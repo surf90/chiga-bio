@@ -161,7 +161,7 @@ details p { margin-top: 8px; word-break: break-all; }
 a { color: var(--primary-deep); }
 
 /* =========================================
-   5. ボトムナビゲーション
+   5. ボトムナビゲーション (以下の部分を丸ごと置き換え)
    ========================================= */
 .bottom-nav {
     position: fixed;
@@ -170,19 +170,58 @@ a { color: var(--primary-deep); }
     width: 100%;
     background: white;
     display: flex;
-    justify-content: space-around;
-    padding: 12px 0;
+    justify-content: flex-start; /* 左詰めに変更 */
+    overflow-x: auto;            /* 横スクロールを許可 */
+    white-space: nowrap;         /* 折り返しを防止 */
+    -webkit-overflow-scrolling: touch;
+    padding: 12px 16px;
+    gap: 12px;                   /* ボタン間の余白 */
     box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
     border-top: 1px solid #eee;
     z-index: 1000;
 }
+
+/* スクロールバーを見えなくしてスッキリさせる */
+.bottom-nav::-webkit-scrollbar {
+    display: none;
+}
+
 .nav-item {
     font-size: 0.9rem;
     font-weight: bold;
     color: var(--text-main);
     text-decoration: none;
     padding: 8px 16px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    flex-shrink: 0; /* 縮まないようにする */
+    transition: background-color 0.2s, color 0.2s;
 }
+
+/* タップされたときの視覚的なフィードバック */
+.nav-item:active, .nav-item:focus {
+    background-color: var(--primary-deep);
+    color: #ffffff;
+}
+
+/* =========================================
+   アラート・バッジ用の追加スタイル (ファイルの末尾などに追加)
+   ========================================= */
+   
+/* 「守るため注意」のバッジをグリーン系に */
+span.danger-badge.protect {
+    background: #10b981; 
+    color: #ffffff;
+}
+
+/* 「守るため注意」のカードの左枠線をグリーン系に */
+.bio-card.protect-border {
+    border-left-color: #10b981;
+}
+
+/* 必要に応じて他のバッジカラーも整理 */
+span.danger-badge.contact { background: var(--alert-high); }
+span.danger-badge.eat { background: #f59e0b; /* オレンジ系 */ }
 
 /* =========================================
    タイポグラフィとインライン要素の再定義 (h1, span)
