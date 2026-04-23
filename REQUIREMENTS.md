@@ -35,6 +35,9 @@ chiga-bio/
 │   └── style.css          # Chiga-style適用スタイルシート
 ├── js/
 │   └── script.js          # 生物データの描画と検索・UI制御
+├── data/
+│   └── bio-data.json      # 生物データ
 └── assets/
     └── icons/             # 権利フリーのSVGアイコン・画像等
+
 ```
