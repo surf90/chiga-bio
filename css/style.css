@@ -298,12 +298,7 @@ span.danger-badge {
     align-self: center;
 }
 
-/* 危険生物のカードではタグの色も警告色に合わせる（任意） */
-.bio-card.danger .category-tag {
-    background-color: rgba(211, 47, 47, 0.1); /* var(--danger-color) の透過色 */
-    color: var(--danger-color);
-    border-color: rgba(211, 47, 47, 0.3);
-}
+/* （危険生物用のタグ色変更設定を削除しました。これで常に上記の色になります） */
 
 /* =========================================
   9. パフォーマンスのためのCSS設定（修正版）
