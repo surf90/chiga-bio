@@ -42,10 +42,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/515850314/large.jpg",
+      "author": "dhugallindsay",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/286915104"
     },
     "features": [
       "尾の付け根に長い毒棘（どくきょく）を持つ",
@@ -76,10 +76,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/252755013/large.jpeg",
+      "author": "hk-phil",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/146943863"
     },
     "features": [
       "体長10〜20cm程度。茶褐色の体に2本の黄色い縦縞がある",
@@ -116,10 +116,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/532188684/large.jpg",
+      "author": "merec0",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/295611469"
     },
     "features": [
       "体長は10cm程度の小型のタコ",
@@ -157,10 +157,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/451063568/large.jpeg",
+      "author": "pedroam14",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/252021724"
     },
     "features": [
       "死角（背後や上空）から人間の食べ物を奪う。",
@@ -189,10 +189,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/617492575/large.jpg",
+      "author": "triskellbreizh",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/339440893"
     },
     "features": [
       "鋭い歯を持ち、ウェットスーツを簡単に突き通すほどの噛む力がある。",
@@ -221,10 +221,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227480944/large.jpg",
+      "author": "mojineko",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/133541973"
     },
     "features": [
       "刺されると皮膚に触手が残存し、毒矢が刺さったままの状態になることがある。",
@@ -252,10 +252,10 @@
     "scientificName": "Engraulis japonicus",
     "isDanger": false,
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/392036225/large.jpeg",
+      "author": "yah_japan",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/221383237"
     },
     "features": [
       "茅ヶ崎名産「シラス」の親魚。体側に銀色の帯がある。",
