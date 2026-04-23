@@ -2137,6 +2137,47 @@
       }
     ]
   },
+
+    {
+    "id": "tsutsuji",
+    "name": "ツツジ",
+    "category": "植物",
+    "scientificName": "Rhododendron spp.",
+    "isDanger": true,
+    "dangerType": "ingestion",
+    "image": {
+      "url": "https://example.com/images/tsutsuji.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/tsutsuji"
+    },
+    "features": [
+      "春に漏斗状の鮮やかな花を咲かせる常緑または落葉低木",
+      "街路樹や庭木として非常に一般的",
+      "レンゲツツジ等の特定種は全草にグラヤノトキシン（有毒成分）を含む"
+    ],
+    "firstAid": [
+      "誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は直ちに救急車を呼ぶ。",
+      "胃洗浄等の専門的処置が必要なため、速やかに医療機関に搬送する。"
+    ],
+    "dontDo": "種類が確実に判別できない場合、花の蜜を吸う行為は中毒の恐れがあるため避ける。",
+    "localEncounter": "昭和47年に「茅ヶ崎市の花」に制定された市のシンボル。中央公園やつつじ公園をはじめ、市内の公園や街路樹として広く親しまれている。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：植物",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      },
+      {
+        "title": "市の花",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007343.html"
+      }
+    ]
+  },
+  
   {
     "id": "shijukara",
     "name": "シジュウカラ",
