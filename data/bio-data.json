@@ -197,4 +197,197 @@
       }
     ]
   }
+
+  {
+    "id": "katakuchiiwashi",
+    "name": "カタクチイワシ（シラス）",
+    "category": "硬骨魚類",
+    "scientificName": "Engraulis japonicus",
+    "isDanger": false,
+    "features": [
+      "茅ヶ崎名産「シラス」の親魚。体側に銀色の帯がある。",
+      "えぼし岩周辺や相模湾全域に回遊しており、地曳網でもお馴染み。",
+      "プランクトンを食べるため、口が大きく開くのが特徴。"
+    ],
+    "description": "茅ヶ崎の食文化を支える最重要魚種。稚魚はシラスとして親しまれます。",
+    "firstAid": [],
+    "dontDo": "",
+    "references": [
+      {
+        "title": "茅ヶ崎の漁業：シラスについて",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "doi": "https://www.city.chigasaki.kanagawa.jp/sangyo/gyogyo/index.html"
+      }
+    ]
+  },
+  {
+    "id": "kusafugu",
+    "name": "クサフグ",
+    "category": "硬骨魚類",
+    "scientificName": "Takifugu alboplumbeus",
+    "isDanger": true,
+    "features": [
+      "波打ち際やタイドプールで最も頻繁に見かけるフグ。",
+      "背面は暗緑色で白い斑点があり、腹面は白い。",
+      "筋肉・皮・内臓に猛毒のテトロドトキシンを持つ。"
+    ],
+    "firstAid": [
+      "皮膚に触れる分には問題ないが、絶対に調理して食べないこと。",
+      "万が一食べてしまい、口の痺れ等が出た場合は直ちに医療機関へ。"
+    ],
+    "dontDo": "素人判断での調理・食用は厳禁。また、鋭い歯で噛まれると出血するため、指を口に近づけないこと。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：フグ毒",
+        "author": "厚生労働省",
+        "year": "2022",
+        "doi": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
+      }
+    ]
+  },
+  {
+    "id": "shirochidori",
+    "name": "シロチドリ",
+    "category": "鳥類",
+    "scientificName": "Charadrius alexandrinus",
+    "isDanger": false,
+    "features": [
+      "神奈川県の鳥。砂浜を素早く走っては立ち止まる動作を繰り返す。",
+      "4月〜7月頃、砂浜に直接卵を産み、繁殖を行う。",
+      "「ピピヨ」と鳴きながら砂浜をトコトコ歩く姿が観察される。"
+    ],
+    "description": "砂浜の減少により生息地が脅かされている貴重な鳥です。",
+    "firstAid": [],
+    "dontDo": "繁殖期の砂浜では、足元にある卵を踏まないよう注意が必要。また、親鳥が「擬傷（偽の怪我）」で敵を遠ざけようとしている時は、近くに巣があるため速やかに離れること。",
+    "references": [
+      {
+        "title": "ふるさとの鳥：シロチドリ",
+        "author": "神奈川県",
+        "year": "2021",
+        "doi": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+      }
+    ]
+  },
+  {
+    "id": "sunagani",
+    "name": "スナガニ",
+    "category": "甲殻類",
+    "scientificName": "Ocypode stimpsoni",
+    "isDanger": false,
+    "features": [
+      "砂と同じ色の体（擬態）を持ち、時速10km以上で走る「砂浜のスピードスター」。",
+      "夜行性が強いが、日中も砂浜に直径2〜3cmの巣穴を見つけることができる。",
+      "目が飛び出しており、周囲360度を見渡せる。"
+    ],
+    "firstAid": [
+      "ハサミで挟まれると痛むため、流水で洗い必要に応じて消毒する。"
+    ],
+    "dontDo": "無理に捕まえようとするとハサミで自切（足を切り離す）してしまうことがあるため、優しく観察すること。",
+    "references": []
+  },
+  {
+    "id": "hamahirugao",
+    "name": "ハマヒルガオ",
+    "category": "植物",
+    "scientificName": "Calystegia soldanella",
+    "isDanger": false,
+    "features": [
+      "5月〜6月にかけて砂浜に淡いピンク色の花を咲かせる代表的な海浜植物。",
+      "葉は厚みがあり、光沢のあるハート型（腎臓形）をしている。",
+      "蔓（つる）が砂の上を這うように広がり、砂の移動を抑える役割も持つ。"
+    ],
+    "description": "初夏の湘南の海岸を彩る美しい花です。",
+    "firstAid": [],
+    "dontDo": "根が深く張っているため、引き抜くと周囲の砂の安定を損なう恐れがあります。観賞に留めましょう。",
+    "references": []
+  }
+
+
+  {
+    "id": "akakurage",
+    "name": "アカクラゲ",
+    "category": "刺胞動物",
+    "scientificName": "Chrysaora pacifica",
+    "isDanger": true,
+    "features": [
+      "傘に赤い放射状の縞模様がある。",
+      "触手が非常に長く、本体から離れていても刺されることがある。",
+      "乾燥した触手の粉を吸い込むとくしゃみが止まらなくなるため「ハクションクラゲ」とも呼ばれる。"
+    ],
+    "firstAid": [
+      "絶対に素手でこすらず、海水で優しく洗い流す（真水はNG）。",
+      "触手が残っている場合は、ピンセットやプラスチックカード等で慎重に剥がす。",
+      "症状が重い場合や広範囲を刺された場合は、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "真水で洗うのは厳禁（浸透圧の変化で刺胞から毒が注入されるため）。また、打ち上げられて乾燥した死骸でも刺胞の機能は残っているため絶対に触れないこと。",
+    "references": []
+  },
+  {
+    "id": "mizukurage",
+    "name": "ミズクラゲ",
+    "category": "刺胞動物",
+    "scientificName": "Aurelia aurita",
+    "isDanger": false,
+    "features": [
+      "傘の中に4つの目（胃腔）が見える、日本で最もポピュラーなクラゲ。",
+      "年中見られ、特に春から初夏にかけて大量発生することがある。",
+      "毒は比較的弱く、通常は刺されても大事には至らない。"
+    ],
+    "firstAid": [
+      "刺されて痒みや軽い痛みが出た場合は、海水で洗い流す。",
+      "稀にアレルギー反応を起こす人がいるため、呼吸が苦しい等の異常を感じたら速やかに医療機関へ。"
+    ],
+    "dontDo": "毒が弱いとはいえ、大量発生している海域に無防備に飛び込むのは避けること。",
+    "references": []
+  },
+  {
+    "id": "kabutokurage",
+    "name": "カブトクラゲ",
+    "category": "有櫛動物",
+    "scientificName": "Bolinopsis mikado",
+    "isDanger": false,
+    "features": [
+      "刺胞を持たないため、人を刺すことはない（無毒）。",
+      "側面の「櫛板（しゅうばん）」が光を反射し、虹色にキラキラと光って見えるのが特徴。",
+      "湘南エリアでも年間を通して観察できる。"
+    ],
+    "firstAid": [],
+    "dontDo": "非常に体が脆く、網などですくうとすぐに崩れてしまうため、容器で優しく水ごとすくって観察すること。",
+    "references": []
+  },
+  {
+    "id": "ginkakurage",
+    "name": "ギンカクラゲ",
+    "category": "刺胞動物（ヒドロ虫綱）",
+    "scientificName": "Porpita porpita",
+    "isDanger": false,
+    "features": [
+      "銀貨（コイン）のような円盤状の平たい気泡体（直径数cm）を持つ。",
+      "青い触手を周囲に広げて海面を漂う。",
+      "初夏から夏にかけて、カツオノエボシと同じように南風に乗って漂着することが多い。"
+    ],
+    "firstAid": [
+      "毒は比較的弱いが、人によっては軽いかゆみや痛みを感じるため、触ってしまった場合は海水で洗い流す。"
+    ],
+    "dontDo": "肌の弱い人や子供は、安全のため素手で触らないように注意する。",
+    "references": []
+  },
+  {
+    "id": "katsuonokanmuri",
+    "name": "カツオノカンムリ",
+    "category": "刺胞動物（ヒドロ虫綱）",
+    "scientificName": "Velella velella",
+    "isDanger": false,
+    "features": [
+      "青い楕円形の浮袋の上に、風を受けるための透明な「帆」が斜めに立っている。",
+      "自力で泳がず、風の力で海面を移動する。",
+      "カツオノエボシやギンカクラゲと一緒に大量漂着することがある。"
+    ],
+    "firstAid": [
+      "毒は弱いが、触れた場合は念のため海水で洗い流す。"
+    ],
+    "dontDo": "素手で触った手で目をこすらないこと（結膜炎などの原因になることがある）。",
+    "references": []
+  }
 ]
