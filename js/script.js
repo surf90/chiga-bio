@@ -24,7 +24,7 @@ async function fetchBioData() {
     }
 }
 
-// カードの描画関数（元のコードをベースにしています）
+// カードの描画関数
 function renderCards(data) {
     const container = document.getElementById('bio-list');
     container.innerHTML = '';
@@ -33,9 +33,29 @@ function renderCards(data) {
         const card = document.createElement('div');
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''}`;
 
-        // データの組み立て（簡略化して記載）
+        // リストデータの組み立て
         let featuresHtml = bio.features.map(f => `<li>${f}</li>`).join('');
         let firstAidHtml = bio.firstAid.map(f => `<li>${f}</li>`).join('');
+        
+        // 禁忌事項（やってはいけないこと）のHTML生成
+        let dontDoHtml = bio.dontDo ? `
+            <div class="alert-box">
+                <strong>⚠️ やってはいけないこと：</strong><br>
+                ${bio.dontDo}
+            </div>` : '';
+
+        // 出典アコーディオンのHTML生成
+        let referencesHtml = '';
+        if (bio.references && bio.references.length > 0) {
+            let refsList = bio.references.map(ref => 
+                `<li>${ref.title} (${ref.author}, ${ref.year}) <a href="${ref.doi}" target="_blank">リンク</a></li>`
+            ).join('');
+            referencesHtml = `
+                <details>
+                    <summary>出典・参考文献を開く</summary>
+                    <ul>${refsList}</ul>
+                </details>`;
+        }
         
         card.innerHTML = `
             ${bio.isDanger ? '<span class="danger-badge">WARNING / 高度危険</span>' : ''}
@@ -48,6 +68,8 @@ function renderCards(data) {
             <ul class="styled-list">${featuresHtml}</ul>
             <span class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST_AID</span>
             <ul class="styled-list">${firstAidHtml}</ul>
+            ${dontDoHtml}
+            ${referencesHtml}
         `;
         container.appendChild(card);
     });
