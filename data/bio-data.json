@@ -2143,21 +2143,21 @@
     "name": "ツツジ",
     "category": "植物",
     "scientificName": "Rhododendron spp.",
-    "isDanger": true,
-    "dangerType": "eat",
+    "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/tsutsuji.jpg",
       "author": "Ecological Data Contributor",
       "license": "CC BY-NC",
       "sourceUrl": "https://example.com/observations/tsutsuji"
     },
-    "features": [
+"features": [
       "春に漏斗状の鮮やかな花を咲かせる常緑または落葉低木",
       "街路樹や庭木として非常に一般的",
-      "レンゲツツジ等の特定種は全草にグラヤノトキシン（有毒成分）を含む"
+      "※同属の「レンゲツツジ（朱赤色の花）」は猛毒を持つため、見分けがつかない場合は注意が必要"
     ],
     "firstAid": [
-      "誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は直ちに救急車を呼ぶ。",
+      "レンゲツツジを誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は直ちに救急車を呼ぶ。",
       "胃洗浄等の専門的処置が必要なため、速やかに医療機関に搬送する。"
     ],
     "dontDo": "種類が確実に判別できない場合、花の蜜を吸う行為は中毒の恐れがあるため避ける。",
@@ -2211,6 +2211,39 @@
         "author": "茅ヶ崎市",
         "year": "2023",
         "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007344.html"
+      }
+    ]
+  },
+  {
+    "id": "rengetsutsuji",
+    "name": "レンゲツツジ",
+    "category": "植物",
+    "scientificName": "Rhododendron molle subsp. japonicum",
+    "isDanger": true,
+    "dangerType": "eat",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
+    "features": [
+      "春から初夏にかけて、鮮やかな朱赤色や黄色の花を咲かせる落葉低木",
+      "花、葉、茎、根、さらには「花の蜜」に至るまで、全草に「グラヤノトキシン」という強い神経毒を含む",
+      "牛や馬などの動物も本能的に避ける毒性を持つため、放牧地にこの花だけが群生して残ることがある"
+    ],
+    "firstAid": [
+      "誤って蜜を吸ったり摂取したりして、嘔吐、下痢、痙攣、呼吸困難などの症状が出た場合は、直ちに救急車（119番）を要請する。",
+      "胃洗浄や対症療法などの専門的な医療処置が必要となるため、速やかに医療機関に搬送する。"
+    ],
+    "dontDo": "「他のツツジと同じように花の蜜を吸う」行為は重篤な中毒を引き起こすため、絶対にやめること。特に子どもが誤って吸わないよう厳重な注意が必要。",
+    "localEncounter": "海岸の自生種ではないが、園芸品種として市内の庭先や公園、緑地などに植栽されている可能性がある。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：高等植物：ツツジ科",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
     ]
   }
