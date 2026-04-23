@@ -10,7 +10,7 @@ async function fetchBioData() {
             throw new Error('データの取得に失敗しました');
         }
         
-globalBioData = await response.json();
+        globalBioData = await response.json();
 
         // ★取得直後にソートする（市のシンボルを先頭にし、他は50音順）
         const priorityIds = ['tsutsuji', 'shijukara']; // 先頭にしたい生物のID
@@ -47,7 +47,7 @@ function renderCards(data) {
         // CSSのクラス付与
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
 
-        // 危険度・注意バッジの生成（階層化対応）
+        // 危険度・注意バッジの生成
         let badgeHtml = '';
         if (bio.dangerType === 'contact') {
             badgeHtml = '<span class="danger-badge contact">⚠️ 触れると危険</span>';
@@ -59,7 +59,7 @@ function renderCards(data) {
             badgeHtml = '<span class="danger-badge">⚠️ 危険</span>';
         }
 
-        // ★画像のHTML生成（ここで画像と出典の表示を行います）
+        // ★画像のHTML生成
         let imageHtml = '';
         if (bio.image && bio.image.url && bio.image.url !== "https://via.placeholder.com/400x300?text=No+Image+Available") {
             imageHtml = `
@@ -77,7 +77,6 @@ function renderCards(data) {
             </div>`;
         }
 
-        // 項目が空の場合はセクションごと非表示にする処理
         let featuresHtml = (bio.features && bio.features.length > 0) 
             ? `<span class="section-label">FEATURES</span><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` 
             : '';
@@ -104,8 +103,6 @@ function renderCards(data) {
                 </details>`;
         }
 
-        // （...既存のコード：referencesHtml の定義などの後）
-
         // ★市のシンボル用の控えめなアイコン設定
         let symbolIcon = '';
         if (bio.id === 'tsutsuji') {
@@ -114,15 +111,7 @@ function renderCards(data) {
             symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の鳥">🐦</span>';
         }
         
-// ★市のシンボル用の控えめなアイコン設定
-        let symbolIcon = '';
-        if (bio.id === 'satsuki') { // ※後述の理由により 'tsutsuji' から 'satsuki' に変更しています
-            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の花">🌸</span>';
-        } else if (bio.id === 'shijukara') {
-            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の鳥">🐦</span>';
-        }
-        
-        // カード全体のHTML組み立て（※ここから下をスッキリ1つにまとめました）
+        // カード全体のHTML組み立て
         card.innerHTML = `
             ${badgeHtml}
             <div class="bio-header">
