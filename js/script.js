@@ -123,12 +123,14 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
     renderCards(filtered);
 });
 
+
 window.filterData = function(type) {
-    if(type === 'danger') {
-        // isDangerがtrue、または保護が必要なものをフィルタ
-        renderCards(globalBioData.filter(bio => bio.isDanger || bio.dangerType === 'protect'));
-    } else {
+    if(type === 'all') {
+        // 「すべて」が選択された場合は全データを表示
         renderCards(globalBioData);
+    } else {
+        // 選択されたカテゴリ（分類）に一致するものだけをフィルタリング
+        renderCards(globalBioData.filter(bio => bio.category === type));
     }
 };
 
