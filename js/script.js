@@ -114,28 +114,26 @@ function renderCards(data) {
             symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の鳥">🐦</span>';
         }
         
-        // カード全体のHTML組み立て
-        card.innerHTML = `
-            ${badgeHtml}
-            <div class="bio-header">
-                <div>
-                    <h2>${bio.name}${symbolIcon}</h2> </div>
-                <span class="category-tag">${bio.category}</span>
-            </div>
-            
-            // （...以下の ${imageHtml} などはそのまま）
+// ★市のシンボル用の控えめなアイコン設定
+        let symbolIcon = '';
+        if (bio.id === 'satsuki') { // ※後述の理由により 'tsutsuji' から 'satsuki' に変更しています
+            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の花">🌸</span>';
+        } else if (bio.id === 'shijukara') {
+            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の鳥">🐦</span>';
+        }
         
-        // カード全体のHTML組み立て
+        // カード全体のHTML組み立て（※ここから下をスッキリ1つにまとめました）
         card.innerHTML = `
             ${badgeHtml}
             <div class="bio-header">
                 <div>
-                    <h2>${bio.name}</h2>
+                    <h2>${bio.name}${symbolIcon}</h2>
                 </div>
                 <span class="category-tag">${bio.category}</span>
             </div>
             
-            ${imageHtml} <div class="data-row">
+            ${imageHtml}
+            <div class="data-row">
                 <span class="data-label">学名</span>
                 <span class="data-value mono">${bio.scientificName}</span>
             </div>
@@ -157,13 +155,10 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
     renderCards(filtered);
 });
 
-
 window.filterData = function(type) {
     if(type === 'all') {
-        // 「すべて」が選択された場合は全データを表示
         renderCards(globalBioData);
     } else {
-        // 選択されたカテゴリ（分類）に一致するものだけをフィルタリング
         renderCards(globalBioData.filter(bio => bio.category === type));
     }
 };
