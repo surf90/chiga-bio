@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- 浮き袋（青く透明な餃子状） -->
+  <ellipse cx="50" cy="45" rx="22" ry="12" fill="#5BC8F5" opacity="0.85"/>
+  <ellipse cx="50" cy="45" rx="22" ry="12" fill="none" stroke="#1A8BBF" stroke-width="2"/>
+  <!-- 浮き袋のハイライト -->
+  <ellipse cx="44" cy="41" rx="8" ry="4" fill="#A8E6F8" opacity="0.6"/>
+  <!-- 触手（長い青色） -->
+  <path d="M38,54 Q30,65 25,80" stroke="#1A6FA8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M44,56 Q40,70 38,85" stroke="#1A6FA8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M56,56 Q60,70 62,85" stroke="#1A6FA8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M62,54 Q70,65 75,80" stroke="#1A6FA8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 感嘆符 -->
+  <text x="50" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#CC6600">!</text>
+</svg>

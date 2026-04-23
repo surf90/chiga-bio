@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 安全背景（水色の円） -->
+  <circle cx="50" cy="50" r="44" fill="#E0F4FF" stroke="#4AB8E8" stroke-width="2"/>
+  <!-- クラゲの傘（半球形・半透明） -->
+  <ellipse cx="50" cy="44" rx="26" ry="18" fill="#B8E0F0" stroke="#4AB8E8" stroke-width="2" opacity="0.85"/>
+  <!-- 傘の縁 -->
+  <ellipse cx="50" cy="62" rx="26" ry="5" fill="#B8E0F0" stroke="#4AB8E8" stroke-width="1.5" opacity="0.7"/>
+  <!-- 4つの胃腔（四葉クローバー状） -->
+  <ellipse cx="44" cy="46" rx="5" ry="7" fill="#E898B8" opacity="0.7"/>
+  <ellipse cx="56" cy="46" rx="5" ry="7" fill="#E898B8" opacity="0.7"/>
+  <ellipse cx="44" cy="58" rx="5" ry="7" fill="#E898B8" opacity="0.7"/>
+  <ellipse cx="56" cy="58" rx="5" ry="7" fill="#E898B8" opacity="0.7"/>
+  <!-- 傘の上ハイライト -->
+  <ellipse cx="44" cy="36" rx="8" ry="5" fill="#DCEEF8" opacity="0.6"/>
+  <!-- 触手（細い） -->
+  <path d="M30,62 Q26,72 24,82" stroke="#4AB8E8" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M38,65 Q36,75 35,85" stroke="#4AB8E8" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M62,65 Q64,75 65,85" stroke="#4AB8E8" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M70,62 Q74,72 76,82" stroke="#4AB8E8" stroke-width="1" fill="none" stroke-linecap="round"/>
+</svg>

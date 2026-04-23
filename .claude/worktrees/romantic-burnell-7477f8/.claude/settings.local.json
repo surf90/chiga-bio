@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"D:/My Documents/GitHub/chiga-bio/assets/svg-icons\")",
+      "Bash(cp \"D:/My Documents/GitHub/chiga-bio/.claude/worktrees/romantic-burnell-7477f8/assets/svg-icons/\"* \"D:/My Documents/GitHub/chiga-bio/assets/svg-icons/\")"
+    ]
+  }
+}

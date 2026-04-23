@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 安全背景（水色の円） -->
+  <circle cx="50" cy="50" r="44" fill="#E0F4FF" stroke="#4AB8E8" stroke-width="2"/>
+  <!-- 円盤形（銀貨のような気泡体） -->
+  <ellipse cx="50" cy="45" rx="22" ry="6" fill="#C8D8E8" stroke="#8AB8D8" stroke-width="2"/>
+  <!-- 円盤の上面（銀色） -->
+  <ellipse cx="50" cy="43" rx="22" ry="5" fill="#D8E8F0" stroke="#A8C8E0" stroke-width="1"/>
+  <!-- 円盤のハイライト（銀色の質感） -->
+  <ellipse cx="43" cy="42" rx="8" ry="2.5" fill="#F0F8FF" opacity="0.7"/>
+  <!-- 同心円紋様 -->
+  <ellipse cx="50" cy="44" rx="15" ry="4" fill="none" stroke="#8AB8D8" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="50" cy="44" rx="8" ry="2" fill="none" stroke="#8AB8D8" stroke-width="1" opacity="0.5"/>
+  <!-- 青い触手（放射状） -->
+  <line x1="50" y1="50" x2="30" y2="62" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="28" y2="50" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="30" y2="38" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="38" y2="68" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="50" y2="70" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="62" y2="68" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="72" y2="62" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="72" y2="50" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="70" y2="38" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="62" y2="32" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="50" y2="30" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="50" x2="38" y2="32" stroke="#3A78B8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

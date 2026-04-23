@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- 箱型クラゲの傘（立方体風） -->
+  <rect x="32" y="28" width="36" height="28" rx="4" ry="4" fill="#C8E8F8" stroke="#1A8BBF" stroke-width="2" opacity="0.9"/>
+  <!-- 傘の上面ハイライト -->
+  <rect x="36" y="30" width="28" height="8" rx="3" fill="#E8F8FF" opacity="0.6"/>
+  <!-- 傘の内部（胃が見える） -->
+  <ellipse cx="50" cy="45" rx="10" ry="6" fill="#9FCCE8" opacity="0.5"/>
+  <!-- 4本の触手（四隅から） -->
+  <path d="M34,56 Q28,65 25,80" stroke="#1A6FA8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M42,56 Q40,68 38,82" stroke="#1A6FA8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M58,56 Q60,68 62,82" stroke="#1A6FA8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M66,56 Q72,65 75,80" stroke="#1A6FA8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 警告色アクセント -->
+  <rect x="32" y="28" width="36" height="28" rx="4" ry="4" fill="none" stroke="#FF8C00" stroke-width="1" opacity="0.5"/>
+  <!-- 感嘆符 -->
+  <text x="50" y="83" text-anchor="middle" font-size="10" font-weight="bold" fill="#CC6600">!</text>
+</svg>

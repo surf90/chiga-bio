@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- エイの菱形体 -->
+  <path d="M50,22 Q72,38 68,55 Q50,62 32,55 Q28,38 50,22Z" fill="#C0622A" stroke="#8B3A0E" stroke-width="1.5"/>
+  <!-- 体の模様（影） -->
+  <path d="M50,27 Q65,40 62,53 Q50,58 38,53 Q35,40 50,27Z" fill="#A85020" opacity="0.4"/>
+  <!-- 目 -->
+  <circle cx="45" cy="35" r="2" fill="#2A1A0A"/>
+  <circle cx="55" cy="35" r="2" fill="#2A1A0A"/>
+  <!-- 尾 -->
+  <path d="M50,62 Q52,72 50,82" stroke="#8B3A0E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- 毒棘（赤い突起） -->
+  <path d="M50,68 L54,65 L52,72" fill="#FF2200" stroke="#CC0000" stroke-width="0.5"/>
+  <!-- 感嘆符 -->
+  <text x="50" y="83" text-anchor="middle" font-size="10" font-weight="bold" fill="#CC6600">!</text>
+</svg>

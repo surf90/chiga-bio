@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 安全背景（緑の円） -->
+  <circle cx="50" cy="50" r="44" fill="#E8F5E0" stroke="#5CB85C" stroke-width="2"/>
+  <!-- 砂浜（底） -->
+  <ellipse cx="50" cy="80" rx="38" ry="8" fill="#E8D8A0" opacity="0.7"/>
+  <!-- 体 -->
+  <ellipse cx="50" cy="55" rx="16" ry="10" fill="#FFFFFF" stroke="#C8C8C8" stroke-width="1"/>
+  <!-- 頭 -->
+  <circle cx="50" cy="42" r="9" fill="#FFFFFF" stroke="#C8C8C8" stroke-width="1"/>
+  <!-- 頭部の黒い帯（シロチドリ特徴） -->
+  <path d="M42,42 Q50,38 58,42" stroke="#1A1A1A" stroke-width="3" fill="none"/>
+  <!-- くちばし -->
+  <path d="M50,47 L56,50 L50,50" fill="#D4A020" stroke="#B08010" stroke-width="0.5"/>
+  <!-- 目 -->
+  <circle cx="47" cy="40" r="2" fill="#1A1A1A"/>
+  <circle cx="47" cy="40" r="0.8" fill="#FFFFFF" opacity="0.6"/>
+  <!-- 翼（折りたたんだ状態） -->
+  <path d="M35,55 Q42,50 50,55 Q58,50 65,55 Q58,65 50,65 Q42,65 35,55Z" fill="#C8C8A8" stroke="#A8A888" stroke-width="1"/>
+  <!-- 足 -->
+  <line x1="45" y1="65" x2="43" y2="78" stroke="#D4A020" stroke-width="2" stroke-linecap="round"/>
+  <line x1="55" y1="65" x2="57" y2="78" stroke="#D4A020" stroke-width="2" stroke-linecap="round"/>
+  <!-- 保護マーク -->
+  <text x="50" y="93" text-anchor="middle" font-size="7" fill="#5CB85C">保護対象</text>
+</svg>

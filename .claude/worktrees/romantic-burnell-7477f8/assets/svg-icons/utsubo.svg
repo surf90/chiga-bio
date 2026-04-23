@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- 体（うねる蛇状） -->
+  <path d="M20,35 Q35,28 50,35 Q65,42 80,35 Q80,50 65,55 Q50,60 35,55 Q20,50 20,35Z" fill="#4A7A3A" stroke="#2A5A1A" stroke-width="1.5"/>
+  <!-- 体の模様 -->
+  <path d="M25,35 Q38,29 50,35 Q62,41 75,36" stroke="#2A5A1A" stroke-width="1" fill="none" opacity="0.5"/>
+  <!-- 頭部 -->
+  <ellipse cx="20" cy="43" rx="12" ry="9" fill="#4A7A3A" stroke="#2A5A1A" stroke-width="1.5"/>
+  <!-- 口（大きく開いた口・鋭い歯） -->
+  <path d="M10,46 Q20,54 30,46" fill="#CC2200" stroke="#2A5A1A" stroke-width="1"/>
+  <line x1="13" y1="46" x2="14" y2="52" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="18" y1="48" x2="19" y2="54" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="23" y1="48" x2="24" y2="54" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="28" y1="46" x2="27" y2="52" stroke="#FFFFFF" stroke-width="1.5"/>
+  <!-- 目 -->
+  <circle cx="16" cy="39" r="2.5" fill="#1A1A1A"/>
+  <circle cx="16" cy="39" r="1" fill="#FFAA00" opacity="0.8"/>
+  <!-- 感嘆符 -->
+  <text x="65" y="83" text-anchor="middle" font-size="10" font-weight="bold" fill="#CC6600">!</text>
+</svg>
