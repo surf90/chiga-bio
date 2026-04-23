@@ -59,28 +59,52 @@ span.danger-badge {
 
 /* =========================================
    5. フッター (Chiga-log スタイル踏襲)
-   ========================================= */
+========================================= */
 .footer {
-    margin-top: 40px;
-    padding: 32px 0 24px;
-    text-align: center;
+    margin-top: 8px;
     font-size: 11px;
-    color: var(--text-sub);
-    border-top: 1px solid var(--border-light);
-    line-height: 1.8;
+    color: #707070;
+    line-height: 1.7;
+    text-align: center;
+    padding: 24px 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .footer a {
-    color: var(--primary-light);
+    color: #707070;
     text-decoration: none;
+    transition: opacity 0.2s;
 }
+
 .footer a:hover {
+    opacity: 0.7;
     text-decoration: underline;
 }
 
-.footer-data {
-    margin-bottom: 16px;
-    font-family: var(--font-sans);
+.footer-disclaimer {
+    font-size: 11px;
+    letter-spacing: -0.28px;
+    color: #888888;
+    line-height: 1.5;
+}
+
+.footer-copyright {
+    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    margin-top: 8px;
+}
+
+/* ライフセービングリンクのアクセントカラー */
+.lifesaving-link {
+    color: #c0392b !important;
+    opacity: 0.75;
+}
+
+.lifesaving-link:hover {
+    opacity: 1;
 }
 
 /* 免責事項エリア */
