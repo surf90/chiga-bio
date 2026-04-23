@@ -9,7 +9,7 @@
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
       "author": "peaslover",
-      "license": "CC BY-NC 4.0",
+      "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/observations/307276767"
     },
     "features": [
@@ -553,10 +553,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6314811/medium.jpg",
-      "author": "Sylke Rohrlach",
-      "license": "CC0",
-      "sourceUrl": "https://www.inaturalist.org/photos/6314811"
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/193505243/large.jpeg",
+      "author": "nekoja_cowry",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/114597224"
     },
     "features": [
       "体長2〜3cm程度。銀青色の美しい姿で「青い竜」とも呼ばれる。",
