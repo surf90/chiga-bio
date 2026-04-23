@@ -11,6 +11,12 @@ async function fetchBioData() {
         }
         
         globalBioData = await response.json();
+
+        // ★追加・修正: 取得直後に名前順でソートする
+        globalBioData.sort((a, b) => {
+            return a.name.localeCompare(b.name, 'ja');
+        });
+
         renderCards(globalBioData);
         
     } catch (error) {
@@ -58,7 +64,8 @@ function renderCards(data) {
         let referencesHtml = '';
         if (bio.references && bio.references.length > 0) {
             let refsList = bio.references.map(ref => 
-                `<li>${ref.title} (${ref.author}, ${ref.year}) <a href="${ref.doi}" target="_blank">リンク</a></li>`
+                // ★修正: url プロパティに合わせて修正しました（元のコードは doi でした）
+                `<li>${ref.title} (${ref.author}, ${ref.year}) <a href="${ref.url}" target="_blank">リンク</a></li>`
             ).join('');
             referencesHtml = `
                 <details>
@@ -69,7 +76,13 @@ function renderCards(data) {
         
         card.innerHTML = `
             ${badgeHtml}
-            <h2>${bio.name}</h2>
+            <div class="bio-header">
+                <div>
+                    <h2>${bio.name}</h2>
+                </div>
+                <span class="category-tag">${bio.category}</span>
+            </div>
+            
             <div class="data-row">
                 <span class="data-label">学名</span>
                 <span class="data-value mono">${bio.scientificName}</span>
