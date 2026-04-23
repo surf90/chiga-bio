@@ -2,7 +2,7 @@
   {
     "id": "katsuonoeboshi",
     "name": "カツオノエボシ",
-    "category": "刺胞動物",
+    "category": "無脊椎動物",
     "scientificName": "Physalia physalis",
     "isDanger": true,
     "dangerType": "contact",
@@ -37,7 +37,7 @@
   {
     "id": "akaei",
     "name": "アカエイ",
-    "category": "軟骨魚類",
+    "category": "魚類",
     "scientificName": "Dasyatis akajei",
     "isDanger": true,
     "dangerType": "contact",
@@ -71,7 +71,7 @@
   {
     "id": "gonzui",
     "name": "ゴンズイ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Plotosus lineatus",
     "isDanger": true,
     "dangerType": "contact",
@@ -111,7 +111,7 @@
   {
     "id": "hyoumondako",
     "name": "ヒョウモンダコ",
-    "category": "頭足類",
+    "category": "無脊椎動物",
     "scientificName": "Hapalochlaena",
     "isDanger": true,
     "dangerType": "contact",
@@ -184,7 +184,7 @@
   {
     "id": "utsubo",
     "name": "ウツボ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Gymnothorax",
     "isDanger": true,
     "dangerType": "contact",
@@ -216,7 +216,7 @@
   {
     "id": "andonkurage",
     "name": "アンドンクラゲ",
-    "category": "刺胞動物",
+    "category": "無脊椎動物",
     "scientificName": "Carybdea brevipedalia",
     "isDanger": true,
     "dangerType": "contact",
@@ -248,7 +248,7 @@
   {
     "id": "katakuchiiwashi",
     "name": "カタクチイワシ（シラス）",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Engraulis japonicus",
     "isDanger": false,
     "image": {
@@ -276,7 +276,7 @@
   {
     "id": "kusafugu",
     "name": "クサフグ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Takifugu alboplumbeus",
     "isDanger": true,
     "dangerType": "eat",
@@ -337,7 +337,7 @@
   {
     "id": "sunagani",
     "name": "スナガニ",
-    "category": "甲殻類",
+    "category": "無脊椎動物",
     "scientificName": "Ocypode stimpsoni",
     "isDanger": false,
     "image": {
@@ -395,7 +395,7 @@
   {
     "id": "akakurage",
     "name": "アカクラゲ",
-    "category": "刺胞動物",
+    "category": "無脊椎動物",
     "scientificName": "Chrysaora pacifica",
     "isDanger": true,
     "dangerType": "contact",
@@ -429,7 +429,7 @@
   {
     "id": "mizukurage",
     "name": "ミズクラゲ",
-    "category": "刺胞動物",
+    "category": "無脊椎動物",
     "scientificName": "Aurelia aurita",
     "isDanger": false,
     "image": {
@@ -460,7 +460,7 @@
   {
     "id": "kabutokurage",
     "name": "カブトクラゲ",
-    "category": "有櫛動物",
+    "category": "無脊椎動物",
     "scientificName": "Bolinopsis mikado",
     "isDanger": false,
     "image": {
@@ -488,7 +488,7 @@
   {
     "id": "ginkakurage",
     "name": "ギンカクラゲ",
-    "category": "刺胞動物（ヒドロ虫綱）",
+    "category": "無脊椎動物",
     "scientificName": "Porpita porpita",
     "isDanger": false,
     "image": {
@@ -518,7 +518,7 @@
   {
     "id": "katsuonokanmuri",
     "name": "カツオノカンムリ",
-    "category": "刺胞動物（ヒドロ虫綱）",
+    "category": "無脊椎動物",
     "scientificName": "Velella velella",
     "isDanger": false,
     "image": {
@@ -548,7 +548,7 @@
   {
     "id": "aominoumiushi",
     "name": "アオミノウミウシ",
-    "category": "軟体動物",
+    "category": "無脊椎動物",
     "scientificName": "Glaucus atlanticus",
     "isDanger": true,
     "dangerType": "contact",
@@ -586,7 +586,7 @@
   {
     "id": "haokoze",
     "name": "ハオコゼ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Hypodytes rubripinnis",
     "isDanger": true,
     "dangerType": "contact",
@@ -619,7 +619,7 @@
   {
     "id": "fujitsubo",
     "name": "フジツボ類",
-    "category": "甲殻類",
+    "category": "無脊椎動物",
     "scientificName": "Balanomorpha",
     "isDanger": true,
     "dangerType": "contact",
@@ -652,7 +652,7 @@
   {
     "id": "datsu",
     "name": "ダツ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Belonidae",
     "isDanger": true,
     "dangerType": "contact",
@@ -690,7 +690,7 @@
   {
     "id": "minokasago",
     "name": "ミノカサゴ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Pterois lunulata",
     "isDanger": true,
     "dangerType": "contact",
@@ -729,7 +729,7 @@
   {
     "id": "akaumigame",
     "name": "アカウミガメ",
-    "category": "爬虫類",
+    "category": "は虫類",
     "scientificName": "Caretta caretta",
     "isDanger": false,
     "dangerType": "protect",
@@ -764,7 +764,7 @@
   {
     "id": "shumokuzame",
     "name": "シュモクザメ（アカシュモクザメ等）",
-    "category": "軟骨魚類",
+    "category": "魚類",
     "scientificName": "Sphyrna lewini",
     "isDanger": true,
     "dangerType": "contact",
@@ -797,7 +797,7 @@
   {
     "id": "yoshikirizame",
     "name": "ヨシキリザメ",
-    "category": "軟骨魚類",
+    "category": "魚類",
     "scientificName": "Prionace glauca",
     "isDanger": true,
     "dangerType": "contact",
@@ -859,7 +859,7 @@
   {
     "id": "sunameri",
     "name": "スナメリ",
-    "category": "哺乳類",
+    "category": "ほ乳類",
     "scientificName": "Neophocaena asiaeorientalis",
     "isDanger": false,
     "dangerType": "protect",
@@ -892,7 +892,7 @@
   {
     "id": "kamairuka",
     "name": "カマイルカ",
-    "category": "哺乳類",
+    "category": "ほ乳類",
     "scientificName": "Lagenorhynchus obliquidens",
     "isDanger": false,
     "dangerType": "protect",
@@ -923,7 +923,7 @@
   {
     "id": "hanagondou",
     "name": "ハナゴンドウ",
-    "category": "哺乳類",
+    "category": "ほ乳類",
     "scientificName": "Grampus griseus",
     "isDanger": false,
     "dangerType": "protect",
@@ -954,7 +954,7 @@
   {
     "id": "zatoukujira",
     "name": "ザトウクジラ",
-    "category": "哺乳類",
+    "category": "ほ乳類",
     "scientificName": "Megaptera novaeangliae",
     "isDanger": true,
     "dangerType": "contact",
@@ -985,7 +985,7 @@
   {
     "id": "shirogisu",
     "name": "シロギス",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Sillago japonica",
     "isDanger": false,
     "image": {
@@ -1013,7 +1013,7 @@
   {
     "id": "hirame",
     "name": "ヒラメ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Paralichthys olivaceus",
     "isDanger": true,
     "dangerType": "contact",
@@ -1045,7 +1045,7 @@
   {
     "id": "kasago",
     "name": "カサゴ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Sebastiscus marmoratus",
     "isDanger": true,
     "dangerType": "contact",
@@ -1077,7 +1077,7 @@
   {
     "id": "mejina",
     "name": "メジナ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Girella punctata",
     "isDanger": false,
     "image": {
@@ -1105,7 +1105,7 @@
   {
     "id": "agohaze",
     "name": "アゴハゼ",
-    "category": "硬骨魚類",
+    "category": "魚類",
     "scientificName": "Chaenogobius annularis",
     "isDanger": false,
     "image": {
@@ -1133,7 +1133,7 @@
   {
     "id": "honyadokari",
     "name": "ホンヤドカリ",
-    "category": "甲殻類",
+    "category": "無脊椎動物",
     "scientificName": "Pagurus filholi",
     "isDanger": false,
     "image": {
@@ -1161,7 +1161,7 @@
   {
     "id": "amehurashi",
     "name": "アメフラシ",
-    "category": "軟体動物",
+    "category": "無脊椎動物",
     "scientificName": "Aplysia kurodai",
     "isDanger": false,
     "image": {
@@ -1218,7 +1218,7 @@
   {
     "id": "hamadangomushi",
     "name": "ハマダンゴムシ",
-    "category": "甲殻類",
+    "category": "無脊椎動物",
     "scientificName": "Tylos granuliferus",
     "isDanger": false,
     "image": {
