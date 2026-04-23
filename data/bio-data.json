@@ -251,6 +251,7 @@
     "category": "魚類",
     "scientificName": "Engraulis japonicus",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/392036225/large.jpeg",
       "author": "yah_japan",
@@ -340,6 +341,7 @@
     "category": "無脊椎動物",
     "scientificName": "Ocypode stimpsoni",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -370,6 +372,7 @@
     "category": "植物",
     "scientificName": "Calystegia soldanella",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -432,6 +435,7 @@
     "category": "無脊椎動物",
     "scientificName": "Aurelia aurita",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -463,6 +467,7 @@
     "category": "無脊椎動物",
     "scientificName": "Bolinopsis mikado",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -491,6 +496,7 @@
     "category": "無脊椎動物",
     "scientificName": "Porpita porpita",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -521,6 +527,7 @@
     "category": "無脊椎動物",
     "scientificName": "Velella velella",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -597,7 +604,7 @@
       "sourceUrl": ""
     },
     "features": [
-      "体長は10cm程度で赤褐色や暗褐色をしており、海藻や岩に擬態する。",
+      "体長は10cm程度で赤褐色や暗褐色をしており、海藻や岩に拟態する。",
       "背びれに鋭く強力な毒棘（どくきょく）を持つ。"
     ],
     "firstAid": [
@@ -832,6 +839,7 @@
     "category": "鳥類",
     "scientificName": "Larus crassirostris",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -988,6 +996,7 @@
     "category": "魚類",
     "scientificName": "Sillago japonica",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -1018,27 +1027,34 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://example.com/images/hirame.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/hirame"
     },
     "features": [
-      "砂地と同化する保護色を持った平たい体で、両目が体の左側にある。",
-      "小魚を捕食するため、口には非常に鋭い牙のような歯が並んでいる。"
+      "両目が体の左側に偏っている（左ヒラメに右カレイ）。",
+      "砂地と同化する保護色を持ち、周囲の砂底に合わせて体色を変化させ擬態する。",
+      "口が大きく、小魚を捕食するため非常に鋭い牙のような歯が並んでいる。"
     ],
     "firstAid": [
       "鋭い歯で指などを切った場合は、清潔な海水や水道水で洗い流し、圧迫止血を行う。",
       "傷口が深い場合は化膿を防ぐため、速やかに医療機関を受診する。"
     ],
     "dontDo": "ルアーや針を外す際、絶対に素手で口元に指を入れないこと。フィッシュグリップやプライヤーを使用する。",
-    "localEncounter": "茅ヶ崎の浜辺（サーフ）からルアー釣りや泳がせ釣りで狙うフラットフィッシュとして人気。",
+    "localEncounter": "沿岸の砂泥底に生息し、茅ヶ崎の浜辺（サーフ）からルアー釣りや泳がせ釣りで狙うフラットフィッシュとして人気。",
     "references": [
       {
         "title": "茅ヶ崎海岸で釣れてる魚",
         "author": "アングラーズ",
         "year": "2026",
         "url": "https://anglers.jp/areas/34"
+      },
+      {
+        "title": "相模湾の漁業資源",
+        "author": "神奈川県水産技術センター",
+        "year": "2023",
+        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
       }
     ]
   },
@@ -1080,6 +1096,7 @@
     "category": "魚類",
     "scientificName": "Girella punctata",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -1106,17 +1123,19 @@
     "id": "agohaze",
     "name": "アゴハゼ",
     "category": "魚類",
-    "scientificName": "Chaenogobius annularis",
+    "scientificName": "Chasmichthys gulosus",
     "isDanger": false,
+    "dangerType": "",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://example.com/images/agohaze.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/agohaze"
     },
     "features": [
-      "体長は5cm程度。茶色っぽいまだら模様で、胸びれが大きくハゼの仲間。",
-      "タイドプール（潮だまり）に取り残されていることが多く、人が近づくとサッと岩陰に素早く隠れる。"
+      "タイドプール（潮だまり）の代表的なハゼ。体長は5cm程度。",
+      "茶色っぽいまだら模様で、下顎に暗色のひげ状の模様がある。",
+      "腹鰭が吸盤状になっており岩に張り付ける。人が近づくとサッと岩陰に素早く隠れる。"
     ],
     "firstAid": [],
     "dontDo": "素手で捕まえるのは難しいため、観察する際は小さな網と透明な観察ケース（プラケース）があると良い。",
@@ -1127,6 +1146,12 @@
         "author": "茅ヶ崎市 文化資料館",
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      },
+      {
+        "title": "WoRMS: Chasmichthys gulosus",
+        "author": "World Register of Marine Species",
+        "year": "2024",
+        "url": "https://www.marinespecies.org/"
       }
     ]
   },
@@ -1136,6 +1161,7 @@
     "category": "無脊椎動物",
     "scientificName": "Pagurus filholi",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -1164,6 +1190,7 @@
     "category": "無脊椎動物",
     "scientificName": "Aplysia kurodai",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -1194,17 +1221,18 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
-      "author": "Unknown",
-      "license": "Unknown",
-      "sourceUrl": ""
+      "url": "https://example.com/images/miyubishigi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/miyubishigi"
     },
     "features": [
-      "スズメほどの大きさで、全体的に白っぽく丸みを帯びたシルエットのシギの仲間。",
-      "打ち寄せる波から逃げるように、波打ち際を「チクタク」と高速で走り回る愛らしい姿が特徴。"
+      "全長20cmほど（スズキほどの大きさ）の小型のシギ。",
+      "全体的に白っぽく丸みを帯びたシルエットで、後趾（第1趾）がなく、前向きの3本の指しかないのが名前の由来。",
+      "打ち寄せる波から逃げるように、波打ち際を「チクタク」と波に合わせて高速で走り回る愛らしい姿が特徴。"
     ],
     "firstAid": [],
-    "dontDo": "長旅の途中で茅ヶ崎の砂浜に立ち寄り休息・採餌しているため、犬を放して追いかけさせたり、わざと驚かせて飛ばしたりしないこと。遠くから静かに観察する。",
+    "dontDo": "長旅の途中で砂浜に立ち寄り休息・採餌しているため、犬を放して追いかけさせたり、わざと驚かせて飛ばしたりしないこと。遠くから静かに観察する。",
     "localEncounter": "秋から春にかけて、サザンビーチから柳島海岸までの波打ち際で小さな群れを作ってゴカイなどのエサを探している姿が観察できる。",
     "references": [
       {
@@ -1212,6 +1240,12 @@
         "author": "神奈川県",
         "year": "2021",
         "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+      },
+      {
+        "title": "鳥類標本データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
       }
     ]
   },
@@ -1221,6 +1255,7 @@
     "category": "無脊椎動物",
     "scientificName": "Tylos granuliferus",
     "isDanger": false,
+    "dangerType": "",
     "image": {
       "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
       "author": "Unknown",
@@ -1249,13 +1284,13 @@
     "category": "鳥類",
     "scientificName": "Monticola solitarius",
     "isDanger": false,
+    "dangerType": "",
     "image": {
-      "url": "",
-      "author": "",
-      "license": "",
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
       "sourceUrl": ""
     },
-    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#e3f2fd\"/><path d=\"M30,60 Q50,20 70,60 Q50,90 30,60 Z\" fill=\"#1e88e5\"/><path d=\"M35,65 Q50,85 65,65 Z\" fill=\"#d84315\"/></svg>",
     "features": [
       "オスは頭から背中にかけて鮮やかな青色、腹部がレンガ色（赤褐色）のツートンカラーをしている。",
       "「ツーツーピーピー」と澄んだ美しい声でさえずる。",
@@ -1281,12 +1316,11 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "",
-      "author": "",
-      "license": "",
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
       "sourceUrl": ""
     },
-    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><polygon points=\"50,5 95,90 5,90\" fill=\"#ffebee\" stroke=\"#d32f2f\" stroke-width=\"4\"/><path d=\"M50,25 C65,25 75,50 65,75 C55,90 45,90 35,75 C25,50 35,25 50,25 Z\" fill=\"#4caf50\" stroke=\"#2e7d32\" stroke-width=\"2\"/></svg>",
     "features": [
       "殻の表面が鮮やかな緑色をした大型の二枚貝（外来種）。",
       "岸壁やテトラポッドなどの人工物に足糸（そくし）を出して密集して付着する。"
@@ -1314,12 +1348,11 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "",
-      "author": "",
-      "license": "",
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
       "sourceUrl": ""
     },
-    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><polygon points=\"50,5 95,90 5,90\" fill=\"#fff3e0\" stroke=\"#f57c00\" stroke-width=\"4\"/><path d=\"M20,60 Q50,40 80,60 Q50,70 20,60 Z\" fill=\"#b0bec5\"/><polygon points=\"40,45 45,30 50,42 55,30 60,45\" fill=\"#cfd8dc\" stroke=\"#d32f2f\" stroke-width=\"1\"/><path d=\"M30,55 Q35,50 30,65\" stroke=\"#d32f2f\" stroke-width=\"2\" fill=\"none\"/></svg>",
     "features": [
       "成長とともに名前が変わる出世魚（セイゴ→フッコ→スズキ）。銀色の細長い体を持つ。",
       "ルアーに掛かると水面で激しく頭を振る「エラ洗い」という行動をとる。"
@@ -1347,12 +1380,11 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "",
-      "author": "",
-      "license": "",
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
       "sourceUrl": ""
     },
-    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#e8f5e9\"/><path d=\"M50,90 L50,50\" stroke=\"#388e3c\" stroke-width=\"4\"/><path d=\"M50,70 Q30,50 40,30 Q60,40 50,70\" fill=\"#4caf50\"/><path d=\"M50,60 Q70,40 60,20 Q40,30 50,60\" fill=\"#4caf50\"/></svg>",
     "features": [
       "海岸の砂浜に深く根を張るセリ科の多年草。葉は肉厚でツヤがあり、初夏に白い小花の集合体を咲かせる。",
       "かつては山菜や薬草として親しまれたが、乱獲や海岸の環境変化により数が激減している。"
@@ -1369,14 +1401,13 @@
       }
     ]
   },
-  
   {
     "id": "kosagi",
     "name": "コサギ",
     "category": "鳥類",
     "scientificName": "Egretta garzetta",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/kosagi.jpg",
       "author": "Ecological Data Contributor",
@@ -1388,8 +1419,8 @@
       "夏羽では頭に2本の長い冠羽が現れる",
       "足の指が黄色いのが大きな特徴"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野生鳥獣への安易な餌付けは生態系に悪影響を及ぼすため行わないこと。また、鳥獣保護管理法により無許可での捕獲は禁止されている。",
     "localEncounter": "相模川の河口付近や干潟、海岸の浅瀬などで小魚を捕食する姿が通年観察される。",
     "references": [
       {
@@ -1406,7 +1437,7 @@
     "category": "鳥類",
     "scientificName": "Phalacrocorax carbo",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/kawau.jpg",
       "author": "Ecological Data Contributor",
@@ -1418,8 +1449,8 @@
       "潜水して魚を捕食し、翼を広げて乾かす習性がある",
       "集団でコロニー（ねぐら）を形成する"
     ],
-    "firstAddress": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野生鳥獣への安易な餌付けは生態系に悪影響を及ぼすため行わないこと。また、鳥獣保護管理法により無許可での捕獲は禁止されている。",
     "localEncounter": "相模湾沿岸や河川の下流域でよく見られ、防波堤などで翼を休めていることが多い。",
     "references": [
       {
@@ -1431,42 +1462,12 @@
     ]
   },
   {
-    "id": "miyubishigi",
-    "name": "ミユビシギ",
-    "category": "鳥類",
-    "scientificName": "Calidris alba",
-    "isDanger": false,
-    "dangerType": null,
-    "image": {
-      "url": "https://example.com/images/miyubishigi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/miyubishigi"
-    },
-    "features": [
-      "全長20cmほどの小型のシギ",
-      "後趾（第1趾）がなく、前向きの3本の指しかないのが名前の由来",
-      "波打ち際を波に合わせて素早く走り回る"
-    ],
-    "firstAid": null,
-    "dontDo": null,
-    "localEncounter": "秋から春にかけて、湘南海岸の砂浜で波打ち際を群れで走り回って採餌する姿が見られる。",
-    "references": [
-      {
-        "title": "鳥類標本データベース",
-        "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
-      }
-    ]
-  },
-  {
     "id": "umiu",
     "name": "ウミウ",
     "category": "鳥類",
     "scientificName": "Phalacrocorax capillatus",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/umiu.jpg",
       "author": "Ecological Data Contributor",
@@ -1478,8 +1479,8 @@
       "くちばし基部の黄色い裸出部の後縁が尖っている（カワウは丸い）",
       "主に岩礁海岸に生息する"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野生動物であるため、むやみに接近してストレスを与えたり、鳥獣保護管理法に抵触する捕獲行為を行わないこと。",
     "localEncounter": "三浦半島や真鶴などの岩礁地帯で一年を通して観察され、冬場は数が増える。",
     "references": [
       {
@@ -1496,7 +1497,7 @@
     "category": "鳥類",
     "scientificName": "Podiceps cristatus",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/kanmurikaitsuburi.jpg",
       "author": "Ecological Data Contributor",
@@ -1508,8 +1509,8 @@
       "夏羽では頭部に黒い冠羽と赤褐色の飾り羽を持つ",
       "首が長く、水面に浮いている姿は優雅"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "渡り鳥であり休息を必要としているため、水上バイク等で故意に追い回したり驚かせたりしないこと。",
     "localEncounter": "冬鳥として渡来し、波の穏やかな湾内や河口域で潜水して魚を捕る姿が冬場に見られる。",
     "references": [
       {
@@ -1526,7 +1527,7 @@
     "category": "鳥類",
     "scientificName": "Ardea cinerea",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/aosagi.jpg",
       "author": "Ecological Data Contributor",
@@ -1538,8 +1539,8 @@
       "全体的に青灰色で、成鳥は頭に黒い冠羽がある",
       "浅瀬でじっと待ち伏せして魚や両生類を捕食する"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野生鳥獣への安易な餌付けは生態系に悪影響を及ぼすため行わないこと。また、鳥獣保護管理法により無許可での捕獲は禁止されている。",
     "localEncounter": "海岸の磯、干潟、河川など水辺全般で一年中見られ、単独で行動していることが多い。",
     "references": [
       {
@@ -1556,7 +1557,7 @@
     "category": "魚類",
     "scientificName": "Repomucenus beniteguri",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/bakenumeri.jpg",
       "author": "Ecological Data Contributor",
@@ -1568,8 +1569,8 @@
       "砂泥底に擬態する体色",
       "第一背鰭の模様で雌雄の判別が可能"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "エラ蓋付近に棘（とげ）を持つ種もいるため、釣り上げた際に素手でエラを強く握り込まないこと。",
     "localEncounter": "沿岸の浅い砂泥底に生息し、地引き網などで混獲されることがある。",
     "references": [
       {
@@ -1586,7 +1587,7 @@
     "category": "魚類",
     "scientificName": "Alectis ciliaris",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/itohikiaji.jpg",
       "author": "Ecological Data Contributor",
@@ -1598,8 +1599,8 @@
       "体は強く側扁し、菱形に近い",
       "成長に伴い糸状の鰭は短くなる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "ヒレの棘条で手を傷つける恐れがあるため、釣り上げた際は素手で強く握らないこと。",
     "localEncounter": "暖海性のため、夏から秋にかけて黒潮の分枝流に乗り、相模湾の定置網などに入る。",
     "references": [
       {
@@ -1611,42 +1612,12 @@
     ]
   },
   {
-    "id": "agohaze",
-    "name": "アゴハゼ",
-    "category": "魚類",
-    "scientificName": "Chasmichthys gulosus",
-    "isDanger": false,
-    "dangerType": null,
-    "image": {
-      "url": "https://example.com/images/agohaze.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/agohaze"
-    },
-    "features": [
-      "タイドプール（潮だまり）の代表的なハゼ",
-      "下顎に暗色のひげ状の模様がある",
-      "腹鰭が吸盤状になっており岩に張り付ける"
-    ],
-    "firstAid": null,
-    "dontDo": null,
-    "localEncounter": "三浦半島や江の島などの岩礁帯の潮だまりで、一年中普通に観察できる。",
-    "references": [
-      {
-        "title": "WoRMS: Chasmichthys gulosus",
-        "author": "World Register of Marine Species",
-        "year": "2024",
-        "url": "https://www.marinespecies.org/"
-      }
-    ]
-  },
-  {
     "id": "bora",
     "name": "ボラ",
     "category": "魚類",
     "scientificName": "Mugil cephalus",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/bora.jpg",
       "author": "Ecological Data Contributor",
@@ -1658,8 +1629,10 @@
       "頭が平たく、目が脂瞼（しけん）で覆われる",
       "水面をジャンプする習性がある"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "水面から飛び出したボラが顔などに衝突して怪我をした場合は、清潔な水で洗い流し、必要に応じて医療機関を受診する。"
+    ],
+    "dontDo": "港湾内で釣れた個体は水質の臭みを持っていることがあるため、生食する場合は寄生虫と衛生状態に十分注意すること。",
     "localEncounter": "沿岸域や河口、港湾内で群れをなして泳いでいるのが頻繁に目撃される。",
     "references": [
       {
@@ -1671,79 +1644,12 @@
     ]
   },
   {
-    "id": "kotohiki",
-    "name": "コトヒキ",
-    "category": "魚類",
-    "scientificName": "Terapon jarbua",
-    "isDanger": true,
-    "dangerType": "contact",
-    "image": {
-      "url": "https://example.com/images/kotohiki.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kotohiki"
-    },
-    "features": [
-      "体側に弓状の黒い縦縞模様がある",
-      "浮き袋を鳴らして「グーグー」と音を出す",
-      "鰓蓋（えらぶた）に鋭い棘を持つ"
-    ],
-    "firstAid": [
-      "棘が刺さった場合は、流水で傷口を洗い流す。",
-      "出血がある場合は圧迫止血を行う。",
-      "腫れや痛みが引かない場合は医療機関を受診する。"
-    ],
-    "dontDo": "釣り上げた際、素手で頭部を強く握りこむと鰓蓋の棘で深く切る恐れがあるため避ける。",
-    "localEncounter": "夏から秋にかけて、河口域や波打ち際の極浅い場所で幼魚が群れていることが多い。",
-    "references": [
-      {
-        "title": "日本産魚類検索 全種の同定 第三版",
-        "author": "中坊徹次",
-        "year": "2013",
-        "url": "https://www.fish-isj.jp/"
-      }
-    ]
-  },
-  {
-    "id": "kongoufugu",
-    "name": "コンゴウフグ",
-    "category": "魚類",
-    "scientificName": "Lactoria cornuta",
-    "isDanger": true,
-    "dangerType": "ingestion",
-    "image": {
-      "url": "https://example.com/images/kongoufugu.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kongoufugu"
-    },
-    "features": [
-      "頭部と尾部に牛の角のような突起がある",
-      "体表が硬い骨板で覆われている箱型の体型",
-      "ストレスを感じると皮膚からパフトキシン（粘液毒）を分泌する"
-    ],
-    "firstAid": [
-      "誤って喫食して中毒症状（消化器症状等）が出た場合は直ちに救急要請する。",
-      "生体を触った手で目や口をこすらず、真水で手を洗う。"
-    ],
-    "dontDo": "素人調理による喫食は厳禁。また、観賞魚として他の魚と同じ水槽に入れると、毒を分泌して全滅させることがある。",
-    "localEncounter": "本来は南方の魚だが、死滅回遊魚として秋頃に相模湾の浅い岩礁帯やタイドプールで見られることがある。",
-    "references": [
-      {
-        "title": "自然毒のリスクプロファイル",
-        "author": "厚生労働省",
-        "year": "2023",
-        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
-      }
-    ]
-  },
-  {
     "id": "rouninaji",
     "name": "ロウニンアジ",
     "category": "魚類",
     "scientificName": "Caranx ignobilis",
-    "isDanger": false,
-    "dangerType": null,
+    "isDanger": true,
+    "dangerType": "ingestion",
     "image": {
       "url": "https://example.com/images/rouninaji.jpg",
       "author": "Ecological Data Contributor",
@@ -1755,45 +1661,17 @@
       "頭部が大きく、体高が高い頑強な体つき",
       "大型個体はシガテラ毒を蓄積している場合がある（熱帯域）"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "万が一喫食して、温度感覚の異常（ドライアイス・センセーション）などのシガテラ中毒を疑う症状が出た場合は、直ちに医療機関を受診する。"
+    ],
+    "dontDo": "熱帯・亜熱帯海域で捕獲された大型個体はシガテラ毒（食物連鎖による自然毒）を蓄積しているリスクがあるため、素人判断での喫食は絶対に避けること。",
     "localEncounter": "幼魚（メッキ）が夏から秋にかけて暖流に乗って現れ、河口や港湾で釣れる。",
     "references": [
       {
-        "title": "FishBase: Caranx ignobilis",
-        "author": "Froese, R. and D. Pauly",
-        "year": "2024",
-        "url": "https://www.fishbase.se/summary/Caranx-ignobilis.html"
-      }
-    ]
-  },
-  {
-    "id": "hirame",
-    "name": "ヒラメ",
-    "category": "魚類",
-    "scientificName": "Paralichthys olivaceus",
-    "isDanger": false,
-    "dangerType": null,
-    "image": {
-      "url": "https://example.com/images/hirame.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/hirame"
-    },
-    "features": [
-      "両目が体の左側に偏っている（左ヒラメに右カレイ）",
-      "口が大きく、鋭い歯を持つ肉食性",
-      "周囲の砂底に合わせて体色を変化させ擬態する"
-    ],
-    "firstAid": null,
-    "dontDo": null,
-    "localEncounter": "沿岸の砂泥底に生息し、波打ち際近くの浅瀬（サーフ）でルアー釣りの対象となる。",
-    "references": [
-      {
-        "title": "相模湾の漁業資源",
-        "author": "神奈川県水産技術センター",
+        "title": "自然毒のリスクプロファイル：シガテラ毒",
+        "author": "厚生労働省",
         "year": "2023",
-        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
       }
     ]
   },
@@ -1803,7 +1681,7 @@
     "category": "無脊椎動物",
     "scientificName": "Eunaticina papilla",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/nekogai.jpg",
       "author": "Ecological Data Contributor",
@@ -1815,8 +1693,8 @@
       "他の二枚貝の殻に酸で丸い穴を開け、中身を食べる肉食性",
       "足（肉部）が非常に大きく、貝殻を覆い隠すように這う"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "観察した後は、生態系維持のため元の砂浜に優しく戻すこと。",
     "localEncounter": "砂浜の潮間帯下部から浅海にかけて生息し、干潮時の砂浜で這い跡を見つけることができる。",
     "references": [
       {
@@ -1833,7 +1711,7 @@
     "category": "無脊椎動物",
     "scientificName": "Cellana nigrolineata",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/matsubagai.jpg",
       "author": "Ecological Data Contributor",
@@ -1845,8 +1723,10 @@
       "殻の表面に松葉のような放射状の黒褐色の模様がある",
       "岩に強力に張り付き、夜行性で岩の上の微小藻類を食べる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "岩から剥がす際に殻の縁で手を切った場合は、清潔な水で洗い流し圧迫止血を行う。"
+    ],
+    "dontDo": "漁業権が設定されている海域での採取は法律（漁業法）で罰せられることがあるため、標本や食用としての無断採取は行わないこと。",
     "localEncounter": "海岸の岩礁帯や堤防の波打ち際付近で普通に見られ、潮が引いた岩肌に張り付いている。",
     "references": [
       {
@@ -1863,7 +1743,7 @@
     "category": "無脊椎動物",
     "scientificName": "Hypselodoris festiva",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/aoumiushi.jpg",
       "author": "Ecological Data Contributor",
@@ -1875,8 +1755,8 @@
       "日本近海で最も代表的かつ色鮮やかなウミウシ",
       "クロイソカイメンなどを餌とする"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "ウミウシの仲間には食べた海綿由来の毒を体内に蓄積している種もいるため、素手で触った後は必ず石鹸で手を洗い、目をこすらないこと。",
     "localEncounter": "春から初夏にかけて、岩礁海岸のタイドプールや浅い海中の岩肌で頻繁に観察される。",
     "references": [
       {
@@ -1893,7 +1773,7 @@
     "category": "魚類",
     "scientificName": "Carangoides ferdau",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/ryukyuyoroiaji.jpg",
       "author": "Ecological Data Contributor",
@@ -1905,8 +1785,10 @@
       "側線の直線部にある稜鱗（ぜんご）が体の後半部にのみ発達",
       "群れで行動する回遊魚"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "尾の付け根にある硬い鱗（ぜんご）で手を切った場合は、清潔な海水または水道水で洗い流す。"
+    ],
+    "dontDo": "ぜんご（稜鱗）は非常に鋭利なため、素手で尾側を掴まないこと。",
     "localEncounter": "暖海性の魚だが、温暖化や黒潮の影響で相模湾内の定置網などで散発的に確認される。",
     "references": [
       {
@@ -1923,7 +1805,7 @@
     "category": "魚類",
     "scientificName": "Cypselurus agoo",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/tobiuo.jpg",
       "author": "Ecological Data Contributor",
@@ -1935,8 +1817,10 @@
       "大型魚から逃げるために海面上を数十〜数百メートル飛ぶ",
       "背中は青黒く、腹側は銀白色（保護色）"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "夜間、光に突進してきて体に激突し怪我をした場合は、流水で洗い流して必要に応じて医療機関を受診する。"
+    ],
+    "dontDo": "夜間に船上から海面を強いライトで照らすと、トビウオやダツが顔に向かって飛び込んでくる危険があるため避けること。",
     "localEncounter": "初夏から秋にかけて沿岸に寄り、船で沖合に出ると滑空する姿が観察できる。",
     "references": [
       {
@@ -1953,7 +1837,7 @@
     "category": "無脊椎動物",
     "scientificName": "Turbo sazae",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/sazae.jpg",
       "author": "Ecological Data Contributor",
@@ -1965,8 +1849,8 @@
       "厚く石灰質の石のような蓋を持つ",
       "夜行性で褐藻類（ワカメやアラメなど）を食べる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "沿岸のサザエには厳密な漁業権が設定されているため、一般人が磯遊びなどで無断採取して持ち帰ることは「密漁（漁業法違反）」となり罰則の対象となるため絶対にやめること。",
     "localEncounter": "岩礁海岸の浅海に生息するが、漁業権が設定されているため無断採取は密漁となる。",
     "references": [
       {
@@ -1983,7 +1867,7 @@
     "category": "無脊椎動物",
     "scientificName": "Meretrix lusoria",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/hamaguri.jpg",
       "author": "Ecological Data Contributor",
@@ -1995,8 +1879,8 @@
       "貝殻の表面は滑らかで、多様な模様を持つ",
       "左右の殻が同じ個体でないとぴったり合わない"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野生のハマグリは絶滅が危惧されており、また多くの海域で漁業権や殻長（サイズ）制限が設けられているため、ルールを無視した潮干狩りや稚貝の採取は厳禁。",
     "localEncounter": "かつては東京湾や相模湾の干潟にも広く生息していたが、現在は自然環境下での減少が著しい。",
     "references": [
       {
@@ -2013,7 +1897,7 @@
     "category": "植物",
     "scientificName": "Briza maxima",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/kobansou.jpg",
       "author": "Ecological Data Contributor",
@@ -2025,8 +1909,8 @@
       "小穂が平たく楕円形で、小判のように見えるのが特徴",
       "風に吹かれるとカサカサと音を立てて揺れる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "外来種（帰化植物）であるため、種を他の自然保護区などに持ち込んで人為的に広げないよう注意すること。",
     "localEncounter": "海岸の砂地や後背地の空き地、道端などで初夏に群生しているのが見られる。",
     "references": [
       {
@@ -2043,7 +1927,7 @@
     "category": "植物",
     "scientificName": "Vitex rotundifolia",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/hamagou.jpg",
       "author": "Ecological Data Contributor",
@@ -2055,8 +1939,8 @@
       "夏に青紫色の唇形の美しい花を咲かせる",
       "葉や果実には特有の芳香がある（精油成分）"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "海浜植物の群落は、飛砂を防ぎ海岸線を維持する重要な役割（砂防）を担っているため、車やバイクで乗り入れたり、むやみに引き抜いたりしてはならない。",
     "localEncounter": "相模湾沿岸の砂浜の飛砂帯（植物群落の最前線付近）で、夏場に青紫の花の群生を観察できる。",
     "references": [
       {
@@ -2072,8 +1956,8 @@
     "name": "チガヤ",
     "category": "植物",
     "scientificName": "Imperata cylindrica",
-    "isDanger": false,
-    "dangerType": null,
+    "isDanger": true,
+    "dangerType": "contact",
     "image": {
       "url": "https://example.com/images/chigaya.jpg",
       "author": "Ecological Data Contributor",
@@ -2085,8 +1969,10 @@
       "初夏に白くフワフワとした綿毛を持つ穂を出す",
       "葉の縁がザラザラしており、皮膚を切ることがある"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "鋭利な葉で皮膚を切った場合は、流水で傷口を洗い流し、必要に応じて絆創膏等で保護する。"
+    ],
+    "dontDo": "葉の縁がカミソリのように鋭くなっているため、素手で葉を強く握ったり、勢いよく引き抜こうとしたりしないこと。",
     "localEncounter": "海岸の砂防林の周縁や堤防、河川敷など、日当たりの良い開けた場所に大群落を形成する。",
     "references": [
       {
@@ -2103,7 +1989,7 @@
     "category": "植物",
     "scientificName": "Hydrocharis dubia",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/tochikagami.jpg",
       "author": "Ecological Data Contributor",
@@ -2115,8 +2001,8 @@
       "葉の裏側に気室となる膨らみがある",
       "夏から秋に1日花（1日でしぼむ）の白い花を咲かせる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "開発や水質汚濁等により野生での生息域が失われている希少植物であるため、自生しているものを採取して持ち帰らないこと。",
     "localEncounter": "ため池や流れの穏やかな水路に生息するが、環境変化により野生での確認は減少している。",
     "references": [
       {
@@ -2133,7 +2019,7 @@
     "category": "植物",
     "scientificName": "Calanthe discolor",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/ebine.jpg",
       "author": "Ecological Data Contributor",
@@ -2145,8 +2031,8 @@
       "地下茎が連なった形がエビに似ているのが名前の由来",
       "春に茶褐色と白色などの落ち着いた色合いの花を咲かせる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "美しい花を咲かせるため園芸目的の乱獲が相次ぎ、絶滅が危惧されている。野生個体の採取（盗掘）は絶対に行わず、写真撮影等の観察に留めること。",
     "localEncounter": "三浦半島や丹沢などの丘陵地・広葉樹林の林床に自生するが、園芸用の乱獲により希少化している。",
     "references": [
       {
@@ -2163,7 +2049,7 @@
     "category": "植物",
     "scientificName": "Cremastra appendiculata",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "protect",
     "image": {
       "url": "https://example.com/images/saihairan.jpg",
       "author": "Ecological Data Contributor",
@@ -2175,8 +2061,8 @@
       "花序の形が戦場で武将が持つ「采配」に似ている",
       "一枚の大きな笹のような葉を冬にも残す"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "ラン科植物は特定の菌類と共生しているなど生育環境が特殊なため、素人が持ち帰っても枯死させてしまう可能性が高い。絶対に採取しないこと。",
     "localEncounter": "県内の雑木林や神社の社叢林など、やや湿り気のある日陰で初夏に花茎を伸ばす姿が見られる。",
     "references": [
       {
@@ -2193,7 +2079,7 @@
     "category": "植物",
     "scientificName": "Cayratia japonica",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/yabukarashi.jpg",
       "author": "Ecological Data Contributor",
@@ -2205,8 +2091,10 @@
       "「藪を枯らす」ほど繁殖力が旺盛であることが名前の由来",
       "夏に小さな淡緑色の花を咲かせ、蜜腺にアリやハチが多く集まる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [
+      "花の蜜腺にスズメバチなどの危険なハチ類が集まっていることがあるため、ハチに刺された場合は速やかに患部を流水で洗い流し、医療機関を受診する。"
+    ],
+    "dontDo": "花に多数の昆虫が集まるため、むやみに素手で植物をかき分けてハチなどを刺激しないよう注意すること。",
     "localEncounter": "海岸の防風林の縁や市街地の空き地、フェンスなど、あらゆる場所で夏場に繁茂する。",
     "references": [
       {
@@ -2218,44 +2106,12 @@
     ]
   },
   {
-    "id": "shakunage",
-    "name": "シャクナゲ",
-    "category": "植物",
-    "scientificName": "Rhododendron subg. Hymenanthes",
-    "isDanger": true,
-    "dangerType": "ingestion",
-    "image": {
-      "url": "https://example.com/images/shakunage.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/shakunage"
-    },
-    "features": [
-      "ツツジ科に属し、大きく豪華な花を頂生（枝の先に集まって咲く）する",
-      "葉は革質で細長く、光沢がある",
-      "ツツジ同様、葉や花にグラヤノトキシンという有毒成分を含む"
-    ],
-    "firstAid": [
-      "摂取による中毒症状（嘔吐、徐脈、血圧低下など）が見られた場合は直ちに救急を受診する。"
-    ],
-    "dontDo": "庭木として植えられることが多いが、有毒であるためペットや幼児が葉をかじらないよう注意する。",
-    "localEncounter": "園芸種として庭や寺院に植栽されるほか、県内の高標高の山域（丹沢など）に野生種が自生する。",
-    "references": [
-      {
-        "title": "自然毒のリスクプロファイル：植物",
-        "author": "厚生労働省",
-        "year": "2023",
-        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
-      }
-    ]
-  },
-  {
     "id": "satsuki",
     "name": "サツキ",
     "category": "植物",
     "scientificName": "Rhododendron indicum",
-    "isDanger": false,
-    "dangerType": null,
+    "isDanger": true,
+    "dangerType": "ingestion",
     "image": {
       "url": "https://example.com/images/satsuki.jpg",
       "author": "Ecological Data Contributor",
@@ -2267,54 +2123,17 @@
       "ツツジと比べて葉が小さく、新梢（新しい枝）が伸びた後に花が咲く",
       "刈り込みに強いため庭木や盆栽によく利用される"
     ],
-    "firstAid": null,
-    "dontDo": null,
-    "localEncounter": "公園の植え込みや道路の分離帯などで極めて一般的に見られる。",
-    "references": [
-      {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
-      }
-    ]
-  },
-  {
-    "id": "tsutsuji",
-    "name": "ツツジ",
-    "category": "植物",
-    "scientificName": "Rhododendron spp.",
-    "isDanger": true,
-    "dangerType": "ingestion",
-    "image": {
-      "url": "https://example.com/images/tsutsuji.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/tsutsuji"
-    },
-    "features": [
-      "春に漏斗状の鮮やかな花を咲かせる常緑または落葉低木",
-      "街路樹や庭木として非常に一般的",
-      "レンゲツツジ等の特定種は全草にグラヤノトキシン（有毒成分）を含む"
-    ],
     "firstAid": [
-      "誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は直ちに救急車を呼ぶ。",
-      "胃洗浄等の専門的処置が必要なため、速やかに医療機関に搬送する。"
+      "誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は、直ちに救急車を呼ぶなどの適切な医療処置を受ける。"
     ],
-    "dontDo": "種類が確実に判別できない場合、花の蜜を吸う行為は中毒の恐れがあるため避ける。",
-    "localEncounter": "昭和47年に「茅ヶ崎市の花」に制定された市のシンボル。中央公園やつつじ公園をはじめ、市内の公園や街路樹として広く親しまれている。",
+    "dontDo": "ツツジ科の植物は全体にグラヤノトキシン（有毒成分）を含むことがあるため、花の蜜を吸う、葉を口に入れるなどの行為は中毒のリスクがあり避けること。",
+    "localEncounter": "公園の植え込みや道路の分離帯などで極めて一般的に見られる。",
     "references": [
       {
         "title": "自然毒のリスクプロファイル：植物",
         "author": "厚生労働省",
         "year": "2023",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
-      },
-      {
-        "title": "市の花",
-        "author": "茅ヶ崎市",
-        "year": "2023",
-        "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007343.html"
       }
     ]
   },
@@ -2324,7 +2143,7 @@
     "category": "鳥類",
     "scientificName": "Parus minor",
     "isDanger": false,
-    "dangerType": null,
+    "dangerType": "",
     "image": {
       "url": "https://example.com/images/shijukara.jpg",
       "author": "Ecological Data Contributor",
@@ -2336,8 +2155,8 @@
       "「ツツピー、ツツピー」という澄んだ声で鳴く",
       "鳴き声を組み合わせて文法のようなコミュニケーションをとる"
     ],
-    "firstAid": null,
-    "dontDo": null,
+    "firstAid": [],
+    "dontDo": "野鳥の巣立ちビナが落ちていても、親鳥が近くにいるため絶対に拾って持ち帰らないこと。また、安易な餌付けは生態系を乱すため行わない。",
     "localEncounter": "平成9年に「茅ヶ崎市の鳥」に制定された市のシンボル。市街地の公園や住宅街の庭先から山林まで広く分布し、年間を通じて市内全域でよく見られる身近な野鳥。",
     "references": [
       {
@@ -2354,8 +2173,4 @@
       }
     ]
   }
-
-
-  
 ]
-
