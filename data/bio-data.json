@@ -900,4 +900,116 @@
     ]
   }
 
+  {
+    "id": "agohaze",
+    "name": "アゴハゼ",
+    "category": "硬骨魚類",
+    "scientificName": "Chaenogobius annularis",
+    "isDanger": false,
+    "features": [
+      "体長は5cm程度。茶色っぽいまだら模様で、胸びれが大きくハゼの仲間。",
+      "タイドプール（潮だまり）に取り残されていることが多く、人が近づくとサッと岩陰に素早く隠れる。"
+    ],
+    "firstAid": [],
+    "dontDo": "素手で捕まえるのは難しいため、観察する際は小さな網と透明な観察ケース（プラケース）があると良い。",
+    "localEncounter": "ヘッドランドの消波ブロック周辺やえぼし岩などのタイドプールで、1年を通して最も簡単に観察できる小魚。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  },
+  {
+    "id": "honyadokari",
+    "name": "ホンヤドカリ",
+    "category": "甲殻類",
+    "scientificName": "Pagurus filholi",
+    "isDanger": false,
+    "features": [
+      "巻き貝の空き殻に身を隠す、磯遊びの定番生物。右のハサミが左のハサミよりも大きいのが特徴。",
+      "水中の岩の上や砂地をせかせかと歩き回り、成長に合わせてより大きな貝殻へ引っ越しをする。"
+    ],
+    "firstAid": [],
+    "dontDo": "無理に貝殻から引っ張り出そうとすると体がちぎれて死んでしまうため、手のひらに乗せて自分から顔を出すのを待つこと。",
+    "localEncounter": "茅ヶ崎の岩礁帯やタイドプールで一年中見られる。特に春から夏にかけての磯遊びで子供たちに大人気。",
+    "references": [
+      {
+        "title": "【湘南】ヤドカリやヒトデを見つけよう！子どもと行きたいおすすめ磯遊びスポット8選",
+        "author": "神奈川イベントプラス",
+        "year": "2021",
+        "url": "https://kanagawa-eventplus.com/column/syonan-children-rockyshore-play"
+      }
+    ]
+  },
+  {
+    "id": "amehurashi",
+    "name": "アメフラシ",
+    "category": "軟体動物",
+    "scientificName": "Aplysia kurodai",
+    "isDanger": false,
+    "features": [
+      "体長10〜20cmほどのウミウシの仲間。ナメクジのように柔らかく、頭部に牛の耳のような触角がある。",
+      "海藻を食べて育ち、外敵から刺激を受けると煙幕のように紫色の液体を出す。"
+    ],
+    "firstAid": [],
+    "dontDo": "紫色の液体には微量の毒性（食べた海藻由来）が含まれることがあるため、素手で優しく触れ合うのは問題ないが、触った後は必ず石鹸と水道水で手を洗うこと。",
+    "localEncounter": "春先（3月〜5月）にかけて、えぼし岩やヘッドランド周辺の浅瀬で大量に発生し、黄色い麺のような卵（海そうめん）を産み付ける。",
+    "references": [
+      {
+        "title": "えのすいトリーター日誌：アメフラシ",
+        "author": "新江ノ島水族館",
+        "year": "2020",
+        "url": "https://www.enosui.com/diaryentry.php?eid=06123"
+      }
+    ]
+  },
+  {
+    "id": "miyubishigi",
+    "name": "ミユビシギ",
+    "category": "鳥類",
+    "scientificName": "Calidris alba",
+    "isDanger": false,
+    "dangerType": "protect",
+    "features": [
+      "スズメほどの大きさで、全体的に白っぽく丸みを帯びたシルエットのシギの仲間。",
+      "打ち寄せる波から逃げるように、波打ち際を「チクタク」と高速で走り回る愛らしい姿が特徴。"
+    ],
+    "firstAid": [],
+    "dontDo": "長旅の途中で茅ヶ崎の砂浜に立ち寄り休息・採餌しているため、犬を放して追いかけさせたり、わざと驚かせて飛ばしたりしないこと。遠くから静かに観察する。",
+    "localEncounter": "秋から春にかけて、サザンビーチから柳島海岸までの波打ち際で小さな群れを作ってゴカイなどのエサを探している姿が観察できる。",
+    "references": [
+      {
+        "title": "ふるさとの鳥",
+        "author": "神奈川県",
+        "year": "2021",
+        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+      }
+    ]
+  },
+  {
+    "id": "hamadangomushi",
+    "name": "ハマダンゴムシ",
+    "category": "甲殻類",
+    "scientificName": "Tylos granuliferus",
+    "isDanger": false,
+    "features": [
+      "陸上に棲む一般的なダンゴムシより一回り大きく、砂と同じような白っぽい保護色をしている（昆虫のように見えるが甲殻類の仲間）。",
+      "危険を感じると丸まるのは同じだが、砂の上を走る動きが非常に素早い。"
+    ],
+    "firstAid": [],
+    "dontDo": "海浜植物の枯れ葉などを分解する「砂浜の掃除屋」であるため、手のひらに乗せて観察した後は、元いた砂浜のくぼみや流木の下に優しく戻すこと。",
+    "localEncounter": "茅ヶ崎海岸の打ち上げられた海藻や流木の下、ハマヒルガオなどの海浜植物の周りの砂を少し掘ると簡単に見つけることができる。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  }
+
 ]
