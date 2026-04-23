@@ -1368,6 +1368,994 @@
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/hakubutsukan/1042540/1042555/1042741.html"
       }
     ]
+  },
+  
+  {
+    "id": "kosagi",
+    "name": "コサギ",
+    "category": "鳥類",
+    "scientificName": "Egretta garzetta",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/kosagi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kosagi"
+    },
+    "features": [
+      "全身が白い羽毛で覆われる（白鷺の一種）",
+      "夏羽では頭に2本の長い冠羽が現れる",
+      "足の指が黄色いのが大きな特徴"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "相模川の河口付近や干潟、海岸の浅瀬などで小魚を捕食する姿が通年観察される。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "kawau",
+    "name": "カワウ",
+    "category": "鳥類",
+    "scientificName": "Phalacrocorax carbo",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/kawau.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kawau"
+    },
+    "features": [
+      "全身が黒褐色で、くちばしの基部が黄色い",
+      "潜水して魚を捕食し、翼を広げて乾かす習性がある",
+      "集団でコロニー（ねぐら）を形成する"
+    ],
+    "firstAddress": null,
+    "dontDo": null,
+    "localEncounter": "相模湾沿岸や河川の下流域でよく見られ、防波堤などで翼を休めていることが多い。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "miyubishigi",
+    "name": "ミユビシギ",
+    "category": "鳥類",
+    "scientificName": "Calidris alba",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/miyubishigi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/miyubishigi"
+    },
+    "features": [
+      "全長20cmほどの小型のシギ",
+      "後趾（第1趾）がなく、前向きの3本の指しかないのが名前の由来",
+      "波打ち際を波に合わせて素早く走り回る"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "秋から春にかけて、湘南海岸の砂浜で波打ち際を群れで走り回って採餌する姿が見られる。",
+    "references": [
+      {
+        "title": "鳥類標本データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+      }
+    ]
+  },
+  {
+    "id": "umiu",
+    "name": "ウミウ",
+    "category": "鳥類",
+    "scientificName": "Phalacrocorax capillatus",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/umiu.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/umiu"
+    },
+    "features": [
+      "カワウに酷似するが、やや大型で緑色の光沢が強い",
+      "くちばし基部の黄色い裸出部の後縁が尖っている（カワウは丸い）",
+      "主に岩礁海岸に生息する"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "三浦半島や真鶴などの岩礁地帯で一年を通して観察され、冬場は数が増える。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "kanmurikaitsuburi",
+    "name": "カンムリカイツブリ",
+    "category": "鳥類",
+    "scientificName": "Podiceps cristatus",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/kanmurikaitsuburi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kanmurikaitsuburi"
+    },
+    "features": [
+      "日本のカイツブリ類で最大",
+      "夏羽では頭部に黒い冠羽と赤褐色の飾り羽を持つ",
+      "首が長く、水面に浮いている姿は優雅"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "冬鳥として渡来し、波の穏やかな湾内や河口域で潜水して魚を捕る姿が冬場に見られる。",
+    "references": [
+      {
+        "title": "鳥類標本データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+      }
+    ]
+  },
+  {
+    "id": "aosagi",
+    "name": "アオサギ",
+    "category": "鳥類",
+    "scientificName": "Ardea cinerea",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/aosagi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/aosagi"
+    },
+    "features": [
+      "日本で繁殖するサギ類で最大（全長約90cm）",
+      "全体的に青灰色で、成鳥は頭に黒い冠羽がある",
+      "浅瀬でじっと待ち伏せして魚や両生類を捕食する"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "海岸の磯、干潟、河川など水辺全般で一年中見られ、単独で行動していることが多い。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "bakenumeri",
+    "name": "バケヌメリ",
+    "category": "魚類",
+    "scientificName": "Repomucenus beniteguri",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/bakenumeri.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/bakenumeri"
+    },
+    "features": [
+      "平たい体と大きな胸鰭を持つネズッポ科の魚",
+      "砂泥底に擬態する体色",
+      "第一背鰭の模様で雌雄の判別が可能"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "沿岸の浅い砂泥底に生息し、地引き網などで混獲されることがある。",
+    "references": [
+      {
+        "title": "日本産魚類検索 全種の同定 第三版",
+        "author": "中坊徹次",
+        "year": "2013",
+        "url": "https://www.fish-isj.jp/"
+      }
+    ]
+  },
+  {
+    "id": "itohikiaji",
+    "name": "イトヒキアジ",
+    "category": "魚類",
+    "scientificName": "Alectis ciliaris",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/itohikiaji.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/itohikiaji"
+    },
+    "features": [
+      "幼魚は背鰭と臀鰭の軟条が著しく長く伸びる（糸引き）",
+      "体は強く側扁し、菱形に近い",
+      "成長に伴い糸状の鰭は短くなる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "暖海性のため、夏から秋にかけて黒潮の分枝流に乗り、相模湾の定置網などに入る。",
+    "references": [
+      {
+        "title": "FishBase: Alectis ciliaris",
+        "author": "Froese, R. and D. Pauly",
+        "year": "2024",
+        "url": "https://www.fishbase.se/summary/Alectis-ciliaris.html"
+      }
+    ]
+  },
+  {
+    "id": "agohaze",
+    "name": "アゴハゼ",
+    "category": "魚類",
+    "scientificName": "Chasmichthys gulosus",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/agohaze.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/agohaze"
+    },
+    "features": [
+      "タイドプール（潮だまり）の代表的なハゼ",
+      "下顎に暗色のひげ状の模様がある",
+      "腹鰭が吸盤状になっており岩に張り付ける"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "三浦半島や江の島などの岩礁帯の潮だまりで、一年中普通に観察できる。",
+    "references": [
+      {
+        "title": "WoRMS: Chasmichthys gulosus",
+        "author": "World Register of Marine Species",
+        "year": "2024",
+        "url": "https://www.marinespecies.org/"
+      }
+    ]
+  },
+  {
+    "id": "bora",
+    "name": "ボラ",
+    "category": "魚類",
+    "scientificName": "Mugil cephalus",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/bora.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/bora"
+    },
+    "features": [
+      "成長につれて名前が変わる出世魚（ハク→スバル→イナ→ボラ→トド）",
+      "頭が平たく、目が脂瞼（しけん）で覆われる",
+      "水面をジャンプする習性がある"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "沿岸域や河口、港湾内で群れをなして泳いでいるのが頻繁に目撃される。",
+    "references": [
+      {
+        "title": "水産資源評価データ",
+        "author": "水産庁",
+        "year": "2023",
+        "url": "https://www.jfa.maff.go.jp/"
+      }
+    ]
+  },
+  {
+    "id": "kotohiki",
+    "name": "コトヒキ",
+    "category": "魚類",
+    "scientificName": "Terapon jarbua",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "https://example.com/images/kotohiki.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kotohiki"
+    },
+    "features": [
+      "体側に弓状の黒い縦縞模様がある",
+      "浮き袋を鳴らして「グーグー」と音を出す",
+      "鰓蓋（えらぶた）に鋭い棘を持つ"
+    ],
+    "firstAid": [
+      "棘が刺さった場合は、流水で傷口を洗い流す。",
+      "出血がある場合は圧迫止血を行う。",
+      "腫れや痛みが引かない場合は医療機関を受診する。"
+    ],
+    "dontDo": "釣り上げた際、素手で頭部を強く握りこむと鰓蓋の棘で深く切る恐れがあるため避ける。",
+    "localEncounter": "夏から秋にかけて、河口域や波打ち際の極浅い場所で幼魚が群れていることが多い。",
+    "references": [
+      {
+        "title": "日本産魚類検索 全種の同定 第三版",
+        "author": "中坊徹次",
+        "year": "2013",
+        "url": "https://www.fish-isj.jp/"
+      }
+    ]
+  },
+  {
+    "id": "kongoufugu",
+    "name": "コンゴウフグ",
+    "category": "魚類",
+    "scientificName": "Lactoria cornuta",
+    "isDanger": true,
+    "dangerType": "ingestion",
+    "image": {
+      "url": "https://example.com/images/kongoufugu.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kongoufugu"
+    },
+    "features": [
+      "頭部と尾部に牛の角のような突起がある",
+      "体表が硬い骨板で覆われている箱型の体型",
+      "ストレスを感じると皮膚からパフトキシン（粘液毒）を分泌する"
+    ],
+    "firstAid": [
+      "誤って喫食して中毒症状（消化器症状等）が出た場合は直ちに救急要請する。",
+      "生体を触った手で目や口をこすらず、真水で手を洗う。"
+    ],
+    "dontDo": "素人調理による喫食は厳禁。また、観賞魚として他の魚と同じ水槽に入れると、毒を分泌して全滅させることがある。",
+    "localEncounter": "本来は南方の魚だが、死滅回遊魚として秋頃に相模湾の浅い岩礁帯やタイドプールで見られることがある。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      }
+    ]
+  },
+  {
+    "id": "rouninaji",
+    "name": "ロウニンアジ",
+    "category": "魚類",
+    "scientificName": "Caranx ignobilis",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/rouninaji.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/rouninaji"
+    },
+    "features": [
+      "アジ科の最大種（GT：ジャイアント・トレバリーと呼ばれる）",
+      "頭部が大きく、体高が高い頑強な体つき",
+      "大型個体はシガテラ毒を蓄積している場合がある（熱帯域）"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "幼魚（メッキ）が夏から秋にかけて暖流に乗って現れ、河口や港湾で釣れる。",
+    "references": [
+      {
+        "title": "FishBase: Caranx ignobilis",
+        "author": "Froese, R. and D. Pauly",
+        "year": "2024",
+        "url": "https://www.fishbase.se/summary/Caranx-ignobilis.html"
+      }
+    ]
+  },
+  {
+    "id": "hirame",
+    "name": "ヒラメ",
+    "category": "魚類",
+    "scientificName": "Paralichthys olivaceus",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/hirame.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/hirame"
+    },
+    "features": [
+      "両目が体の左側に偏っている（左ヒラメに右カレイ）",
+      "口が大きく、鋭い歯を持つ肉食性",
+      "周囲の砂底に合わせて体色を変化させ擬態する"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "沿岸の砂泥底に生息し、波打ち際近くの浅瀬（サーフ）でルアー釣りの対象となる。",
+    "references": [
+      {
+        "title": "相模湾の漁業資源",
+        "author": "神奈川県水産技術センター",
+        "year": "2023",
+        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
+      }
+    ]
+  },
+  {
+    "id": "nekogai",
+    "name": "ネコガイ",
+    "category": "無脊椎動物",
+    "scientificName": "Eunaticina papilla",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/nekogai.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/nekogai"
+    },
+    "features": [
+      "タマガイ科の巻貝で、丸みを帯びた貝殻を持つ",
+      "他の二枚貝の殻に酸で丸い穴を開け、中身を食べる肉食性",
+      "足（肉部）が非常に大きく、貝殻を覆い隠すように這う"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "砂浜の潮間帯下部から浅海にかけて生息し、干潮時の砂浜で這い跡を見つけることができる。",
+    "references": [
+      {
+        "title": "WoRMS: Eunaticina papilla",
+        "author": "World Register of Marine Species",
+        "year": "2024",
+        "url": "https://www.marinespecies.org/"
+      }
+    ]
+  },
+  {
+    "id": "matsubagai",
+    "name": "マツバガイ",
+    "category": "無脊椎動物",
+    "scientificName": "Cellana nigrolineata",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/matsubagai.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/matsubagai"
+    },
+    "features": [
+      "笠形の貝殻を持つヨメガカサ科の巻貝",
+      "殻の表面に松葉のような放射状の黒褐色の模様がある",
+      "岩に強力に張り付き、夜行性で岩の上の微小藻類を食べる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "海岸の岩礁帯や堤防の波打ち際付近で普通に見られ、潮が引いた岩肌に張り付いている。",
+    "references": [
+      {
+        "title": "OBIS: Cellana nigrolineata",
+        "author": "Ocean Biodiversity Information System",
+        "year": "2024",
+        "url": "https://obis.org/"
+      }
+    ]
+  },
+  {
+    "id": "aoumiushi",
+    "name": "アオウミウシ",
+    "category": "無脊椎動物",
+    "scientificName": "Hypselodoris festiva",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/aoumiushi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/aoumiushi"
+    },
+    "features": [
+      "青い体色に黄色の斑紋、赤い触角と二次鰓を持つ",
+      "日本近海で最も代表的かつ色鮮やかなウミウシ",
+      "クロイソカイメンなどを餌とする"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "春から初夏にかけて、岩礁海岸のタイドプールや浅い海中の岩肌で頻繁に観察される。",
+    "references": [
+      {
+        "title": "相模湾の海洋生物データベース",
+        "author": "JAMSTEC (BISMaL)",
+        "year": "2024",
+        "url": "https://www.godac.jamstec.go.jp/bismal/j/"
+      }
+    ]
+  },
+  {
+    "id": "ryukyuyoroiaji",
+    "name": "リュウキュウヨロイアジ",
+    "category": "魚類",
+    "scientificName": "Carangoides ferdau",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/ryukyuyoroiaji.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/ryukyuyoroiaji"
+    },
+    "features": [
+      "体は銀白色で、体側に黄色の斑点を持つ個体が多い",
+      "側線の直線部にある稜鱗（ぜんご）が体の後半部にのみ発達",
+      "群れで行動する回遊魚"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "暖海性の魚だが、温暖化や黒潮の影響で相模湾内の定置網などで散発的に確認される。",
+    "references": [
+      {
+        "title": "日本産魚類検索 全種の同定 第三版",
+        "author": "中坊徹次",
+        "year": "2013",
+        "url": "https://www.fish-isj.jp/"
+      }
+    ]
+  },
+  {
+    "id": "tobiuo",
+    "name": "トビウオ",
+    "category": "魚類",
+    "scientificName": "Cypselurus agoo",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/tobiuo.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/tobiuo"
+    },
+    "features": [
+      "胸鰭が非常に大きく発達し、グライダーのように滑空する",
+      "大型魚から逃げるために海面上を数十〜数百メートル飛ぶ",
+      "背中は青黒く、腹側は銀白色（保護色）"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "初夏から秋にかけて沿岸に寄り、船で沖合に出ると滑空する姿が観察できる。",
+    "references": [
+      {
+        "title": "相模湾の漁業資源",
+        "author": "神奈川県水産技術センター",
+        "year": "2023",
+        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
+      }
+    ]
+  },
+  {
+    "id": "sazae",
+    "name": "サザエ",
+    "category": "無脊椎動物",
+    "scientificName": "Turbo sazae",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/sazae.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/sazae"
+    },
+    "features": [
+      "殻に角（棘）があるものと無いものがある（波の強さが影響するとされる）",
+      "厚く石灰質の石のような蓋を持つ",
+      "夜行性で褐藻類（ワカメやアラメなど）を食べる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "岩礁海岸の浅海に生息するが、漁業権が設定されているため無断採取は密漁となる。",
+    "references": [
+      {
+        "title": "日本産貝類図鑑",
+        "author": "日本貝類学会",
+        "year": "2017",
+        "url": "https://www.malaco-soc-japan.org/"
+      }
+    ]
+  },
+  {
+    "id": "hamaguri",
+    "name": "ハマグリ",
+    "category": "無脊椎動物",
+    "scientificName": "Meretrix lusoria",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/hamaguri.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/hamaguri"
+    },
+    "features": [
+      "内湾の砂泥底に生息する二枚貝",
+      "貝殻の表面は滑らかで、多様な模様を持つ",
+      "左右の殻が同じ個体でないとぴったり合わない"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "かつては東京湾や相模湾の干潟にも広く生息していたが、現在は自然環境下での減少が著しい。",
+    "references": [
+      {
+        "title": "海洋生物レッドリスト",
+        "author": "環境省",
+        "year": "2017",
+        "url": "https://www.env.go.jp/nature/kisho/marine/redlist.html"
+      }
+    ]
+  },
+  {
+    "id": "kobansou",
+    "name": "コバンソウ",
+    "category": "植物",
+    "scientificName": "Briza maxima",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/kobansou.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/kobansou"
+    },
+    "features": [
+      "イネ科の一年草（帰化植物）",
+      "小穂が平たく楕円形で、小判のように見えるのが特徴",
+      "風に吹かれるとカサカサと音を立てて揺れる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "海岸の砂地や後背地の空き地、道端などで初夏に群生しているのが見られる。",
+    "references": [
+      {
+        "title": "日本の帰化植物",
+        "author": "国立科学博物館",
+        "year": "2020",
+        "url": "https://www.kahaku.go.jp/"
+      }
+    ]
+  },
+  {
+    "id": "hamagou",
+    "name": "ハマゴウ",
+    "category": "植物",
+    "scientificName": "Vitex rotundifolia",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/hamagou.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/hamagou"
+    },
+    "features": [
+      "海岸の砂浜に這うように群生する落葉低木",
+      "夏に青紫色の唇形の美しい花を咲かせる",
+      "葉や果実には特有の芳香がある（精油成分）"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "相模湾沿岸の砂浜の飛砂帯（植物群落の最前線付近）で、夏場に青紫の花の群生を観察できる。",
+    "references": [
+      {
+        "title": "国立公園内の生態系保全データ",
+        "author": "環境省",
+        "year": "2023",
+        "url": "https://www.env.go.jp/nature/nationalparks/"
+      }
+    ]
+  },
+  {
+    "id": "chigaya",
+    "name": "チガヤ",
+    "category": "植物",
+    "scientificName": "Imperata cylindrica",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/chigaya.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/chigaya"
+    },
+    "features": [
+      "イネ科の多年草で、地下茎で広く繁殖する",
+      "初夏に白くフワフワとした綿毛を持つ穂を出す",
+      "葉の縁がザラザラしており、皮膚を切ることがある"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "海岸の砂防林の周縁や堤防、河川敷など、日当たりの良い開けた場所に大群落を形成する。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "tochikagami",
+    "name": "トチカガミ",
+    "category": "植物",
+    "scientificName": "Hydrocharis dubia",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/tochikagami.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/tochikagami"
+    },
+    "features": [
+      "水面に円形の葉を浮かべる浮葉性の水草",
+      "葉の裏側に気室となる膨らみがある",
+      "夏から秋に1日花（1日でしぼむ）の白い花を咲かせる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "ため池や流れの穏やかな水路に生息するが、環境変化により野生での確認は減少している。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "ebine",
+    "name": "エビネ",
+    "category": "植物",
+    "scientificName": "Calanthe discolor",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/ebine.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/ebine"
+    },
+    "features": [
+      "ラン科の多年草で、林床に自生する地生ラン",
+      "地下茎が連なった形がエビに似ているのが名前の由来",
+      "春に茶褐色と白色などの落ち着いた色合いの花を咲かせる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "三浦半島や丹沢などの丘陵地・広葉樹林の林床に自生するが、園芸用の乱獲により希少化している。",
+    "references": [
+      {
+        "title": "レッドデータブック・レッドリスト",
+        "author": "環境省",
+        "year": "2020",
+        "url": "https://www.env.go.jp/nature/kisho/hozen/redlist/index.html"
+      }
+    ]
+  },
+  {
+    "id": "saihairan",
+    "name": "サイハイラン",
+    "category": "植物",
+    "scientificName": "Cremastra appendiculata",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/saihairan.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/saihairan"
+    },
+    "features": [
+      "ラン科の多年草で、広葉樹林の薄暗い林床に生える",
+      "花序の形が戦場で武将が持つ「采配」に似ている",
+      "一枚の大きな笹のような葉を冬にも残す"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "県内の雑木林や神社の社叢林など、やや湿り気のある日陰で初夏に花茎を伸ばす姿が見られる。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "yabukarashi",
+    "name": "ヤブカラシ",
+    "category": "植物",
+    "scientificName": "Cayratia japonica",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/yabukarashi.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/yabukarashi"
+    },
+    "features": [
+      "ブドウ科のつる性多年草",
+      "「藪を枯らす」ほど繁殖力が旺盛であることが名前の由来",
+      "夏に小さな淡緑色の花を咲かせ、蜜腺にアリやハチが多く集まる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "海岸の防風林の縁や市街地の空き地、フェンスなど、あらゆる場所で夏場に繁茂する。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "shakunage",
+    "name": "シャクナゲ",
+    "category": "植物",
+    "scientificName": "Rhododendron subg. Hymenanthes",
+    "isDanger": true,
+    "dangerType": "ingestion",
+    "image": {
+      "url": "https://example.com/images/shakunage.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/shakunage"
+    },
+    "features": [
+      "ツツジ科に属し、大きく豪華な花を頂生（枝の先に集まって咲く）する",
+      "葉は革質で細長く、光沢がある",
+      "ツツジ同様、葉や花にグラヤノトキシンという有毒成分を含む"
+    ],
+    "firstAid": [
+      "摂取による中毒症状（嘔吐、徐脈、血圧低下など）が見られた場合は直ちに救急を受診する。"
+    ],
+    "dontDo": "庭木として植えられることが多いが、有毒であるためペットや幼児が葉をかじらないよう注意する。",
+    "localEncounter": "園芸種として庭や寺院に植栽されるほか、県内の高標高の山域（丹沢など）に野生種が自生する。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：植物",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      }
+    ]
+  },
+  {
+    "id": "satsuki",
+    "name": "サツキ",
+    "category": "植物",
+    "scientificName": "Rhododendron indicum",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/satsuki.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/satsuki"
+    },
+    "features": [
+      "ツツジの仲間だが、開花時期が遅く5〜6月（旧暦の皐月）に咲く",
+      "ツツジと比べて葉が小さく、新梢（新しい枝）が伸びた後に花が咲く",
+      "刈り込みに強いため庭木や盆栽によく利用される"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "公園の植え込みや道路の分離帯などで極めて一般的に見られる。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "tsutsuji",
+    "name": "ツツジ",
+    "category": "植物",
+    "scientificName": "Rhododendron spp.",
+    "isDanger": true,
+    "dangerType": "ingestion",
+    "image": {
+      "url": "https://example.com/images/tsutsuji.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/tsutsuji"
+    },
+    "features": [
+      "春に漏斗状の鮮やかな花を咲かせる常緑または落葉低木",
+      "街路樹や庭木として非常に一般的",
+      "レンゲツツジ等の特定種は全草にグラヤノトキシン（有毒成分）を含む"
+    ],
+    "firstAid": [
+      "誤食して嘔吐、痙攣、呼吸困難などの症状が出た場合は直ちに救急車を呼ぶ。",
+      "胃洗浄等の専門的処置が必要なため、速やかに医療機関に搬送する。"
+    ],
+    "dontDo": "種類が確実に判別できない場合、花の蜜を吸う行為は中毒の恐れがあるため避ける。",
+    "localEncounter": "昭和47年に「茅ヶ崎市の花」に制定された市のシンボル。中央公園やつつじ公園をはじめ、市内の公園や街路樹として広く親しまれている。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：植物",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      },
+      {
+        "title": "市の花",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007343.html"
+      }
+    ]
+  },
+  {
+    "id": "shijukara",
+    "name": "シジュウカラ",
+    "category": "鳥類",
+    "scientificName": "Parus minor",
+    "isDanger": false,
+    "dangerType": null,
+    "image": {
+      "url": "https://example.com/images/shijukara.jpg",
+      "author": "Ecological Data Contributor",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://example.com/observations/shijukara"
+    },
+    "features": [
+      "白い頬と胸から腹にかけての「黒いネクタイ模様」が特徴",
+      "「ツツピー、ツツピー」という澄んだ声で鳴く",
+      "鳴き声を組み合わせて文法のようなコミュニケーションをとる"
+    ],
+    "firstAid": null,
+    "dontDo": null,
+    "localEncounter": "平成9年に「茅ヶ崎市の鳥」に制定された市のシンボル。市街地の公園や住宅街の庭先から山林まで広く分布し、年間を通じて市内全域でよく見られる身近な野鳥。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      },
+      {
+        "title": "市の鳥",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007344.html"
+      }
+    ]
   }
+
+
+  
 ]
 
