@@ -1,0 +1,58 @@
+/* =========================================
+   タイポグラフィとインライン要素の再定義 (h1, span)
+   ========================================= */
+
+/* h1: ロゴ・ページタイトル */
+h1 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: var(--primary-deep); /* #0e7490 */
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+/* h2: 生物名など（ガイドの「セクション見出し」を適用） */
+h2 {
+    font-size: 1.0rem;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    color: var(--text-main);
+    margin-bottom: 16px;
+}
+
+/* span: セクションラベル（TIDE, WAVE, FEATURESなど） */
+span.section-label {
+    font-family: var(--font-mono);
+    background: rgba(14, 116, 144, 0.08);
+    color: var(--primary-deep);
+    border: 1px solid rgba(14, 116, 144, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 24px 0 12px;
+    letter-spacing: 0.5px;
+}
+
+/* span: アラート用ラベル（危険生物など） */
+span.section-label.alert {
+    background: rgba(192, 57, 43, 0.08);
+    color: var(--alert-high);
+    border-color: rgba(192, 57, 43, 0.2);
+}
+
+span.danger-badge {
+    background: var(--alert-high);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}

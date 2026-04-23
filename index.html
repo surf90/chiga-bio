@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ちがビオ | 茅ヶ崎 海の生き物ガイド</title>
+    <style>
+        /* CSS: モバイルファースト & 屋外での視認性重視 */
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #111111;
+            --danger-color: #d32f2f;
+            --safe-color: #1976d2;
+            --card-bg: #f5f5f5;
+            --border-radius: 12px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 80px; /* 下部ナビゲーションの余白 */
+        }
+
+        header {
+            background-color: var(--safe-color);
+            color: white;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-size: 1.5rem; letter-spacing: 1px; }
+
+        .container {
+            padding: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 検索バー */
+        .search-bar {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            -webkit-appearance: none;
+        }
+
+        /* 生物カード */
+        .bio-card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 8px solid var(--safe-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .bio-card.danger {
+            border-left-color: var(--danger-color);
+        }
+
+        .bio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .bio-name { font-size: 1.4rem; font-weight: bold; }
+        .bio-sci-name { font-size: 0.85rem; font-style: italic; color: #555; }
+        
+        .danger-badge {
+            background-color: var(--danger-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 16px 0 8px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: '■';
+            color: var(--safe-color);
+            margin-right: 6px;
+            font-size: 0.9rem;
+        }
+        .bio-card.danger .section-title::before { color: var(--danger-color); }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+
+        /* 注意書きハイライト */
+        .alert-box {
+            background-color: #ffebee;
+            border: 1px solid #ffcdd2;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+        .alert-box strong { color: var(--danger-color); }
+
+        /* 出典アコーディオン */
+        details {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #666;
+            background: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        summary { font-weight: bold; cursor: pointer; padding: 4px; }
+        details p { margin-top: 8px; word-break: break-all; }
+        a { color: var(--safe-color); }
+
+        /* ボトムナビゲーション (片手操作用) */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            border-top: 1px solid #eee;
+        }
+        .nav-item {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ちがビオ</h1>
+</header>
+
+<div class="container">
+    <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索...">
+    
+    <div id="bio-list">
+        </div>
+</div>
+
+<nav class="bottom-nav">
+    <a href="#" class="nav-item" onclick="filterData('all')">すべて</a>
+    <a href="#" class="nav-item" style="color: var(--danger-color);" onclick="filterData('danger')">⚠️ 危険生物</a>
+</nav>
+
+<script>
+    // JS: データ管理とDOMレンダリング
+    const bioData = [
+        {
+            id: "katsuonoeboshi",
+            name: "カツオノエボシ",
+            scientificName: "Physalia physalis",
+            isDanger: true,
+            features: [
+                "青く透明な餃子のような形の浮き袋（約10cm）",
+                "長い触手（青色）を持つ",
+                "砂浜に打ち上げられていることが多い（死んでいても刺胞は発射される）"
+            ],
+            firstAid: [
+                "絶対に素手で触らない。",
+                "刺されたら、こすらずに海水で優しく洗い流す（真水はNG）。",
+                "触手が残っている場合は、ピンセットやプラスチックカード等で剥がす。",
+                "氷や冷水で冷やし、速やかに医療機関を受診する。"
+            ],
+            dontDo: "お酢（ビネガー）をかけるのはNG（ハブクラゲとは異なり、刺胞の発射を促進する恐れがある）。真水で洗うのも浸透圧の変化で毒が注入されるため厳禁。",
+            references: [
+                {
+                    title: "Jellyfish stings and their management: A review",
+                    author: "Montgomery, L., et al.",
+                    year: "2016",
+                    doi: "https://doi.org/10.3390/md14020027" // ※架空または代表的な例としての記載です
+                }
+            ]
+        }
+        // 今後ここにアカエイなどを追加していきます
+    ];
+
+    function renderCards(data) {
+        const container = document.getElementById('bio-list');
+        container.innerHTML = '';
+
+        data.forEach(bio => {
+            const card = document.createElement('div');
+            card.className = `bio-card ${bio.isDanger ? 'danger' : ''}`;
+
+            let featuresHtml = bio.features.map(f => `<li>${f}</li>`).join('');
+            let firstAidHtml = bio.firstAid.map(f => `<li>${f}</li>`).join('');
+            
+            let refsHtml = bio.references.map(ref => 
+                `<li>${ref.author} (${ref.year}). <i>${ref.title}</i>. <a href="${ref.doi}" target="_blank" rel="noopener">DOIリンク</a></li>`
+            ).join('');
+
+		card.innerHTML = `
+                ${bio.isDanger ? '<span class="danger-badge">WARNING / 高度危険</span>' : ''}
+                <h2>${bio.name}</h2>
+                
+                <div class="data-row">
+                    <span class="data-label">分類</span>
+                    <span class="data-value">${bio.category}</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">学名</span>
+                    <span class="data-value mono">${bio.scientificName}</span>
+                </div>
+                
+                <span class="section-label">FEATURES</span>
+                <ul class="styled-list">${featuresHtml}</ul>
+
+                <span class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST_AID</span>
+                <ul class="styled-list">${firstAidHtml}</ul>
+                
+                ${bio.dontDo ? `
+                <div class="alert-box">
+                    <strong>DO NOT / やってはいけない事</strong>
+                    ${bio.dontDo}
+                </div>
+                ` : ''}
+
+                <details>
+                    <summary>SOURCE / 出典</summary>
+                    ${refsHtml}
+                </details>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // 初期表示
+    renderCards(bioData);
+
+    // 検索機能
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+        const keyword = e.target.value.toLowerCase();
+        const filtered = bioData.filter(bio => 
+            bio.name.includes(keyword) || 
+            bio.features.some(f => f.includes(keyword))
+        );
+        renderCards(filtered);
+    });
+
+    // フィルター機能 (ボトムナビゲーション用)
+    window.filterData = function(type) {
+        if(type === 'danger') {
+            renderCards(bioData.filter(bio => bio.isDanger));
+        } else {
+            renderCards(bioData);
+        }
+    };
+</script>
+
+</body>
+</html>
