@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ちがビオ | 茅ヶ崎 海の生き物ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
     <style>
         /* CSS: モバイルファースト & 屋外での視認性重視 */
         :root {
@@ -36,7 +37,35 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        h1 { font-size: 1.5rem; letter-spacing: 1px; }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.25;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo-text {
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            font-weight: 900;
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+            background: linear-gradient(135deg, #ffffff 0%, #7dd3fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .title-divider {
+            color: rgba(255,255,255,0.5);
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        h1 small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.85;
+        }
 
         .container {
             padding: 16px;
@@ -157,7 +186,7 @@
 <body>
 
 <header>
-    <h1>ちがビオ</h1>
+    <h1><span class="logo-text">ちがビオ</span> <span class="title-divider">|</span> <small>茅ヶ崎の自然・生き物</small></h1>
 </header>
 
 <div class="container">
