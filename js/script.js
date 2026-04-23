@@ -95,7 +95,37 @@ function renderCards(data) {
         container.appendChild(card);
     });
 }
+/**
+ * 生物カードのHTMLを生成する関数
+ * @param {Object} bio 生物データ
+ */
+function createBioCard(bio) {
+    const card = document.createElement('div');
+    card.className = 'bio-card';
 
+    // 画像URLの最適化（iNaturalistの場合、mediumを指定）
+    const imageUrl = bio.image ? bio.image.url : 'assets/placeholder.png';
+
+    card.innerHTML = `
+        <div class="bio-image-container">
+            <img 
+                src="${imageUrl}" 
+                alt="${bio.name}" 
+                loading="lazy" 
+                class="bio-image"
+                onload="this.parentElement.classList.add('loaded')"
+            >
+            <div class="image-credit">
+                Photo: ${bio.image ? bio.image.author : '---'} (${bio.image ? bio.image.license : ''})
+            </div>
+        </div>
+        <div class="bio-info">
+            <h3>${bio.name}</h3>
+            <p class="scientific-name">${bio.scientificName}</p>
+            </div>
+    `;
+    return card;
+}
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const keyword = e.target.value.toLowerCase();
     const filtered = globalBioData.filter(bio => 
