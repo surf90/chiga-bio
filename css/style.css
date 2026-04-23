@@ -58,7 +58,7 @@ span.danger-badge {
 }
 
 /* =========================================
-   5. フッター (Chiga-log スタイル踏襲)
+   5. フッター (Chiga-log スタイル踏襲 + ボックス型免責事項)
 ========================================= */
 .footer {
     margin-top: 8px;
@@ -83,31 +83,7 @@ span.danger-badge {
     text-decoration: underline;
 }
 
-.footer-disclaimer {
-    font-size: 11px;
-    letter-spacing: -0.28px;
-    color: #888888;
-    line-height: 1.5;
-}
-
-.footer-copyright {
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 12px;
-    letter-spacing: -0.28px;
-    margin-top: 8px;
-}
-
-/* ライフセービングリンクのアクセントカラー */
-.lifesaving-link {
-    color: #c0392b !important;
-    opacity: 0.75;
-}
-
-.lifesaving-link:hover {
-    opacity: 1;
-}
-
-/* 免責事項エリア */
+/* 免責事項エリア：重複を統合し、ボックススタイルを適用 */
 .footer-disclaimer {
     margin-bottom: 16px;
     padding: 12px 16px;
@@ -117,20 +93,31 @@ span.danger-badge {
     text-align: left;
     font-size: 11px;
     line-height: 1.6;
+    letter-spacing: -0.28px;
 }
 
 .footer-info {
     margin-bottom: 16px;
     font-weight: 600;
 }
+
+/* ライフセービングリンク：重複を統合（ちがログ本来の赤ではなく、テーマカラーに合わせる形） */
 .lifesaving-link {
     color: var(--primary-deep) !important;
+    opacity: 0.75;
 }
 
-/* コピーライトとデュアルライセンス */
+.lifesaving-link:hover {
+    opacity: 1;
+}
+
+/* コピーライトとデュアルライセンス：重複を統合 */
 .footer-copyright {
     font-family: var(--font-mono);
     color: var(--text-meta);
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    margin-top: 8px;
 }
 
 /* =========================================
@@ -156,6 +143,7 @@ span.danger-badge {
     transition: visibility 0s, opacity 0.3s linear, bottom 0.3s ease-out;
     opacity: 0;
 }
+
 #toast.show {
     visibility: visible;
     opacity: 1;
