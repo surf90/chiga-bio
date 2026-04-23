@@ -5,6 +5,7 @@
     "category": "刺胞動物",
     "scientificName": "Physalia physalis",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "青く透明な餃子のような形の浮き袋（約10cm）",
       "長い触手（青色）を持つ",
@@ -32,6 +33,7 @@
     "category": "軟骨魚類",
     "scientificName": "Dasyatis akajei",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "浅瀬の砂地に潜んでいることが多い",
       "尾の付け根に長い毒棘（どくきょく）を持つ",
@@ -45,15 +47,14 @@
     ],
     "dontDo": "素手で棘を抜こうとすると、返しがついているため組織をさらに傷つける恐れがあります。",
     "references": []
-  }
-]
-
-{
+  },
+  {
     "id": "gonzui",
     "name": "ゴンズイ",
     "category": "硬骨魚類",
     "scientificName": "Plotosus lineatus",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "体長10〜20cm程度。茶褐色の体に2本の黄色い縦縞がある",
       "幼魚は密集して「ゴンズイ玉」と呼ばれる球状の群れを作る",
@@ -88,6 +89,7 @@
     "category": "頭足類",
     "scientificName": "Hapalochlaena",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "体長は10cm程度の小型のタコ",
       "普段は岩や海藻に擬態して目立たないが、刺激を受けると鮮やかな青い輪の模様（ヒョウ柄）が全身に浮かび上がる",
@@ -115,15 +117,14 @@
         "doi": "https://www.pref.kanagawa.jp/docs/aw3/cnt/f6567/"
       }
     ]
-  }
-
-[
+  },
   {
     "id": "tonbi",
     "name": "トンビ（トビ）",
     "category": "鳥類",
     "scientificName": "Milvus migrans",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "海沿いや川沿いに生息し、死角から人間の食べ物を奪うことがある。",
       "食べ物を狙って飛来した際、鋭い爪によって怪我を負う事例が発生している。"
@@ -148,6 +149,7 @@
     "category": "硬骨魚類",
     "scientificName": "Gymnothorax",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "夜行性で、昼間は岩陰などに潜み、夜になると開けた場所に出てくる。",
       "こちらから近づかなければ攻撃してくることはない。",
@@ -179,6 +181,7 @@
     "category": "刺胞動物",
     "scientificName": "Carybdea brevipedalia",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "刺されると皮膚に触手が残存し、毒矢が刺さったままの状態になることがある。",
       "お盆の時期などによく発生し、刺されると強い痛みを伴う。"
@@ -196,8 +199,7 @@
         "doi": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
       }
     ]
-  }
-
+  },
   {
     "id": "katakuchiiwashi",
     "name": "カタクチイワシ（シラス）",
@@ -209,7 +211,6 @@
       "えぼし岩周辺や相模湾全域に回遊しており、地曳網でもお馴染み。",
       "プランクトンを食べるため、口が大きく開くのが特徴。"
     ],
-    "description": "茅ヶ崎の食文化を支える最重要魚種。稚魚はシラスとして親しまれます。",
     "firstAid": [],
     "dontDo": "",
     "references": [
@@ -227,6 +228,7 @@
     "category": "硬骨魚類",
     "scientificName": "Takifugu alboplumbeus",
     "isDanger": true,
+    "dangerType": "eat",
     "features": [
       "波打ち際やタイドプールで最も頻繁に見かけるフグ。",
       "背面は暗緑色で白い斑点があり、腹面は白い。",
@@ -252,12 +254,12 @@
     "category": "鳥類",
     "scientificName": "Charadrius alexandrinus",
     "isDanger": false,
+    "dangerType": "protect",
     "features": [
       "神奈川県の鳥。砂浜を素早く走っては立ち止まる動作を繰り返す。",
       "4月〜7月頃、砂浜に直接卵を産み、繁殖を行う。",
       "「ピピヨ」と鳴きながら砂浜をトコトコ歩く姿が観察される。"
     ],
-    "description": "砂浜の減少により生息地が脅かされている貴重な鳥です。",
     "firstAid": [],
     "dontDo": "繁殖期の砂浜では、足元にある卵を踏まないよう注意が必要。また、親鳥が「擬傷（偽の怪我）」で敵を遠ざけようとしている時は、近くに巣があるため速やかに離れること。",
     "references": [
@@ -297,19 +299,17 @@
       "葉は厚みがあり、光沢のあるハート型（腎臓形）をしている。",
       "蔓（つる）が砂の上を這うように広がり、砂の移動を抑える役割も持つ。"
     ],
-    "description": "初夏の湘南の海岸を彩る美しい花です。",
     "firstAid": [],
     "dontDo": "根が深く張っているため、引き抜くと周囲の砂の安定を損なう恐れがあります。観賞に留めましょう。",
     "references": []
-  }
-
-
+  },
   {
     "id": "akakurage",
     "name": "アカクラゲ",
     "category": "刺胞動物",
     "scientificName": "Chrysaora pacifica",
     "isDanger": true,
+    "dangerType": "contact",
     "features": [
       "傘に赤い放射状の縞模様がある。",
       "触手が非常に長く、本体から離れていても刺されることがある。",
