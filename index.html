@@ -6,183 +6,7 @@
     <title>ちがビオ | 茅ヶ崎 海の生き物ガイド</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        /* CSS: モバイルファースト & 屋外での視認性重視 */
-        :root {
-            --bg-color: #ffffff;
-            --text-main: #111111;
-            --danger-color: #d32f2f;
-            --safe-color: #1976d2;
-            --card-bg: #f5f5f5;
-            --border-radius: 12px;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding-bottom: 80px; /* 下部ナビゲーションの余白 */
-        }
-
-        header {
-            background-color: var(--safe-color);
-            color: white;
-            padding: 16px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0;
-            line-height: 1.25;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .logo-text {
-            font-family: "Zen Kaku Gothic New", sans-serif;
-            font-weight: 900;
-            font-size: 2.4rem;
-            letter-spacing: 0.05em;
-            background: linear-gradient(135deg, #ffffff 0%, #7dd3fc 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .title-divider {
-            color: rgba(255,255,255,0.5);
-            font-weight: 300;
-            font-size: 1.2rem;
-        }
-        h1 small {
-            font-size: 0.9rem;
-            font-weight: 400;
-            opacity: 0.85;
-        }
-
-        .container {
-            padding: 16px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* 検索バー */
-        .search-bar {
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 1rem;
-            border: 2px solid #ccc;
-            border-radius: var(--border-radius);
-            margin-bottom: 20px;
-            -webkit-appearance: none;
-        }
-
-        /* 生物カード */
-        .bio-card {
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 8px solid var(--safe-color);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .bio-card.danger {
-            border-left-color: var(--danger-color);
-        }
-
-        .bio-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 12px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 8px;
-        }
-
-        .bio-name { font-size: 1.4rem; font-weight: bold; }
-        .bio-sci-name { font-size: 0.85rem; font-style: italic; color: #555; }
-        
-        .danger-badge {
-            background-color: var(--danger-color);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .section-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin: 16px 0 8px;
-            display: flex;
-            align-items: center;
-        }
-        .section-title::before {
-            content: '■';
-            color: var(--safe-color);
-            margin-right: 6px;
-            font-size: 0.9rem;
-        }
-        .bio-card.danger .section-title::before { color: var(--danger-color); }
-
-        ul { padding-left: 20px; }
-        li { margin-bottom: 6px; }
-
-        /* 注意書きハイライト */
-        .alert-box {
-            background-color: #ffebee;
-            border: 1px solid #ffcdd2;
-            padding: 12px;
-            border-radius: 8px;
-            margin-top: 12px;
-        }
-        .alert-box strong { color: var(--danger-color); }
-
-        /* 出典アコーディオン */
-        details {
-            margin-top: 20px;
-            font-size: 0.85rem;
-            color: #666;
-            background: #fff;
-            padding: 8px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        summary { font-weight: bold; cursor: pointer; padding: 4px; }
-        details p { margin-top: 8px; word-break: break-all; }
-        a { color: var(--safe-color); }
-
-        /* ボトムナビゲーション (片手操作用) */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 12px 0;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            border-top: 1px solid #eee;
-        }
-        .nav-item {
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: var(--text-main);
-            text-decoration: none;
-            padding: 8px 16px;
-        }
-    </style>
 </head>
 <body>
 
@@ -192,40 +16,37 @@
 
 <div class="container">
     <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索...">
-    
-    <div id="bio-list">
-        </div>
+    <div id="bio-list"></div>
 </div>
 
 <nav class="bottom-nav">
     <a href="#" class="nav-item" onclick="filterData('all')">すべて</a>
-    <a href="#" class="nav-item" style="color: var(--danger-color);" onclick="filterData('danger')">⚠️ 危険生物</a>
+    <a href="#" class="nav-item" style="color: var(--danger-color);" onclick="filterData('danger')">⚠️ 要注意 / 危険</a>
 </nav>
 
 <script src="js/script.js"></script>
     
 <div class="footer">
-        <div class="footer-data">
-            参考・データ提供:
-            <a href="参考サイトのURL" target="_blank">〇〇図鑑</a> /
-            <a href="参考サイトのURL" target="_blank">〇〇水族館</a>
-        </div>
-
-        <div class="footer-disclaimer">
-            ※ 本サイトの生き物情報は一般的な参考用です。地域や季節によって異なる場合があります。<br>
-            ※ 海の生き物には毒を持つものもいます。観察する際は安全に十分注意し、素手で触れないようにしましょう。
-        </div>
-
-        <div class="footer-info">
-            | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> |
-        </div>
-
-        <div class="footer-copyright">
-            <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki | <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a>
-        </div>
+    <div class="footer-data">
+        参考資料・データ出典:
+        <a href="https://www.kaiho.mlit.go.jp/" target="_blank">海上保安庁</a> /
+        <a href="https://www.jaam.jp/" target="_blank">日本救急医学会</a>
     </div>
 
-<div id="toast" onclick="location.reload(); hideToast();">🔄 図鑑データを更新する</div>
-    
+    <div class="footer-disclaimer">
+        ※ 本図鑑は参考用です。実際の応急処置時は、必ず医療機関の指示や最新の医学的知見を優先してください。<br>
+        ※ 海の生き物には危険な毒を持つものもいます。むやみに触れず、安全に海を楽しみましょう。
+    </div>
+
+    <div class="footer-info">
+        | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> |
+    </div>
+
+    <div class="footer-copyright">
+        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
+        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
+    </div>
+</div>
+
 </body>
 </html>
