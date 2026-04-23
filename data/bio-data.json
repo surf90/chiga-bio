@@ -6,6 +6,12 @@
     "scientificName": "Physalia physalis",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/168494541/medium.jpeg",
+      "author": "Ken-ichi Ueda",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/photos/168494541"
+    },
     "features": [
       "青く透明な餃子のような形の浮き袋（約10cm）",
       "長い触手（青色）を持つ",
@@ -35,6 +41,12 @@
     "scientificName": "Dasyatis akajei",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "尾の付け根に長い毒棘（どくきょく）を持つ",
       "踏みつけると反射的に尾を振り上げて刺してくる"
@@ -63,6 +75,12 @@
     "scientificName": "Plotosus lineatus",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長10〜20cm程度。茶褐色の体に2本の黄色い縦縞がある",
       "背びれと胸びれに強力な毒棘（どくきょく）を持つ"
@@ -80,7 +98,7 @@
         "title": "海洋危険生物の毒と病態",
         "author": "日本救急医学会",
         "year": "2023",
-        "url": "https://www.jaam.jp/" 
+        "url": "https://www.jaam.jp/"
       },
       {
         "title": "海の危険生物ガイドブック",
@@ -97,6 +115,12 @@
     "scientificName": "Hapalochlaena",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長は10cm程度の小型のタコ",
       "普段は岩や海藻に擬態して目立たないが、刺激を受けると鮮やかな青い輪の模様（ヒョウ柄）が全身に浮かび上がる",
@@ -132,6 +156,12 @@
     "scientificName": "Milvus migrans",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "死角（背後や上空）から人間の食べ物を奪う。",
       "食べ物を狙って飛来した際、鋭い爪によって手や顔に怪我を負う事例が発生している。"
@@ -158,6 +188,12 @@
     "scientificName": "Gymnothorax",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "鋭い歯を持ち、ウェットスーツを簡単に突き通すほどの噛む力がある。",
       "こちらから近づかなければ積極的に攻撃してくることは少ない。"
@@ -184,6 +220,12 @@
     "scientificName": "Carybdea brevipedalia",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "刺されると皮膚に触手が残存し、毒矢が刺さったままの状態になることがある。",
       "刺されるとピリッとした強い痛みを伴う。"
@@ -209,6 +251,12 @@
     "category": "硬骨魚類",
     "scientificName": "Engraulis japonicus",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "茅ヶ崎名産「シラス」の親魚。体側に銀色の帯がある。",
       "プランクトンを食べるため、口が大きく開くのが特徴。"
@@ -232,6 +280,12 @@
     "scientificName": "Takifugu alboplumbeus",
     "isDanger": true,
     "dangerType": "eat",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "背面は暗緑色で白い斑点があり、腹面は白い。",
       "筋肉・皮・内臓に猛毒のテトロドトキシンを持つ。"
@@ -258,6 +312,12 @@
     "scientificName": "Charadrius alexandrinus",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "神奈川県の鳥。砂浜を素早く走っては立ち止まる動作を繰り返す。",
       "「ピピヨ」と鳴きながら砂浜をトコトコ歩く姿が観察される。"
@@ -280,6 +340,12 @@
     "category": "甲殻類",
     "scientificName": "Ocypode stimpsoni",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "砂と同じ色の体（擬態）を持ち、時速10km以上で走る「砂浜のスピードスター」。",
       "目が飛び出しており、周囲360度を見渡せる。"
@@ -304,6 +370,12 @@
     "category": "植物",
     "scientificName": "Calystegia soldanella",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "葉は厚みがあり、光沢のあるハート型（腎臓形）をしている。",
       "蔓（つる）が砂の上を這うように広がり、砂の移動を抑える役割（飛砂防止）も持つ。"
@@ -327,6 +399,12 @@
     "scientificName": "Chrysaora pacifica",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "傘に赤い放射状の縞模様がある。",
       "触手が非常に長く、本体から離れていても刺されることがある。",
@@ -354,6 +432,12 @@
     "category": "刺胞動物",
     "scientificName": "Aurelia aurita",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "傘の中に4つの目（胃腔）が見える、日本で最もポピュラーなクラゲ。",
       "毒は比較的弱く、通常は刺されても大事には至らない。"
@@ -379,6 +463,12 @@
     "category": "有櫛動物",
     "scientificName": "Bolinopsis mikado",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "刺胞を持たないため、人を刺すことはない（無毒）。",
       "側面の「櫛板（しゅうばん）」が光を反射し、虹色にキラキラと光って見えるのが特徴。"
@@ -401,6 +491,12 @@
     "category": "刺胞動物（ヒドロ虫綱）",
     "scientificName": "Porpita porpita",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "銀貨（コイン）のような円盤状の平たい気泡体（直径数cm）を持つ。",
       "青い触手を周囲に広げて海面を漂う。"
@@ -425,6 +521,12 @@
     "category": "刺胞動物（ヒドロ虫綱）",
     "scientificName": "Velella velella",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "青い楕円形の浮袋の上に、風を受けるための透明な「帆」が斜めに立っている。",
       "自力で泳がず、風の力で海面を移動する。"
@@ -450,6 +552,12 @@
     "scientificName": "Glaucus atlanticus",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6314811/medium.jpg",
+      "author": "Sylke Rohrlach",
+      "license": "CC0",
+      "sourceUrl": "https://www.inaturalist.org/photos/6314811"
+    },
     "features": [
       "体長2〜3cm程度。銀青色の美しい姿で「青い竜」とも呼ばれる。",
       "カツオノエボシなどの毒クラゲを捕食し、その刺胞（毒）を体内に取り込んで蓄える「盗刺胞」を行うため猛毒を持つ。"
@@ -482,6 +590,12 @@
     "scientificName": "Hypodytes rubripinnis",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長は10cm程度で赤褐色や暗褐色をしており、海藻や岩に擬態する。",
       "背びれに鋭く強力な毒棘（どくきょく）を持つ。"
@@ -509,6 +623,12 @@
     "scientificName": "Balanomorpha",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "岩やテトラポッドに固着する火山の火口のような形をした殻。",
       "殻の縁がカミソリのように非常に鋭く、少し触れただけでも皮膚が深く切れることがある。"
@@ -525,7 +645,7 @@
         "title": "海洋危険生物の毒と病態",
         "author": "日本救急医学会",
         "year": "2023",
-        "url": "https://www.jaam.jp/" 
+        "url": "https://www.jaam.jp/"
       }
     ]
   },
@@ -536,6 +656,12 @@
     "scientificName": "Belonidae",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長は1m前後。下あごが前方に鋭く突き出た、槍のような形状をしている。",
       "夜間、ライトなどの強い光に向かって水面から猛スピードで飛び出す習性がある。"
@@ -568,6 +694,12 @@
     "scientificName": "Pterois lunulata",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "赤褐色と白色の鮮やかな横縞模様を持ち、胸びれと背びれが大きく広がっている。",
       "動きは非常にゆっくりで優雅だが、背びれ・腹びれ・臀びれに強力な毒棘を持つ。"
@@ -601,6 +733,12 @@
     "scientificName": "Caretta caretta",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "甲長は70〜100cm程度で、赤褐色の甲羅を持つ。",
       "環境省のレッドリストで絶滅危惧種（絶滅危惧IB類）に指定されている。"
@@ -630,6 +768,12 @@
     "scientificName": "Sphyrna lewini",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "頭部が左右に張り出したT字型（ハンマー型）の特異なシルエット。",
       "比較的神経質だが、群れで浅瀬に接近することがある。"
@@ -657,6 +801,12 @@
     "scientificName": "Prionace glauca",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体は細長く、背側が鮮やかな藍色（ブルー）をしている。",
       "「世界で最も美しいサメ」とも呼ばれるが、好奇心が強く危険な一面もある。"
@@ -682,6 +832,12 @@
     "category": "鳥類",
     "scientificName": "Larus crassirostris",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "黄色い嘴（くちばし）の先端に赤と黒の斑点があり、「ミャー」という猫のような鳴き声が特徴。",
       "茅ヶ崎の海岸周辺で1年を通して観察できる留鳥。"
@@ -707,6 +863,12 @@
     "scientificName": "Neophocaena asiaeorientalis",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長は1.5〜2mほどの小型のイルカで、背びれがないのが最大の特徴。",
       "体色は明るい灰白色で、沿岸の浅い海域を好むため波打ち際近くに現れることがある。"
@@ -734,6 +896,12 @@
     "scientificName": "Lagenorhynchus obliquidens",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "背びれが草刈り鎌のような形をしており、背中が黒く、体側面に白と黒の鮮やかな模様がある。",
       "非常に活発で、船の波に乗ってジャンプする姿がよく見られる。"
@@ -759,6 +927,12 @@
     "scientificName": "Grampus griseus",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "頭部が丸く、口先（吻）が突出していない。",
       "成長するにつれて仲間同士で付け合った白い引っかき傷が全身に増え、白っぽく見えるのが特徴。"
@@ -784,6 +958,12 @@
     "scientificName": "Megaptera novaeangliae",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長10〜15mに達する大型のクジラ。胸びれが全長の3分の1と非常に長い。",
       "海面から高くジャンプする（ブリーチング）など、ダイナミックな行動をとる。"
@@ -808,6 +988,12 @@
     "category": "硬骨魚類",
     "scientificName": "Sillago japonica",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "透き通るような美しい細身の魚体で、「砂浜の女王」とも呼ばれる。",
       "砂泥底を好み、ゴカイなどの底生生物を捕食する。"
@@ -831,6 +1017,12 @@
     "scientificName": "Paralichthys olivaceus",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "砂地と同化する保護色を持った平たい体で、両目が体の左側にある。",
       "小魚を捕食するため、口には非常に鋭い牙のような歯が並んでいる。"
@@ -857,6 +1049,12 @@
     "scientificName": "Sebastiscus marmoratus",
     "isDanger": true,
     "dangerType": "contact",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "赤褐色から暗褐色のまだら模様で、頭が大きくゴツゴツしている。",
       "背びれ、腹びれ、臀びれ、そしてエラ蓋に鋭いトゲを持つ。"
@@ -882,6 +1080,12 @@
     "category": "硬骨魚類",
     "scientificName": "Girella punctata",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体は黒褐色で平たく、パワフルな引きが特徴の魚。",
       "海藻や小型の甲殻類を食べる雑食性。"
@@ -904,6 +1108,12 @@
     "category": "硬骨魚類",
     "scientificName": "Chaenogobius annularis",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長は5cm程度。茶色っぽいまだら模様で、胸びれが大きくハゼの仲間。",
       "タイドプール（潮だまり）に取り残されていることが多く、人が近づくとサッと岩陰に素早く隠れる。"
@@ -926,6 +1136,12 @@
     "category": "甲殻類",
     "scientificName": "Pagurus filholi",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "巻き貝の空き殻に身を隠す、磯遊びの定番生物。右のハサミが左のハサミよりも大きいのが特徴。",
       "水中の岩の上や砂地をせかせかと歩き回り、成長に合わせてより大きな貝殻へ引っ越しをする。"
@@ -948,6 +1164,12 @@
     "category": "軟体動物",
     "scientificName": "Aplysia kurodai",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "体長10〜20cmほどのウミウシの仲間。ナメクジのように柔らかく、頭部に牛の耳のような触角がある。",
       "海藻を食べて育ち、外敵から刺激を受けると煙幕のように紫色の液体を出す。"
@@ -971,6 +1193,12 @@
     "scientificName": "Calidris alba",
     "isDanger": false,
     "dangerType": "protect",
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "スズメほどの大きさで、全体的に白っぽく丸みを帯びたシルエットのシギの仲間。",
       "打ち寄せる波から逃げるように、波打ち際を「チクタク」と高速で走り回る愛らしい姿が特徴。"
@@ -993,6 +1221,12 @@
     "category": "甲殻類",
     "scientificName": "Tylos granuliferus",
     "isDanger": false,
+    "image": {
+      "url": "https://via.placeholder.com/400x300?text=No+Image+Available",
+      "author": "Unknown",
+      "license": "Unknown",
+      "sourceUrl": ""
+    },
     "features": [
       "陸上に棲む一般的なダンゴムシより一回り大きく、砂と同じような白っぽい保護色をしている（昆虫のように見えるが甲殻類の仲間）。",
       "危険を感じると丸まるのは同じだが、砂の上を走る動きが非常に素早い。"
