@@ -267,6 +267,35 @@ span.danger-badge {
 }
 
 /* =========================================
+  パフォーマンスのためのCSS設定
+   ========================================= */
+
+.bio-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* 画像読み込み前も領域を確保してガタつきを防止 */
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.bio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 5px;
+}
+
+/* =========================================
    5. フッター (Chiga-log スタイル踏襲 + ボックス型免責事項)
 ========================================= */
 .footer {
