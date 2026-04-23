@@ -296,7 +296,7 @@ span.danger-badge {
 .footer-disclaimer {
     margin-bottom: 16px;
     padding: 12px 16px;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(0, 0, 0, 0);
     border-radius: 8px;
     color: var(--text-main);
     text-align: left;
