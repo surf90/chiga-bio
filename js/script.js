@@ -13,7 +13,7 @@ async function fetchBioData() {
         globalBioData = await response.json();
 
         // ★取得直後にソートする（市のシンボルを先頭にし、他は50音順）
-        const priorityIds = ['tsutsuji', 'shijukara']; // 先頭にしたい生物のID
+        const priorityIds = ['shijukara','tsutsuji']; // 先頭にしたい生物のID
         
         globalBioData.sort((a, b) => {
             const indexA = priorityIds.indexOf(a.id);
