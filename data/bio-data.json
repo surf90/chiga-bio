@@ -2144,7 +2144,7 @@
     "category": "植物",
     "scientificName": "Rhododendron spp.",
     "isDanger": true,
-    "dangerType": "ingestion",
+    "dangerType": "eat",
     "image": {
       "url": "https://example.com/images/tsutsuji.jpg",
       "author": "Ecological Data Contributor",
