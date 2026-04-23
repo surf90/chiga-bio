@@ -443,4 +443,461 @@
       }
     ]
   }
+  
+  {
+    "id": "aominoumiushi",
+    "name": "アオミノウミウシ",
+    "category": "軟体動物",
+    "scientificName": "Glaucus atlanticus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "体長2〜3cm程度。銀青色の美しい姿で「青い竜」とも呼ばれる。",
+      "カツオノエボシなどの毒クラゲを捕食し、その刺胞（毒）を体内に取り込んで蓄える「盗刺胞」を行うため猛毒を持つ。"
+    ],
+    "firstAid": [
+      "絶対に素手で触らず、刺された場合はこすらずに海水で優しく洗い流す（真水はNG）。",
+      "氷や冷水で冷やし、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "真水で洗うことや、お酢をかけることは厳禁（カツオノエボシの毒をそのまま持っているため、刺胞の発射を促進する恐れがある）。",
+    "localEncounter": "春から初夏にかけて、南風に乗ってカツオノエボシやギンカクラゲと一緒に茅ヶ崎海岸の砂浜に打ち上げられることが多い。",
+    "references": [
+      {
+        "title": "海の青い龍・アオミノウミウシ【学芸員自然と歴史のたより】",
+        "author": "横須賀市自然・人文博物館",
+        "year": "2023",
+        "url": "https://www.museum.yokosuka.kanagawa.jp/archives/nature-history/40275"
+      },
+      {
+        "title": "色と模様が変わっていく | えのすいトリーター日誌",
+        "author": "新江ノ島水族館",
+        "year": "2021",
+        "url": "https://www.enosui.com/diaryentry.php?eid=07467"
+      }
+    ]
+  },
+  {
+    "id": "haokoze",
+    "name": "ハオコゼ",
+    "category": "硬骨魚類",
+    "scientificName": "Hypodytes rubripinnis",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "体長は10cm程度で赤褐色や暗褐色をしており、海藻や岩に擬態する。",
+      "背びれに鋭く強力な毒棘（どくきょく）を持つ。"
+    ],
+    "firstAid": [
+      "速やかに海から上がり、患部を清潔な水または海水で洗い流す。",
+      "毒はタンパク質性で熱に弱いため、火傷しない程度の熱めのお湯（40〜45℃）に患部を30〜60分ほど浸す（温熱療法）。",
+      "痛みが引かない場合や棘が残っている場合は、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "死んだ個体であっても毒は失われないため、絶対に素手で触らないこと。また、棘を無理に素手で抜こうとしない。",
+    "localEncounter": "ヘッドランド周辺や磯場、潮だまり（タイドプール）に一年中生息しており、磯遊びや釣りで遭遇しやすい。",
+    "references": [
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      }
+    ]
+  },
+  {
+    "id": "fujitsubo",
+    "name": "フジツボ類",
+    "category": "甲殻類",
+    "scientificName": "Balanomorpha",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "岩やテトラポッドに固着する火山の火口のような形をした殻。",
+      "殻の縁がカミソリのように非常に鋭く、少し触れただけでも皮膚が深く切れることがある。"
+    ],
+    "firstAid": [
+      "傷口を清潔な流水（水道水など）でしっかりと洗い流し、砂や汚れを落とす。",
+      "出血している場合は清潔なガーゼやタオルで圧迫止血を行う。",
+      "傷が深い場合や化膿した場合は、皮膚科や外科を受診する。"
+    ],
+    "dontDo": "汚れた海水や砂がついたまま絆創膏で塞がないこと（海洋性の細菌による重篤な感染症を防ぐため）。",
+    "localEncounter": "えぼし岩、ヘッドランドの消波ブロック、堤防など、茅ヶ崎のあらゆる岩礁地帯に密集している。",
+    "references": [
+      {
+        "title": "海洋危険生物の毒と病態",
+        "author": "日本救急医学会",
+        "year": "2023",
+        "url": "https://www.jaam.jp/" 
+      }
+    ]
+  },
+  {
+    "id": "datsu",
+    "name": "ダツ",
+    "category": "硬骨魚類",
+    "scientificName": "Belonidae",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "体長は1m前後。下あごが前方に鋭く突き出た、槍のような形状をしている。",
+      "夜間、ライトなどの強い光に向かって水面から猛スピードで飛び出す習性がある。"
+    ],
+    "firstAid": [
+      "万が一、体に突き刺さった場合は、絶対に自力で引き抜かず、周囲の人に助けを求める。",
+      "刺さった魚体（または折れたあご）をタオル等で固定して動かないようにし、直ちに119番通報する。"
+    ],
+    "dontDo": "刺さったものを引き抜くのは厳禁（あごが栓の役割を果たしており、抜くと大出血を引き起こすため）。また、夜間に海面をライトで直接照らさないこと。",
+    "localEncounter": "相模湾の表層を群れで回遊しており、ヘッドランド周辺での夜釣りや、夜間の海浜活動時に注意が必要。",
+    "references": [
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      },
+      {
+        "title": "海洋危険生物の毒と病態",
+        "author": "日本救急医学会",
+        "year": "2023",
+        "url": "https://www.jaam.jp/"
+      }
+    ]
+  },
+  {
+    "id": "minokasago",
+    "name": "ミノカサゴ",
+    "category": "硬骨魚類",
+    "scientificName": "Pterois lunulata",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "赤褐色と白色の鮮やかな横縞模様を持ち、胸びれと背びれが大きく広がっている。",
+      "動きは非常にゆっくりで優雅だが、背びれ・腹びれ・臀びれに強力な毒棘を持つ。"
+    ],
+    "firstAid": [
+      "速やかに海から上がり、患部を清潔な海水または真水で洗い流す。",
+      "目視できる棘が残っていればピンセットで除去し、火傷しない程度の熱めのお湯（40〜45℃）に患部を30〜60分ほど浸す（温熱療法）。",
+      "激しい痛みが伴うため、応急処置後は速やかに医療機関を受診する。"
+    ],
+    "dontDo": "非常に人馴れしやすく逃げないことが多いが、写真撮影などで不用意に手を近づけないこと。",
+    "localEncounter": "えぼし岩周辺の岩礁帯やヘッドランドの消波ブロック周辺に定着しており、ダイビングやシュノーケリングで頻繁に目撃される。",
+    "references": [
+      {
+        "title": "海の危険生物ガイドブック",
+        "author": "海上保安庁 海洋情報部",
+        "year": "2020",
+        "url": "https://www1.kaiho.mlit.go.jp/JODC/kiken/"
+      },
+      {
+        "title": "相模湾の魚類",
+        "author": "新江ノ島水族館",
+        "year": "2022",
+        "url": "https://www.enosui.com/animals.php"
+      }
+    ]
+  },
+  {
+    "id": "akaumigame",
+    "name": "アカウミガメ",
+    "category": "爬虫類",
+    "scientificName": "Caretta caretta",
+    "isDanger": false,
+    "dangerType": "protect",
+    "features": [
+      "甲長は70〜100cm程度で、赤褐色の甲羅を持つ。",
+      "環境省のレッドリストで絶滅危惧種（絶滅危惧IB類）に指定されている。"
+    ],
+    "firstAid": [],
+    "dontDo": "夜間に上陸したウミガメを見つけても、ライトで照らしたり、フラッシュ撮影を行ったりしてはならない（光に驚いて産卵せずに海へ戻ってしまうため）。絶対に触れず、静かに見守ること。",
+    "localEncounter": "初夏から夏にかけて、ごく稀に茅ヶ崎や平塚の海岸に産卵のために上陸することがある。海岸清掃やパトロール時に足跡（キャタピラのような跡）が発見されることがある。",
+    "references": [
+      {
+        "title": "海洋生物レッドリスト",
+        "author": "環境省",
+        "year": "2017",
+        "url": "https://www.env.go.jp/press/103823.html"
+      },
+      {
+        "title": "相模湾におけるウミガメ類の漂着・上陸記録",
+        "author": "新江ノ島水族館",
+        "year": "2023",
+        "url": "https://www.enosui.com/diaryentry.php?eid=08112"
+      }
+    ]
+  },
+  {
+    "id": "shumokuzame",
+    "name": "シュモクザメ（アカシュモクザメ等）",
+    "category": "軟骨魚類",
+    "scientificName": "Sphyrna lewini",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "頭部が左右に張り出したT字型（ハンマー型）の特異なシルエット。",
+      "比較的神経質だが、群れで浅瀬に接近することがある。"
+    ],
+    "firstAid": [
+      "背びれを発見次第、ただちに海から上がり、周囲の遊泳者にも避難を呼びかける。",
+      "万が一咬まれた場合は、速やかに119番および118番（海上保安庁）へ通報する。",
+      "清潔なタオルやシャツで傷口を強く圧迫して止血し、救急隊の到着を待つ。"
+    ],
+    "dontDo": "水面をバシャバシャと激しく叩いて逃げないこと（サメの狩猟本能を刺激するため）。対象から目を離さず、ゆっくりと後ずさりして陸へ向かう。",
+    "localEncounter": "夏場、水温の上昇に伴い茅ヶ崎海岸やえぼし岩周辺の浅瀬に接近することがあり、過去にも遊泳注意・禁止の措置が取られる事例が発生している。",
+    "references": [
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      }
+    ]
+  },
+  {
+    "id": "yoshikirizame",
+    "name": "ヨシキリザメ",
+    "category": "軟骨魚類",
+    "scientificName": "Prionace glauca",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "体は細長く、背側が鮮やかな藍色（ブルー）をしている。",
+      "「世界で最も美しいサメ」とも呼ばれるが、好奇心が強く危険な一面もある。"
+    ],
+    "firstAid": [
+      "海上で遭遇した場合は速やかに船や陸に上がり、安全を確保する。",
+      "咬傷を受けた場合は、直接圧迫止血を行いながら直ちに119番・118番へ通報する。"
+    ],
+    "dontDo": "弱って砂浜に打ち上げられている個体であっても、不用意に口元へ近づかないこと（反射的に噛みつかれる恐れがある）。",
+    "localEncounter": "主に相模湾の沖合を回遊する外洋性のサメだが、地曳網に入ったり、台風後に海岸へ打ち上げられたりすることがある。",
+    "references": [
+      {
+        "title": "魚類写真資料データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/Fishes/"
+      }
+    ]
+  },
+  {
+    "id": "umineko",
+    "name": "ウミネコ（カモメ類）",
+    "category": "鳥類",
+    "scientificName": "Larus crassirostris",
+    "isDanger": false,
+    "features": [
+      "黄色い嘴（くちばし）の先端に赤と黒の斑点があり、「ミャー」という猫のような鳴き声が特徴。",
+      "茅ヶ崎の海岸周辺で1年を通して観察できる留鳥。"
+    ],
+    "firstAid": [
+      "糞が落ちてきて目に入った場合は、擦らずに大量の流水で洗い流し、必要に応じて眼科を受診する。"
+    ],
+    "dontDo": "人間の食べ物（スナック菓子など）を絶対に与えないこと。栄養失調の原因になるほか、人に慣れることでトンビと同様のひったくり被害を誘発する恐れがある。",
+    "localEncounter": "えぼし岩周辺が県内有数の繁殖地・休息地となっており、サザンビーチちがさきや漁港で日常的に飛び交っている。",
+    "references": [
+      {
+        "title": "ふるさとの鳥：ウミネコ",
+        "author": "神奈川県",
+        "year": "2021",
+        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+      }
+    ]
+  },
+  {
+    "id": "sunameri",
+    "name": "スナメリ",
+    "category": "哺乳類",
+    "scientificName": "Neophocaena asiaeorientalis",
+    "isDanger": false,
+    "dangerType": "protect",
+    "features": [
+      "体長は1.5〜2mほどの小型のイルカで、背びれがないのが最大の特徴。",
+      "体色は明るい灰白色で、沿岸の浅い海域を好むため波打ち際近くに現れることがある。"
+    ],
+    "firstAid": [
+      "【ストランディング（漂着）時の初期対応】",
+      "速やかに新江ノ島水族館などの専門機関や自治体へ連絡する。",
+      "専門家が到着するまでの間、乾燥を防ぐため体に濡れたタオルを掛け、上から海水を優しくかけ続ける。"
+    ],
+    "dontDo": "頭の頂上にある呼吸孔（鼻）には絶対に水が入らないよう注意すること。また、素人判断で無理に海へ押し戻すと溺死する危険があるため厳禁。",
+    "localEncounter": "相模湾の沿岸部に生息しており、茅ヶ崎や平塚の海岸に死骸が漂着（ストランディング）する事例が定期的に報告されている。",
+    "references": [
+      {
+        "title": "ストランディング（漂着）個体への対応",
+        "author": "国立科学博物館 海棲哺乳類情報データベース",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/m-mammal/"
+      }
+    ]
+  },
+  {
+    "id": "kamairuka",
+    "name": "カマイルカ",
+    "category": "哺乳類",
+    "scientificName": "Lagenorhynchus obliquidens",
+    "isDanger": false,
+    "dangerType": "protect",
+    "features": [
+      "背びれが草刈り鎌のような形をしており、背中が黒く、体側面に白と黒の鮮やかな模様がある。",
+      "非常に活発で、船の波に乗ってジャンプする姿がよく見られる。"
+    ],
+    "firstAid": [
+      "漂着個体を発見した場合は、スナメリと同様に専門機関への通報と保湿（濡れタオル）を行う。"
+    ],
+    "dontDo": "人獣共通感染症（ブルセラ症など）のリスクがあるため、漂着した生体や死骸を素手で触らないこと。作業時はゴム手袋を着用する。",
+    "localEncounter": "相模湾を数十頭の群れで回遊しており、地曳網や定置網の近くに現れたり、沖合でのマリンスポーツ中に遭遇したりすることがある。",
+    "references": [
+      {
+        "title": "相模湾のクジラたち",
+        "author": "新江ノ島水族館",
+        "year": "2022",
+        "url": "https://www.enosui.com/diaryentry.php?eid=08112"
+      }
+    ]
+  },
+  {
+    "id": "hanagondou",
+    "name": "ハナゴンドウ",
+    "category": "哺乳類",
+    "scientificName": "Grampus griseus",
+    "isDanger": false,
+    "dangerType": "protect",
+    "features": [
+      "頭部が丸く、口先（吻）が突出していない。",
+      "成長するにつれて仲間同士で付け合った白い引っかき傷が全身に増え、白っぽく見えるのが特徴。"
+    ],
+    "firstAid": [
+      "漂着個体を発見した場合は、専門機関への通報と保湿（濡れタオル）の初期対応を行う。"
+    ],
+    "dontDo": "大型で力が強いため、生きて漂着している個体が暴れた際に尾びれなどで怪我をしないよう、不用意に接近しすぎないこと。",
+    "localEncounter": "相模湾のやや沖合を主な生息域としており、えのすい（新江ノ島水族館）でも長年飼育・研究されている代表的なイルカ。",
+    "references": [
+      {
+        "title": "えのすいのイルカ・クジラたち",
+        "author": "新江ノ島水族館",
+        "year": "2023",
+        "url": "https://www.enosui.com/animals.php"
+      }
+    ]
+  },
+  {
+    "id": "zatoukujira",
+    "name": "ザトウクジラ",
+    "category": "哺乳類",
+    "scientificName": "Megaptera novaeangliae",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "体長10〜15mに達する大型のクジラ。胸びれが全長の3分の1と非常に長い。",
+      "海面から高くジャンプする（ブリーチング）など、ダイナミックな行動をとる。"
+    ],
+    "firstAid": [
+      "海上で遭遇した場合は、ボートやSUPのエンジン・パドルを止め、クジラが自然に通り過ぎるのを待つ。"
+    ],
+    "dontDo": "船やSUPで執拗に追いかけたり、進行方向を塞いだりしてはならない。また、予期せぬ浮上によりボートが転覆する恐れがあるため、むやみに接近しないこと。",
+    "localEncounter": "近年、冬から春（11月〜4月頃）にかけて、相模湾や湘南海岸の沖合でブロー（潮吹き）やジャンプが目撃される機会が急増している。",
+    "references": [
+      {
+        "title": "沿岸域におけるクジラ類との遭遇時の注意喚起",
+        "author": "海上保安庁",
+        "year": "2022",
+        "url": "https://www.kaiho.mlit.go.jp/info/kouhou/r4/k220302/k220302.pdf"
+      }
+    ]
+  },
+  {
+    "id": "shirogisu",
+    "name": "シロギス",
+    "category": "硬骨魚類",
+    "scientificName": "Sillago japonica",
+    "isDanger": false,
+    "features": [
+      "透き通るような美しい細身の魚体で、「砂浜の女王」とも呼ばれる。",
+      "砂泥底を好み、ゴカイなどの底生生物を捕食する。"
+    ],
+    "firstAid": [],
+    "dontDo": "特に危険はないが、釣り上げる際に針を深く飲み込んでいることが多いため、外す際は魚体を優しく扱うこと。",
+    "localEncounter": "茅ヶ崎海岸のサーフ（砂浜）やヘッドランド周辺で、春から秋にかけて投げ釣りのメインターゲットとして非常に人気がある。",
+    "references": [
+      {
+        "title": "茅ヶ崎ヘッドランド（茅ヶ崎海岸）の釣り場",
+        "author": "TOKYO 360° PHOTO",
+        "year": "2021",
+        "url": "https://tokyo360photo.com/chigasaki-coast-fishing"
+      }
+    ]
+  },
+  {
+    "id": "hirame",
+    "name": "ヒラメ",
+    "category": "硬骨魚類",
+    "scientificName": "Paralichthys olivaceus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "砂地と同化する保護色を持った平たい体で、両目が体の左側にある。",
+      "小魚を捕食するため、口には非常に鋭い牙のような歯が並んでいる。"
+    ],
+    "firstAid": [
+      "鋭い歯で指などを切った場合は、清潔な海水や水道水で洗い流し、圧迫止血を行う。",
+      "傷口が深い場合は化膿を防ぐため、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "ルアーや針を外す際、絶対に素手で口元に指を入れないこと。フィッシュグリップやプライヤーを使用する。",
+    "localEncounter": "茅ヶ崎の浜辺（サーフ）からルアー釣りや泳がせ釣りで狙うフラットフィッシュとして人気。",
+    "references": [
+      {
+        "title": "茅ヶ崎海岸で釣れてる魚",
+        "author": "アングラーズ",
+        "year": "2026",
+        "url": "https://anglers.jp/areas/34"
+      }
+    ]
+  },
+  {
+    "id": "kasago",
+    "name": "カサゴ",
+    "category": "硬骨魚類",
+    "scientificName": "Sebastiscus marmoratus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "features": [
+      "赤褐色から暗褐色のまだら模様で、頭が大きくゴツゴツしている。",
+      "背びれ、腹びれ、臀びれ、そしてエラ蓋に鋭いトゲを持つ。"
+    ],
+    "firstAid": [
+      "トゲが刺さった場合は、患部を清潔な水で洗い流す。",
+      "微弱な毒性を持つため、ひどい痛みが続く場合は温水（40〜45℃）に浸す温熱療法を行う。"
+    ],
+    "dontDo": "陸の磯や海中の岩場に擬態して潜んでいるため、磯遊びなどで岩の隙間に不用意に手を突っ込まないこと。",
+    "localEncounter": "えぼし岩の周辺や、茅ヶ崎漁港・ヘッドランドのテトラポッドなど、岩礁や障害物のある場所に定着している。",
+    "references": [
+      {
+        "title": "【湘南】ヤドカリやヒトデを見つけよう！子どもと行きたいおすすめ磯遊びスポット8選",
+        "author": "神奈川イベントプラス",
+        "year": "2021",
+        "url": "https://kanagawa-eventplus.com/column/syonan-children-rockyshore-play"
+      }
+    ]
+  },
+  {
+    "id": "mejina",
+    "name": "メジナ",
+    "category": "硬骨魚類",
+    "scientificName": "Girella punctata",
+    "isDanger": false,
+    "features": [
+      "体は黒褐色で平たく、パワフルな引きが特徴の魚。",
+      "海藻や小型の甲殻類を食べる雑食性。"
+    ],
+    "firstAid": [],
+    "dontDo": "エラ蓋の縁が鋭いため、素手で強く握ると手を切る恐れがあるので注意すること。",
+    "localEncounter": "えぼし岩での磯釣りの代表的なターゲットであり、ヘッドランド周辺の防波堤でもウキフカセ釣りでよく狙われる。",
+    "references": [
+      {
+        "title": "【絶景釣り紀行】茅ヶ崎・烏帽子岩 磯釣り",
+        "author": "Honda釣り倶楽部",
+        "year": "2017",
+        "url": "https://www.honda.co.jp/fishing/enjoy/travelogue/201703/"
+      }
+    ]
+  }
+
 ]
