@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- フグの丸い体 -->
+  <ellipse cx="50" cy="50" rx="22" ry="18" fill="#3D5A1A" stroke="#2A3E10" stroke-width="2"/>
+  <!-- 白い斑点 -->
+  <circle cx="40" cy="42" r="3" fill="#E8EED0" opacity="0.85"/>
+  <circle cx="55" cy="40" r="2.5" fill="#E8EED0" opacity="0.85"/>
+  <circle cx="62" cy="50" r="3" fill="#E8EED0" opacity="0.85"/>
+  <circle cx="50" cy="55" r="2.5" fill="#E8EED0" opacity="0.85"/>
+  <circle cx="38" cy="54" r="2" fill="#E8EED0" opacity="0.85"/>
+  <circle cx="45" cy="62" r="2" fill="#E8EED0" opacity="0.85"/>
+  <!-- 腹面（白） -->
+  <ellipse cx="50" cy="58" rx="15" ry="8" fill="#F0F0E8" opacity="0.5"/>
+  <!-- 目 -->
+  <circle cx="36" cy="46" r="3" fill="#1A1A1A"/>
+  <circle cx="36" cy="46" r="1.2" fill="#FFFFFF" opacity="0.6"/>
+  <!-- 口（鋭い歯・警告色） -->
+  <path d="M30,52 Q36,56 42,52" fill="#FF4400" stroke="#CC2200" stroke-width="1"/>
+  <!-- 尾びれ -->
+  <path d="M72,42 L84,50 L72,58Z" fill="#3D5A1A" stroke="#2A3E10" stroke-width="1"/>
+  <!-- 毒マーク（骸骨風） -->
+  <text x="50" y="83" text-anchor="middle" font-size="9" font-weight="bold" fill="#CC6600">! 食べるな</text>
+</svg>

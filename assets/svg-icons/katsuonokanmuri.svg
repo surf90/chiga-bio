@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 安全背景（水色の円） -->
+  <circle cx="50" cy="50" r="44" fill="#E0F4FF" stroke="#4AB8E8" stroke-width="2"/>
+  <!-- 青い楕円形の浮袋 -->
+  <ellipse cx="50" cy="58" rx="24" ry="12" fill="#5BAEE8" stroke="#2A7EC8" stroke-width="2"/>
+  <!-- 浮袋ハイライト -->
+  <ellipse cx="42" cy="54" rx="8" ry="4" fill="#A0D0F0" opacity="0.6"/>
+  <!-- 浮袋の内部構造 -->
+  <ellipse cx="50" cy="58" rx="16" ry="8" fill="#4898D8" opacity="0.4"/>
+  <!-- 斜めの透明な帆 -->
+  <path d="M38,56 L52,18 L62,56" fill="#C8E8F8" stroke="#4AB8E8" stroke-width="1.5" opacity="0.7"/>
+  <!-- 帆の縁（透明感） -->
+  <path d="M38,56 L52,18" stroke="#4AB8E8" stroke-width="1.5" fill="none"/>
+  <path d="M52,18 L62,56" stroke="#4AB8E8" stroke-width="1.5" fill="none"/>
+  <!-- 帆の模様（筋） -->
+  <line x1="45" y1="30" x2="57" y2="52" stroke="#8AC8E8" stroke-width="1" opacity="0.5"/>
+  <line x1="48" y1="24" x2="60" y2="48" stroke="#8AC8E8" stroke-width="1" opacity="0.5"/>
+  <!-- 小さな触手 -->
+  <path d="M30,62 Q26,70 24,78" stroke="#2A7EC8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M40,68 Q38,76 37,82" stroke="#2A7EC8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M60,68 Q62,76 63,82" stroke="#2A7EC8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M70,62 Q74,70 76,78" stroke="#2A7EC8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

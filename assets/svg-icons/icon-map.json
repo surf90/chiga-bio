@@ -1,0 +1,138 @@
+[
+  {
+    "id": "katsuonoeboshi",
+    "name": "カツオノエボシ",
+    "path": "assets/svg-icons/katsuonoeboshi.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "刺胞動物"
+  },
+  {
+    "id": "akaei",
+    "name": "アカエイ",
+    "path": "assets/svg-icons/akaei.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "軟骨魚類"
+  },
+  {
+    "id": "gonzui",
+    "name": "ゴンズイ",
+    "path": "assets/svg-icons/gonzui.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "硬骨魚類"
+  },
+  {
+    "id": "hyoumondako",
+    "name": "ヒョウモンダコ",
+    "path": "assets/svg-icons/hyoumondako.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "頭足類"
+  },
+  {
+    "id": "tonbi",
+    "name": "トンビ（トビ）",
+    "path": "assets/svg-icons/tonbi.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "鳥類"
+  },
+  {
+    "id": "utsubo",
+    "name": "ウツボ",
+    "path": "assets/svg-icons/utsubo.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "硬骨魚類"
+  },
+  {
+    "id": "andonkurage",
+    "name": "アンドンクラゲ",
+    "path": "assets/svg-icons/andonkurage.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "刺胞動物"
+  },
+  {
+    "id": "katakuchiiwashi",
+    "name": "カタクチイワシ（シラス）",
+    "path": "assets/svg-icons/katakuchiiwashi.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "硬骨魚類"
+  },
+  {
+    "id": "kusafugu",
+    "name": "クサフグ",
+    "path": "assets/svg-icons/kusafugu.svg",
+    "isDanger": true,
+    "dangerType": "eat",
+    "category": "硬骨魚類"
+  },
+  {
+    "id": "shirochidori",
+    "name": "シロチドリ",
+    "path": "assets/svg-icons/shirochidori.svg",
+    "isDanger": false,
+    "dangerType": "protect",
+    "category": "鳥類"
+  },
+  {
+    "id": "sunagani",
+    "name": "スナガニ",
+    "path": "assets/svg-icons/sunagani.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "甲殻類"
+  },
+  {
+    "id": "hamahirugao",
+    "name": "ハマヒルガオ",
+    "path": "assets/svg-icons/hamahirugao.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "植物"
+  },
+  {
+    "id": "akakurage",
+    "name": "アカクラゲ",
+    "path": "assets/svg-icons/akakurage.svg",
+    "isDanger": true,
+    "dangerType": "contact",
+    "category": "刺胞動物"
+  },
+  {
+    "id": "mizukurage",
+    "name": "ミズクラゲ",
+    "path": "assets/svg-icons/mizukurage.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "刺胞動物"
+  },
+  {
+    "id": "kabutokurage",
+    "name": "カブトクラゲ",
+    "path": "assets/svg-icons/kabutokurage.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "有櫛動物"
+  },
+  {
+    "id": "ginkakurage",
+    "name": "ギンカクラゲ",
+    "path": "assets/svg-icons/ginkakurage.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "刺胞動物（ヒドロ虫綱）"
+  },
+  {
+    "id": "katsuonokanmuri",
+    "name": "カツオノカンムリ",
+    "path": "assets/svg-icons/katsuonokanmuri.svg",
+    "isDanger": false,
+    "dangerType": null,
+    "category": "刺胞動物（ヒドロ虫綱）"
+  }
+]

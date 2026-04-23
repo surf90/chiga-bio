@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 警告三角形背景 -->
+  <polygon points="50,5 95,90 5,90" fill="#FFF3CD" stroke="#FF8C00" stroke-width="3"/>
+  <!-- 魚体（茶褐色） -->
+  <ellipse cx="48" cy="50" rx="22" ry="10" fill="#7A4E2D" stroke="#5A3318" stroke-width="1.5"/>
+  <!-- 尾びれ -->
+  <path d="M70,50 L80,42 L80,58Z" fill="#7A4E2D" stroke="#5A3318" stroke-width="1"/>
+  <!-- 黄色い縦縞2本 -->
+  <path d="M38,41 Q38,50 38,59" stroke="#F5C542" stroke-width="3" fill="none"/>
+  <path d="M50,41 Q50,50 50,59" stroke="#F5C542" stroke-width="3" fill="none"/>
+  <!-- 頭部 -->
+  <ellipse cx="28" cy="50" rx="10" ry="9" fill="#7A4E2D" stroke="#5A3318" stroke-width="1.5"/>
+  <!-- 目 -->
+  <circle cx="24" cy="47" r="2.5" fill="#1A1A1A"/>
+  <circle cx="24" cy="47" r="1" fill="#FFFFFF" opacity="0.5"/>
+  <!-- 背びれ（毒棘あり・赤） -->
+  <path d="M35,41 L38,30 L42,41" fill="#FF3300" stroke="#CC2200" stroke-width="1"/>
+  <!-- 胸びれ（毒棘・赤） -->
+  <path d="M32,52 L22,60 L30,58" fill="#FF3300" stroke="#CC2200" stroke-width="1"/>
+  <!-- 感嘆符 -->
+  <text x="50" y="83" text-anchor="middle" font-size="10" font-weight="bold" fill="#CC6600">!</text>
+</svg>
