@@ -103,6 +103,27 @@ function renderCards(data) {
                     <ul>${refsList}</ul>
                 </details>`;
         }
+
+        // （...既存のコード：referencesHtml の定義などの後）
+
+        // ★市のシンボル用の控えめなアイコン設定
+        let symbolIcon = '';
+        if (bio.id === 'tsutsuji') {
+            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の花">🌸</span>';
+        } else if (bio.id === 'shijukara') {
+            symbolIcon = '<span class="symbol-icon" title="茅ヶ崎市の鳥">🐦</span>';
+        }
+        
+        // カード全体のHTML組み立て
+        card.innerHTML = `
+            ${badgeHtml}
+            <div class="bio-header">
+                <div>
+                    <h2>${bio.name}${symbolIcon}</h2> </div>
+                <span class="category-tag">${bio.category}</span>
+            </div>
+            
+            // （...以下の ${imageHtml} などはそのまま）
         
         // カード全体のHTML組み立て
         card.innerHTML = `
