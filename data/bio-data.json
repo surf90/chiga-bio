@@ -1242,5 +1242,132 @@
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
     ]
+  },
+  {
+    "id": "isohiyodori",
+    "name": "イソヒヨドリ",
+    "category": "鳥類",
+    "scientificName": "Monticola solitarius",
+    "isDanger": false,
+    "image": {
+      "url": "",
+      "author": "",
+      "license": "",
+      "sourceUrl": ""
+    },
+    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#e3f2fd\"/><path d=\"M30,60 Q50,20 70,60 Q50,90 30,60 Z\" fill=\"#1e88e5\"/><path d=\"M35,65 Q50,85 65,65 Z\" fill=\"#d84315\"/></svg>",
+    "features": [
+      "オスは頭から背中にかけて鮮やかな青色、腹部がレンガ色（赤褐色）のツートンカラーをしている。",
+      "「ツーツーピーピー」と澄んだ美しい声でさえずる。",
+      "もともとは海岸の岩場に生息するが、近年は内陸の市街地にも進出している。"
+    ],
+    "firstAid": [],
+    "dontDo": "野生動物であるため、人間の食べ物を与えたり（餌付け）、むやみに捕獲しようとしないこと。",
+    "localEncounter": "えぼし岩や茅ヶ崎漁港、柳島海岸の防波堤周辺などで1年を通してよく見られ、フナムシや昆虫を捕食している姿が観察できる。",
+    "references": [
+      {
+        "title": "茅ヶ崎の野鳥たち 南部の海辺編 (09)イソヒヨドリ",
+        "author": "茅ヶ崎郷土会",
+        "year": "2023",
+        "url": "https://chigasaki-kyodokai.com/?p=5435"
+      }
+    ]
+  },
+  {
+    "id": "midoriigai",
+    "name": "ミドリイガイ",
+    "category": "無脊椎動物",
+    "scientificName": "Perna viridis",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "",
+      "author": "",
+      "license": "",
+      "sourceUrl": ""
+    },
+    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><polygon points=\"50,5 95,90 5,90\" fill=\"#ffebee\" stroke=\"#d32f2f\" stroke-width=\"4\"/><path d=\"M50,25 C65,25 75,50 65,75 C55,90 45,90 35,75 C25,50 35,25 50,25 Z\" fill=\"#4caf50\" stroke=\"#2e7d32\" stroke-width=\"2\"/></svg>",
+    "features": [
+      "殻の表面が鮮やかな緑色をした大型の二枚貝（外来種）。",
+      "岸壁やテトラポッドなどの人工物に足糸（そくし）を出して密集して付着する。"
+    ],
+    "firstAid": [
+      "鋭利な殻で手足を切った場合は、速やかに海から上がり、傷口を清潔な流水（水道水など）で洗い流す。",
+      "出血がある場合は清潔なタオルで圧迫止血を行い、傷が深い場合は医療機関を受診する。"
+    ],
+    "dontDo": "自己判断で採取して食べないこと（貝毒を蓄積しているリスクがあるため）。また、素手で無理にむしり取ろうとすると殻の縁で深く手を切る恐れがある。",
+    "localEncounter": "茅ヶ崎漁港の堤防や、ヘッドランド周辺の消波ブロックの潮間帯に密集して付着しているのが見られる。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：貝毒",
+        "author": "厚生労働省",
+        "year": "2022",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
+      }
+    ]
+  },
+  {
+    "id": "suzuki",
+    "name": "スズキ（シーバス）",
+    "category": "魚類",
+    "scientificName": "Lateolabrax japonicus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "",
+      "author": "",
+      "license": "",
+      "sourceUrl": ""
+    },
+    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><polygon points=\"50,5 95,90 5,90\" fill=\"#fff3e0\" stroke=\"#f57c00\" stroke-width=\"4\"/><path d=\"M20,60 Q50,40 80,60 Q50,70 20,60 Z\" fill=\"#b0bec5\"/><polygon points=\"40,45 45,30 50,42 55,30 60,45\" fill=\"#cfd8dc\" stroke=\"#d32f2f\" stroke-width=\"1\"/><path d=\"M30,55 Q35,50 30,65\" stroke=\"#d32f2f\" stroke-width=\"2\" fill=\"none\"/></svg>",
+    "features": [
+      "成長とともに名前が変わる出世魚（セイゴ→フッコ→スズキ）。銀色の細長い体を持つ。",
+      "ルアーに掛かると水面で激しく頭を振る「エラ洗い」という行動をとる。"
+    ],
+    "firstAid": [
+      "エラ蓋や背びれのトゲで切創・刺傷を負った場合は、速やかに患部を清潔な水で洗い流す。",
+      "圧迫止血を行い、痛みがひどい場合や化膿の兆候があれば医療機関を受診する。"
+    ],
+    "dontDo": "エラ蓋の縁はカミソリのように鋭利なため、絶対に素手でエラや口元を掴まないこと（フィッシュグリップや厚手の手袋を使用する）。",
+    "localEncounter": "相模川河口付近や茅ヶ崎海岸のサーフで、ルアーフィッシングのメインターゲットとして非常に人気が高い。",
+    "references": [
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      }
+    ]
+  },
+  {
+    "id": "hamaboufuu",
+    "name": "ハマボウフウ",
+    "category": "植物",
+    "scientificName": "Glehnia littoralis",
+    "isDanger": false,
+    "dangerType": "protect",
+    "image": {
+      "url": "",
+      "author": "",
+      "license": "",
+      "sourceUrl": ""
+    },
+    "svgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"#e8f5e9\"/><path d=\"M50,90 L50,50\" stroke=\"#388e3c\" stroke-width=\"4\"/><path d=\"M50,70 Q30,50 40,30 Q60,40 50,70\" fill=\"#4caf50\"/><path d=\"M50,60 Q70,40 60,20 Q40,30 50,60\" fill=\"#4caf50\"/></svg>",
+    "features": [
+      "海岸の砂浜に深く根を張るセリ科の多年草。葉は肉厚でツヤがあり、初夏に白い小花の集合体を咲かせる。",
+      "かつては山菜や薬草として親しまれたが、乱獲や海岸の環境変化により数が激減している。"
+    ],
+    "firstAid": [],
+    "dontDo": "減少が懸念されている海浜植物であるため、自生しているものを自己判断で引き抜いたり採取したりしてはならない。観賞に留めること。",
+    "localEncounter": "茅ヶ崎の柳島海岸周辺やヘッドランド付近の砂浜で見られる。現在、地元のNPOやボランティアによる保全・植栽活動が行われている。",
+    "references": [
+      {
+        "title": "海岸に生きる植物",
+        "author": "茅ヶ崎市",
+        "year": "2017",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/hakubutsukan/1042540/1042555/1042741.html"
+      }
+    ]
   }
 ]
+
