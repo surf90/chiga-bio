@@ -242,6 +242,29 @@ span.danger-badge {
     margin-bottom: 12px;
     letter-spacing: 0.5px;
 }
+/* =========================================
+   カテゴリータグのスタイル
+   ========================================= */
+.category-tag {
+    background-color: rgba(14, 116, 144, 0.1); /* var(--primary-deep) の透過色 */
+    color: var(--primary-deep);
+    border: 1px solid rgba(14, 116, 144, 0.3);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px; /* 丸みを持たせてバッジ風に */
+    white-space: nowrap;
+    margin-left: 12px;
+    display: inline-block;
+    align-self: center;
+}
+
+/* 危険生物のカードではタグの色も警告色に合わせる（任意） */
+.bio-card.danger .category-tag {
+    background-color: rgba(211, 47, 47, 0.1); /* var(--danger-color) の透過色 */
+    color: var(--danger-color);
+    border-color: rgba(211, 47, 47, 0.3);
+}
 
 /* =========================================
    5. フッター (Chiga-log スタイル踏襲 + ボックス型免責事項)
