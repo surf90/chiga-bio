@@ -10,10 +10,23 @@ async function fetchBioData() {
             throw new Error('データの取得に失敗しました');
         }
         
-        globalBioData = await response.json();
+globalBioData = await response.json();
 
-        // 取得直後に名前順でソートする
+        // ★取得直後にソートする（市のシンボルを先頭にし、他は50音順）
+        const priorityIds = ['tsutsuji', 'shijukara']; // 先頭にしたい生物のID
+        
         globalBioData.sort((a, b) => {
+            const indexA = priorityIds.indexOf(a.id);
+            const indexB = priorityIds.indexOf(b.id);
+            
+            // 両方とも特別指定の場合（IDリストの順序に従う）
+            if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+            // Aだけ特別指定ならAを前に
+            if (indexA !== -1) return -1;
+            // Bだけ特別指定ならBを前に
+            if (indexB !== -1) return 1;
+            
+            // それ以外は通常の50音順
             return a.name.localeCompare(b.name, 'ja');
         });
 
