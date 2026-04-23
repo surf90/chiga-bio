@@ -12,7 +12,7 @@ async function fetchBioData() {
         
         globalBioData = await response.json();
 
-        // ★追加・修正: 取得直後に名前順でソートする
+        // 取得直後に名前順でソートする
         globalBioData.sort((a, b) => {
             return a.name.localeCompare(b.name, 'ja');
         });
@@ -46,6 +46,24 @@ function renderCards(data) {
             badgeHtml = '<span class="danger-badge">⚠️ 危険</span>';
         }
 
+        // ★画像のHTML生成（ここで画像と出典の表示を行います）
+        let imageHtml = '';
+        if (bio.image && bio.image.url && bio.image.url !== "https://via.placeholder.com/400x300?text=No+Image+Available") {
+            imageHtml = `
+            <div class="bio-image-container" style="margin-bottom: 16px;">
+                <img 
+                    src="${bio.image.url}" 
+                    alt="${bio.name}" 
+                    loading="lazy" 
+                    class="bio-image"
+                    onload="this.parentElement.classList.add('loaded')"
+                >
+                <div class="image-credit">
+                    Photo: <a href="${bio.image.sourceUrl}" target="_blank" rel="noopener noreferrer" style="color:#fff; text-decoration:underline;">${bio.image.author}</a> (${bio.image.license})
+                </div>
+            </div>`;
+        }
+
         // 項目が空の場合はセクションごと非表示にする処理
         let featuresHtml = (bio.features && bio.features.length > 0) 
             ? `<span class="section-label">FEATURES</span><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` 
@@ -64,8 +82,7 @@ function renderCards(data) {
         let referencesHtml = '';
         if (bio.references && bio.references.length > 0) {
             let refsList = bio.references.map(ref => 
-                // ★修正: url プロパティに合わせて修正しました（元のコードは doi でした）
-                `<li>${ref.title} (${ref.author}, ${ref.year}) <a href="${ref.url}" target="_blank">リンク</a></li>`
+                `<li>${ref.title} (${ref.author}, ${ref.year}) <a href="${ref.url}" target="_blank" rel="noopener noreferrer">リンク</a></li>`
             ).join('');
             referencesHtml = `
                 <details>
@@ -74,6 +91,7 @@ function renderCards(data) {
                 </details>`;
         }
         
+        // カード全体のHTML組み立て
         card.innerHTML = `
             ${badgeHtml}
             <div class="bio-header">
@@ -83,7 +101,7 @@ function renderCards(data) {
                 <span class="category-tag">${bio.category}</span>
             </div>
             
-            <div class="data-row">
+            ${imageHtml} <div class="data-row">
                 <span class="data-label">学名</span>
                 <span class="data-value mono">${bio.scientificName}</span>
             </div>
@@ -95,37 +113,7 @@ function renderCards(data) {
         container.appendChild(card);
     });
 }
-/**
- * 生物カードのHTMLを生成する関数
- * @param {Object} bio 生物データ
- */
-function createBioCard(bio) {
-    const card = document.createElement('div');
-    card.className = 'bio-card';
 
-    // 画像URLの最適化（iNaturalistの場合、mediumを指定）
-    const imageUrl = bio.image ? bio.image.url : 'assets/placeholder.png';
-
-    card.innerHTML = `
-        <div class="bio-image-container">
-            <img 
-                src="${imageUrl}" 
-                alt="${bio.name}" 
-                loading="lazy" 
-                class="bio-image"
-                onload="this.parentElement.classList.add('loaded')"
-            >
-            <div class="image-credit">
-                Photo: ${bio.image ? bio.image.author : '---'} (${bio.image ? bio.image.license : ''})
-            </div>
-        </div>
-        <div class="bio-info">
-            <h3>${bio.name}</h3>
-            <p class="scientific-name">${bio.scientificName}</p>
-            </div>
-    `;
-    return card;
-}
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const keyword = e.target.value.toLowerCase();
     const filtered = globalBioData.filter(bio => 
