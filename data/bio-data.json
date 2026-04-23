@@ -45,10 +45,8 @@
     ],
     "dontDo": "素手で棘を抜こうとすると、返しがついているため組織をさらに傷つける恐れがあります。",
     "references": []
-  }
-
-
-{
+  },
+  {
     "id": "gonzui",
     "name": "ゴンズイ",
     "category": "硬骨魚類",
@@ -113,6 +111,85 @@
         "author": "神奈川県水産技術センター",
         "year": "2018",
         "doi": "https://www.pref.kanagawa.jp/docs/aw3/cnt/f6567/"
+      }
+    ]
+  },
+  {
+    "id": "tonbi",
+    "name": "トンビ（トビ）",
+    "category": "鳥類",
+    "scientificName": "Milvus migrans",
+    "isDanger": true,
+    "features": [
+      "海沿いや川沿いに生息し、死角から人間の食べ物を奪うことがある。",
+      "食べ物を狙って飛来した際、鋭い爪によって怪我を負う事例が発生している。"
+    ],
+    "firstAid": [
+      "傷口からの感染症を防ぐため、その場に消毒液があれば早めに消毒して対処する。",
+      "怪我をした場合は、感染症のリスクを考慮し早めに皮膚科などの医療機関を受診する。"
+    ],
+    "dontDo": "勝手に駆除したり、攻撃された際に反撃したりしてはならない（鳥獣保護法によって保護されており、傷つけると罰金刑などに処されることがあるため）。",
+    "references": [
+      {
+        "title": "トンビによる被害事例と対策方法をご紹介します！",
+        "author": "EPARKくらしのレスキュー",
+        "year": "2023",
+        "doi": "https://rescue.epark.jp/columns/gaityou-gaiju/gaityou/869"
+      }
+    ]
+  },
+  {
+    "id": "utsubo",
+    "name": "ウツボ",
+    "category": "硬骨魚類",
+    "scientificName": "Gymnothorax",
+    "isDanger": true,
+    "features": [
+      "夜行性で、昼間は岩陰などに潜み、夜になると開けた場所に出てくる。",
+      "こちらから近づかなければ攻撃してくることはない。",
+      "鋭い歯を持ち、ウェットスーツを簡単に突き通すほどの危険性がある。"
+    ],
+    "firstAid": [
+      "咬傷は深く細菌感染を起こしやすいため、咬まれた場合はまず流水でしっかりと洗い流す。",
+      "傷口の処置後は、すみやかに医療機関を受診し適切な治療を受ける。"
+    ],
+    "dontDo": "岩の亀裂や暗がりにはうかつに手を入れないこと（余計な事故を防ぐため、手をつく場所は事前によく観察する必要がある）。",
+    "references": [
+      {
+        "title": "海の危険生物｜海のいきもの 第8回",
+        "author": "Marine Diving web",
+        "year": "N/A",
+        "doi": "https://marinediving.com/marine_life/serial_marine_life/dangerous/"
+      },
+      {
+        "title": "海で気をつけたい！危ない海の生き物図鑑",
+        "author": "Tierzine",
+        "year": "2025",
+        "doi": "https://tierzine.com/aquatic/dangerous-sea-creatures/"
+      }
+    ]
+  },
+  {
+    "id": "andonkurage",
+    "name": "アンドンクラゲ",
+    "category": "刺胞動物",
+    "scientificName": "Carybdea brevipedalia",
+    "isDanger": true,
+    "features": [
+      "刺されると皮膚に触手が残存し、毒矢が刺さったままの状態になることがある。",
+      "お盆の時期などによく発生し、刺されると強い痛みを伴う。"
+    ],
+    "firstAid": [
+      "まずは海水中でタオルなどを用いて、皮膚に残存している触手をそっと取り去る。",
+      "症状が改善しない場合は速やかに医療機関を受診する。"
+    ],
+    "dontDo": "「砂を付けてこすり取る」という民間療法は言い伝えられているが控えること。また、「お酢をかける」という手法は、アンドンクラゲに対しては効果が限定的であるため推奨されない。",
+    "references": [
+      {
+        "title": "学校理科教育現場における事故事例とその対策（8）",
+        "author": "神奈川大学",
+        "year": "2017",
+        "doi": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
       }
     ]
   }
