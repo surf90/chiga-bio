@@ -1409,10 +1409,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/kosagi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kosagi"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "全身が白い羽毛で覆われる（白鷺の一種）",
@@ -1439,10 +1439,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/kawau.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kawau"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "全身が黒褐色で、くちばしの基部が黄色い",
@@ -1469,10 +1469,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/umiu.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/umiu"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "カワウに酷似するが、やや大型で緑色の光沢が強い",
@@ -1499,10 +1499,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/kanmurikaitsuburi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kanmurikaitsuburi"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "日本のカイツブリ類で最大",
@@ -1529,10 +1529,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/aosagi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/aosagi"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "日本で繁殖するサギ類で最大（全長約90cm）",
@@ -1559,10 +1559,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/bakenumeri.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/bakenumeri"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "平たい体と大きな胸びれをもつネズッポ科の魚",
@@ -1589,10 +1589,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/itohikiaji.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/itohikiaji"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "幼魚は背びれとしりびれの軟条が著しく長く伸びる（糸引き）",
@@ -1619,10 +1619,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/bora.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/bora"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "成長につれて名前が変わる出世魚（ハク→スバル→イナ→ボラ→トド）",
@@ -1651,10 +1651,10 @@
     "isDanger": true,
     "dangerType": "ingestion",
     "image": {
-      "url": "https://example.com/images/rouninaji.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/rouninaji"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "アジ科の最大種（GT：ジャイアント・トレバリーと呼ばれる）",
@@ -1683,10 +1683,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/nekogai.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/nekogai"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "タマガイ科の巻貝で、丸みを帯びた貝殻をもつ",
@@ -1713,10 +1713,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/matsubagai.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/matsubagai"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "笠形（かさがた）の貝殻をもつヨメガカサ科の巻貝",
@@ -1745,10 +1745,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/aoumiushi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/aoumiushi"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "青い体色に黄色の斑紋、赤い触角と二次鰓（にじえら）をもつ",
@@ -1775,10 +1775,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/ryukyuyoroiaji.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/ryukyuyoroiaji"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "体は銀白色で、体側に黄色の斑点をもつ個体が多い",
@@ -1807,10 +1807,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/tobiuo.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/tobiuo"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "胸ひれが非常に大きく発達し、グライダーのように滑空する",
@@ -1839,10 +1839,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/sazae.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/sazae"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "殻に角（トゲ）があるものと無いものがある（波の強さが影響するとされる）",
@@ -1869,10 +1869,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/hamaguri.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/hamaguri"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "内湾の砂泥底に生息する二枚貝",
@@ -1899,10 +1899,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/kobansou.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/kobansou"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "イネ科の一年草（帰化植物）",
@@ -1929,10 +1929,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/hamagou.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/hamagou"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "海岸の砂浜に這（は）うように群生する落葉低木",
@@ -1959,10 +1959,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://example.com/images/chigaya.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/chigaya"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "イネ科の多年草で、地下茎で広く繁殖する",
@@ -1991,10 +1991,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/tochikagami.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/tochikagami"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "水面に円形の葉を浮かべる浮葉性の水草",
@@ -2021,10 +2021,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/ebine.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/ebine"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "ラン科の多年草で、林床に自生する地生ラン",
@@ -2051,10 +2051,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-      "url": "https://example.com/images/saihairan.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/saihairan"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "ラン科の多年草で、広葉樹林の薄暗い林床に生える",
@@ -2081,10 +2081,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://example.com/images/yabukarashi.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/yabukarashi"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "ブドウ科のつる性多年草",
@@ -2113,10 +2113,10 @@
     "isDanger": true,
     "dangerType": "ingestion",
     "image": {
-      "url": "https://example.com/images/satsuki.jpg",
-      "author": "Ecological Data Contributor",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://example.com/observations/satsuki"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
     },
     "features": [
       "ツツジの仲間だが、開花時期が遅く5〜6月（旧暦の皐月）に咲く",
