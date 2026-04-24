@@ -23,6 +23,9 @@ const placeholderSVG = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/
 
 async function fetchBioData() {
     try {
+        // スケルトンアニメーションの挙動を確認できるよう、意図的に0.8秒遅延させる
+        await new Promise(resolve => setTimeout(resolve, 800));
+
         const response = await fetch('./data/bio-data.json');
         
         if (!response.ok) {
@@ -48,7 +51,6 @@ async function fetchBioData() {
         
         renderCards(globalBioData);
         
-        // --- ここから追加 ---
         // URLパラメータをチェックし、指定の生き物がいたらモーダルを自動で開く
         const urlParams = new URLSearchParams(window.location.search);
         const targetId = urlParams.get('id');
@@ -58,7 +60,6 @@ async function fetchBioData() {
                 openModal(targetBio);
             }
         }
-        // --- ここまで追加 ---
         
     } catch (error) {
         console.error('エラー:', error);
@@ -179,7 +180,13 @@ function openModal(bio) {
     let creditHtml = '';
     if (bio.image && bio.image.url && bio.image.url.trim().length > 5 && !bio.image.url.includes('placeholder.com')) {
         imgUrl = bio.image.url;
-        creditHtml = `<div class="image-credit">Photo: ${bio.image.author || 'Unknown'}</div>`;
+        const authorText = bio.image.author || 'Unknown';
+        // sourceUrlが存在する場合はリンクにする
+        if (bio.image.sourceUrl && bio.image.sourceUrl.trim() !== '') {
+            creditHtml = `<div class="image-credit"><a href="${bio.image.sourceUrl}" target="_blank" rel="noopener noreferrer">Photo: ${authorText}</a></div>`;
+        } else {
+            creditHtml = `<div class="image-credit">Photo: ${authorText}</div>`;
+        }
     }
 
     let featuresHtml = (bio.features && bio.features.length > 0) 
@@ -237,7 +244,6 @@ modal.addEventListener('click', (e) => {
 // シェアAPI
 // ==========================================
 window.shareBio = function(id, name, category) {
-    // 現在のベースURLを取得し、パラメータを付与
     const baseUrl = window.location.origin + window.location.pathname;
     const shareUrl = `${baseUrl}?id=${id}`;
 
@@ -245,12 +251,12 @@ window.shareBio = function(id, name, category) {
         navigator.share({
             title: `ちがビオ - ${name}`,
             text: `茅ヶ崎の生き物「${name} (${category})」をチェック！`,
-            url: shareUrl, // 生成した固有URLを使用
+            url: shareUrl,
         }).catch(console.error);
     } else {
         const dummy = document.createElement('input');
         document.body.appendChild(dummy);
-        dummy.value = `ちがビオ - ${name} ${shareUrl}`; // 生成した固有URLを使用
+        dummy.value = `ちがビオ - ${name} ${shareUrl}`;
         dummy.select();
         document.execCommand('copy');
         document.body.removeChild(dummy);
