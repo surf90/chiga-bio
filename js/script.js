@@ -21,11 +21,16 @@ const navItems = document.querySelectorAll('.nav-item');
 // SVGプレースホルダー (外部リクエストを減らし、デザインを統一)
 const placeholderSVG = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f1f5f9'/%3E%3Cpath d='M0 130 Q 50 160 100 130 T 200 130 L 200 200 L 0 200 Z' fill='%23e2e8f0'/%3E%3Cpath d='M0 150 Q 50 180 100 150 T 200 150 L 200 200 L 0 200 Z' fill='%23cbd5e1' opacity='0.6'/%3E%3Ctext x='100' y='90' font-family='sans-serif' font-size='14' font-weight='bold' fill='%2394a3b8' text-anchor='middle'%3ENo Image%3C/text%3E%3C/svg%3E`;
 
+// 画像URLを返すヘルパー（プレースホルダーフォールバック付き）
+function getImageUrl(bio) {
+    if (bio.image && bio.image.url && bio.image.url.trim().length > 5 && !bio.image.url.includes('placeholder.com')) {
+        return bio.image.url;
+    }
+    return placeholderSVG;
+}
+
 async function fetchBioData() {
     try {
-        // スケルトンアニメーションの挙動を確認できるよう、意図的に0.8秒遅延させる
-        await new Promise(resolve => setTimeout(resolve, 800));
-
         const response = await fetch('./data/bio-data.json');
         
         if (!response.ok) {
@@ -95,11 +100,7 @@ function renderCards(data) {
         else if (bio.dangerType === 'protect') tileBadge = '<div class="tile-badge">🐣</div>';
         else if (bio.isDanger) tileBadge = '<div class="tile-badge">⚠️</div>';
 
-        // プレースホルダーの適用
-        let imgUrl = placeholderSVG;
-        if (bio.image && bio.image.url && bio.image.url.trim().length > 5 && !bio.image.url.includes('placeholder.com')) {
-            imgUrl = bio.image.url;
-        }
+        const imgUrl = getImageUrl(bio);
 
         card.innerHTML = `
             ${tileBadge}
@@ -176,10 +177,9 @@ function openModal(bio) {
     else if (bio.dangerType === 'protect') badgeHtml = '<span class="danger-badge protect">🐣 守るため注意</span>';
     else if (bio.isDanger) badgeHtml = '<span class="danger-badge contact">⚠️ 危険</span>';
 
-    let imgUrl = placeholderSVG;
+    const imgUrl = getImageUrl(bio);
     let creditHtml = '';
-    if (bio.image && bio.image.url && bio.image.url.trim().length > 5 && !bio.image.url.includes('placeholder.com')) {
-        imgUrl = bio.image.url;
+    if (imgUrl !== placeholderSVG) {
         const authorText = bio.image.author || 'Unknown';
         
 // CCアイコンの構築処理
@@ -245,11 +245,13 @@ function openModal(bio) {
         ${firstAidHtml}
         ${dontDoHtml}
         
-       <button class="share-btn" onclick="shareBio('${bio.id}', '${bio.name}', '${bio.category}')">
+       <button class="share-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
             この生き物をシェアする
         </button>
     `;
+
+    modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -282,13 +284,18 @@ window.shareBio = function(id, name, category) {
             url: shareUrl,
         }).catch(console.error);
     } else {
-        const dummy = document.createElement('input');
-        document.body.appendChild(dummy);
-        dummy.value = `ちがビオ - ${name} ${shareUrl}`;
-        dummy.select();
-        document.execCommand('copy');
-        document.body.removeChild(dummy);
-        showToast("リンクをコピーしました");
+        const text = `ちがビオ - ${name} ${shareUrl}`;
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(text).then(() => showToast("リンクをコピーしました")).catch(() => showToast("コピーに失敗しました"));
+        } else {
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+            showToast("リンクをコピーしました");
+        }
     }
 }
 
