@@ -290,7 +290,7 @@ summary { font-weight: bold; cursor: pointer; }
 .footer a.lifesaving-link { color: var(--danger-color); } /* 特定のリンクのみ赤系に */
 .footer-disclaimer { background: var(--bg-color); padding: 12px; border-radius: 8px; text-align: left; margin: 16px 0; } /* 背景色を全体に揃える */
 .footer-copyright {
-    margin-top: 8px;
+    margin-top: 20px;
 }
 /* トースト通知 */
 #toast {
