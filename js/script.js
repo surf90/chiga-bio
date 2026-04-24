@@ -217,11 +217,11 @@ function openModal(bio) {
         }
     }
 
-    let featuresHtml = (bio.features && bio.features.length > 0) 
-        ? `<span class="section-label">FEATURES / 特徴</span><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
-        
-    let firstAidHtml = (bio.firstAid && bio.firstAid.length > 0) 
-        ? `<span class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST AID / 応急処置</span><ul class="styled-list">${bio.firstAid.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+    let featuresHtml = (bio.features && bio.features.length > 0)
+        ? `<h3 class="section-label">FEATURES / 特徴</h3><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+
+    let firstAidHtml = (bio.firstAid && bio.firstAid.length > 0)
+        ? `<h3 class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST AID / 応急処置</h3><ul class="styled-list">${bio.firstAid.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
     
     let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${bio.dontDo}</div>` : '';
 
@@ -237,10 +237,10 @@ function openModal(bio) {
         ${creditHtml}
         ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
         <h2 class="modal-title">${bio.name}${symbolIcon}</h2>
-        <div class="modal-meta">
-            <span class="category-tag">${bio.category}</span>
-            <span class="text-slate-500" style="font-family:monospace; font-size:0.8rem;">${bio.scientificName}</span>
-        </div>
+        <dl class="modal-meta">
+            <dt class="sr-only">分類</dt><dd><span class="category-tag">${bio.category}</span></dd>
+            <dt class="sr-only">学名</dt><dd class="scientific-name">${bio.scientificName}</dd>
+        </dl>
         ${featuresHtml}
         ${firstAidHtml}
         ${dontDoHtml}
