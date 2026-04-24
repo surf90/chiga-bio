@@ -2244,5 +2244,44 @@
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
     ]
-  }
+  },
+  {
+  "id": "azumahikigaeru",
+  "name": "アズマヒキガエル",
+  "category": "両生類",
+  "scientificName": "Bufo japonicus formosus",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/115456485/large.jpeg",
+    "author": "Ecological Data Contributor",
+    "license": "CC BY-NC",
+    "sourceUrl": "https://www.inaturalist.org/"
+  },
+  "features": [
+    "体長は10〜15cm程度で、茶褐色や黄褐色の体色に多数のイボ状の突起がある",
+    "目の後方にある耳腺（じせん）から「ブフォトキシン」という乳白色の猛毒を分泌する",
+    "水かきが発達しておらず、ピョンピョン跳ねずにのっそりと歩く"
+  ],
+  "firstAid": [
+    "触ってしまった場合は、目をこすったり口に手を持っていったりせず、直ちに流水と石鹸（せっけん）で十分に手を洗う。",
+    "万が一、毒液が目に入った場合は大量の流水で洗い流し、速やかに眼科を受診する。"
+  ],
+  "dontDo": "毒液が目に入ると失明の恐れがあり、口に入ると重篤な中毒症状を引き起こす危険があるため、素手で触ったり、むやみに刺激を与えたりしないこと。",
+  "localEncounter": "茅ヶ崎海岸の砂防林（松林）周辺や相模川河口の草地に生息し、雨上がりや夜間に海浜公園の遊歩道へ出てくることがある。",
+  "references": [
+    {
+      "title": "自然毒のリスクプロファイル：動物性自然毒",
+      "author": "厚生労働省",
+      "year": "2023",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+    },
+    {
+      "title": "海洋危険生物の毒と病態",
+      "author": "日本救急医学会",
+      "year": "2023",
+      "url": "https://www.jaam.jp/"
+    }
+  ]
+}
 ]
