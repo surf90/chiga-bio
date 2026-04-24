@@ -2147,7 +2147,7 @@
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/265881076/large.jpeg",
       "author": "rinbee",
-      "license": "Unknown",
+      "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/observations/153906375"
     },
     "features": [
@@ -2186,7 +2186,7 @@
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/249781641/large.jpeg",
       "author": "jitensha2021",
-      "license": "Unknown",
+      "license": "CC BY-NC",
       "sourceUrl": "https://www.inaturalist.org/observations/145422085"
     },
     "features": [
@@ -2220,10 +2220,10 @@
     "isDanger": true,
     "dangerType": "eat",
     "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/623518377/large.jpg",
-      "author": "mmagr1",
-      "license": "Unknown",
-      "sourceUrl": "https://www.inaturalist.org/observations/342397736"
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/623518377/large.jpg",
+    "author": "mmagr1",
+    "license": "CC BY-NC",
+    "sourceUrl": "https://www.inaturalist.org/observations/342397736"
     },
     "features": [
       "春から初夏にかけて、鮮やかな朱赤色や黄色の花を咲かせる落葉低木",
@@ -2253,10 +2253,10 @@
   "isDanger": true,
   "dangerType": "contact",
   "image": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/115456485/large.jpeg",
-    "author": "Ecological Data Contributor",
-    "license": "CC BY-NC",
-    "sourceUrl": "https://www.inaturalist.org/"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
   },
   "features": [
     "体長は10〜15cm程度で、茶褐色や黄褐色の体色に多数のイボ状の突起がある",
@@ -2292,10 +2292,10 @@
   "isDanger": true,
   "dangerType": "contact",
   "image": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/15234399/large.jpg",
-    "author": "Ecological Data Contributor",
-    "license": "CC BY-NC",
-    "sourceUrl": "https://www.inaturalist.org/"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
   },
   "features": [
     "体長は3〜4cm程度で、周囲の環境に合わせて体色を緑色や灰褐色に変化させる",
@@ -2325,10 +2325,10 @@
   "isDanger": true,
   "dangerType": "contact",
   "image": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/103259871/large.jpeg",
-    "author": "Ecological Data Contributor",
-    "license": "CC BY-NC",
-    "sourceUrl": "https://www.inaturalist.org/"
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
   },
   "features": [
     "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
@@ -2354,6 +2354,85 @@
       "author": "海上保安庁（国土交通省）",
       "year": "2024",
       "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+    }
+  ]
+ },
+  {
+  "id": "seguroumihebi",
+  "name": "セグロウミヘビ",
+  "category": "は虫類",
+  "scientificName": "Hydrophis platurus",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
+  },
+  "features": [
+    "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
+    "外洋性で一生を海中で過ごし、遊泳に適したオール状の平たい尾をもつ",
+    "ハブの数十倍とも言われる非常に強力な神経毒をもつ"
+  ],
+  "firstAid": [
+    "海上で見かけた場合は絶対に近づかず、速やかにその場から離れる。",
+    "万が一咬（か）まれた場合は、直ちに海から上がり119番通報する。",
+    "パニックになると毒の回りが早くなるため、可能な限り安静を保ち救急隊の到着を待つ。"
+  ],
+  "dontDo": "台風などの荒天後に砂浜に打ち上げられていることがあるが、弱っていても反射的に咬（か）みつく恐れがあるため絶対に素手で触らないこと。",
+  "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
+  "references": [
+    {
+      "title": "海洋危険生物の毒と病態",
+      "author": "日本救急医学会",
+      "year": "2023",
+      "url": "https://www.jaam.jp/"
+    },
+    {
+      "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+      "author": "海上保安庁（国土交通省）",
+      "year": "2024",
+      "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+    }
+  ]
+},
+  {
+  "id": "araiguma",
+  "name": "アライグマ",
+  "category": "ほ乳類",
+  "scientificName": "Procyon lotor",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": " ",
+    "author": " ",
+    "license": " ",
+    "sourceUrl": " "
+  },
+  "features": [
+    "目の周りに黒いマスクのような模様があり、ふさふさとした尾に黒い輪の縞模様をもつ",
+    "手先が器用で木登りや泳ぎが得意な特定外来生物",
+    "夜行性だが日中にも海岸の防砂林や公園でエサを探すことがある"
+  ],
+  "firstAid": [
+    "万が一咬（か）まれたり引っかかれたりした場合は、直ちに傷口を流水と石鹸（せっけん）でよく洗い流す。",
+    "破傷風やその他重篤な感染症のリスクがあるため、応急処置後は速やかに医療機関を受診する。"
+  ],
+  "dontDo": "気性が荒く、アライグマ回虫などの重篤な人獣共通感染症のリスクがあるため、可愛らしく見えても絶対に近づいてエサを与えたり素手で触ろうとしたりしないこと。",
+  "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）や周辺の海浜公園に生息し、放置されたゴミやバーベキューの食べ残しを狙って出没することがある。",
+  "references": [
+    {
+      "title": "特定外来生物の解説：アライグマ",
+      "author": "環境省",
+      "year": "2023",
+      "url": "https://www.env.go.jp/nature/intro/2outline/list/L-ho-01.html"
+    },
+    {
+      "title": "野生鳥獣（アライグマ等）の被害を防ぐために",
+      "author": "茅ヶ崎市",
+      "year": "2023",
+      "url": "https://www.city.chigasaki.kanagawa.jp/"
     }
   ]
 }
