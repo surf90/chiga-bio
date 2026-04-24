@@ -2283,5 +2283,78 @@
       "url": "https://www.jaam.jp/"
     }
   ]
+},
+  {
+  "id": "nihonamagaeru",
+  "name": "ニホンアマガエル",
+  "category": "両生類",
+  "scientificName": "Dryophytes japonicus",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/15234399/large.jpg",
+    "author": "Ecological Data Contributor",
+    "license": "CC BY-NC",
+    "sourceUrl": "https://www.inaturalist.org/"
+  },
+  "features": [
+    "体長は3〜4cm程度で、周囲の環境に合わせて体色を緑色や灰褐色に変化させる",
+    "鼻筋から目の後方にかけて黒褐色の縞模様（アイマスクのような模様）がある",
+    "指先に丸い吸盤があり、海岸周辺の植物やコンクリート壁などに張り付く"
+  ],
+  "firstAid": [
+    "触った後は、絶対に目をこすらず、直ちに流水と石鹸（せっけん）で手を洗う。",
+    "万が一、触った手で目をこすってしまい激しい痛みが出た場合は、大量の流水で洗い流し速やかに眼科を受診する。"
+  ],
+  "dontDo": "皮膚から分泌される粘液には毒性があり、目に入ると激しい痛みや失明の恐れがあるため、触った手で絶対に顔や目をこすらないこと。",
+  "localEncounter": "茅ヶ崎海岸の砂防林や海浜植物の周辺、海岸沿いの公園や公共シャワー施設などに広く生息し、雨上がりによく姿を見せる。",
+  "references": [
+    {
+      "title": "自然毒のリスクプロファイル：動物性自然毒",
+      "author": "厚生労働省",
+      "year": "2023",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+    }
+  ]
+  },
+  {
+  "id": "seguroumihebi",
+  "name": "セグロウミヘビ",
+  "category": "は虫類",
+  "scientificName": "Hydrophis platurus",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/103259871/large.jpeg",
+    "author": "Ecological Data Contributor",
+    "license": "CC BY-NC",
+    "sourceUrl": "https://www.inaturalist.org/"
+  },
+  "features": [
+    "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
+    "外洋性で一生を海中で過ごし、遊泳に適したオール状の平たい尾をもつ",
+    "ハブの数十倍とも言われる非常に強力な神経毒をもつ"
+  ],
+  "firstAid": [
+    "海上で見かけた場合は絶対に近づかず、速やかにその場から離れる。",
+    "万が一咬（か）まれた場合は、直ちに海から上がり119番通報する。",
+    "パニックになると毒の回りが早くなるため、可能な限り安静を保ち救急隊の到着を待つ。"
+  ],
+  "dontDo": "台風などの荒天後に砂浜に打ち上げられていることがあるが、弱っていても反射的に咬（か）みつく恐れがあるため絶対に素手で触らないこと。",
+  "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
+  "references": [
+    {
+      "title": "海洋危険生物の毒と病態",
+      "author": "日本救急医学会",
+      "year": "2023",
+      "url": "https://www.jaam.jp/"
+    },
+    {
+      "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+      "author": "海上保安庁（国土交通省）",
+      "year": "2024",
+      "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+    }
+  ]
 }
 ]
