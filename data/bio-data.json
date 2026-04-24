@@ -2356,46 +2356,6 @@
       "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
     }
   ]
- },
-  {
-  "id": "seguroumihebi",
-  "name": "セグロウミヘビ",
-  "category": "は虫類",
-  "scientificName": "Hydrophis platurus",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
-  },
-  "features": [
-    "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
-    "外洋性で一生を海中で過ごし、遊泳に適したオール状の平たい尾をもつ",
-    "ハブの数十倍とも言われる非常に強力な神経毒をもつ"
-  ],
-  "firstAid": [
-    "海上で見かけた場合は絶対に近づかず、速やかにその場から離れる。",
-    "万が一咬（か）まれた場合は、直ちに海から上がり119番通報する。",
-    "パニックになると毒の回りが早くなるため、可能な限り安静を保ち救急隊の到着を待つ。"
-  ],
-  "dontDo": "台風などの荒天後に砂浜に打ち上げられていることがあるが、弱っていても反射的に咬（か）みつく恐れがあるため絶対に素手で触らないこと。",
-  "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
-  "references": [
-    {
-      "title": "海洋危険生物の毒と病態",
-      "author": "日本救急医学会",
-      "year": "2023",
-      "url": "https://www.jaam.jp/"
-    },
-    {
-      "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
-      "author": "海上保安庁（国土交通省）",
-      "year": "2024",
-      "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
-    }
-  ]
 },
   {
   "id": "araiguma",
