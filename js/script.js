@@ -182,24 +182,27 @@ function openModal(bio) {
         imgUrl = bio.image.url;
         const authorText = bio.image.author || 'Unknown';
         
-        // CCアイコンの構築処理
+// CCアイコンの構築処理
         let licenseIcons = '';
         if (bio.image.license) {
             const licenseUpper = bio.image.license.toUpperCase().trim();
             if (licenseUpper === 'CC0') {
-                licenseIcons = '<span class="cc-icons cc-icons-cc-zero" title="CC0 (Public Domain)"></span>';
+                // CC0の場合は、ベースマークとゼロマークを両方表示
+                licenseIcons = '<i class="fa-brands fa-creative-commons" title="CC0"></i><i class="fa-brands fa-creative-commons-zero" title="Public Domain"></i>';
             } else if (licenseUpper.startsWith('CC')) {
-                licenseIcons += '<span class="cc-icons cc-icons-cc" title="Creative Commons"></span>';
+                // ベースとなる「CC」マーク
+                licenseIcons += '<i class="fa-brands fa-creative-commons" title="Creative Commons"></i>';
                 
                 const typesStr = licenseUpper.substring(2).trim(); // "BY-NC" 等の抽出
                 const types = typesStr.split('-');
                 
+                // ライセンス条件に応じてアイコンを追加
                 types.forEach(type => {
                     const t = type.trim();
-                    if (t === 'BY') licenseIcons += '<span class="cc-icons cc-icons-by" title="Attribution"></span>';
-                    else if (t === 'SA') licenseIcons += '<span class="cc-icons cc-icons-sa" title="ShareAlike"></span>';
-                    else if (t === 'NC') licenseIcons += '<span class="cc-icons cc-icons-nc" title="NonCommercial"></span>';
-                    else if (t === 'ND') licenseIcons += '<span class="cc-icons cc-icons-nd" title="NoDerivatives"></span>';
+                    if (t === 'BY') licenseIcons += '<i class="fa-brands fa-creative-commons-by" title="Attribution"></i>';
+                    else if (t === 'SA') licenseIcons += '<i class="fa-brands fa-creative-commons-sa" title="ShareAlike"></i>';
+                    else if (t === 'NC') licenseIcons += '<i class="fa-brands fa-creative-commons-nc" title="NonCommercial"></i>';
+                    else if (t === 'ND') licenseIcons += '<i class="fa-brands fa-creative-commons-nd" title="NoDerivatives"></i>';
                 });
             } else {
                 licenseIcons = ` (${bio.image.license})`;
