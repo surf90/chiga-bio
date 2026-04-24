@@ -225,6 +225,22 @@ function openModal(bio) {
     
     let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${bio.dontDo}</div>` : '';
 
+    let referencesHtml = '';
+    if (bio.references && bio.references.length > 0) {
+        const items = bio.references.map(ref => {
+            const link = ref.url
+                ? `<a href="${ref.url}" target="_blank" rel="noopener">${ref.title}</a>`
+                : ref.title;
+            const meta = [ref.author, ref.year].filter(Boolean).join(', ');
+            return `<li>${link}${meta ? `<span class="ref-meta"> — ${meta}</span>` : ''}</li>`;
+        }).join('');
+        referencesHtml = `
+        <details class="references-details">
+            <summary>参考文献</summary>
+            <ul class="references-list">${items}</ul>
+        </details>`;
+    }
+
     let symbolIcon = '';
     if (bio.id === 'tsutsuji') {
         symbolIcon = `<span class="symbol-icon" title="茅ヶ崎市の花"><svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M240,144a40,40,0,0,1-40,40A39.88,39.88,0,0,1,183.86,180.58A40,40,0,0,1,136,200v8a40,40,0,0,1-80,0v-8a40,40,0,0,1-47.86-51.42A40,40,0,0,1,56,104a39.88,39.88,0,0,1,16.14,3.42A40,40,0,0,1,120,56V48a40,40,0,0,1,80,0v8a40,40,0,0,1,47.86,51.42A40,40,0,0,1,240,144ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Z"></path></svg></span>`;
@@ -249,6 +265,7 @@ function openModal(bio) {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
             この生き物をシェアする
         </button>
+        ${referencesHtml}
     `;
 
     modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));

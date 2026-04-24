@@ -318,3 +318,39 @@ summary { font-weight: bold; cursor: pointer; }
     opacity: 0; transition: visibility 0s, opacity 0.3s, bottom 0.3s;
 }
 #toast.show { visibility: visible; opacity: 1; bottom: 90px; }
+
+.references-details {
+    margin-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 12px;
+}
+.references-details summary {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--primary-deep);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.references-details summary::-webkit-details-marker { display: none; }
+.references-details summary::before {
+    content: '▶';
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+}
+.references-details[open] summary::before { transform: rotate(90deg); }
+.references-list {
+    margin: 10px 0 0 0;
+    padding-left: 16px;
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.7;
+}
+.references-list a {
+    color: var(--primary-deep);
+    text-decoration: underline;
+    word-break: break-all;
+}
+.ref-meta { color: #94a3b8; font-size: 0.75rem; }
