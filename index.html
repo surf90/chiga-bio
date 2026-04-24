@@ -2,25 +2,100 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cc-icons.github.io/cc-icons-font/css/cc-icons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ちがビオ | 茅ヶ崎の海の生き物情報</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-032.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-064.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="favicon-144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="profile-card">
-            <img id="profile-image" src="" alt="Profile Picture">
-            <div id="profile-info">
-                <h1 id="p-name"></h1>
-                <p id="p-role"></p>
-                <p id="p-bio-desc"></p>
-            </div>
-        </div>
 
-        <div id="photo-gallery">
+<header>
+    <h1><span class="logo-text">ちがビオ</span> <span class="title-divider">|</span> <small>茅ヶ崎の海の生き物情報</small></h1>
+    <span class="subtitle">茅ヶ崎の生き物が、まるっとわかる。</span>
+</header>
+
+<div class="container">
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索...">
+        <button id="clearSearchBtn" class="search-clear-btn" aria-label="検索をクリア">✕</button>
+    </div>
+    
+    <div id="skeleton-list" class="grid-container">
+        <div class="skeleton-card"></div><div class="skeleton-card"></div>
+        <div class="skeleton-card"></div><div class="skeleton-card"></div>
+        <div class="skeleton-card"></div><div class="skeleton-card"></div>
+    </div>
+
+    <div id="bio-list" class="grid-container" style="display: none;"></div>
+
+    <div id="empty-state" class="empty-state">
+        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2C7.58 2 4 5.58 4 10v2a2 2 0 002 2h12a2 2 0 002-2v-2c0-4.42-3.58-8-8-8z"/>
+            <path d="M6 14v4c0 1.1.9 2 2 2v2M10 14v6c0 1.1.9 2 2 2v2M14 14v6c0 1.1.9 2 2 2v2M18 14v4c0 1.1-.9 2-2 2v2"/>
+        </svg>
+        <p>「<strong id="empty-keyword" style="color: var(--text-main);"></strong>」に一致する<br>生き物は見つかりませんでした。</p>
+        <button id="emptyResetBtn" class="empty-reset-btn">すべてを表示に戻す</button>
+    </div>
+</div>
+
+<div id="bio-modal" class="modal-overlay">
+    <div class="modal-content" id="modal-content">
+        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn">✕</button>
+        <div id="modal-body" class="modal-body">
             </div>
     </div>
-    <script src="script.js"></script>
+</div>
+
+<nav class="bottom-nav" id="bottomNav">
+    <a href="#" class="nav-item active" data-category="all">すべて</a>
+    <a href="#" class="nav-item" data-category="ほ乳類">ほ乳類</a>
+    <a href="#" class="nav-item" data-category="鳥類">鳥類</a>
+    <a href="#" class="nav-item" data-category="は虫類">は虫類</a>
+    <a href="#" class="nav-item" data-category="両生類">両生類</a>
+    <a href="#" class="nav-item" data-category="魚類">魚類</a>
+    <a href="#" class="nav-item" data-category="無脊椎動物">無脊椎動物</a>
+    <a href="#" class="nav-item" data-category="植物">植物</a>
+</nav>
+
+<footer class="footer">
+    <div class="footer-data">
+        <p><strong>参考資料・データ出典:</strong></p>
+        <div class="source-links">
+            <a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">厚生労働省</a> /
+            <a href="https://www.env.go.jp/" target="_blank" rel="noopener noreferrer">環境省</a> /
+            <a href="https://www.kaiho.mlit.go.jp/" target="_blank" rel="noopener noreferrer">海上保安庁</a> /
+            <a href="https://www.pref.kanagawa.jp/" target="_blank" rel="noopener noreferrer">神奈川県</a> /
+            <a href="https://www.city.chigasaki.kanagawa.jp/" target="_blank" rel="noopener noreferrer">茅ヶ崎市</a> /
+            <a href="https://www.kahaku.go.jp/" target="_blank" rel="noopener noreferrer">国立科学博物館</a> /
+            <a href="https://www.enosui.com/" target="_blank" rel="noopener noreferrer">新江ノ島水族館</a> /
+            <a href="https://www.jaam.jp/" target="_blank" rel="noopener noreferrer">日本救急医学会</a> /
+            <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">iNaturalist</a>
+        </div>
+    </div> <div class="footer-disclaimer">
+        ※ 本ページは学術的・教育的利用を目的とした非公式サイトです。<br>
+        ※ 本ページは参考用です。実際の応急処置時は、必ず医療機関の指示や最新の医学的知見を優先してください。<br>
+    </div>
+
+    <div class="footer-info">
+        | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> | <br>
+    </div>
+
+    <div class="footer-copyright">
+        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
+        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
+    </div>
+</footer>
+
+<div id="toast"></div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
