@@ -48,6 +48,18 @@ async function fetchBioData() {
         
         renderCards(globalBioData);
         
+        // --- ここから追加 ---
+        // URLパラメータをチェックし、指定の生き物がいたらモーダルを自動で開く
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetId = urlParams.get('id');
+        if (targetId) {
+            const targetBio = globalBioData.find(bio => bio.id === targetId);
+            if (targetBio) {
+                openModal(targetBio);
+            }
+        }
+        // --- ここまで追加 ---
+        
     } catch (error) {
         console.error('エラー:', error);
         skeletonList.style.display = 'none';
@@ -198,7 +210,7 @@ function openModal(bio) {
         ${firstAidHtml}
         ${dontDoHtml}
         
-        <button class="share-btn" onclick="shareBio('${bio.name}', '${bio.category}')">
+       <button class="share-btn" onclick="shareBio('${bio.id}', '${bio.name}', '${bio.category}')">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
             この生き物をシェアする
         </button>
@@ -212,6 +224,8 @@ function openModal(bio) {
 function closeModal() {
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    const cleanUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState({}, document.title, cleanUrl);
 }
 
 modalClose.addEventListener('click', closeModal);
@@ -222,17 +236,21 @@ modal.addEventListener('click', (e) => {
 // ==========================================
 // シェアAPI
 // ==========================================
-window.shareBio = function(name, category) {
+window.shareBio = function(id, name, category) {
+    // 現在のベースURLを取得し、パラメータを付与
+    const baseUrl = window.location.origin + window.location.pathname;
+    const shareUrl = `${baseUrl}?id=${id}`;
+
     if (navigator.share) {
         navigator.share({
             title: `ちがビオ - ${name}`,
             text: `茅ヶ崎の生き物「${name} (${category})」をチェック！`,
-            url: window.location.href,
+            url: shareUrl, // 生成した固有URLを使用
         }).catch(console.error);
     } else {
         const dummy = document.createElement('input');
         document.body.appendChild(dummy);
-        dummy.value = `ちがビオ - ${name} ${window.location.href}`;
+        dummy.value = `ちがビオ - ${name} ${shareUrl}`; // 生成した固有URLを使用
         dummy.select();
         document.execCommand('copy');
         document.body.removeChild(dummy);
