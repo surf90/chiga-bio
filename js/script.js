@@ -181,11 +181,36 @@ function openModal(bio) {
     if (bio.image && bio.image.url && bio.image.url.trim().length > 5 && !bio.image.url.includes('placeholder.com')) {
         imgUrl = bio.image.url;
         const authorText = bio.image.author || 'Unknown';
+        
+        // CCアイコンの構築処理
+        let licenseIcons = '';
+        if (bio.image.license) {
+            const licenseUpper = bio.image.license.toUpperCase().trim();
+            if (licenseUpper === 'CC0') {
+                licenseIcons = '<span class="cc-icons cc-icons-cc-zero" title="CC0 (Public Domain)"></span>';
+            } else if (licenseUpper.startsWith('CC')) {
+                licenseIcons += '<span class="cc-icons cc-icons-cc" title="Creative Commons"></span>';
+                
+                const typesStr = licenseUpper.substring(2).trim(); // "BY-NC" 等の抽出
+                const types = typesStr.split('-');
+                
+                types.forEach(type => {
+                    const t = type.trim();
+                    if (t === 'BY') licenseIcons += '<span class="cc-icons cc-icons-by" title="Attribution"></span>';
+                    else if (t === 'SA') licenseIcons += '<span class="cc-icons cc-icons-sa" title="ShareAlike"></span>';
+                    else if (t === 'NC') licenseIcons += '<span class="cc-icons cc-icons-nc" title="NonCommercial"></span>';
+                    else if (t === 'ND') licenseIcons += '<span class="cc-icons cc-icons-nd" title="NoDerivatives"></span>';
+                });
+            } else {
+                licenseIcons = ` (${bio.image.license})`;
+            }
+        }
+
         // sourceUrlが存在する場合はリンクにする
         if (bio.image.sourceUrl && bio.image.sourceUrl.trim() !== '') {
-            creditHtml = `<div class="image-credit"><a href="${bio.image.sourceUrl}" target="_blank" rel="noopener noreferrer">Photo: ${authorText}</a></div>`;
+            creditHtml = `<div class="image-credit"><a href="${bio.image.sourceUrl}" target="_blank" rel="noopener noreferrer">Photo: ${authorText}</a> ${licenseIcons}</div>`;
         } else {
-            creditHtml = `<div class="image-credit">Photo: ${authorText}</div>`;
+            creditHtml = `<div class="image-credit">Photo: ${authorText} ${licenseIcons}</div>`;
         }
     }
 
