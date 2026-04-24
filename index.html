@@ -22,7 +22,19 @@
 
 <div class="container">
     <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索...">
+    
+    <!-- タイル表示用のコンテナ -->
     <div id="bio-list"></div>
+</div>
+
+<!-- 詳細表示モーダル -->
+<div id="bio-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button id="modal-close" class="modal-close-btn">✕</button>
+        <div id="modal-body" class="modal-body">
+            <!-- JavaScriptで詳細データが挿入されます -->
+        </div>
+    </div>
 </div>
 
 <nav class="bottom-nav">
@@ -36,7 +48,6 @@
     <a href="#" class="nav-item" onclick="filterData('植物')"> 植物</a>
 </nav>
 
-<script src="js/script.js"></script>
 <footer class="footer">
     <div class="footer-data">
         <p><strong>参考資料・データ出典:</strong></p>
@@ -65,7 +76,7 @@
         Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
     </div>
 </footer>
-</div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
