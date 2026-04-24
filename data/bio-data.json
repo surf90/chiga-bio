@@ -2395,6 +2395,1094 @@
       "url": "https://www.city.chigasaki.kanagawa.jp/"
     }
   ]
-}
+},
+  {
+    "id": "kuromatsu",
+    "name": "クロマツ",
+    "category": "植物",
+    "scientificName": "Pinus thunbergii",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の厳しい環境（潮風や乾燥）に耐える常緑針葉樹",
+      "樹皮は黒褐色で亀甲状に深く割れ、葉は硬く触るとチクチクする",
+      "飛砂を防ぎ、後背地の暮らしや農地を守る「砂防林」として古くから植林されてきた"
+    ],
+    "firstAid": [],
+    "dontDo": "海岸の砂防林は強風や飛砂から街を守る重要な役割を担っているため、枝を勝手に折ったり、根元の砂を過度に掘り返したりしないこと。",
+    "localEncounter": "昭和45年（1970年）に「茅ヶ崎市の木」に制定された。柳島海岸からサザンビーチちがさき、汐見台に至るまで、海岸線沿いの防砂林として茅ヶ崎全域に群生している。",
+    "references": [
+      {
+        "title": "市の木",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007342.html"
+      },
+      {
+        "title": "海岸林の役割",
+        "author": "神奈川県",
+        "year": "2022",
+        "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
+      }
+    ]
+  },
+  {
+    "id": "maaji",
+    "name": "マアジ",
+    "category": "魚類",
+    "scientificName": "Trachurus japonicus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体側の中央から尾にかけて「ぜんご（稜鱗）」と呼ばれる硬い鱗（うろこ）の列があり、素手で強く握ると手を切ることがある",
+      "相模湾には広く回遊する群れと、湾内に定着して脂が乗った「地付き」の群れが混在している",
+      "成長に伴って生息域を深場に移し、大型の個体は釣り人の間で珍重される"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "茅ヶ崎漁港から出船するアジ釣り船のメインターゲットであり、えぼし岩やヘッドランド周辺のサビキ釣りでも年間を通して釣れる。",
+    "references": [
+      {
+        "title": "おさかな図鑑（マアジ）",
+        "author": "神奈川県",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-maaji.html"
+      }
+    ]
+  },
+  {
+    "id": "kurodai",
+    "name": "クロダイ",
+    "category": "魚類",
+    "scientificName": "Acanthopagrus schlegelii",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体は銀灰色から黒褐色で、鯛（たい）の仲間として知られる",
+      "雑食性で、甲殻類や貝類、海藻など様々なものを強力な顎で砕いて食べる",
+      "警戒心が非常に強く、釣りのターゲット（チヌ）として非常に人気が高い"
+    ],
+    "firstAid": [],
+    "dontDo": "背びれやエラ蓋の棘（とげ）が非常に鋭く太いため、釣り上げた際に素手で魚体を強く握り込まないこと。",
+    "localEncounter": "えぼし岩周辺の磯釣りや、茅ヶ崎漁港の堤防、相模川河口の汽水域など、市内全域の沿岸で年間を通して狙える。",
+    "references": [
+      {
+        "title": "おさかな図鑑（クロダイ）",
+        "author": "神奈川県水産技術センター",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kurodai.html"
+      }
+    ]
+  },
+  {
+    "id": "kawahagi",
+    "name": "カワハギ",
+    "category": "魚類",
+    "scientificName": "Stephanolepis cirrhifer",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "ザラザラとした丈夫な皮を持ち、調理時に簡単に皮を剥（は）ぐことができるのが名前の由来",
+      "おちょぼ口でホバリングしながらエサをかすめ取るのが非常に上手く「エサ取り名人」と呼ばれる",
+      "秋から冬にかけて肝臓（キモ）が大きくなり、非常に美味とされる"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "えぼし岩などの岩礁帯や海藻が多い浅海に生息し、秋から冬にかけての船釣りやボート釣りで茅ヶ崎の代表的なターゲットとなる。",
+    "references": [
+      {
+        "title": "おさかな図鑑（カワハギ）",
+        "author": "神奈川県水産技術センター",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kawahagi.html"
+      }
+    ]
+  },
+  {
+    "id": "maiwashi",
+    "name": "マイワシ",
+    "category": "魚類",
+    "scientificName": "Sardinops melanostictus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体側に黒い斑点が1列に並ぶのが特徴で「ナナツボシ」とも呼ばれる",
+      "プランクトンを主食とし、口を大きく開けて泳ぎながらエラで濾（こ）し取って食べる",
+      "海の食物連鎖の底辺を支える重要な魚で、大型魚や海鳥の主なエサとなる"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "相模湾を巨大な群れで回遊しており、地引き網でよく獲れるほか、ヘッドランド周辺に接岸した際はサビキ釣りで大漁になることがある。",
+    "references": [
+      {
+        "title": "水産資源評価データ",
+        "author": "水産庁",
+        "year": "2023",
+        "url": "https://www.jfa.maff.go.jp/"
+      },
+      {
+        "title": "相模湾の漁業資源",
+        "author": "神奈川県水産技術センター",
+        "year": "2023",
+        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
+      }
+    ]
+  },
+  {
+    "id": "madai",
+    "name": "マダイ",
+    "category": "魚類",
+    "scientificName": "Pagrus major",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "鮮やかな淡紅色の体に、青い小斑点が散在する美しい魚",
+      "「百魚の王」とも呼ばれ、祝い事の席に欠かせない縁起の良い魚",
+      "頑丈な顎（あご）と歯を持ち、エビやカニなどの甲殻類を噛（か）み砕いて食べる"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "茅ヶ崎沖のやや深場の岩礁地帯や砂礫底に生息し、茅ヶ崎港から出船する乗合船のコマセ釣りなどで一年中狙うことができる。",
+    "references": [
+      {
+        "title": "おさかな図鑑（マダイ）",
+        "author": "神奈川県水産技術センター",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-madai.html"
+      }
+    ]
+  },
+  {
+    "id": "sappa",
+    "name": "サッパ",
+    "category": "魚類",
+    "scientificName": "Sardinella zunasi",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体は平たく銀白色で、マイワシやカタクチイワシに似たニシン目の小魚",
+      "酢漬け（ママカリ）にすると非常に美味しいことで知られる",
+      "群れを作って沿岸の浅い場所や汽水域を回遊する"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "塩分濃度の低い場所を好むため、相模川河口付近によく集まり、初夏から秋にかけてのサビキ釣りで頻繁に釣れる。",
+    "references": [
+      {
+        "title": "FishBase: Sardinella zunasi",
+        "author": "Froese, R. and D. Pauly",
+        "year": "2024",
+        "url": "https://www.fishbase.se/summary/Sardinella-zunasi.html"
+      }
+    ]
+  },
+  {
+    "id": "meitagarei",
+    "name": "メイタガレイ",
+    "category": "魚類",
+    "scientificName": "Pleuronichthys cornutus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "両目が体の右側にあり、両目の間にトゲ状の突起があるのが特徴",
+      "砂泥底に身を潜め、ゴカイや小型の甲殻類を捕食する",
+      "身が肉厚で、カレイ類の中でも特に美味しいとされる"
+    ],
+    "firstAid": [],
+    "dontDo": "両目の間やエラ蓋の棘（とげ）が鋭く、触ると痛む（目痛カレイの由来の一説）ため、釣り上げた際に顔周辺を素手で強く掴まないこと。",
+    "localEncounter": "茅ヶ崎沖の砂泥底に生息し、相模湾の刺し網漁や底引き網で水揚げされるほか、海岸からの投げ釣りでも稀（まれ）に掛かる。",
+    "references": [
+      {
+        "title": "日本産魚類検索 全種の同定 第三版",
+        "author": "中坊徹次",
+        "year": "2013",
+        "url": "https://www.fish-isj.jp/"
+      }
+    ]
+  },
+  {
+    "id": "hebiginpo",
+    "name": "ヘビギンポ",
+    "category": "魚類",
+    "scientificName": "Enneapterygius etheostomus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体長5cmほどの小さな魚で、背びれが3基（3つに分かれている）あるのが最大の特徴",
+      "オスは繁殖期になると頭部が黒くなり、体が赤や黄色に鮮やかに色付く（婚姻色）",
+      "岩肌や海藻にしがみつくようにして生活している"
+    ],
+    "firstAid": [],
+    "dontDo": "タイドプールで観察する際は、岩の隙間に隠れるのが早いため、無理に棒などでつついて傷つけないこと。",
+    "localEncounter": "えぼし岩周辺の潮だまり（タイドプール）や浅い岩礁域で、アゴハゼなどと一緒に1年を通して観察できる磯遊びの定番種。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  },
+  {
+    "id": "ginanago",
+    "name": "ギンアナゴ",
+    "category": "魚類",
+    "scientificName": "Gnathophis nystromi",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "マアナゴに似ているが、全体的に銀白色で目が大きい",
+      "夜行性で、昼間は砂泥底に潜って頭だけを出している",
+      "小魚や甲殻類を食べる肉食性"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "相模湾のやや深い砂泥底に生息するため陸からの釣りでは珍しいが、沖合の船釣り（アマダイ狙いなど）で外道として釣れることがある。",
+    "references": [
+      {
+        "title": "FishBase: Gnathophis nystromi",
+        "author": "Froese, R. and D. Pauly",
+        "year": "2024",
+        "url": "https://www.fishbase.se/summary/Gnathophis-nystromi.html"
+      }
+    ]
+  },
+  {
+    "id": "isogani",
+    "name": "イソガニ",
+    "category": "無脊椎動物",
+    "scientificName": "Hemigrapsus sanguineus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "甲幅2〜3cmほどの小型のカニで、甲羅に四角い模様があることが多い",
+      "岩の隙間や石の下に潜み、雑食性で海藻や死肉などを食べる",
+      "ハサミに赤い斑点がある個体もいる"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "えぼし岩周辺の岩礁地帯や、ヘッドランドの消波ブロック、茅ヶ崎漁港の堤防など、水際の岩場・石の下で一年中見られ、磯遊びの定番ターゲット。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  },
+  {
+    "id": "murasakiuni",
+    "name": "ムラサキウニ",
+    "category": "無脊椎動物",
+    "scientificName": "Heliocidaris crassispina",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "全体が暗紫色で、長くて太いトゲを持つ代表的なウニ",
+      "岩のくぼみや隙間に集団で潜んでいることが多い",
+      "海藻（特にカジメやワカメなど）を主食とし、増えすぎると磯焼けの原因になることもある"
+    ],
+    "firstAid": [
+      "トゲが刺さった場合は無理に抜かず、ピンセット等で慎重に除去する。",
+      "ウニのトゲは脆（もろ）く皮膚に残りやすいため、痛みや腫れが続く場合は皮膚科などの医療機関を受診する。"
+    ],
+    "dontDo": "マリンシューズを履かずに岩場を歩くと踏み抜く恐れがあり、また素手で触るとトゲが折れて刺さる危険があるため避けること。",
+    "localEncounter": "えぼし岩周辺の浅い岩礁帯やタイドプールに生息しているが、茅ヶ崎沿岸では漁業権が設定されているため無断採取は密漁となる。",
+    "references": [
+      {
+        "title": "相模湾の漁業資源",
+        "author": "神奈川県水産技術センター",
+        "year": "2023",
+        "url": "https://www.pref.kanagawa.jp/docs/pw3/"
+      },
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      }
+    ]
+  },
+  {
+    "id": "madako",
+    "name": "マダコ",
+    "category": "無脊椎動物",
+    "scientificName": "Octopus vulgaris",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "周囲の環境に合わせて体色や皮膚の質感を瞬時に変え、岩に擬態する",
+      "カニやエビなどの甲殻類や二枚貝を好んで食べる肉食性",
+      "非常に賢く、吸盤の吸着力が極めて強い"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "えぼし岩の岩礁帯やヘッドランドの消波ブロックの隙間に潜んでおり、相模湾でのタコつぼ漁や岸からのタコ釣り（テンヤ釣りなど）でも馴染み深い。",
+    "references": [
+      {
+        "title": "おさかな図鑑（マダコ）",
+        "author": "神奈川県",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-madako.html"
+      }
+    ]
+  },
+  {
+    "id": "aoriika",
+    "name": "アオリイカ",
+    "category": "無脊椎動物",
+    "scientificName": "Sepioteuthis lessoniana",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "胴の縁全体に半透明のヒレ（エンペラ）があり、ホバリングするように優雅に泳ぐ",
+      "「イカの王様」と呼ばれるほど食味が良く、ルアー（エギ）を使った釣り人に大人気",
+      "春から初夏にかけて産卵のために浅場の海藻帯に接岸する"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "春から夏にかけて、えぼし岩周辺のホンダワラなどの海藻が生い茂る岩礁帯や、茅ヶ崎漁港の堤防周辺で産卵のため姿を見せる。",
+    "references": [
+      {
+        "title": "おさかな図鑑（アオリイカ）",
+        "author": "神奈川県水産技術センター",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-aoriika.html"
+      }
+    ]
+  },
+  {
+    "id": "itomakihitode",
+    "name": "イトマキヒトデ",
+    "category": "無脊椎動物",
+    "scientificName": "Patiria pectinifera",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "五角形から星形をした、青色と赤色（オレンジ色）のまだら模様が特徴的なヒトデ",
+      "動きは非常にゆっくりで、岩に張り付いて貝類や死骸を食べる",
+      "腕が切れても再生する強い生命力をもつ"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "茅ヶ崎のヘッドランドやえぼし岩などの岩礁帯・タイドプールで一年中見られ、磯遊びで子供たちが最も見つけやすい生物の一つ。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  },
+  {
+    "id": "murasakiigai",
+    "name": "ムラサキイガイ",
+    "category": "無脊椎動物",
+    "scientificName": "Mytilus galloprovincialis",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "黒紫色の殻をもつ二枚貝で「ムール貝」として知られるが、本来は地中海原産の外来種",
+      "足糸（そくし）という強靭な糸を出して人工物や岩に密集して付着する"
+    ],
+    "firstAid": [
+      "殻の鋭利な縁で手足を切った場合は、速やかに海から上がり、清潔な流水で洗い流す。",
+      "出血している場合は清潔なタオルで圧迫止血を行い、傷が深い場合は医療機関を受診する。"
+    ],
+    "dontDo": "ミドリイガイ同様に貝毒を蓄積しているリスクがあるため自己判断で採取して食べないようにし、密集した殻の縁で深く手を切る恐れがあるため素手でむしり取ろうとしないこと。",
+    "localEncounter": "茅ヶ崎漁港の堤防やヘッドランドのテトラポッド、沖合のブイなどの人工物に帯状にびっしりと付着している。",
+    "references": [
+      {
+        "title": "侵入生物データベース：ムラサキイガイ",
+        "author": "国立環境研究所",
+        "year": "2023",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/70160.html"
+      },
+      {
+        "title": "自然毒のリスクプロファイル：貝毒",
+        "author": "厚生労働省",
+        "year": "2022",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
+      }
+    ]
+  },
+  {
+    "id": "shiroumiushi",
+    "name": "シロウミウシ",
+    "category": "無脊椎動物",
+    "scientificName": "Chromodoris orientalis",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "透き通るような白い体に黒い斑点が散らばり、触角とエラが黄色い美しいウミウシ",
+      "クロイソカイメンなどの海綿動物をエサとする",
+      "体長は3〜4cm程度で、アオウミウシと並んで磯の観察で人気が高い"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "春から初夏にかけて、えぼし岩周辺のタイドプールや浅瀬の岩肌をゆっくり這（は）っているのが観察できる。",
+    "references": [
+      {
+        "title": "相模湾の海洋生物データベース",
+        "author": "JAMSTEC (BISMaL)",
+        "year": "2024",
+        "url": "https://www.godac.jamstec.go.jp/bismal/j/"
+      }
+    ]
+  },
+  {
+    "id": "ougigani",
+    "name": "オウギガニ",
+    "category": "無脊椎動物",
+    "scientificName": "Leptodius exaratus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "甲羅が扇（おうぎ）のような形をしており、表面がゴツゴツしている",
+      "甲幅は3cmほどで、全体的に黒褐色や茶褐色の地味な色合い",
+      "ハサミの先が黒く、力は見た目以上に強い"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "えぼし岩周辺やヘッドランドの潮間帯で、大きな石をひっくり返すとイソガニと一緒に転がり出てくることが多い。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      }
+    ]
+  },
+  {
+    "id": "shako",
+    "name": "シャコ",
+    "category": "無脊椎動物",
+    "scientificName": "Oratosquilla oratoria",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "エビに似ているが、カマキリのような折り畳み式の強力な捕脚（カマ）をもつ",
+      "砂泥底にU字型の巣穴を掘って生活し、通りかかった小魚や甲殻類を捕食する",
+      "カマの打撃力は非常に強く、カニの甲羅や貝殻を叩き割るほど"
+    ],
+    "firstAid": [
+      "カマで指などを切られたり叩かれたりした場合は、流水で洗い流して圧迫止血を行う。",
+      "傷が深い場合や腫れがひどい場合は、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "「シャコパンチ」と呼ばれる強力な打撃で怪我をする恐れがあるため、生きた個体を不用意に素手で掴まないこと。",
+    "localEncounter": "茅ヶ崎沖の砂泥底に生息。海岸の地引き網や沖の底引き網で水揚げされることがあり、江戸前寿司のネタとしても有名。",
+    "references": [
+      {
+        "title": "おさかな図鑑（シャコ）",
+        "author": "神奈川県水産技術センター",
+        "year": "2020",
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-syako.html"
+      }
+    ]
+  },
+  {
+    "id": "sunabikisou",
+    "name": "スナビキソウ",
+    "category": "植物",
+    "scientificName": "Argusia sibirica",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の砂浜に地下茎を長く伸ばして群生するムラサキ科の多年草",
+      "初夏に白い小さな花を咲かせ、甘い香りを放つ",
+      "渡り蝶「アサギマダラ」が好んで吸蜜に訪れる植物として有名"
+    ],
+    "firstAid": [],
+    "dontDo": "海浜植物の群落は砂防の役割を果たしているため、チョウなどの昆虫観察や写真撮影の際も群落に踏み入ったり引き抜いたりしないこと。",
+    "localEncounter": "茅ヶ崎の柳島海岸など、相模川河口付近の砂地に自生しており、初夏に花を咲かせる。",
+    "references": [
+      {
+        "title": "海浜植物",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040853.html"
+      }
+    ]
+  },
+  {
+    "id": "hamanasu",
+    "name": "ハマナス",
+    "category": "植物",
+    "scientificName": "Rosa rugosa",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の砂地に生えるバラ科の落葉低木で、枝に細かいトゲが密生している",
+      "夏に鮮やかな濃いピンク色（紅紫色）の香りの良い大きな花を咲かせる",
+      "秋にはミニトマトのような赤い果実（ローズヒップ）をつける"
+    ],
+    "firstAid": [],
+    "dontDo": "枝には非常に鋭いトゲが密集しているため、花や実を観察する際は素手で不用意に触れないこと。",
+    "localEncounter": "本来は北日本の海岸に多く自生するが、茅ヶ崎海岸のサイクリングロード沿いや海浜公園などの植栽として見ることができる。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "hamanadeshiko",
+    "name": "ハマナデシコ",
+    "category": "植物",
+    "scientificName": "Dianthus japonicus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の砂地や岩場に自生するナデシコの仲間",
+      "一般的なナデシコと異なり、葉は厚く光沢があり乾燥や塩害に強い",
+      "夏から秋にかけて、鮮やかな紅紫色（ピンク色）の花を茎の頂部にまとまって咲かせる"
+    ],
+    "firstAid": [],
+    "dontDo": "美しい花を咲かせるため園芸目的での採取が問題になることがあるが、自然の自生個体は絶対に持ち帰らないこと。",
+    "localEncounter": "茅ヶ崎の海岸周辺の砂地や、えぼし岩などの岩礁帯の隙間、サイクリングロードの脇などで夏場に見られる。",
+    "references": [
+      {
+        "title": "植物和名ー学名インデックス YList",
+        "author": "米倉浩司・梶田忠",
+        "year": "2003",
+        "url": "http://ylist.info/"
+      }
+    ]
+  },
+  {
+    "id": "kawarayomogi",
+    "name": "カワラヨモギ",
+    "category": "植物",
+    "scientificName": "Artemisia capillaris",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の砂地や河川敷に生えるキク科の多年草",
+      "葉は細かく裂けており、全体が白い綿毛に覆われ銀緑色に見える",
+      "乾燥に強く、生薬（インチンコウ）としても利用される特有の香りをもつ"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "相模川の河口付近の砂地や、茅ヶ崎海岸の後背地（飛砂帯）に群生しており、銀色の葉が砂浜によく映える。",
+    "references": [
+      {
+        "title": "植物研究部",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/department/botany/"
+      }
+    ]
+  },
+  {
+    "id": "marubasharinbai",
+    "name": "マルバシャリンバイ",
+    "category": "植物",
+    "scientificName": "Rhaphiolepis umbellata",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の岩場や林縁に生える常緑低木で、葉が厚く丸みを帯びている",
+      "初夏に白い5弁の花を咲かせ、秋から冬にかけて黒紫色のブルーベリーに似た実をつける",
+      "潮風や乾燥に非常に強いため、海岸沿いの生垣や街路樹としてよく利用される"
+    ],
+    "firstAid": [],
+    "dontDo": "",
+    "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）の縁や、国道134号沿いの植え込み、サザンビーチ周辺の生垣などで一年中見られる。",
+    "references": [
+      {
+        "title": "海岸林の役割",
+        "author": "神奈川県",
+        "year": "2022",
+        "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
+      }
+    ]
+  },
+  {
+    "id": "misago",
+    "name": "ミサゴ",
+    "category": "鳥類",
+    "scientificName": "Pandion haliaetus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "魚を主食とする猛禽類（もうきんるい）で、「魚鷹（うおたか）」とも呼ばれる",
+      "上空でホバリング（停空飛翔）してから水面に豪快にダイブし、鋭い爪で魚を捕らえる",
+      "飛翔時のシルエットはカモメに似ており、翼の下側が白いのが特徴"
+    ],
+    "firstAid": [],
+    "dontDo": "上空を旋回しているときは狩りの最中であることが多いため、ドローンなどを飛ばして妨害しないこと。",
+    "localEncounter": "相模川の河口付近や茅ヶ崎海岸の上空を飛翔し、海面や川面に向かってダイブしてボラなどの魚を狩る姿が一年を通して観察される。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "yurikamome",
+    "name": "ユリカモメ",
+    "category": "鳥類",
+    "scientificName": "Chroicocephalus ridibundus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "赤いくちばしと赤い足が特徴の小型のカモメ",
+      "冬鳥として飛来し、夏羽になると頭が黒頭巾をかぶったように黒くなる（茅ヶ崎では主に冬羽の白頭で観察される）",
+      "「ミャー」と鳴き、群れで行動することが多い"
+    ],
+    "firstAid": [],
+    "dontDo": "人に慣れやすく集団で群がるため、スナック菓子などの人間の食べ物を与えて生態系や栄養状態を乱さないこと。",
+    "localEncounter": "秋から春にかけての冬鳥として、相模川河口付近や茅ヶ崎漁港、サザンビーチちがさきなどで群れを作って休んでいる姿がよく見られる。",
+    "references": [
+      {
+        "title": "ふるさとの鳥：ユリカモメ",
+        "author": "神奈川県",
+        "year": "2021",
+        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+      }
+    ]
+  },
+  {
+    "id": "kawasemi",
+    "name": "カワセミ",
+    "category": "鳥類",
+    "scientificName": "Alcedo atthis",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "背中が鮮やかなコバルトブルー、腹部がオレンジ色で「空飛ぶ宝石」と呼ばれる",
+      "長いくちばしを持ち、水辺の木の枝や岩から水中に飛び込んで小魚やエビを捕食する",
+      "直線的に水面スレスレを高速で飛ぶ"
+    ],
+    "firstAid": [],
+    "dontDo": "警戒心が非常に強いため、大きな音を出したり、むやみに近づいて驚かせたりして観察や写真撮影を行わないこと。",
+    "localEncounter": "相模川の支流や小出川、千ノ川などの市内の河川や、中央公園の池など水辺環境のある場所で一年中観察できる留鳥。",
+    "references": [
+      {
+        "title": "鳥類標本データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+      }
+    ]
+  },
+  {
+    "id": "daisagi",
+    "name": "ダイサギ",
+    "category": "鳥類",
+    "scientificName": "Ardea alba",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "日本で見られるシラサギの中で最大（全長約90cm）の鳥",
+      "首が非常に長く、くちばしは冬羽では黄色、夏羽では黒色になる",
+      "浅瀬をゆっくり歩きながら、魚やカエルなどを長い首を素早く伸ばして捕食する"
+    ],
+    "firstAid": [],
+    "dontDo": "野生鳥獣への安易な餌付けは生態系に悪影響を及ぼすため行わず、遠くから静かに観察すること。",
+    "localEncounter": "相模川河口の干潟や浅瀬、市内の田園地帯などで一年を通して単独または小さな群れで行動しているのが観察される。",
+    "references": [
+      {
+        "title": "日本産鳥類目録 改訂第7版",
+        "author": "日本鳥学会",
+        "year": "2012",
+        "url": "https://www.ornithology.jp/"
+      }
+    ]
+  },
+  {
+    "id": "magamo",
+    "name": "マガモ",
+    "category": "鳥類",
+    "scientificName": "Anas platyrhynchos",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "オスは頭部が光沢のある緑色（青首）で、黄色いくちばしと白い首輪模様が特徴",
+      "メスは全体が茶褐色の保護色をしている",
+      "水面採餌ガモの代表種で、水面にお尻を向けて逆立ちするようにして水草などを食べる"
+    ],
+    "firstAid": [],
+    "dontDo": "パンなどの人間の食べ物を餌として与えると、栄養失調や水質悪化の原因になるため絶対に与えないこと。",
+    "localEncounter": "代表的な冬鳥として秋から春にかけて飛来し、相模川河口付近のヨシ原の周辺や市内のため池で群れになって越冬する。",
+    "references": [
+      {
+        "title": "鳥類標本データベース",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+      }
+    ]
+  },
+  {
+    "id": "nihontokage",
+    "name": "ニホントカゲ",
+    "category": "は虫類",
+    "scientificName": "Plestiodon japonicus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "幼体は尾が鮮やかなメタリックブルーで、体に金色の縦筋（ストライプ）が入る美しい姿をしている",
+      "成長すると全体が茶褐色になり、表面が滑らかで光沢がある",
+      "日当たりの良い石垣や草むらで日光浴をし、昆虫やクモを捕食する"
+    ],
+    "firstAid": [],
+    "dontDo": "敵に襲われると自切（尾を切り離す）して逃げる習性があり、再生には多大なエネルギーを消耗するため、むやみに追いかけたり尾を掴んだりしないこと。",
+    "localEncounter": "茅ヶ崎海岸の砂防林（クロマツ林）周辺の開けた場所や、海浜公園の石垣、サイクリングロード脇の草地などで、春から秋にかけてよく見られる。",
+    "references": [
+      {
+        "title": "動物研究部：爬虫類",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/department/zoology/"
+      }
+    ]
+  },
+  {
+    "id": "nihonkanahebi",
+    "name": "ニホンカナヘbi",
+    "category": "は虫類",
+    "scientificName": "Takydromus tachydromoides",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "全体が茶褐色で、ニホントカゲと比べて表面の鱗（うろこ）がカサカサしており光沢がない",
+      "尾が非常に長く、全長の3分の2ほどを占めるのが特徴",
+      "立体的な活動が得意で、草や低い低木の上によく登る"
+    ],
+    "firstAid": [],
+    "dontDo": "ニホントカゲと同様に自切を行うため、捕まえて観察する際は胴体を優しく包み込むように持ち、絶対に尾を引っ張らないこと。",
+    "localEncounter": "砂防林や防風林の林縁、柳島海岸周辺の乾いた草地や低い生垣の上などで、日光浴をしたり小さな昆虫を狙ったりする姿が観察できる。",
+    "references": [
+      {
+        "title": "動物研究部：爬虫類",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/department/zoology/"
+      }
+    ]
+  },
+  {
+    "id": "hamabehasamimushi",
+    "name": "ハマベハサミムシ",
+    "category": "無脊椎動物",
+    "scientificName": "Anisolabis maritima",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の環境に特化して生息する昆虫で、体長は2〜3cm程度、全身が光沢のある黒褐色",
+      "尾の先端にハサミがあり、翅（はね）は完全に退化しているため飛ぶことはできない",
+      "打ち上げられた海藻や魚の死骸などを食べる「砂浜の掃除屋」の役割を担う"
+    ],
+    "firstAid": [],
+    "dontDo": "尾のハサミで威嚇してくるが、挟まれても皮膚が切れるほどの力はないため、観察後は生息環境を壊さないよう元の海藻や流木の下へ優しく戻すこと。",
+    "localEncounter": "茅ヶ崎海岸や柳島海岸の波打ち際近くで、満潮線の跡に取り残された海藻や流木をひっくり返すと素早く逃げ出す姿が一年中観察できる。",
+    "references": [
+      {
+        "title": "動物研究部：昆虫",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/department/zoology/"
+      }
+    ]
+  },
+  {
+    "id": "umiakaamenbo",
+    "name": "ウミアカアメンボ",
+    "category": "無脊椎動物",
+    "scientificName": "Halobates japonicus",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "一生を海上で過ごす、世界的にも珍しい「海生昆虫」であるウミアメンボの仲間",
+      "体長は5mm程度で翅（はね）を持たず、発達した中脚と後脚で海面を滑るように移動する",
+      "海面に落ちた小昆虫などの体液を吸って生活している"
+    ],
+    "firstAid": [],
+    "dontDo": "非常に小さくデリケートな昆虫であるため、タイドプールで見つけても網で乱暴にすくわず、水面に浮いている姿をそのまま観察すること。",
+    "localEncounter": "夏から秋にかけて、えぼし岩などの岩礁帯にある潮だまり（タイドプール）で、波が穏やかな日に水面をよく探すと見つけられる。",
+    "references": [
+      {
+        "title": "相模湾の海洋生物データベース",
+        "author": "JAMSTEC (BISMaL)",
+        "year": "2024",
+        "url": "https://www.godac.jamstec.go.jp/bismal/j/"
+      }
+    ]
+  },
+  {
+    "id": "hamahyoutangomimushi",
+    "name": "ハマヒョウタンゴミムシ",
+    "category": "無脊椎動物",
+    "scientificName": "Omophron aequale",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "海岸の砂浜にのみ生息する体長5mmほどの小さな甲虫",
+      "丸みを帯びたひょうたん型の体に、緑褐色と淡黄色の複雑なまだら模様がある",
+      "砂に潜るのが非常に上手く、日中は砂の中に身を潜めている"
+    ],
+    "firstAid": [],
+    "dontDo": "生息環境である自然な砂浜が減少しているため、海岸清掃等で流木を動かした際に見つけても、踏みつけないように注意すること。",
+    "localEncounter": "茅ヶ崎海岸の飛砂帯（植物が生え始める境界付近）の乾いた砂地で、ハマヒルガオの根元や流木の下などを掘ると現れることがある。",
+    "references": [
+      {
+        "title": "動物研究部：昆虫",
+        "author": "国立科学博物館",
+        "year": "2023",
+        "url": "https://www.kahaku.go.jp/research/department/zoology/"
+      }
+    ]
+  },
+  {
+    "id": "hamatobimushi",
+    "name": "ハマトビムシ類",
+    "category": "無脊椎動物",
+    "scientificName": "Talitridae",
+    "isDanger": false,
+    "dangerType": "",
+    "image": {
+      "url": "【要設定：iNaturalist画像URL】",
+      "author": "【要設定：撮影者名】",
+      "license": "【要設定：ライセンス】",
+      "sourceUrl": "【要設定：観察ページURL】"
+    },
+    "features": [
+      "体長1cm前後で、エビに似た横に平たい体をしている甲殻類（ヨコエビの仲間）",
+      "後脚が非常に発達しており、刺激を受けるとノミのようにピョンピョンと高く跳び跳ねる",
+      "打ち上げられた海藻や魚の死骸などを食べて細かく砕き、砂浜の生態系を支える分解者（掃除屋）として極めて重要な役割をもつ"
+    ],
+    "firstAid": [],
+    "dontDo": "砂浜の有機物を分解して海岸を清潔に保つ益虫的な存在であるため、無闇に踏み潰したり、隠れ家となる打ち上げ海藻を不必要に除去したりしないこと。",
+    "localEncounter": "茅ヶ崎海岸やサザンビーチちがさきの波打ち際付近で、満潮線の跡に打ち上げられたワカメなどの海藻や流木を足でどかすと、一斉に跳び跳ねる姿が一年中観察できる。",
+    "references": [
+      {
+        "title": "海辺の魚類・甲殻類",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      },
+      {
+        "title": "相模湾の海洋生物データベース",
+        "author": "JAMSTEC (BISMaL)",
+        "year": "2024",
+        "url": "https://www.godac.jamstec.go.jp/bismal/j/"
+      }
+    ]
+  }
 ]
 
