@@ -18,6 +18,24 @@ const modalBody = document.getElementById('modal-body');
 const modalClose = document.getElementById('modal-close');
 const navItems = document.querySelectorAll('.nav-item');
 
+// ヘッダー縮小（スクロール時）
+(function () {
+    const header = document.querySelector('header');
+    if (!header) return;
+    const SCROLL_THRESHOLD = 30;
+    let ticking = false;
+    function updateHeader() {
+        header.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
+        ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(updateHeader);
+            ticking = true;
+        }
+    }, { passive: true });
+})();
+
 // SVGプレースホルダー (外部リクエストを減らし、デザインを統一)
 const placeholderSVG = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f1f5f9'/%3E%3Cpath d='M0 130 Q 50 160 100 130 T 200 130 L 200 200 L 0 200 Z' fill='%23e2e8f0'/%3E%3Cpath d='M0 150 Q 50 180 100 150 T 200 150 L 200 200 L 0 200 Z' fill='%23cbd5e1' opacity='0.6'/%3E%3Ctext x='100' y='90' font-family='sans-serif' font-size='14' font-weight='bold' fill='%2394a3b8' text-anchor='middle'%3ENo Image%3C/text%3E%3C/svg%3E`;
 
