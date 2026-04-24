@@ -237,13 +237,13 @@ header h1 small { font-size: 0.9rem; font-weight: 400; color: rgba(255,255,255,0
 .image-credit a:hover { color: var(--primary-deep); }
 
 /* --- ここからCCアイコンの追加スタイル --- */
-.image-credit .cc-icons {
+.image-credit i.fa-brands {
     font-size: 1.2em; /* テキストより少し大きく */
     margin-left: 4px; /* 著作者名とアイコン間の余白 */
     vertical-align: middle; /* テキストのベースラインに合わせる */
     color: #888; 
 }
-.image-credit .cc-icons + .cc-icons {
+.image-credit i.fa-brands + i.fa-brands {
     margin-left: 2px; /* 複数のアイコンが並ぶ場合の間隔 */
 }
 /* --- ここまで追加スタイル --- */
