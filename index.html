@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ちがビオ | 茅ヶ崎の海の生き物情報</title>
     
-    <link href="[https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap](https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap)" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-032.png">
     <link rel="icon" type="image/png" sizes="64x64" href="favicon-064.png">
     <link rel="icon" type="image/png" sizes="144x144" href="favicon-144.png">
@@ -21,23 +21,19 @@
 </header>
 
 <div class="container">
-    <!-- 検索バー領域 -->
     <div class="search-wrapper">
         <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索...">
         <button id="clearSearchBtn" class="search-clear-btn" aria-label="検索をクリア">✕</button>
     </div>
     
-    <!-- スケルトンローディング表示領域 -->
     <div id="skeleton-list" class="grid-container">
         <div class="skeleton-card"></div><div class="skeleton-card"></div>
         <div class="skeleton-card"></div><div class="skeleton-card"></div>
         <div class="skeleton-card"></div><div class="skeleton-card"></div>
     </div>
 
-    <!-- 生物タイルの表示領域 -->
     <div id="bio-list" class="grid-container" style="display: none;"></div>
 
-    <!-- 検索結果ゼロの場合の表示 -->
     <div id="empty-state" class="empty-state">
         <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M12 2C7.58 2 4 5.58 4 10v2a2 2 0 002 2h12a2 2 0 002-2v-2c0-4.42-3.58-8-8-8z"/>
@@ -48,18 +44,14 @@
     </div>
 </div>
 
-<!-- 詳細表示モーダル -->
 <div id="bio-modal" class="modal-overlay">
     <div class="modal-content" id="modal-content">
-        <div class="modal-handle"></div> <!-- スワイプ用ハンドル -->
-        <button id="modal-close" class="modal-close-btn">✕</button>
+        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn">✕</button>
         <div id="modal-body" class="modal-body">
-            <!-- JavaScriptで詳細データが挿入されます -->
-        </div>
+            </div>
     </div>
 </div>
 
-<!-- ボトムナビゲーション -->
 <nav class="bottom-nav" id="bottomNav">
     <a href="#" class="nav-item active" data-category="all">すべて</a>
     <a href="#" class="nav-item" data-category="ほ乳類">ほ乳類</a>
@@ -75,15 +67,15 @@
     <div class="footer-data">
         <p><strong>参考資料・データ出典:</strong></p>
         <div class="source-links">
-            <a href="[https://www.mhlw.go.jp/](https://www.mhlw.go.jp/)" target="_blank" rel="noopener noreferrer">厚生労働省</a> /
-            <a href="[https://www.env.go.jp/](https://www.env.go.jp/)" target="_blank" rel="noopener noreferrer">環境省</a> /
-            <a href="[https://www.kaiho.mlit.go.jp/](https://www.kaiho.mlit.go.jp/)" target="_blank" rel="noopener noreferrer">海上保安庁</a> /
-            <a href="[https://www.pref.kanagawa.jp/](https://www.pref.kanagawa.jp/)" target="_blank" rel="noopener noreferrer">神奈川県</a> /
-            <a href="[https://www.city.chigasaki.kanagawa.jp/](https://www.city.chigasaki.kanagawa.jp/)" target="_blank" rel="noopener noreferrer">茅ヶ崎市</a>
-            <a href="[https://www.kahaku.go.jp/](https://www.kahaku.go.jp/)" target="_blank" rel="noopener noreferrer">国立科学博物館</a> /
-            <a href="[https://www.enosui.com/](https://www.enosui.com/)" target="_blank" rel="noopener noreferrer">新江ノ島水族館</a> /
-            <a href="[https://www.jaam.jp/](https://www.jaam.jp/)" target="_blank" rel="noopener noreferrer">日本救急医学会</a> /
-            <a href="[https://www.inaturalist.org/](https://www.inaturalist.org/)" target="_blank" rel="noopener noreferrer">iNaturalist</a>
+            <a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">厚生労働省</a> /
+            <a href="https://www.env.go.jp/" target="_blank" rel="noopener noreferrer">環境省</a> /
+            <a href="https://www.kaiho.mlit.go.jp/" target="_blank" rel="noopener noreferrer">海上保安庁</a> /
+            <a href="https://www.pref.kanagawa.jp/" target="_blank" rel="noopener noreferrer">神奈川県</a> /
+            <a href="https://www.city.chigasaki.kanagawa.jp/" target="_blank" rel="noopener noreferrer">茅ヶ崎市</a> /
+            <a href="https://www.kahaku.go.jp/" target="_blank" rel="noopener noreferrer">国立科学博物館</a> /
+            <a href="https://www.enosui.com/" target="_blank" rel="noopener noreferrer">新江ノ島水族館</a> /
+            <a href="https://www.jaam.jp/" target="_blank" rel="noopener noreferrer">日本救急医学会</a> /
+            <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">iNaturalist</a>
         </div>
     </div> <div class="footer-disclaimer">
         ※ 本ページは学術的・教育的利用を目的とした非公式サイトです。<br>
@@ -91,16 +83,15 @@
     </div>
 
     <div class="footer-info">
-        | <a class="lifesaving-link" href="[https://www.instagram.com/surf90chigasakilsc/](https://www.instagram.com/surf90chigasakilsc/)" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> |
+        | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> |
     </div>
 
     <div class="footer-copyright">
-        <a href="[https://github.com/surf90/chiga-bio/blob/main/README.md](https://github.com/surf90/chiga-bio/blob/main/README.md)" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
-        Code: <a href="[https://github.com/surf90/chiga-bio/blob/main/LICENSE](https://github.com/surf90/chiga-bio/blob/main/LICENSE)" target="_blank">MIT License</a> | Content: <a href="[https://creativecommons.org/licenses/by-nc/4.0/deed.ja](https://creativecommons.org/licenses/by-nc/4.0/deed.ja)" target="_blank">CC BY-NC 4.0</a>
+        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
+        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
     </div>
 </footer>
 
-<!-- トースト通知 -->
 <div id="toast"></div>
 
 <script src="js/script.js"></script>
