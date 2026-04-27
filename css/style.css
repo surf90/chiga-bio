@@ -316,6 +316,7 @@ summary { font-weight: bold; cursor: pointer; }
    ========================================= */
 .symbol-icon { font-size: 0.85em; margin-left: 6px; color: var(--primary-deep); opacity: 0.75; vertical-align: middle; }
 .symbol-svg { vertical-align: -0.15em; margin-right: 4px; }
+.symbol-label { font-size: 0.75em; letter-spacing: 0.05em; vertical-align: middle; }
 .category-tag { background-color: rgba(14, 116, 144, 0.1); color: var(--primary-deep); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
 
 .footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: #94a3b8; }
