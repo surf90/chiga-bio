@@ -3483,6 +3483,46 @@
         "url": "https://www.godac.jamstec.go.jp/bismal/j/"
       }
     ]
-  }
+  },
+  {
+  "id": "niseakashia",
+  "name": "ニセアカシア（ハリエンジュ）",
+  "category": "植物",
+  "scientificName": "Robinia pseudoacacia",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": "【要設定：iNaturalist画像URL】",
+    "author": "【要設定：撮影者名】",
+    "license": "【要設定：ライセンス】",
+    "sourceUrl": "【要設定：観察ページURL】"
+  },
+  "features": [
+    "日本で一般に「アカシア」と呼ばれることが多いマメ科の落葉高木",
+    "初夏に白い蝶形の花を房状に咲かせ甘く強い香りを放つ",
+    "枝の基部に非常に鋭く硬いトゲ（刺）をもつ",
+    "繁殖力が極めて高く生態系被害防止外来種に指定されている"
+  ],
+  "firstAid": [
+    "トゲが刺さった場合は流水で傷口を洗い流し清潔に保つ。",
+    "トゲが深く折れ残ったり腫れや痛みが続く場合は医療機関を受診する。"
+  ],
+  "dontDo": "枝には非常に鋭いトゲがあるため、花や葉を観察する際に素手で不用意に枝を掴まないこと。",
+  "localEncounter": "相模川の河川敷や茅ヶ崎海岸周辺の防砂林の縁などで野生化して群生しており、初夏には白い花と強い香りで存在が目立つ。",
+  "references": [
+    {
+      "title": "侵入生物データベース：ニセアカシア",
+      "author": "国立環境研究所",
+      "year": "2023",
+      "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/80380.html"
+    },
+    {
+      "title": "生態系被害防止外来種リスト",
+      "author": "環境省",
+      "year": "2015",
+      "url": "https://www.env.go.jp/nature/intro/2outline/list.html"
+    }
+  ]
+}
 ]
 
