@@ -134,8 +134,14 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
    ========================================= */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 12px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 6px), 1fr));
     gap: 12px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
 }
 
 /* スケルトンローディングのアニメーション */
