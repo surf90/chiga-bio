@@ -11,9 +11,12 @@
 ## 技術要件・制約
 
 - **構成:** シングルページの静的HTML（Vanilla JS / CSS）。外部ライブラリへの依存は最小限とする。
-- **デプロイ・ホスティング:** GitHub Pages。
-- **CI/CD:** GitHub Actions を利用した自動デプロイを想定。
-- **拡張性:** 将来的なPWA化を視野に入れ、電波状況の悪い海辺でのオフライン利用を可能にする構造とする。
+- **デプロイ・ホスティング:** GitHub Pages（HTTPS）。
+- **CI/CD:** GitHub Actions を利用した自動デプロイ。
+- **PWA対応済み:** Service Worker（`sw.js`）によるオフラインキャッシュを実装済み。電波状況の悪い海辺でもインストール済みページを閲覧可能。
+  - 静的ファイル（HTML / CSS / JS / JSON）: Network First
+  - 画像（ローカル・iNaturalist CDN）: Cache First（最大100枚）
+  - キャッシュバージョン: `CACHE_VERSION`（`sw.js`冒頭）を変更することで旧キャッシュを自動削除
 
 ## UX 定義
 
@@ -27,16 +30,20 @@
 chiga-bio/
 ├── .github/
 │   └── workflows/
-│       └── pages.yml      # GitHub Pages 自動デプロイ用
-├── index.html             # メインHTML（UI/テンプレート）
+│       └── pages.yml                  # GitHub Pages 自動デプロイ用
+├── index.html                         # メインHTML（UI/テンプレート）
+├── sw.js                              # Service Worker（PWAオフライン対応）
+├── site.webmanifest                   # PWAマニフェスト
 ├── css/
-│   └── style.css          # スタイルシート
+│   └── style.css                      # スタイルシート
 ├── js/
-│   └── script.js          # 生物データの描画と検索・UI制御
+│   └── script.js                      # 生物データの描画と検索・UI制御
 ├── data/
-│   └── bio-data.json      # 生物データ
-└── assets/
-    └── images/            # 権利フリーの画像等（必要に応じて）
+│   └── bio-data.json                  # 生物データ
+├── favicon.ico / favicon.svg          # ファビコン
+├── apple-touch-icon.png               # iOS向けアイコン
+├── web-app-manifest-192x192.png       # PWAアイコン（192px）
+└── web-app-manifest-512x512.png       # PWAアイコン（512px）
 ```
 
 
