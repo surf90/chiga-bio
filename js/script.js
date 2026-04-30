@@ -392,3 +392,12 @@ modalContent.addEventListener('touchend', (e) => {
 
 // 起動
 document.addEventListener('DOMContentLoaded', fetchBioData);
+
+// Service Worker 登録（PWA オフライン対応）
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW 登録成功:', reg.scope))
+            .catch(err => console.log('SW 登録失敗:', err));
+    });
+}
