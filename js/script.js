@@ -150,13 +150,18 @@ navItems.forEach(item => {
     });
 });
 
+let searchTimeout;
+
 searchInput.addEventListener('input', (e) => {
     if (e.target.value.length > 0) {
         clearSearchBtn.classList.add('visible');
     } else {
         clearSearchBtn.classList.remove('visible');
     }
-    filterData();
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        filterData();
+    }, 300);
 });
 
 clearSearchBtn.addEventListener('click', () => {
