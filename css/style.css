@@ -210,6 +210,18 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10;
 }
+.tile-badge.contact { color: var(--alert-high); }
+.tile-badge.eat { color: #f59e0b; }
+.tile-badge.protect { color: #10b981; }
+
+.tile-symbol-icon {
+    display: inline-flex; align-items: center;
+    color: var(--primary-deep);
+    background-color: rgba(14, 116, 144, 0.08);
+    padding: 2px 6px; border-radius: 8px; margin-left: 6px;
+    font-size: 0.85em; font-weight: 600;
+}
+.tile-symbol-icon .symbol-svg { margin-right: 3px; }
 
 .tile-image-wrapper {
     width: 55%; height: 55%; border-radius: 50%; overflow: hidden;

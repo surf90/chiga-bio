@@ -47,6 +47,25 @@ function getImageUrl(bio) {
     return placeholderSVG;
 }
 
+function getCitySymbol(id, isTile = false) {
+    let svg = '';
+    let label = '';
+    if (id === 'tsutsuji') {
+        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M240,144a40,40,0,0,1-40,40A39.88,39.88,0,0,1,183.86,180.58A40,40,0,0,1,136,200v8a40,40,0,0,1-80,0v-8a40,40,0,0,1-47.86-51.42A40,40,0,0,1,56,104a39.88,39.88,0,0,1,16.14,3.42A40,40,0,0,1,120,56V48a40,40,0,0,1,80,0v8a40,40,0,0,1,47.86,51.42A40,40,0,0,1,240,144ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Z"></path></svg>`;
+        label = '市の花';
+    } else if (id === 'shijukara') {
+        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M232,104a32.16,32.16,0,0,0-17.76-28.72l-14.88-7.44a56.16,56.16,0,0,0-25-5.84h0a64,64,0,0,0-64,64v8h-8A40,40,0,0,0,62.36,174l-25.13,10.6a16,16,0,0,0-3.32,27.18,52.28,52.28,0,0,0,32,12.18h8a64,64,0,0,0,64-64v-8h16l14.88,7.44A56.16,56.16,0,0,0,188.64,164h0a32.16,32.16,0,0,0,28.72-17.76A103.58,103.58,0,0,0,232,104ZM120,136v24a48,48,0,0,1-48,48h-8A36.4,36.4,0,0,1,43.25,200L68.61,189.31A24,24,0,0,1,102.36,174,16,16,0,0,0,120,136ZM214.32,138.8a16.08,16.08,0,0,1-14.36,8.88h0A40.12,40.12,0,0,1,182.1,143.5l-20.44-10.22A15.93,15.93,0,0,0,154.5,132H136V126a48,48,0,0,1,48-48h0a40.12,40.12,0,0,1,17.86,4.18L222.3,92.4a16.08,16.08,0,0,1,8.88,14.36A87.65,87.65,0,0,1,214.32,138.8ZM160,116a12,12,0,1,1-12-12A12,12,0,0,1,160,116Z"></path></svg>`;
+        label = '市の鳥';
+    } else if (id === 'niseakashia') {
+        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,149.66l-36,36A8,8,0,0,1,166,188H136v40a8,8,0,0,1-16,0V188H90.06a8,8,0,0,1-5.72-2.4l-35.72-36.43A48,48,0,0,1,80,64a8,8,0,0,1,0,16,32,32,0,0,0-22.63,54.63L88,165.94V136a8,8,0,0,1,16,0v16h16V120a8,8,0,0,1,16,0v32h16v-8a8,8,0,0,1,16,0v8.06l29.66-29.66a8,8,0,0,1,11.31,11.31ZM176,80a48.05,48.05,0,0,0-48-48,47.58,47.58,0,0,0-19.79,4.27,8,8,0,0,0,6.62,14.56A31.7,31.7,0,0,1,128,48a32,32,0,0,1,32,32,31.7,31.7,0,0,1-2.83,13.17,8,8,0,1,0,14.56,6.62A47.58,47.58,0,0,0,176,80Z"></path></svg>`;
+        label = '市の木';
+    } else {
+        return '';
+    }
+    const wrapperClass = isTile ? 'tile-symbol-icon' : 'symbol-icon';
+    return `<span class="${wrapperClass}" title="茅ヶ崎${label}">${svg}<span class="symbol-label">${label}</span></span>`;
+}
+
 async function fetchBioData() {
     try {
         const response = await fetch('./data/bio-data.json');
@@ -113,10 +132,10 @@ function renderCards(data) {
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
 
         let tileBadge = '';
-        if (bio.dangerType === 'contact') tileBadge = '<div class="tile-badge">⚠️</div>';
-        else if (bio.dangerType === 'eat') tileBadge = '<div class="tile-badge">☠️</div>';
-        else if (bio.dangerType === 'protect') tileBadge = '<div class="tile-badge">🐣</div>';
-        else if (bio.isDanger) tileBadge = '<div class="tile-badge">⚠️</div>';
+        if (bio.dangerType === 'contact') tileBadge = '<div class="tile-badge contact"><i class="fa-solid fa-triangle-exclamation"></i></div>';
+        else if (bio.dangerType === 'eat') tileBadge = '<div class="tile-badge eat"><i class="fa-solid fa-skull-crossbones"></i></div>';
+        else if (bio.dangerType === 'protect') tileBadge = '<div class="tile-badge protect"><i class="fa-solid fa-hand-holding-heart"></i></div>';
+        else if (bio.isDanger) tileBadge = '<div class="tile-badge contact"><i class="fa-solid fa-triangle-exclamation"></i></div>';
 
         const imgUrl = getImageUrl(bio);
 
@@ -126,7 +145,7 @@ function renderCards(data) {
                 <img src="${imgUrl}" alt="${bio.name}" loading="lazy">
             </div>
             <div class="tile-name">${bio.name}</div>
-            <div class="tile-category">${bio.category}</div>
+            <div class="tile-category">${bio.category}${getCitySymbol(bio.id, true)}</div>
         `;
 
         card.addEventListener('click', () => openModal(bio));
@@ -195,10 +214,10 @@ window.filterData = function() {
 // ==========================================
 function openModal(bio) {
     let badgeHtml = '';
-    if (bio.dangerType === 'contact') badgeHtml = '<span class="danger-badge contact">⚠️ 触れると危険</span>';
-    else if (bio.dangerType === 'eat') badgeHtml = '<span class="danger-badge eat">☠️ 食べると危険</span>';
-    else if (bio.dangerType === 'protect') badgeHtml = '<span class="danger-badge protect">🐣 守るため注意</span>';
-    else if (bio.isDanger) badgeHtml = '<span class="danger-badge contact">⚠️ 危険</span>';
+    if (bio.dangerType === 'contact') badgeHtml = '<span class="danger-badge contact"><i class="fa-solid fa-triangle-exclamation"></i> 触れると危険</span>';
+    else if (bio.dangerType === 'eat') badgeHtml = '<span class="danger-badge eat"><i class="fa-solid fa-skull-crossbones"></i> 食べると危険</span>';
+    else if (bio.dangerType === 'protect') badgeHtml = '<span class="danger-badge protect"><i class="fa-solid fa-hand-holding-heart"></i> 守るため注意</span>';
+    else if (bio.isDanger) badgeHtml = '<span class="danger-badge contact"><i class="fa-solid fa-triangle-exclamation"></i> 危険</span>';
 
     const imgUrl = getImageUrl(bio);
     let creditHtml = '';
@@ -264,14 +283,7 @@ function openModal(bio) {
         </details>`;
     }
 
-    let symbolIcon = '';
-    if (bio.id === 'tsutsuji') {
-        symbolIcon = `<span class="symbol-icon" title="茅ヶ崎市の花"><svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M240,144a40,40,0,0,1-40,40A39.88,39.88,0,0,1,183.86,180.58A40,40,0,0,1,136,200v8a40,40,0,0,1-80,0v-8a40,40,0,0,1-47.86-51.42A40,40,0,0,1,56,104a39.88,39.88,0,0,1,16.14,3.42A40,40,0,0,1,120,56V48a40,40,0,0,1,80,0v8a40,40,0,0,1,47.86,51.42A40,40,0,0,1,240,144ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Z"></path></svg><span class="symbol-label">市の花</span></span>`;
-    } else if (bio.id === 'shijukara') {
-        symbolIcon = `<span class="symbol-icon" title="茅ヶ崎市の鳥"><svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M232,104a32.16,32.16,0,0,0-17.76-28.72l-14.88-7.44a56.16,56.16,0,0,0-25-5.84h0a64,64,0,0,0-64,64v8h-8A40,40,0,0,0,62.36,174l-25.13,10.6a16,16,0,0,0-3.32,27.18,52.28,52.28,0,0,0,32,12.18h8a64,64,0,0,0,64-64v-8h16l14.88,7.44A56.16,56.16,0,0,0,188.64,164h0a32.16,32.16,0,0,0,28.72-17.76A103.58,103.58,0,0,0,232,104ZM120,136v24a48,48,0,0,1-48,48h-8A36.4,36.4,0,0,1,43.25,200L68.61,189.31A24,24,0,0,1,102.36,174,16,16,0,0,0,120,136ZM214.32,138.8a16.08,16.08,0,0,1-14.36,8.88h0A40.12,40.12,0,0,1,182.1,143.5l-20.44-10.22A15.93,15.93,0,0,0,154.5,132H136V126a48,48,0,0,1,48-48h0a40.12,40.12,0,0,1,17.86,4.18L222.3,92.4a16.08,16.08,0,0,1,8.88,14.36A87.65,87.65,0,0,1,214.32,138.8ZM160,116a12,12,0,1,1-12-12A12,12,0,0,1,160,116Z"></path></svg><span class="symbol-label">市の鳥</span></span>`;
-    } else if (bio.id === 'niseakashia') {
-        symbolIcon = `<span class="symbol-icon" title="茅ヶ崎市の木"><svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,149.66l-36,36A8,8,0,0,1,166,188H136v40a8,8,0,0,1-16,0V188H90.06a8,8,0,0,1-5.72-2.4l-35.72-36.43A48,48,0,0,1,80,64a8,8,0,0,1,0,16,32,32,0,0,0-22.63,54.63L88,165.94V136a8,8,0,0,1,16,0v16h16V120a8,8,0,0,1,16,0v32h16v-8a8,8,0,0,1,16,0v8.06l29.66-29.66a8,8,0,0,1,11.31,11.31ZM176,80a48.05,48.05,0,0,0-48-48,47.58,47.58,0,0,0-19.79,4.27,8,8,0,0,0,6.62,14.56A31.7,31.7,0,0,1,128,48a32,32,0,0,1,32,32,31.7,31.7,0,0,1-2.83,13.17,8,8,0,1,0,14.56,6.62A47.58,47.58,0,0,0,176,80Z"></path></svg><span class="symbol-label">市の木</span></span>`;
-    }
+    const symbolIcon = getCitySymbol(bio.id, false);
 
     modalBody.innerHTML = `
         <img src="${imgUrl}" alt="${bio.name}" class="modal-header-img">
