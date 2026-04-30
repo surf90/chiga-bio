@@ -123,7 +123,7 @@ function renderCards(data) {
         card.innerHTML = `
             ${tileBadge}
             <div class="tile-image-wrapper">
-                <img src="${imgUrl}" alt="${bio.name}" loading="lazy">
+                <img src="${imgUrl}" alt="${bio.name}" loading="lazy" decoding="async">
             </div>
             <div class="tile-name">${bio.name}</div>
             <div class="tile-category">${bio.category}</div>
@@ -147,6 +147,7 @@ navItems.forEach(item => {
 
         currentCategory = item.dataset.category;
         filterData();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
 
