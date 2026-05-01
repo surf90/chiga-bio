@@ -270,9 +270,9 @@ function openModal(bio) {
     let encounterHtml = '';
     if (bio.encounterSeason || bio.encounterLocation || bio.encounterProbability) {
         const tags = [];
-        if (bio.encounterSeason) tags.push(`<span class="encounter-tag">🗓️ ${bio.encounterSeason}</span>`);
-        if (bio.encounterLocation) tags.push(`<span class="encounter-tag">📍 ${bio.encounterLocation}</span>`);
-        if (bio.encounterProbability) tags.push(`<span class="encounter-tag">🎲 遭遇確率: ${bio.encounterProbability}</span>`);
+        if (bio.encounterSeason) tags.push(`<span class="encounter-tag"><i class="fa-regular fa-calendar"></i>${bio.encounterSeason}</span>`);
+        if (bio.encounterLocation) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-location-dot"></i>${bio.encounterLocation}</span>`);
+        if (bio.encounterProbability) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-chart-simple"></i>遭遇確率: ${bio.encounterProbability}</span>`);
         encounterHtml = `<div class="encounter-tags">${tags.join('')}</div>`;
     }
 
