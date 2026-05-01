@@ -41,6 +41,10 @@
   "scientificName": "学名",
   "isDanger": false,
   "dangerType": "",
+  "rarity": 1,
+  "encounterSeason": "通年",
+  "encounterLocation": "海岸全域",
+  "encounterProbability": "高",
   "image": {
     "url": "【要設定：iNaturalist画像URL】",
     "author": "【要設定：撮影者名】",
@@ -76,6 +80,10 @@
 | `scientificName` | String | ラテン語の学名を記述（イタリック体指定はアプリ側で行うため平文で可）。 |
 | `isDanger` | Boolean | 人体への危害を及ぼす恐れがある場合は `true`、それ以外は `false`。 |
 | `dangerType` | String | `isDanger`が`true`の場合、下記の危険タイプENUMから選択。`isDanger`が`false`の場合は `""` を指定。 |
+| `rarity` | Number | レア度を示す1〜3の数値（1: よくいる, 2: 時々いる, 3: レア）。 |
+| `encounterSeason` | String | 遭遇しやすい季節を示す短い文字列（例: "春〜秋", "通年", "夏", "冬"）。 |
+| `encounterLocation` | String | 遭遇しやすい場所を示す短い文字列（例: "砂浜", "岩礁・タイドプール", "海面", "防砂林"）。 |
+| `encounterProbability` | String | 遭遇する確率を示す文字列（"高", "中", "低" のいずれか）。 |
 | `image` | Object | **AIはプレースホルダーのまま出力すること**（画像選定・URL設定は人力で行う）。 |
 | `features` | Array of String | 生物の外見や生態に関する特徴を2〜3項目でリスト化。**句点（。）は不要**。形態→生態→特記事項の順で記述。 |
 | `firstAid` | Array of String | 危険生物の場合、推奨される応急処置を手順順に記述（**句点あり**、命令形「〜する。」「〜しない。」）。危険がない場合は `[]`（空配列）。 |
