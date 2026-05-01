@@ -1,39 +1,45 @@
 [
   {
-    "id": "katsuonoeboshi",
-    "name": "カツオノエボシ",
-    "category": "無脊椎動物",
-    "scientificName": "Physalia physalis",
-    "isDanger": true,
-    "dangerType": "contact",
-    "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
-      "author": "peaslover",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/observations/307276767"
-    },
-    "features": [
-      "青く透明な餃子（ぎょうざ）のような形の浮き袋（約10cm）",
-      "長い触手（青色）をもつ",
-      "死んでいても刺胞は発射される"
-    ],
-    "firstAid": [
-      "絶対に素手で触らない。",
-      "刺されたら、こすらずに海水で優しく洗い流す（真水はNG）。",
-      "触手が残っている場合は、ピンセットやプラスチックカード等で剥がす。",
-      "氷や冷水で冷やし、速やかに医療機関を受診する。"
-    ],
-    "dontDo": "お酢（ビネガー）をかけるのはNG（ハブクラゲとは異なり、刺胞の発射を促進する恐れがある）であり、真水で洗うのも浸透圧の変化で毒が注入されるため絶対に避けること。",
-    "localEncounter": "夏場を中心に、強い南風が吹いた後に茅ヶ崎海岸の砂浜へ大量に打ち上げられていることが多い。",
-    "references": [
-      {
-        "title": "Jellyfish stings and their management: A review",
-        "author": "Montgomery, L., et al.",
-        "year": "2016",
-        "url": "https://doi.org/10.3390/md14020027"
-      }
-    ]
-  },
+"id": "katsuonoeboshi",
+"name": "カツオノエボシ",
+"category": "無脊椎動物",
+"scientificName": "Physalia physalis",
+"isDanger": true,
+"dangerType": "contact",
+"image": {
+"url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
+"author": "peaslover",
+"license": "CC BY-NC",
+"sourceUrl": "https://www.inaturalist.org/observations/307276767"
+},
+"features": [
+"大きさ約10cmの透き通った鮮やかな藍色を含む浮き袋と、平均10m（最大約50m）にも達する長い触手をもつ",
+"浮き袋にある三角形の帆で風を受けて移動し、自身には遊泳力がほとんどない",
+"1個体に見えるが、実は触手や浮袋など多くのヒドロ虫が集まって形成された群体生物である"
+],
+"firstAid": [
+"アナフィラキシーショックによる溺水を防ぐため、刺されたらすぐに海から上がる。",
+"触手が残っている場合は、二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。",
+"未発射の刺胞を刺激しないよう、真水ではなく海水で患部を優しく洗い流す。",
+"痛みが落ち着く程度の温度（40度以上）のお湯で温めるか、保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する。"
+],
+"dontDo": "お酢（食酢）をかけると逆に刺胞が反応して毒針を発射するため絶対に使用しないこと。また、真水（水道水）で洗うのも未発射の刺胞が浸透圧ショックで毒針をさらに発射し症状が悪化するため絶対に避けること。",
+"localEncounter": "夏場を中心に、強い南風や台風の影響でサザンビーチをはじめとする茅ヶ崎海岸の砂浜へ大量に漂着して打ち上げられていることが多い。",
+"references": [
+{
+"title": "クラゲに刺された時に一番重要なこと",
+"author": "日本ライフセービング協会",
+"year": "2024",
+"url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
+},
+{
+"title": "Jellyfish stings and their management: A review",
+"author": "Montgomery, L., et al.",
+"year": "2016",
+"url": "https://doi.org/10.3390/md14020027"
+}
+]
+},
   {
     "id": "akaei",
     "name": "アカエイ",
@@ -213,38 +219,47 @@
       }
     ]
   },
-  {
-    "id": "andonkurage",
-    "name": "アンドンクラゲ",
-    "category": "無脊椎動物",
-    "scientificName": "Carybdea brevipedalia",
-    "isDanger": true,
-    "dangerType": "contact",
-    "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227480944/large.jpg",
-      "author": "mojineko",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/observations/133541973"
-    },
-    "features": [
-      "刺されると皮膚に触手が残存し、毒矢が刺さったままの状態になることがある",
-      "刺されるとピリッとした強い痛みを伴う"
-    ],
-    "firstAid": [
-      "まずは海水中でタオルなどを用いて、皮膚に残存している触手をそっと取り去る。",
-      "症状が改善しない場合は速やかに医療機関を受診する。"
-    ],
-    "dontDo": "「砂を付けてこすり取る」という民間療法は言い伝えられているが控え、また「お酢をかける」という手法はアンドンクラゲに対して効果が限定的であるため行わないこと。",
-    "localEncounter": "お盆（8月中旬）の時期以降に海水浴場へよく発生し、「お盆過ぎに海に入ると刺される」原因の代表格。",
-    "references": [
-      {
-        "title": "学校理科教育現場における事故事例とその対策（8）",
-        "author": "神奈川大学",
-        "year": "2017",
-        "url": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
-      }
-    ]
+{
+  "id": "andonkurage",
+  "name": "アンドンクラゲ",
+  "category": "無脊椎動物",
+  "scientificName": "Carybdea brevipedalia",
+  "isDanger": true,
+  "dangerType": "contact",
+  "image": {
+    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227480944/large.jpg",
+    "author": "mojineko",
+    "license": "CC BY-NC",
+    "sourceUrl": "https://www.inaturalist.org/observations/133541973"
   },
+  "features": [
+    "体全体がほぼ無色透明で立方体のような形状の傘を持ち、その4隅から触手が伸びている[cite: 1]",
+    "海中では極めて視認しづらく比較的高速で遊泳するが、大潮のときなどに多数群れていることがある[cite: 1]",
+    "刺されると火傷のようにケロイド状の痕が残ることや、遅延型アレルギーにより約1週間にわたり強いかゆみを感じることがある[cite: 1]"
+  ],
+  "firstAid": [
+    "アナフィラキシーショックによる溺水を防ぐため、受傷直後の痛みの度合いに関係なくすぐに海から上がる。[cite: 1]",
+    "立方クラゲ類であるため、未発射の刺胞を不活性化させるために患部に食酢（4%酢酸溶液）をかける。[cite: 1]",
+    "触手が貼り付いている場合は二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。[cite: 1]",
+    "痛みが落ち着く程度の温度（40度以上）のお湯で患部を温めるか保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する（遅延型のかゆみにも温めることが有効）。[cite: 1]"
+  ],
+  "dontDo": "真水（水道水）で洗うと未発射の刺胞が浸透圧ショックにより毒針をさらに発射して症状が悪化するため絶対に避けること。[cite: 1]",
+  "localEncounter": "お盆（8月中旬）の時期以降にサザンビーチなどの海水浴場へよく発生し「お盆過ぎに海に入ると刺される」原因の代表格であり、大潮のときなどに多数群れていることがあるため注意が必要である。[cite: 1]",
+  "references": [
+    {
+      "title": "クラゲに刺された時に一番重要なこと",
+      "author": "日本ライフセービング協会",
+      "year": "2024",
+      "url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
+    },
+    {
+      "title": "学校理科教育現場における事故事例とその対策（8）",
+      "author": "神奈川大学",
+      "year": "2017",
+      "url": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
+    }
+  ]
+},
   {
     "id": "katakuchiiwashi",
     "name": "カタクチイワシ（シラス）",

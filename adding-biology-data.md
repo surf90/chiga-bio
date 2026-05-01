@@ -18,10 +18,10 @@
 ### imageフィールドのプレースホルダー（変更禁止）
 ```json
 "image": {
-  "url": "【要設定：iNaturalist画像URL】",
-  "author": "【要設定：撮影者名】",
-  "license": "【要設定：ライセンス】",
-  "sourceUrl": "【要設定：観察ページURL】"
+  "url": " ",
+  "author": " ",
+  "license": " ",
+  "sourceUrl": " "
 }
 ```
 
