@@ -139,7 +139,12 @@ function renderCards(data) {
 
         const imgUrl = getImageUrl(bio);
 
+        const rarityStars = bio.rarity === 3 ? '★★★' : bio.rarity === 2 ? '★★☆' : '★☆☆';
+        const rarityClass = `rarity-${bio.rarity || 1}`;
+        const rarityBadge = bio.rarity ? `<div class="rarity-badge ${rarityClass}">${rarityStars}</div>` : '';
+
         card.innerHTML = `
+            ${rarityBadge}
             ${tileBadge}
             <div class="tile-image-wrapper">
                 <img src="${imgUrl}" alt="${bio.name}" loading="lazy" decoding="async">
@@ -200,15 +205,17 @@ emptyResetBtn.addEventListener('click', () => {
     filterData();
 });
 
-window.filterData = function() {
+function filterData() {
     const keyword = searchInput.value.toLowerCase();
     const filtered = globalBioData.filter(bio => {
         const matchCategory = currentCategory === 'all' || bio.category === currentCategory;
-        const matchKeyword = bio.name.includes(keyword) || (bio.features && bio.features.some(f => f.includes(keyword)));
+        const matchKeyword =
+            bio.name.toLowerCase().includes(keyword) ||
+            (bio.features && bio.features.some(f => f.toLowerCase().includes(keyword)));
         return matchCategory && matchKeyword;
     });
     renderCards(filtered);
-};
+}
 
 // ==========================================
 // 詳細モーダルとシェア機能
@@ -222,7 +229,7 @@ function openModal(bio) {
 
     const imgUrl = getImageUrl(bio);
     let creditHtml = '';
-    if (imgUrl !== placeholderSVG) {
+    if (imgUrl !== placeholderSVG && bio.image) {
         const authorText = bio.image.author || 'Unknown';
         
 // CCアイコンの構築処理
@@ -260,6 +267,19 @@ function openModal(bio) {
         }
     }
 
+    let encounterHtml = '';
+    if (bio.encounterSeason || bio.encounterLocation || bio.encounterProbability) {
+        const tags = [];
+        if (bio.encounterSeason) tags.push(`<span class="encounter-tag">🗓️ ${bio.encounterSeason}</span>`);
+        if (bio.encounterLocation) tags.push(`<span class="encounter-tag">📍 ${bio.encounterLocation}</span>`);
+        if (bio.encounterProbability) tags.push(`<span class="encounter-tag">🎲 遭遇確率: ${bio.encounterProbability}</span>`);
+        encounterHtml = `<div class="encounter-tags">${tags.join('')}</div>`;
+    }
+
+    let localEncounterHtml = bio.localEncounter
+        ? `<h3 class="section-label">FIND / 見つけ方・遭遇場所</h3><p class="local-encounter">${bio.localEncounter}</p>`
+        : '';
+
     let featuresHtml = (bio.features && bio.features.length > 0)
         ? `<h3 class="section-label">FEATURES / 特徴</h3><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
 
@@ -295,6 +315,8 @@ function openModal(bio) {
             <dt class="sr-only">分類</dt><dd><span class="category-tag">${bio.category}</span></dd>
             <dt class="sr-only">学名</dt><dd class="scientific-name">${bio.scientificName}</dd>
         </dl>
+        ${encounterHtml}
+        ${localEncounterHtml}
         ${featuresHtml}
         ${firstAidHtml}
         ${dontDoHtml}
@@ -328,7 +350,7 @@ modal.addEventListener('click', (e) => {
 // ==========================================
 // シェアAPI
 // ==========================================
-window.shareBio = function(id, name, category) {
+function shareBio(id, name, category) {
     const baseUrl = window.location.origin + window.location.pathname;
     const shareUrl = `${baseUrl}?id=${id}`;
 

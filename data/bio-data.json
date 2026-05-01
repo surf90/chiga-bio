@@ -1,45 +1,49 @@
 [
   {
-"id": "katsuonoeboshi",
-"name": "カツオノエボシ",
-"category": "無脊椎動物",
-"scientificName": "Physalia physalis",
-"isDanger": true,
-"dangerType": "contact",
-"image": {
-"url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
-"author": "peaslover",
-"license": "CC BY-NC",
-"sourceUrl": "https://www.inaturalist.org/observations/307276767"
-},
-"features": [
-"大きさ約10cmの透き通った鮮やかな藍色を含む浮き袋と、平均10m（最大約50m）にも達する長い触手をもつ",
-"浮き袋にある三角形の帆で風を受けて移動し、自身には遊泳力がほとんどない",
-"1個体に見えるが、実は触手や浮袋など多くのヒドロ虫が集まって形成された群体生物である"
-],
-"firstAid": [
-"アナフィラキシーショックによる溺水を防ぐため、刺されたらすぐに海から上がる。",
-"触手が残っている場合は、二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。",
-"未発射の刺胞を刺激しないよう、真水ではなく海水で患部を優しく洗い流す。",
-"痛みが落ち着く程度の温度（40度以上）のお湯で温めるか、保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する。"
-],
-"dontDo": "お酢（食酢）をかけると逆に刺胞が反応して毒針を発射するため絶対に使用しないこと。また、真水（水道水）で洗うのも未発射の刺胞が浸透圧ショックで毒針をさらに発射し症状が悪化するため絶対に避けること。",
-"localEncounter": "夏場を中心に、強い南風や台風の影響でサザンビーチをはじめとする茅ヶ崎海岸の砂浜へ大量に漂着して打ち上げられていることが多い。",
-"references": [
-{
-"title": "クラゲに刺された時に一番重要なこと",
-"author": "日本ライフセービング協会",
-"year": "2024",
-"url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
-},
-{
-"title": "Jellyfish stings and their management: A review",
-"author": "Montgomery, L., et al.",
-"year": "2016",
-"url": "https://doi.org/10.3390/md14020027"
-}
-]
-},
+    "id": "katsuonoeboshi",
+    "name": "カツオノエボシ",
+    "category": "無脊椎動物",
+    "scientificName": "Physalia physalis",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
+      "author": "peaslover",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/307276767"
+    },
+    "features": [
+      "大きさ約10cmの透き通った鮮やかな藍色を含む浮き袋と、平均10m（最大約50m）にも達する長い触手をもつ",
+      "浮き袋にある三角形の帆で風を受けて移動し、自身には遊泳力がほとんどない",
+      "1個体に見えるが、実は触手や浮袋など多くのヒドロ虫が集まって形成された群体生物である"
+    ],
+    "firstAid": [
+      "アナフィラキシーショックによる溺水を防ぐため、刺されたらすぐに海から上がる。",
+      "触手が残っている場合は、二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。",
+      "未発射の刺胞を刺激しないよう、真水ではなく海水で患部を優しく洗い流す。",
+      "痛みが落ち着く程度の温度（40度以上）のお湯で温めるか、保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する。"
+    ],
+    "dontDo": "お酢（食酢）をかけると逆に刺胞が反応して毒針を発射するため絶対に使用しないこと。また、真水（水道水）で洗うのも未発射の刺胞が浸透圧ショックで毒針をさらに発射し症状が悪化するため絶対に避けること。",
+    "localEncounter": "夏場を中心に、強い南風や台風の影響でサザンビーチをはじめとする茅ヶ崎海岸の砂浜へ大量に漂着して打ち上げられていることが多い。",
+    "references": [
+      {
+        "title": "クラゲに刺された時に一番重要なこと",
+        "author": "日本ライフセービング協会",
+        "year": "2024",
+        "url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
+      },
+      {
+        "title": "Jellyfish stings and their management: A review",
+        "author": "Montgomery, L., et al.",
+        "year": "2016",
+        "url": "https://doi.org/10.3390/md14020027"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
+  },
   {
     "id": "akaei",
     "name": "アカエイ",
@@ -72,7 +76,11 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜秋",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "gonzui",
@@ -112,7 +120,11 @@
         "year": "2020",
         "url": "https://www1.kaiho.mlit.go.jp/JODC/kiken/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "春〜秋",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "hyoumondako",
@@ -153,7 +165,11 @@
         "year": "2018",
         "url": "https://www.pref.kanagawa.jp/docs/aw3/cnt/f6567/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "tonbi",
@@ -185,7 +201,11 @@
         "year": "2023",
         "url": "https://rescue.epark.jp/columns/gaityou-gaiju/gaityou/869"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "utsubo",
@@ -217,49 +237,57 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/fishing/25_fish/index.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
-{
-  "id": "andonkurage",
-  "name": "アンドンクラゲ",
-  "category": "無脊椎動物",
-  "scientificName": "Carybdea brevipedalia",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227480944/large.jpg",
-    "author": "mojineko",
-    "license": "CC BY-NC",
-    "sourceUrl": "https://www.inaturalist.org/observations/133541973"
-  },
-  "features": [
-    "体全体がほぼ無色透明で立方体のような形状の傘を持ち、その4隅から触手が伸びている[cite: 1]",
-    "海中では極めて視認しづらく比較的高速で遊泳するが、大潮のときなどに多数群れていることがある[cite: 1]",
-    "刺されると火傷のようにケロイド状の痕が残ることや、遅延型アレルギーにより約1週間にわたり強いかゆみを感じることがある[cite: 1]"
-  ],
-  "firstAid": [
-    "アナフィラキシーショックによる溺水を防ぐため、受傷直後の痛みの度合いに関係なくすぐに海から上がる。[cite: 1]",
-    "立方クラゲ類であるため、未発射の刺胞を不活性化させるために患部に食酢（4%酢酸溶液）をかける。[cite: 1]",
-    "触手が貼り付いている場合は二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。[cite: 1]",
-    "痛みが落ち着く程度の温度（40度以上）のお湯で患部を温めるか保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する（遅延型のかゆみにも温めることが有効）。[cite: 1]"
-  ],
-  "dontDo": "真水（水道水）で洗うと未発射の刺胞が浸透圧ショックにより毒針をさらに発射して症状が悪化するため絶対に避けること。[cite: 1]",
-  "localEncounter": "お盆（8月中旬）の時期以降にサザンビーチなどの海水浴場へよく発生し「お盆過ぎに海に入ると刺される」原因の代表格であり、大潮のときなどに多数群れていることがあるため注意が必要である。[cite: 1]",
-  "references": [
-    {
-      "title": "クラゲに刺された時に一番重要なこと",
-      "author": "日本ライフセービング協会",
-      "year": "2024",
-      "url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
+  {
+    "id": "andonkurage",
+    "name": "アンドンクラゲ",
+    "category": "無脊椎動物",
+    "scientificName": "Carybdea brevipedalia",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227480944/large.jpg",
+      "author": "mojineko",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/133541973"
     },
-    {
-      "title": "学校理科教育現場における事故事例とその対策（8）",
-      "author": "神奈川大学",
-      "year": "2017",
-      "url": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
-    }
-  ]
-},
+    "features": [
+      "体全体がほぼ無色透明で立方体のような形状の傘を持ち、その4隅から触手が伸びている[cite: 1]",
+      "海中では極めて視認しづらく比較的高速で遊泳するが、大潮のときなどに多数群れていることがある[cite: 1]",
+      "刺されると火傷のようにケロイド状の痕が残ることや、遅延型アレルギーにより約1週間にわたり強いかゆみを感じることがある[cite: 1]"
+    ],
+    "firstAid": [
+      "アナフィラキシーショックによる溺水を防ぐため、受傷直後の痛みの度合いに関係なくすぐに海から上がる。[cite: 1]",
+      "立方クラゲ類であるため、未発射の刺胞を不活性化させるために患部に食酢（4%酢酸溶液）をかける。[cite: 1]",
+      "触手が貼り付いている場合は二次被害を防ぐため素手で触らず、手袋やピンセット等を用いて手早く静かに取り除く。[cite: 1]",
+      "痛みが落ち着く程度の温度（40度以上）のお湯で患部を温めるか保冷剤等で冷やして痛みを和らげ、速やかに医療機関を受診する（遅延型のかゆみにも温めることが有効）。[cite: 1]"
+    ],
+    "dontDo": "真水（水道水）で洗うと未発射の刺胞が浸透圧ショックにより毒針をさらに発射して症状が悪化するため絶対に避けること。[cite: 1]",
+    "localEncounter": "お盆（8月中旬）の時期以降にサザンビーチなどの海水浴場へよく発生し「お盆過ぎに海に入ると刺される」原因の代表格であり、大潮のときなどに多数群れていることがあるため注意が必要である。[cite: 1]",
+    "references": [
+      {
+        "title": "クラゲに刺された時に一番重要なこと",
+        "author": "日本ライフセービング協会",
+        "year": "2024",
+        "url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
+      },
+      {
+        "title": "学校理科教育現場における事故事例とその対策（8）",
+        "author": "神奈川大学",
+        "year": "2017",
+        "url": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
+  },
   {
     "id": "katakuchiiwashi",
     "name": "カタクチイワシ（シラス）",
@@ -287,7 +315,11 @@
         "year": "2023",
         "url": "https://www.city.chigasaki.kanagawa.jp/sangyo/gyogyo/index.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "kusafugu",
@@ -319,7 +351,11 @@
         "year": "2022",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "shirochidori",
@@ -348,7 +384,11 @@
         "year": "2021",
         "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "sunagani",
@@ -379,7 +419,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "冬",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamahirugao",
@@ -408,7 +452,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040853.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "初夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "akakurage",
@@ -442,7 +490,11 @@
         "year": "2021",
         "url": "https://www.enosui.com/diaryentry.php?eid=07467"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "秋〜春",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "mizukurage",
@@ -474,7 +526,11 @@
         "year": "2018",
         "url": "https://www.enosui.com/diaryentry.php?eid=04461"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "高"
   },
   {
     "id": "kabutokurage",
@@ -503,7 +559,11 @@
         "year": "2025",
         "url": "https://www.enosui.com/diaryentry.php?eid=07228"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "ginkakurage",
@@ -534,7 +594,11 @@
         "year": "2018",
         "url": "https://www.enosui.com/diaryentry.php?eid=04680"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "katsuonokanmuri",
@@ -565,7 +629,11 @@
         "year": "2023",
         "url": "https://www.museum.yokosuka.kanagawa.jp/archives/nature-history/40275"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜初夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "aominoumiushi",
@@ -603,7 +671,11 @@
         "year": "2021",
         "url": "https://www.enosui.com/diaryentry.php?eid=07467"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜初夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "haokoze",
@@ -636,7 +708,11 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "fujitsubo",
@@ -669,7 +745,11 @@
         "year": "2023",
         "url": "https://www.jaam.jp/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "datsu",
@@ -707,7 +787,11 @@
         "year": "2023",
         "url": "https://www.jaam.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "minokasago",
@@ -746,7 +830,11 @@
         "year": "2022",
         "url": "https://www.enosui.com/animals.php"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "akaumigame",
@@ -781,7 +869,11 @@
         "year": "2023",
         "url": "https://www.enosui.com/diaryentry.php?eid=08112"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "初夏〜夏",
+    "encounterLocation": "砂浜",
+    "encounterProbability": "低"
   },
   {
     "id": "shumokuzame",
@@ -814,7 +906,11 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "夏",
+    "encounterLocation": "沖合・浅瀬",
+    "encounterProbability": "低"
   },
   {
     "id": "yoshikirizame",
@@ -846,7 +942,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/Fishes/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "umineko",
@@ -877,7 +977,11 @@
         "year": "2021",
         "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "sunameri",
@@ -910,7 +1014,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/m-mammal/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沿岸・砂浜",
+    "encounterProbability": "低"
   },
   {
     "id": "kamairuka",
@@ -941,7 +1049,11 @@
         "year": "2022",
         "url": "https://www.enosui.com/diaryentry.php?eid=08112"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "hanagondou",
@@ -972,7 +1084,11 @@
         "year": "2023",
         "url": "https://www.enosui.com/animals.php"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "zatoukujira",
@@ -1003,7 +1119,11 @@
         "year": "2022",
         "url": "https://www.kaiho.mlit.go.jp/info/kouhou/r4/k220302/k220302.pdf"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "冬〜春",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "shirogisu",
@@ -1032,7 +1152,11 @@
         "year": "2021",
         "url": "https://tokyo360photo.com/chigasaki-coast-fishing"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜秋",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hirame",
@@ -1071,7 +1195,11 @@
         "year": "2023",
         "url": "https://www.pref.kanagawa.jp/docs/pw3/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "kasago",
@@ -1103,7 +1231,11 @@
         "year": "2021",
         "url": "https://kanagawa-eventplus.com/column/syonan-children-rockyshore-play"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "mejina",
@@ -1132,7 +1264,11 @@
         "year": "2017",
         "url": "https://www.honda.co.jp/fishing/enjoy/travelogue/201703/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "agohaze",
@@ -1168,7 +1304,11 @@
         "year": "2024",
         "url": "https://www.marinespecies.org/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "honyadokari",
@@ -1197,7 +1337,11 @@
         "year": "2021",
         "url": "https://kanagawa-eventplus.com/column/syonan-children-rockyshore-play"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "amehurashi",
@@ -1226,7 +1370,11 @@
         "year": "2020",
         "url": "https://www.enosui.com/diaryentry.php?eid=06123"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "miyubishigi",
@@ -1262,7 +1410,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "秋〜春",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamadangomushi",
@@ -1291,7 +1443,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "高"
   },
   {
     "id": "isohiyodori",
@@ -1321,7 +1477,11 @@
         "year": "2023",
         "url": "https://chigasaki-kyodokai.com/?p=5435"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "midoriigai",
@@ -1353,7 +1513,11 @@
         "year": "2022",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "suzuki",
@@ -1385,7 +1549,11 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamaboufuu",
@@ -1414,7 +1582,11 @@
         "year": "2017",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/hakubutsukan/1042540/1042555/1042741.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "kosagi",
@@ -1424,10 +1596,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "全身が白い羽毛で覆われる（白鷺の一種）",
@@ -1444,7 +1616,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "中"
   },
   {
     "id": "kawau",
@@ -1454,10 +1630,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "全身が黒褐色で、くちばしの基部が黄色い",
@@ -1474,7 +1650,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "漁港・堤防",
+    "encounterProbability": "高"
   },
   {
     "id": "umiu",
@@ -1484,10 +1664,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "カワウに酷似するが、やや大型で緑色の光沢が強い",
@@ -1504,7 +1684,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "kanmurikaitsuburi",
@@ -1514,10 +1698,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "日本のカイツブリ類で最大",
@@ -1534,7 +1718,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "秋〜春",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "中"
   },
   {
     "id": "aosagi",
@@ -1544,10 +1732,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "日本で繁殖するサギ類で最大（全長約90cm）",
@@ -1564,7 +1752,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "bakenumeri",
@@ -1574,10 +1766,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "平たい体と大きな胸びれをもつネズッポ科の魚",
@@ -1594,7 +1786,11 @@
         "year": "2013",
         "url": "https://www.fish-isj.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "itohikiaji",
@@ -1604,10 +1800,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "幼魚は背びれとしりびれの軟条が著しく長く伸びる（糸引き）",
@@ -1624,7 +1820,11 @@
         "year": "2024",
         "url": "https://www.fishbase.se/summary/Alectis-ciliaris.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "bora",
@@ -1634,10 +1834,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "成長につれて名前が変わる出世魚（ハク→スバル→イナ→ボラ→トド）",
@@ -1656,7 +1856,11 @@
         "year": "2023",
         "url": "https://www.jfa.maff.go.jp/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "高"
   },
   {
     "id": "rouninaji",
@@ -1666,10 +1870,10 @@
     "isDanger": true,
     "dangerType": "ingestion",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "アジ科の最大種（GT：ジャイアント・トレバリーと呼ばれる）",
@@ -1688,7 +1892,11 @@
         "year": "2023",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "中"
   },
   {
     "id": "nekogai",
@@ -1698,10 +1906,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "タマガイ科の巻貝で、丸みを帯びた貝殻をもつ",
@@ -1718,7 +1926,11 @@
         "year": "2024",
         "url": "https://www.marinespecies.org/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "matsubagai",
@@ -1728,10 +1940,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "笠形（かさがた）の貝殻をもつヨメガカサ科の巻貝",
@@ -1750,7 +1962,11 @@
         "year": "2024",
         "url": "https://obis.org/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "aoumiushi",
@@ -1760,10 +1976,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "青い体色に黄色の斑紋、赤い触角と二次鰓（にじえら）をもつ",
@@ -1780,7 +1996,11 @@
         "year": "2024",
         "url": "https://www.godac.jamstec.go.jp/bismal/j/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "春〜初夏",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "ryukyuyoroiaji",
@@ -1790,10 +2010,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体は銀白色で、体側に黄色の斑点をもつ個体が多い",
@@ -1812,7 +2032,11 @@
         "year": "2013",
         "url": "https://www.fish-isj.jp/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "tobiuo",
@@ -1822,10 +2046,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "胸ひれが非常に大きく発達し、グライダーのように滑空する",
@@ -1844,7 +2068,11 @@
         "year": "2023",
         "url": "https://www.pref.kanagawa.jp/docs/pw3/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "sazae",
@@ -1854,10 +2082,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "殻に角（トゲ）があるものと無いものがある（波の強さが影響するとされる）",
@@ -1874,7 +2102,11 @@
         "year": "2017",
         "url": "https://www.malaco-soc-japan.org/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "hamaguri",
@@ -1884,10 +2116,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "内湾の砂泥底に生息する二枚貝",
@@ -1904,7 +2136,11 @@
         "year": "2017",
         "url": "https://www.env.go.jp/nature/kisho/marine/redlist.html"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "干潟",
+    "encounterProbability": "低"
   },
   {
     "id": "kobansou",
@@ -1914,10 +2150,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "イネ科の一年草（帰化植物）",
@@ -1934,7 +2170,11 @@
         "year": "2020",
         "url": "https://www.kahaku.go.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "初夏",
+    "encounterLocation": "上空・海面",
+    "encounterProbability": "中"
   },
   {
     "id": "hamagou",
@@ -1944,10 +2184,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂浜に這（は）うように群生する落葉低木",
@@ -1964,7 +2204,11 @@
         "year": "2023",
         "url": "https://www.env.go.jp/nature/nationalparks/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "chigaya",
@@ -1974,10 +2218,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "イネ科の多年草で、地下茎で広く繁殖する",
@@ -1996,7 +2240,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "防砂林・砂丘",
+    "encounterProbability": "高"
   },
   {
     "id": "tochikagami",
@@ -2006,10 +2254,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "水面に円形の葉を浮かべる浮葉性の水草",
@@ -2026,7 +2274,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "夏",
+    "encounterLocation": "ため池・水路",
+    "encounterProbability": "低"
   },
   {
     "id": "ebine",
@@ -2036,10 +2288,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "ラン科の多年草で、林床に自生する地生ラン",
@@ -2056,7 +2308,11 @@
         "year": "2020",
         "url": "https://www.env.go.jp/nature/kisho/hozen/redlist/index.html"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "春",
+    "encounterLocation": "林床",
+    "encounterProbability": "低"
   },
   {
     "id": "saihairan",
@@ -2066,10 +2322,10 @@
     "isDanger": false,
     "dangerType": "protect",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "ラン科の多年草で、広葉樹林の薄暗い林床に生える",
@@ -2086,7 +2342,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "初夏",
+    "encounterLocation": "雑木林・社叢林",
+    "encounterProbability": "中"
   },
   {
     "id": "yabukarashi",
@@ -2096,10 +2356,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "ブドウ科のつる性多年草",
@@ -2118,7 +2378,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏",
+    "encounterLocation": "防砂林・砂丘",
+    "encounterProbability": "中"
   },
   {
     "id": "satsuki",
@@ -2128,10 +2392,10 @@
     "isDanger": true,
     "dangerType": "ingestion",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "ツツジの仲間だが、開花時期が遅く5〜6月（旧暦の皐月）に咲く",
@@ -2150,7 +2414,11 @@
         "year": "2023",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "公園・市街地",
+    "encounterProbability": "中"
   },
   {
     "id": "tsutsuji",
@@ -2189,7 +2457,11 @@
         "year": "2023",
         "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007343.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "春",
+    "encounterLocation": "公園・市街地",
+    "encounterProbability": "高"
   },
   {
     "id": "shijukara",
@@ -2225,7 +2497,11 @@
         "year": "2023",
         "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007344.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "公園・市街地",
+    "encounterProbability": "高"
   },
   {
     "id": "rengetsutsuji",
@@ -2235,10 +2511,10 @@
     "isDanger": true,
     "dangerType": "eat",
     "image": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/623518377/large.jpg",
-    "author": "mmagr1",
-    "license": "CC BY-NC",
-    "sourceUrl": "https://www.inaturalist.org/observations/342397736"
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/623518377/large.jpg",
+      "author": "mmagr1",
+      "license": "CC BY-NC",
+      "sourceUrl": "https://www.inaturalist.org/observations/342397736"
     },
     "features": [
       "春から初夏にかけて、鮮やかな朱赤色や黄色の花を咲かせる落葉低木",
@@ -2258,159 +2534,179 @@
         "year": "2023",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "公園・市街地",
+    "encounterProbability": "中"
   },
   {
-  "id": "azumahikigaeru",
-  "name": "アズマヒキガエル",
-  "category": "両生類",
-  "scientificName": "Bufo japonicus formosus",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
-  },
-  "features": [
-    "体長は10〜15cm程度で、茶褐色や黄褐色の体色に多数のイボ状の突起がある",
-    "目の後方にある耳腺（じせん）から「ブフォトキシン」という乳白色の猛毒を分泌する",
-    "水かきが発達しておらず、ピョンピョン跳ねずにのっそりと歩く"
-  ],
-  "firstAid": [
-    "触ってしまった場合は、目をこすったり口に手を持っていったりせず、直ちに流水と石鹸（せっけん）で十分に手を洗う。",
-    "万が一、毒液が目に入った場合は大量の流水で洗い流し、速やかに眼科を受診する。"
-  ],
-  "dontDo": "毒液が目に入ると失明の恐れがあり、口に入ると重篤な中毒症状を引き起こす危険があるため、素手で触ったり、むやみに刺激を与えたりしないこと。",
-  "localEncounter": "茅ヶ崎海岸の砂防林（松林）周辺や相模川河口の草地に生息し、雨上がりや夜間に海浜公園の遊歩道へ出てくることがある。",
-  "references": [
-    {
-      "title": "自然毒のリスクプロファイル：動物性自然毒",
-      "author": "厚生労働省",
-      "year": "2023",
-      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+    "id": "azumahikigaeru",
+    "name": "アズマヒキガエル",
+    "category": "両生類",
+    "scientificName": "Bufo japonicus formosus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
-    {
-      "title": "海洋危険生物の毒と病態",
-      "author": "日本救急医学会",
-      "year": "2023",
-      "url": "https://www.jaam.jp/"
-    }
-  ]
-},
-  {
-  "id": "nihonamagaeru",
-  "name": "ニホンアマガエル",
-  "category": "両生類",
-  "scientificName": "Dryophytes japonicus",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
-  },
-  "features": [
-    "体長は3〜4cm程度で、周囲の環境に合わせて体色を緑色や灰褐色に変化させる",
-    "鼻筋から目の後方にかけて黒褐色の縞模様（アイマスクのような模様）がある",
-    "指先に丸い吸盤があり、海岸周辺の植物やコンクリート壁などに張り付く"
-  ],
-  "firstAid": [
-    "触った後は、絶対に目をこすらず、直ちに流水と石鹸（せっけん）で手を洗う。",
-    "万が一、触った手で目をこすってしまい激しい痛みが出た場合は、大量の流水で洗い流し速やかに眼科を受診する。"
-  ],
-  "dontDo": "皮膚から分泌される粘液には毒性があり、目に入ると激しい痛みや失明の恐れがあるため、触った手で絶対に顔や目をこすらないこと。",
-  "localEncounter": "茅ヶ崎海岸の砂防林や海浜植物の周辺、海岸沿いの公園や公共シャワー施設などに広く生息し、雨上がりによく姿を見せる。",
-  "references": [
-    {
-      "title": "自然毒のリスクプロファイル：動物性自然毒",
-      "author": "厚生労働省",
-      "year": "2023",
-      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
-    }
-  ]
+    "features": [
+      "体長は10〜15cm程度で、茶褐色や黄褐色の体色に多数のイボ状の突起がある",
+      "目の後方にある耳腺（じせん）から「ブフォトキシン」という乳白色の猛毒を分泌する",
+      "水かきが発達しておらず、ピョンピョン跳ねずにのっそりと歩く"
+    ],
+    "firstAid": [
+      "触ってしまった場合は、目をこすったり口に手を持っていったりせず、直ちに流水と石鹸（せっけん）で十分に手を洗う。",
+      "万が一、毒液が目に入った場合は大量の流水で洗い流し、速やかに眼科を受診する。"
+    ],
+    "dontDo": "毒液が目に入ると失明の恐れがあり、口に入ると重篤な中毒症状を引き起こす危険があるため、素手で触ったり、むやみに刺激を与えたりしないこと。",
+    "localEncounter": "茅ヶ崎海岸の砂防林（松林）周辺や相模川河口の草地に生息し、雨上がりや夜間に海浜公園の遊歩道へ出てくることがある。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：動物性自然毒",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      },
+      {
+        "title": "海洋危険生物の毒と病態",
+        "author": "日本救急医学会",
+        "year": "2023",
+        "url": "https://www.jaam.jp/"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "防砂林・砂丘",
+    "encounterProbability": "中"
   },
   {
-  "id": "seguroumihebi",
-  "name": "セグロウミヘビ",
-  "category": "は虫類",
-  "scientificName": "Hydrophis platurus",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
-  },
-  "features": [
-    "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
-    "外洋性で一生を海中で過ごし、遊泳に適したオール状の平たい尾をもつ",
-    "ハブの数十倍とも言われる非常に強力な神経毒をもつ"
-  ],
-  "firstAid": [
-    "海上で見かけた場合は絶対に近づかず、速やかにその場から離れる。",
-    "万が一咬（か）まれた場合は、直ちに海から上がり119番通報する。",
-    "パニックになると毒の回りが早くなるため、可能な限り安静を保ち救急隊の到着を待つ。"
-  ],
-  "dontDo": "台風などの荒天後に砂浜に打ち上げられていることがあるが、弱っていても反射的に咬（か）みつく恐れがあるため絶対に素手で触らないこと。",
-  "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
-  "references": [
-    {
-      "title": "海洋危険生物の毒と病態",
-      "author": "日本救急医学会",
-      "year": "2023",
-      "url": "https://www.jaam.jp/"
+    "id": "nihonamagaeru",
+    "name": "ニホンアマガエル",
+    "category": "両生類",
+    "scientificName": "Dryophytes japonicus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
-    {
-      "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
-      "author": "海上保安庁（国土交通省）",
-      "year": "2024",
-      "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
-    }
-  ]
-},
-  {
-  "id": "araiguma",
-  "name": "アライグマ",
-  "category": "ほ乳類",
-  "scientificName": "Procyon lotor",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+    "features": [
+      "体長は3〜4cm程度で、周囲の環境に合わせて体色を緑色や灰褐色に変化させる",
+      "鼻筋から目の後方にかけて黒褐色の縞模様（アイマスクのような模様）がある",
+      "指先に丸い吸盤があり、海岸周辺の植物やコンクリート壁などに張り付く"
+    ],
+    "firstAid": [
+      "触った後は、絶対に目をこすらず、直ちに流水と石鹸（せっけん）で手を洗う。",
+      "万が一、触った手で目をこすってしまい激しい痛みが出た場合は、大量の流水で洗い流し速やかに眼科を受診する。"
+    ],
+    "dontDo": "皮膚から分泌される粘液には毒性があり、目に入ると激しい痛みや失明の恐れがあるため、触った手で絶対に顔や目をこすらないこと。",
+    "localEncounter": "茅ヶ崎海岸の砂防林や海浜植物の周辺、海岸沿いの公園や公共シャワー施設などに広く生息し、雨上がりによく姿を見せる。",
+    "references": [
+      {
+        "title": "自然毒のリスクプロファイル：動物性自然毒",
+        "author": "厚生労働省",
+        "year": "2023",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "防砂林・砂丘",
+    "encounterProbability": "中"
   },
-  "features": [
-    "目の周りに黒いマスクのような模様があり、ふさふさとした尾に黒い輪の縞模様をもつ",
-    "手先が器用で木登りや泳ぎが得意な特定外来生物",
-    "夜行性だが日中にも海岸の防砂林や公園でエサを探すことがある"
-  ],
-  "firstAid": [
-    "万が一咬（か）まれたり引っかかれたりした場合は、直ちに傷口を流水と石鹸（せっけん）でよく洗い流す。",
-    "破傷風やその他重篤な感染症のリスクがあるため、応急処置後は速やかに医療機関を受診する。"
-  ],
-  "dontDo": "気性が荒く、アライグマ回虫などの重篤な人獣共通感染症のリスクがあるため、可愛らしく見えても絶対に近づいてエサを与えたり素手で触ろうとしたりしないこと。",
-  "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）や周辺の海浜公園に生息し、放置されたゴミやバーベキューの食べ残しを狙って出没することがある。",
-  "references": [
-    {
-      "title": "特定外来生物の解説：アライグマ",
-      "author": "環境省",
-      "year": "2023",
-      "url": "https://www.env.go.jp/nature/intro/2outline/list/L-ho-01.html"
+  {
+    "id": "seguroumihebi",
+    "name": "セグロウミヘビ",
+    "category": "は虫類",
+    "scientificName": "Hydrophis platurus",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
-    {
-      "title": "野生鳥獣（アライグマ等）の被害を防ぐために",
-      "author": "茅ヶ崎市",
-      "year": "2023",
-      "url": "https://www.city.chigasaki.kanagawa.jp/"
-    }
-  ]
-},
+    "features": [
+      "背面が黒色、腹面が黄色という鮮やかなツートンカラーをしている",
+      "外洋性で一生を海中で過ごし、遊泳に適したオール状の平たい尾をもつ",
+      "ハブの数十倍とも言われる非常に強力な神経毒をもつ"
+    ],
+    "firstAid": [
+      "海上で見かけた場合は絶対に近づかず、速やかにその場から離れる。",
+      "万が一咬（か）まれた場合は、直ちに海から上がり119番通報する。",
+      "パニックになると毒の回りが早くなるため、可能な限り安静を保ち救急隊の到着を待つ。"
+    ],
+    "dontDo": "台風などの荒天後に砂浜に打ち上げられていることがあるが、弱っていても反射的に咬（か）みつく恐れがあるため絶対に素手で触らないこと。",
+    "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
+    "references": [
+      {
+        "title": "海洋危険生物の毒と病態",
+        "author": "日本救急医学会",
+        "year": "2023",
+        "url": "https://www.jaam.jp/"
+      },
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
+      }
+    ],
+    "rarity": 3,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "砂浜",
+    "encounterProbability": "低"
+  },
+  {
+    "id": "araiguma",
+    "name": "アライグマ",
+    "category": "ほ乳類",
+    "scientificName": "Procyon lotor",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
+    },
+    "features": [
+      "目の周りに黒いマスクのような模様があり、ふさふさとした尾に黒い輪の縞模様をもつ",
+      "手先が器用で木登りや泳ぎが得意な特定外来生物",
+      "夜行性だが日中にも海岸の防砂林や公園でエサを探すことがある"
+    ],
+    "firstAid": [
+      "万が一咬（か）まれたり引っかかれたりした場合は、直ちに傷口を流水と石鹸（せっけん）でよく洗い流す。",
+      "破傷風やその他重篤な感染症のリスクがあるため、応急処置後は速やかに医療機関を受診する。"
+    ],
+    "dontDo": "気性が荒く、アライグマ回虫などの重篤な人獣共通感染症のリスクがあるため、可愛らしく見えても絶対に近づいてエサを与えたり素手で触ろうとしたりしないこと。",
+    "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）や周辺の海浜公園に生息し、放置されたゴミやバーベキューの食べ残しを狙って出没することがある。",
+    "references": [
+      {
+        "title": "特定外来生物の解説：アライグマ",
+        "author": "環境省",
+        "year": "2023",
+        "url": "https://www.env.go.jp/nature/intro/2outline/list/L-ho-01.html"
+      },
+      {
+        "title": "野生鳥獣（アライグマ等）の被害を防ぐために",
+        "author": "茅ヶ崎市",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "防砂林・海浜公園",
+    "encounterProbability": "中"
+  },
   {
     "id": "kuromatsu",
     "name": "クロマツ",
@@ -2419,10 +2715,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の厳しい環境（潮風や乾燥）に耐える常緑針葉樹",
@@ -2445,7 +2741,11 @@
         "year": "2022",
         "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "防砂林・海岸",
+    "encounterProbability": "高"
   },
   {
     "id": "maaji",
@@ -2455,10 +2755,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体側の中央から尾にかけて「ぜんご（稜鱗）」と呼ばれる硬い鱗（うろこ）の列があり、素手で強く握ると手を切ることがある",
@@ -2475,7 +2775,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-maaji.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "漁港・堤防",
+    "encounterProbability": "中"
   },
   {
     "id": "kurodai",
@@ -2485,10 +2789,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体は銀灰色から黒褐色で、鯛（たい）の仲間として知られる",
@@ -2505,7 +2809,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kurodai.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "kawahagi",
@@ -2515,10 +2823,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "ザラザラとした丈夫な皮を持ち、調理時に簡単に皮を剥（は）ぐことができるのが名前の由来",
@@ -2535,7 +2843,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kawahagi.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "秋〜冬",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "maiwashi",
@@ -2545,10 +2857,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体側に黒い斑点が1列に並ぶのが特徴で「ナナツボシ」とも呼ばれる",
@@ -2571,7 +2883,11 @@
         "year": "2023",
         "url": "https://www.pref.kanagawa.jp/docs/pw3/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "madai",
@@ -2581,10 +2897,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "鮮やかな淡紅色の体に、青い小斑点が散在する美しい魚",
@@ -2601,7 +2917,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-madai.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "sappa",
@@ -2611,10 +2931,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体は平たく銀白色で、マイワシやカタクチイワシに似たニシン目の小魚",
@@ -2631,7 +2951,11 @@
         "year": "2024",
         "url": "https://www.fishbase.se/summary/Sardinella-zunasi.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "高"
   },
   {
     "id": "meitagarei",
@@ -2641,10 +2965,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "両目が体の右側にあり、両目の間にトゲ状の突起があるのが特徴",
@@ -2661,7 +2985,11 @@
         "year": "2013",
         "url": "https://www.fish-isj.jp/"
       }
-    ]
+    ],
+    "rarity": 3,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "低"
   },
   {
     "id": "hebiginpo",
@@ -2671,10 +2999,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体長5cmほどの小さな魚で、背びれが3基（3つに分かれている）あるのが最大の特徴",
@@ -2691,7 +3019,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "ginanago",
@@ -2701,10 +3033,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "マアナゴに似ているが、全体的に銀白色で目が大きい",
@@ -2721,7 +3053,11 @@
         "year": "2024",
         "url": "https://www.fishbase.se/summary/Gnathophis-nystromi.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "isogani",
@@ -2731,10 +3067,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "甲幅2〜3cmほどの小型のカニで、甲羅に四角い模様があることが多い",
@@ -2751,7 +3087,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "murasakiuni",
@@ -2761,10 +3101,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "全体が暗紫色で、長くて太いトゲを持つ代表的なウニ",
@@ -2790,7 +3130,11 @@
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "madako",
@@ -2800,10 +3144,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "周囲の環境に合わせて体色や皮膚の質感を瞬時に変え、岩に擬態する",
@@ -2820,7 +3164,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-madako.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "aoriika",
@@ -2830,10 +3178,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "胴の縁全体に半透明のヒレ（エンペラ）があり、ホバリングするように優雅に泳ぐ",
@@ -2850,7 +3198,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-aoriika.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜秋",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "itomakihitode",
@@ -2860,10 +3212,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "五角形から星形をした、青色と赤色（オレンジ色）のまだら模様が特徴的なヒトデ",
@@ -2880,7 +3232,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "高"
   },
   {
     "id": "murasakiigai",
@@ -2890,10 +3246,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "黒紫色の殻をもつ二枚貝で「ムール貝」として知られるが、本来は地中海原産の外来種",
@@ -2918,7 +3274,11 @@
         "year": "2022",
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "shiroumiushi",
@@ -2928,10 +3288,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "透き通るような白い体に黒い斑点が散らばり、触角とエラが黄色い美しいウミウシ",
@@ -2948,7 +3308,11 @@
         "year": "2024",
         "url": "https://www.godac.jamstec.go.jp/bismal/j/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "春〜初夏",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "ougigani",
@@ -2958,10 +3322,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "甲羅が扇（おうぎ）のような形をしており、表面がゴツゴツしている",
@@ -2978,7 +3342,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "海岸全般",
+    "encounterProbability": "中"
   },
   {
     "id": "shako",
@@ -2988,10 +3356,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "エビに似ているが、カマキリのような折り畳み式の強力な捕脚（カマ）をもつ",
@@ -3011,7 +3379,11 @@
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-syako.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "沖合",
+    "encounterProbability": "中"
   },
   {
     "id": "sunabikisou",
@@ -3021,10 +3393,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂浜に地下茎を長く伸ばして群生するムラサキ科の多年草",
@@ -3041,7 +3413,11 @@
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040853.html"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "初夏",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamanasu",
@@ -3051,10 +3427,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂地に生えるバラ科の落葉低木で、枝に細かいトゲが密生している",
@@ -3071,7 +3447,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "公園・市街地",
+    "encounterProbability": "中"
   },
   {
     "id": "hamanadeshiko",
@@ -3081,10 +3461,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂地や岩場に自生するナデシコの仲間",
@@ -3101,7 +3481,11 @@
         "year": "2003",
         "url": "http://ylist.info/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "kawarayomogi",
@@ -3111,10 +3495,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂地や河川敷に生えるキク科の多年草",
@@ -3131,7 +3515,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/department/botany/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "marubasharinbai",
@@ -3141,10 +3529,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の岩場や林縁に生える常緑低木で、葉が厚く丸みを帯びている",
@@ -3161,7 +3549,11 @@
         "year": "2022",
         "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "misago",
@@ -3171,10 +3563,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "魚を主食とする猛禽類（もうきんるい）で、「魚鷹（うおたか）」とも呼ばれる",
@@ -3191,7 +3583,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "中"
   },
   {
     "id": "yurikamome",
@@ -3201,10 +3597,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "赤いくちばしと赤い足が特徴の小型のカモメ",
@@ -3221,7 +3617,11 @@
         "year": "2021",
         "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "秋〜春",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "kawasemi",
@@ -3231,10 +3631,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "背中が鮮やかなコバルトブルー、腹部がオレンジ色で「空飛ぶ宝石」と呼ばれる",
@@ -3251,7 +3651,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "高"
   },
   {
     "id": "daisagi",
@@ -3261,10 +3665,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "日本で見られるシラサギの中で最大（全長約90cm）の鳥",
@@ -3281,7 +3685,11 @@
         "year": "2012",
         "url": "https://www.ornithology.jp/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "中"
   },
   {
     "id": "magamo",
@@ -3291,10 +3699,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "オスは頭部が光沢のある緑色（青首）で、黄色いくちばしと白い首輪模様が特徴",
@@ -3311,7 +3719,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "秋〜春",
+    "encounterLocation": "河口・干潟",
+    "encounterProbability": "高"
   },
   {
     "id": "nihontokage",
@@ -3321,10 +3733,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "幼体は尾が鮮やかなメタリックブルーで、体に金色の縦筋（ストライプ）が入る美しい姿をしている",
@@ -3341,7 +3753,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/department/zoology/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "春〜秋",
+    "encounterLocation": "防砂林・砂丘",
+    "encounterProbability": "高"
   },
   {
     "id": "nihonkanahebi",
@@ -3351,10 +3767,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "全体が茶褐色で、ニホントカゲと比べて表面の鱗（うろこ）がカサカサしており光沢がない",
@@ -3371,7 +3787,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/department/zoology/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamabehasamimushi",
@@ -3381,10 +3801,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の環境に特化して生息する昆虫で、体長は2〜3cm程度、全身が光沢のある黒褐色",
@@ -3401,7 +3821,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/department/zoology/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
     "id": "umiakaamenbo",
@@ -3411,10 +3835,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "一生を海上で過ごす、世界的にも珍しい「海生昆虫」であるウミアメンボの仲間",
@@ -3431,7 +3855,11 @@
         "year": "2024",
         "url": "https://www.godac.jamstec.go.jp/bismal/j/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "夏〜秋",
+    "encounterLocation": "岩礁・タイドプール",
+    "encounterProbability": "中"
   },
   {
     "id": "hamahyoutangomimushi",
@@ -3441,10 +3869,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "海岸の砂浜にのみ生息する体長5mmほどの小さな甲虫",
@@ -3461,7 +3889,11 @@
         "year": "2023",
         "url": "https://www.kahaku.go.jp/research/department/zoology/"
       }
-    ]
+    ],
+    "rarity": 2,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "中"
   },
   {
     "id": "hamatobimushi",
@@ -3471,10 +3903,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "体長1cm前後で、エビに似た横に平たい体をしている甲殻類（ヨコエビの仲間）",
@@ -3497,47 +3929,54 @@
         "year": "2024",
         "url": "https://www.godac.jamstec.go.jp/bismal/j/"
       }
-    ]
+    ],
+    "rarity": 1,
+    "encounterSeason": "通年",
+    "encounterLocation": "砂浜・波打ち際",
+    "encounterProbability": "高"
   },
   {
-  "id": "niseakashia",
-  "name": "ニセアカシア（ハリエンジュ）",
-  "category": "植物",
-  "scientificName": "Robinia pseudoacacia",
-  "isDanger": true,
-  "dangerType": "contact",
-  "image": {
-    "url": " ",
-    "author": " ",
-    "license": " ",
-    "sourceUrl": " "
-  },
-  "features": [
-    "日本で一般に「アカシア」と呼ばれることが多いマメ科の落葉高木",
-    "初夏に白い蝶形の花を房状に咲かせ甘く強い香りを放つ",
-    "枝の基部に非常に鋭く硬いトゲ（刺）をもつ",
-    "繁殖力が極めて高く生態系被害防止外来種に指定されている"
-  ],
-  "firstAid": [
-    "トゲが刺さった場合は流水で傷口を洗い流し清潔に保つ。",
-    "トゲが深く折れ残ったり腫れや痛みが続く場合は医療機関を受診する。"
-  ],
-  "dontDo": "枝には非常に鋭いトゲがあるため、花や葉を観察する際に素手で不用意に枝を掴まないこと。",
-  "localEncounter": "相模川の河川敷や茅ヶ崎海岸周辺の防砂林の縁などで野生化して群生しており、初夏には白い花と強い香りで存在が目立つ。",
-  "references": [
-    {
-      "title": "侵入生物データベース：ニセアカシア",
-      "author": "国立環境研究所",
-      "year": "2023",
-      "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/80380.html"
+    "id": "niseakashia",
+    "name": "ニセアカシア（ハリエンジュ）",
+    "category": "植物",
+    "scientificName": "Robinia pseudoacacia",
+    "isDanger": true,
+    "dangerType": "contact",
+    "image": {
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
-    {
-      "title": "生態系被害防止外来種リスト",
-      "author": "環境省",
-      "year": "2015",
-      "url": "https://www.env.go.jp/nature/intro/2outline/list.html"
-    }
-  ]
-}
+    "features": [
+      "日本で一般に「アカシア」と呼ばれることが多いマメ科の落葉高木",
+      "初夏に白い蝶形の花を房状に咲かせ甘く強い香りを放つ",
+      "枝の基部に非常に鋭く硬いトゲ（刺）をもつ",
+      "繁殖力が極めて高く生態系被害防止外来種に指定されている"
+    ],
+    "firstAid": [
+      "トゲが刺さった場合は流水で傷口を洗い流し清潔に保つ。",
+      "トゲが深く折れ残ったり腫れや痛みが続く場合は医療機関を受診する。"
+    ],
+    "dontDo": "枝には非常に鋭いトゲがあるため、花や葉を観察する際に素手で不用意に枝を掴まないこと。",
+    "localEncounter": "相模川の河川敷や茅ヶ崎海岸周辺の防砂林の縁などで野生化して群生しており、初夏には白い花と強い香りで存在が目立つ。",
+    "references": [
+      {
+        "title": "侵入生物データベース：ニセアカシア",
+        "author": "国立環境研究所",
+        "year": "2023",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/80380.html"
+      },
+      {
+        "title": "生態系被害防止外来種リスト",
+        "author": "環境省",
+        "year": "2015",
+        "url": "https://www.env.go.jp/nature/intro/2outline/list.html"
+      }
+    ],
+    "rarity": 2,
+    "encounterSeason": "初夏",
+    "encounterLocation": "河川敷・防砂林",
+    "encounterProbability": "中"
+  }
 ]
-
