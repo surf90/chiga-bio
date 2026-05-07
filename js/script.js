@@ -66,6 +66,25 @@ function getCitySymbol(id, isTile = false) {
     return `<span class="${wrapperClass}" title="茅ヶ崎${label}">${svg}<span class="symbol-label">${label}</span></span>`;
 }
 
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function sanitizeUrl(url) {
+    if (!url) return '';
+    try {
+        const parsed = new URL(url, window.location.origin);
+        return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
+    } catch {
+        return '';
+    }
+}
+
 async function fetchBioData() {
     try {
         const response = await fetch('./data/bio-data.json');
@@ -128,8 +147,10 @@ function renderCards(data) {
     emptyState.style.display = 'none';
 
     data.forEach(bio => {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
+        card.type = 'button';
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
+        card.setAttribute('aria-label', `${bio.name}の詳細を開く`);
 
         let tileBadge = '';
         if (bio.dangerType === 'contact') tileBadge = '<div class="tile-badge contact"><i class="fa-solid fa-triangle-exclamation"></i></div>';
@@ -147,10 +168,10 @@ function renderCards(data) {
             ${rarityBadge}
             ${tileBadge}
             <div class="tile-image-wrapper">
-                <img src="${imgUrl}" alt="${bio.name}" loading="lazy" decoding="async">
+                <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" loading="lazy" decoding="async">
             </div>
-            <div class="tile-name">${bio.name}</div>
-            <div class="tile-category">${bio.category}${getCitySymbol(bio.id, true)}</div>
+            <div class="tile-name">${escapeHtml(bio.name)}</div>
+            <div class="tile-category">${escapeHtml(bio.category)}${getCitySymbol(bio.id, true)}</div>
         `;
 
         card.addEventListener('click', () => openModal(bio));
@@ -230,7 +251,7 @@ function openModal(bio) {
     const imgUrl = getImageUrl(bio);
     let creditHtml = '';
     if (imgUrl !== placeholderSVG && bio.image) {
-        const authorText = bio.image.author || 'Unknown';
+        const authorText = escapeHtml(bio.image.author || 'Unknown');
         
 // CCアイコンの構築処理
         let licenseIcons = '';
@@ -255,13 +276,14 @@ function openModal(bio) {
                     else if (t === 'ND') licenseIcons += '<i class="fa-brands fa-creative-commons-nd" aria-label="NoDerivatives" title="NoDerivatives"></i>';
                 });
             } else {
-                licenseIcons = ` <span class="license-text">(${bio.image.license})</span>`;
+                licenseIcons = ` <span class="license-text">(${escapeHtml(bio.image.license)})</span>`;
             }
         }
 
         // sourceUrlが存在する場合はリンクにする
-        if (bio.image.sourceUrl && bio.image.sourceUrl.trim() !== '') {
-            creditHtml = `<div class="image-credit"><a href="${bio.image.sourceUrl}" target="_blank" rel="noopener noreferrer">Photo: ${authorText}</a> ${licenseIcons}</div>`;
+        const sourceUrl = sanitizeUrl(bio.image.sourceUrl);
+        if (sourceUrl) {
+            creditHtml = `<div class="image-credit"><a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">Photo: ${authorText}</a> ${licenseIcons}</div>`;
         } else {
             creditHtml = `<div class="image-credit">Photo: ${authorText} ${licenseIcons}</div>`;
         }
@@ -270,31 +292,33 @@ function openModal(bio) {
     let encounterHtml = '';
     if (bio.encounterSeason || bio.encounterLocation || bio.encounterProbability) {
         const tags = [];
-        if (bio.encounterSeason) tags.push(`<span class="encounter-tag"><i class="fa-regular fa-calendar"></i>${bio.encounterSeason}</span>`);
-        if (bio.encounterLocation) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-location-dot"></i>${bio.encounterLocation}</span>`);
-        if (bio.encounterProbability) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-chart-simple"></i>遭遇確率: ${bio.encounterProbability}</span>`);
+        if (bio.encounterSeason) tags.push(`<span class="encounter-tag"><i class="fa-regular fa-calendar"></i>${escapeHtml(bio.encounterSeason)}</span>`);
+        if (bio.encounterLocation) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-location-dot"></i>${escapeHtml(bio.encounterLocation)}</span>`);
+        if (bio.encounterProbability) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-chart-simple"></i>遭遇確率: ${escapeHtml(bio.encounterProbability)}</span>`);
         encounterHtml = `<div class="encounter-tags">${tags.join('')}</div>`;
     }
 
     let localEncounterHtml = bio.localEncounter
-        ? `<h3 class="section-label">FIND / 見つけ方・遭遇場所</h3><p class="local-encounter">${bio.localEncounter}</p>`
+        ? `<h3 class="section-label">FIND / 見つけ方・遭遇場所</h3><p class="local-encounter">${escapeHtml(bio.localEncounter)}</p>`
         : '';
 
     let featuresHtml = (bio.features && bio.features.length > 0)
-        ? `<h3 class="section-label">FEATURES / 特徴</h3><ul class="styled-list">${bio.features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+        ? `<h3 class="section-label">FEATURES / 特徴</h3><ul class="styled-list">${bio.features.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>` : '';
 
     let firstAidHtml = (bio.firstAid && bio.firstAid.length > 0)
-        ? `<h3 class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST AID / 応急処置</h3><ul class="styled-list">${bio.firstAid.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+        ? `<h3 class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST AID / 応急処置</h3><ul class="styled-list">${bio.firstAid.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>` : '';
     
-    let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${bio.dontDo}</div>` : '';
+    let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${escapeHtml(bio.dontDo)}</div>` : '';
 
     let referencesHtml = '';
     if (bio.references && bio.references.length > 0) {
         const items = bio.references.map(ref => {
-            const link = ref.url
-                ? `<a href="${ref.url}" target="_blank" rel="noopener">${ref.title}</a>`
-                : ref.title;
-            const meta = [ref.author, ref.year].filter(Boolean).join(', ');
+            const safeRefUrl = sanitizeUrl(ref.url);
+            const safeTitle = escapeHtml(ref.title);
+            const link = safeRefUrl
+                ? `<a href="${safeRefUrl}" target="_blank" rel="noopener">${safeTitle}</a>`
+                : safeTitle;
+            const meta = [ref.author, ref.year].filter(Boolean).map(escapeHtml).join(', ');
             return `<li>${link}${meta ? `<span class="ref-meta"> — ${meta}</span>` : ''}</li>`;
         }).join('');
         referencesHtml = `
@@ -307,13 +331,13 @@ function openModal(bio) {
     const symbolIcon = getCitySymbol(bio.id, false);
 
     modalBody.innerHTML = `
-        <img src="${imgUrl}" alt="${bio.name}" class="modal-header-img">
+        <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" class="modal-header-img">
         ${creditHtml}
         ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
-        <h2 class="modal-title">${bio.name}${symbolIcon}</h2>
+        <h2 class="modal-title">${escapeHtml(bio.name)}${symbolIcon}</h2>
         <dl class="modal-meta">
-            <dt class="sr-only">分類</dt><dd><span class="category-tag">${bio.category}</span></dd>
-            <dt class="sr-only">学名</dt><dd class="scientific-name">${bio.scientificName}</dd>
+            <dt class="sr-only">分類</dt><dd><span class="category-tag">${escapeHtml(bio.category)}</span></dd>
+            <dt class="sr-only">学名</dt><dd class="scientific-name">${escapeHtml(bio.scientificName)}</dd>
         </dl>
         ${encounterHtml}
         ${localEncounterHtml}
