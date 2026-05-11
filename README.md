@@ -137,3 +137,14 @@ chiga-bio/
 - **リライトの徹底:** 文献の文章（表現）には著作権があるため、複数の情報源から事実を抽出し、必ず自分の言葉で本アプリのフォーマット（箇条書き等）に合わせて再構成すること。
 - **出典の明示:** リライト後も `references` 配列に出典元を必ず明記すること。可能な限りDOIや公式URLを含める。
 - **画像の利用:** パブリックドメイン（CC0）またはクリエイティブ・コモンズ・ライセンス（CC BY 等）の写真のみ使用すること。官公庁のオープンデータを利用する場合は各機関の利用規約に従いクレジット表記を行うこと。
+
+## Google Search Console で sitemap.xml が登録できないときの確認項目
+
+`https://surf90.github.io/chiga-bio/` は GitHub Pages の **サブディレクトリ配信** のため、Search Console には以下を登録します。
+
+1. プロパティは URL プレフィックス `https://surf90.github.io/chiga-bio/` を使う（`https://surf90.github.io/` ではなく）
+2. サイトマップ URL は `https://surf90.github.io/chiga-bio/sitemap.xml`
+3. `robots.txt` で sitemap を明示する
+4. GitHub Pages のデプロイ完了後に再送信する（反映前は 404 になる）
+
+このリポジトリでは `sitemap.xml` と `robots.txt` をルートに配置済み。
