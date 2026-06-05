@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ea5e9">
     <title>ちがビオ | 茅ヶ崎の生き物情報</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
@@ -29,7 +30,11 @@
     <meta property="og:title" content="ちがビオ | 茅ヶ崎の生き物情報">
     <meta property="og:description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
     <meta property="og:image" content="https://surf90.github.io/chiga-bio/ogp.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ちがビオ - 茅ヶ崎の生き物情報">
     <meta property="og:site_name" content="ちがビオ">
+    <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://surf90.github.io/chiga-bio/">
 </head>
@@ -43,7 +48,7 @@
 <div class="container">
     <div class="search-wrapper">
         <label for="searchInput" class="sr-only">生き物の検索</label>
-        <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索..." aria-label="生き物の検索">
+        <input type="search" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索..." aria-label="生き物の検索" enterkeyhint="search" autocomplete="off">
         <button id="clearSearchBtn" class="search-clear-btn" aria-label="検索をクリア">✕</button>
     </div>
     
@@ -68,23 +73,23 @@
     </div>
 </div>
 
-<div id="bio-modal" class="modal-overlay">
+<div id="bio-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-anchor" aria-hidden="true">
     <div class="modal-content" id="modal-content">
-        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn">✕</button>
-        <div id="modal-body" class="modal-body">
+        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn" aria-label="閉じる">✕</button>
+        <div id="modal-body" class="modal-body" tabindex="-1">
             </div>
     </div>
 </div>
 
-<nav class="bottom-nav" id="bottomNav">
-    <a href="#" class="nav-item active" data-category="all">すべて</a>
-    <a href="#" class="nav-item" data-category="ほ乳類">哺乳類</a>
-    <a href="#" class="nav-item" data-category="鳥類">鳥類</a>
-    <a href="#" class="nav-item" data-category="は虫類">爬虫類</a>
-    <a href="#" class="nav-item" data-category="両生類">両生類</a>
-    <a href="#" class="nav-item" data-category="魚類">魚類</a>
-    <a href="#" class="nav-item" data-category="無脊椎動物">無脊椎動物</a>
-    <a href="#" class="nav-item" data-category="植物">植物</a>
+<nav class="bottom-nav" id="bottomNav" aria-label="カテゴリー">
+    <button type="button" class="nav-item active" data-category="all" aria-current="page">すべて</button>
+    <button type="button" class="nav-item" data-category="ほ乳類">哺乳類</button>
+    <button type="button" class="nav-item" data-category="鳥類">鳥類</button>
+    <button type="button" class="nav-item" data-category="は虫類">爬虫類</button>
+    <button type="button" class="nav-item" data-category="両生類">両生類</button>
+    <button type="button" class="nav-item" data-category="魚類">魚類</button>
+    <button type="button" class="nav-item" data-category="無脊椎動物">無脊椎動物</button>
+    <button type="button" class="nav-item" data-category="植物">植物</button>
 </nav>
 
 <footer class="footer">
@@ -111,12 +116,12 @@
     <div class="footer-info">
         | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> | <br>
         <br>
-        | <a href="https://surf90.github.io/chiga-log/">ちがログ | 茅ヶ崎の海情報</a> | <br>
+        | <a href="https://surf90.github.io/chiga-log/" rel="noopener">ちがログ | 茅ヶ崎の海情報</a> | <br>
     </div>
 
     <div class="footer-copyright">
-        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
-        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
+        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank" rel="noopener noreferrer">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
+        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
     </div>
 </footer>
 
