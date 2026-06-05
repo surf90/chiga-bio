@@ -76,9 +76,11 @@ function escapeHtml(value) {
 }
 
 function sanitizeUrl(url) {
-    if (!url) return '';
+    if (!url || typeof url !== 'string') return '';
+    // 絶対URL（http/https）のみ許可。相対パスや javascript: 等は拒否
+    if (!/^https?:\/\//i.test(url.trim())) return '';
     try {
-        const parsed = new URL(url, window.location.origin);
+        const parsed = new URL(url);
         return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : '';
     } catch {
         return '';
@@ -103,7 +105,7 @@ async function fetchBioData() {
             if (indexA !== -1 && indexB !== -1) return indexA - indexB;
             if (indexA !== -1) return -1;
             if (indexB !== -1) return 1;
-            return a.name.localeCompare(b.name, 'ja');
+            return (a.name || '').localeCompare(b.name || '', 'ja');
         });
 
         // データ取得完了後、スケルトンを消してリストを表示
@@ -118,7 +120,9 @@ async function fetchBioData() {
         if (targetId) {
             const targetBio = globalBioData.find(bio => bio.id === targetId);
             if (targetBio) {
-                openModal(targetBio);
+                openModal(targetBio, { skipPushState: true });
+            } else {
+                showToast('指定の生き物が見つかりませんでした');
             }
         }
         
@@ -146,29 +150,40 @@ function renderCards(data) {
     bioList.style.display = 'grid';
     emptyState.style.display = 'none';
 
-    data.forEach(bio => {
+    data.forEach((bio, idx) => {
         const card = document.createElement('button');
         card.type = 'button';
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
-        card.setAttribute('aria-label', `${bio.name}の詳細を開く`);
+
+        const dangerLabelMap = { contact: '触れると危険', eat: '食べると危険', protect: '守るため注意' };
+        const dangerLabel = dangerLabelMap[bio.dangerType] || (bio.isDanger ? '危険' : '');
+        const ariaParts = [bio.name, bio.category];
+        if (dangerLabel) ariaParts.push(dangerLabel);
+        if (bio.rarity) ariaParts.push(`希少度${bio.rarity}`);
+        card.setAttribute('aria-label', `${ariaParts.join('、')}の詳細を開く`);
 
         let tileBadge = '';
-        if (bio.dangerType === 'contact') tileBadge = '<div class="tile-badge contact"><i class="fa-solid fa-triangle-exclamation"></i></div>';
-        else if (bio.dangerType === 'eat') tileBadge = '<div class="tile-badge eat"><i class="fa-solid fa-skull-crossbones"></i></div>';
-        else if (bio.dangerType === 'protect') tileBadge = '<div class="tile-badge protect"><i class="fa-solid fa-hand-holding-heart"></i></div>';
-        else if (bio.isDanger) tileBadge = '<div class="tile-badge contact"><i class="fa-solid fa-triangle-exclamation"></i></div>';
+        if (bio.dangerType === 'contact') tileBadge = '<div class="tile-badge contact" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></div>';
+        else if (bio.dangerType === 'eat') tileBadge = '<div class="tile-badge eat" aria-hidden="true"><i class="fa-solid fa-skull-crossbones"></i></div>';
+        else if (bio.dangerType === 'protect') tileBadge = '<div class="tile-badge protect" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></div>';
+        else if (bio.isDanger) tileBadge = '<div class="tile-badge contact" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></div>';
 
         const imgUrl = getImageUrl(bio);
 
         const rarityStars = bio.rarity === 3 ? '★★★' : bio.rarity === 2 ? '★★☆' : '★☆☆';
         const rarityClass = `rarity-${bio.rarity || 1}`;
-        const rarityBadge = bio.rarity ? `<div class="rarity-badge ${rarityClass}">${rarityStars}</div>` : '';
+        const rarityBadge = bio.rarity ? `<div class="rarity-badge ${rarityClass}" aria-hidden="true">${rarityStars}</div>` : '';
+
+        // ファーストビューの画像は優先読み込み
+        const isAboveFold = idx < 6;
+        const loadingAttr = isAboveFold ? 'eager' : 'lazy';
+        const fetchAttr = isAboveFold ? ' fetchpriority="high"' : '';
 
         card.innerHTML = `
             ${rarityBadge}
             ${tileBadge}
             <div class="tile-image-wrapper">
-                <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" loading="lazy" decoding="async">
+                <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" width="200" height="200" loading="${loadingAttr}" decoding="async"${fetchAttr}>
             </div>
             <div class="tile-name">${escapeHtml(bio.name)}</div>
             <div class="tile-category">${escapeHtml(bio.category)}${getCitySymbol(bio.id, true)}</div>
@@ -182,14 +197,21 @@ function renderCards(data) {
 // ==========================================
 // ボトムナビ & 検索
 // ==========================================
+function setActiveNav(item) {
+    navItems.forEach(nav => {
+        nav.classList.remove('active');
+        nav.removeAttribute('aria-current');
+    });
+    if (item) {
+        item.classList.add('active');
+        item.setAttribute('aria-current', 'page');
+    }
+}
+
 navItems.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        
-        // アクティブ状態の視覚化
-        navItems.forEach(nav => nav.classList.remove('active'));
-        item.classList.add('active');
-
+        setActiveNav(item);
         currentCategory = item.dataset.category;
         filterData();
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -197,6 +219,14 @@ navItems.forEach(item => {
 });
 
 let searchTimeout;
+let isComposing = false;
+
+searchInput.addEventListener('compositionstart', () => { isComposing = true; });
+searchInput.addEventListener('compositionend', () => {
+    isComposing = false;
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(filterData, 100);
+});
 
 searchInput.addEventListener('input', (e) => {
     if (e.target.value.length > 0) {
@@ -204,10 +234,9 @@ searchInput.addEventListener('input', (e) => {
     } else {
         clearSearchBtn.classList.remove('visible');
     }
+    if (isComposing) return; // IME変換中は検索しない
     clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-        filterData();
-    }, 300);
+    searchTimeout = setTimeout(filterData, 300);
 });
 
 clearSearchBtn.addEventListener('click', () => {
@@ -220,8 +249,7 @@ clearSearchBtn.addEventListener('click', () => {
 emptyResetBtn.addEventListener('click', () => {
     searchInput.value = '';
     clearSearchBtn.classList.remove('visible');
-    navItems.forEach(nav => nav.classList.remove('active'));
-    document.querySelector('.nav-item[data-category="all"]').classList.add('active');
+    setActiveNav(document.querySelector('.nav-item[data-category="all"]'));
     currentCategory = 'all';
     filterData();
 });
@@ -241,7 +269,10 @@ function filterData() {
 // ==========================================
 // 詳細モーダルとシェア機能
 // ==========================================
-function openModal(bio) {
+let lastFocusedElement = null;
+
+function openModal(bio, options = {}) {
+    lastFocusedElement = document.activeElement;
     let badgeHtml = '';
     if (bio.dangerType === 'contact') badgeHtml = '<span class="danger-badge contact"><i class="fa-solid fa-triangle-exclamation"></i> 触れると危険</span>';
     else if (bio.dangerType === 'eat') badgeHtml = '<span class="danger-badge eat"><i class="fa-solid fa-skull-crossbones"></i> 食べると危険</span>';
@@ -250,8 +281,8 @@ function openModal(bio) {
 
     const imgUrl = getImageUrl(bio);
     let creditHtml = '';
-    if (imgUrl !== placeholderSVG && bio.image) {
-        const authorText = escapeHtml(bio.image.author || 'Unknown');
+    if (imgUrl !== placeholderSVG && bio.image && bio.image.author) {
+        const authorText = escapeHtml(bio.image.author);
         
 // CCアイコンの構築処理
         let licenseIcons = '';
@@ -331,7 +362,7 @@ function openModal(bio) {
     const symbolIcon = getCitySymbol(bio.id, false);
 
     modalBody.innerHTML = `
-        <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" class="modal-header-img">
+        <img src="${imgUrl}" alt="${escapeHtml(bio.name)}" class="modal-header-img" width="600" height="400" decoding="async">
         ${creditHtml}
         ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
         <h2 class="modal-title">${escapeHtml(bio.name)}${symbolIcon}</h2>
@@ -355,16 +386,68 @@ function openModal(bio) {
     modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));
 
     modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
-    modalBody.scrollTop = 0; // スクロール位置を一番上に戻す
+    modalBody.scrollTop = 0;
+
+    // 履歴に積んで「戻る」でモーダルを閉じられるようにする
+    if (!options.skipPushState) {
+        const url = `${window.location.pathname}?id=${encodeURIComponent(bio.id)}`;
+        window.history.pushState({ modal: true, id: bio.id }, '', url);
+    }
+
+    // フォーカスをモーダル内へ
+    setTimeout(() => { modalClose.focus(); }, 50);
 }
 
-function closeModal() {
+function closeModal(options = {}) {
+    if (!modal.classList.contains('active')) return;
     modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
-    const cleanUrl = window.location.origin + window.location.pathname;
-    window.history.replaceState({}, document.title, cleanUrl);
+    // history からモーダル状態を取り除く
+    if (!options.skipHistory && window.history.state && window.history.state.modal) {
+        window.history.back();
+    } else if (!options.skipHistory) {
+        const cleanUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+    }
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+        lastFocusedElement.focus();
+    }
 }
+
+// 「戻る」でモーダルが開いていれば閉じる
+window.addEventListener('popstate', () => {
+    if (modal.classList.contains('active')) {
+        closeModal({ skipHistory: true });
+    }
+});
+
+// Esc キーで閉じる + 簡易フォーカストラップ
+document.addEventListener('keydown', (e) => {
+    if (!modal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+        e.preventDefault();
+        closeModal();
+        return;
+    }
+    if (e.key === 'Tab') {
+        const focusables = modalContent.querySelectorAll(
+            'a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    }
+});
 
 modalClose.addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => {
@@ -376,27 +459,21 @@ modal.addEventListener('click', (e) => {
 // ==========================================
 function shareBio(id, name, category) {
     const baseUrl = window.location.origin + window.location.pathname;
-    const shareUrl = `${baseUrl}?id=${id}`;
+    const shareUrl = `${baseUrl}?id=${encodeURIComponent(id)}`;
 
     if (navigator.share) {
         navigator.share({
             title: `ちがビオ - ${name}`,
             text: `茅ヶ崎の生き物「${name} (${category})」をチェック！`,
             url: shareUrl,
-        }).catch(console.error);
-    } else {
+        }).catch(() => { /* ユーザーキャンセル等は無視 */ });
+    } else if (navigator.clipboard) {
         const text = `ちがビオ - ${name} ${shareUrl}`;
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(text).then(() => showToast("リンクをコピーしました")).catch(() => showToast("コピーに失敗しました"));
-        } else {
-            const dummy = document.createElement('input');
-            document.body.appendChild(dummy);
-            dummy.value = text;
-            dummy.select();
-            document.execCommand('copy');
-            document.body.removeChild(dummy);
-            showToast("リンクをコピーしました");
-        }
+        navigator.clipboard.writeText(text)
+            .then(() => showToast("リンクをコピーしました"))
+            .catch(() => showToast("コピーに失敗しました"));
+    } else {
+        showToast("シェア機能に対応していません");
     }
 }
 
@@ -455,8 +532,6 @@ document.addEventListener('DOMContentLoaded', fetchBioData);
 // Service Worker 登録（PWA オフライン対応）
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-            .then(reg => console.log('SW 登録成功:', reg.scope))
-            .catch(err => console.log('SW 登録失敗:', err));
+        navigator.serviceWorker.register('./sw.js').catch(() => { /* 失敗時は静かに無視 */ });
     });
 }
