@@ -265,7 +265,7 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
     text-align: center; width: 90%; white-space: nowrap;
     overflow: hidden; text-overflow: ellipsis;
 }
-.tile-category { font-size: 0.65rem; color: var(--text-meta); margin-top: 2px; }
+.tile-category { font-size: 0.75rem; color: var(--text-meta); margin-top: 2px; }
 
 /* =========================================
    5. Empty State
@@ -324,16 +324,19 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 .image-credit a:hover { color: var(--primary-deep); }
 
 /* --- ここからCCアイコンの追加スタイル --- */
-.image-credit i.fa-brands {
-    font-size: 1.2em; /* テキストより少し大きく */
+.image-credit .cc-icon {
+    width: 1.2em; height: 1.2em; /* テキストより少し大きく */
     margin-left: 4px; /* 著作者名とアイコン間の余白 */
     vertical-align: middle; /* テキストのベースラインに合わせる */
-    color: #888; 
+    color: #888;
 }
-.image-credit i.fa-brands + i.fa-brands {
+.image-credit .cc-icon + .cc-icon {
     margin-left: 2px; /* 複数のアイコンが並ぶ場合の間隔 */
 }
 /* --- ここまで追加スタイル --- */
+
+/* インラインSVGアイコン共通(Font Awesome CDN 廃止に伴う自前アイコン) */
+.icon-svg { width: 1em; height: 1em; vertical-align: -0.125em; flex-shrink: 0; }
 
 .modal-title { font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
 .modal-meta { display: flex; align-items: center; gap: 8px; margin: 0 0 16px; padding-bottom: 16px; border-bottom: 1px solid #f1f5f9; }
@@ -377,10 +380,11 @@ summary { font-weight: bold; cursor: pointer; }
 
 .nav-item {
     font-size: 0.85rem; font-weight: bold; color: var(--text-main); text-decoration: none;
-    padding: 8px 16px; background-color: var(--card-bg); border-radius: 20px;
+    padding: 12px 16px; background-color: var(--card-bg); border-radius: 22px;
     flex-shrink: 0; transition: all 0.2s;
     border: none; cursor: pointer; font-family: inherit; line-height: 1.2;
 }
+.nav-item:active { transform: scale(0.95); }
 .nav-item:focus-visible { outline: 2px solid var(--primary-deep); outline-offset: 2px; }
 .nav-item.active { background-color: var(--primary-deep); color: #ffffff; box-shadow: 0 2px 6px rgba(14, 116, 144, 0.3); }
 
