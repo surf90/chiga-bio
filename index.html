@@ -2,21 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://inaturalist-open-data.s3.amazonaws.com https://static.inaturalist.org; connect-src 'self'">
     <title>ちがビオ | 茅ヶ崎の生き物情報</title>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://inaturalist-open-data.s3.amazonaws.com">
     <link rel="preconnect" href="https://static.inaturalist.org">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
-       
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -29,12 +26,30 @@
     <meta property="og:title" content="ちがビオ | 茅ヶ崎の生き物情報">
     <meta property="og:description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
     <meta property="og:image" content="https://surf90.github.io/chiga-bio/ogp.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ちがビオ - 茅ヶ崎の生き物情報">
     <meta property="og:site_name" content="ちがビオ">
+    <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://surf90.github.io/chiga-bio/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ちがビオ",
+      "alternateName": "ちがビオ | 茅ヶ崎の生き物情報",
+      "url": "https://surf90.github.io/chiga-bio/",
+      "description": "魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ",
+      "inLanguage": "ja"
+    }
+    </script>
 </head>
 <body>
+
+<noscript><p style="text-align:center; padding: 20px;">このサイトの利用には JavaScript が必要です。ブラウザの設定で JavaScript を有効にしてください。</p></noscript>
 
 <header>
     <h1><span class="logo-text">ちがビオ</span> <span class="title-divider">|</span> <small>茅ヶ崎の生き物情報</small></h1>
@@ -44,7 +59,7 @@
 <div class="container">
     <div class="search-wrapper">
         <label for="searchInput" class="sr-only">生き物の検索</label>
-        <input type="text" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索..." aria-label="生き物の検索">
+        <input type="search" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索..." aria-label="生き物の検索" enterkeyhint="search" autocomplete="off">
         <button id="clearSearchBtn" class="search-clear-btn" aria-label="検索をクリア">✕</button>
     </div>
     
@@ -59,6 +74,8 @@
 
     <div id="bio-list" class="grid-container" style="display: none;"></div>
 
+    <div id="result-count" class="sr-only" aria-live="polite"></div>
+
     <div id="empty-state" class="empty-state">
         <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M12 2C7.58 2 4 5.58 4 10v2a2 2 0 002 2h12a2 2 0 002-2v-2c0-4.42-3.58-8-8-8z"/>
@@ -69,23 +86,23 @@
     </div>
 </div>
 
-<div id="bio-modal" class="modal-overlay">
+<div id="bio-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-anchor" aria-hidden="true">
     <div class="modal-content" id="modal-content">
-        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn">✕</button>
-        <div id="modal-body" class="modal-body">
+        <div class="modal-handle"></div> <button id="modal-close" class="modal-close-btn" aria-label="閉じる">✕</button>
+        <div id="modal-body" class="modal-body" tabindex="-1">
             </div>
     </div>
 </div>
 
-<nav class="bottom-nav" id="bottomNav">
-    <a href="#" class="nav-item active" data-category="all">すべて</a>
-    <a href="#" class="nav-item" data-category="ほ乳類">哺乳類</a>
-    <a href="#" class="nav-item" data-category="鳥類">鳥類</a>
-    <a href="#" class="nav-item" data-category="は虫類">爬虫類</a>
-    <a href="#" class="nav-item" data-category="両生類">両生類</a>
-    <a href="#" class="nav-item" data-category="魚類">魚類</a>
-    <a href="#" class="nav-item" data-category="無脊椎動物">無脊椎動物</a>
-    <a href="#" class="nav-item" data-category="植物">植物</a>
+<nav class="bottom-nav" id="bottomNav" aria-label="カテゴリー">
+    <button type="button" class="nav-item active" data-category="all" aria-current="page">すべて</button>
+    <button type="button" class="nav-item" data-category="ほ乳類">哺乳類</button>
+    <button type="button" class="nav-item" data-category="鳥類">鳥類</button>
+    <button type="button" class="nav-item" data-category="は虫類">爬虫類</button>
+    <button type="button" class="nav-item" data-category="両生類">両生類</button>
+    <button type="button" class="nav-item" data-category="魚類">魚類</button>
+    <button type="button" class="nav-item" data-category="無脊椎動物">無脊椎動物</button>
+    <button type="button" class="nav-item" data-category="植物">植物</button>
 </nav>
 
 <footer class="footer">
@@ -112,12 +129,12 @@
     <div class="footer-info">
         | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> | <br>
         <br>
-        | <a href="https://surf90.github.io/chiga-log/">ちがログ | 茅ヶ崎の海情報</a> | <br>
+        | <a href="https://surf90.github.io/chiga-log/" rel="noopener">ちがログ | 茅ヶ崎の海情報</a> | <br>
     </div>
 
     <div class="footer-copyright">
-        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
-        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank">CC BY-NC 4.0</a>
+        <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank" rel="noopener noreferrer">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
+        Code: <a href="https://github.com/surf90/chiga-bio/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> | Content: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
     </div>
 </footer>
 

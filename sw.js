@@ -1,7 +1,7 @@
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.2.0';
 const STATIC_CACHE_NAME = `chiga-bio-static-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `chiga-bio-image-${CACHE_VERSION}`;
-const MAX_IMAGE_CACHE = 100;
+const MAX_IMAGE_CACHE = 150;
 
 const PRECACHE_URLS = [
     './',
@@ -37,11 +37,14 @@ self.addEventListener('activate', (event) => {
 
 // フェッチ：リソース種別ごとにキャッシュ戦略を振り分け
 self.addEventListener('fetch', (event) => {
+    // GET 以外は素通し
+    if (event.request.method !== 'GET') return;
+
     const requestUrl = new URL(event.request.url);
 
     // 画像（Cache First：爆速化＆通信量節約）
     if (
-        requestUrl.pathname.match(/\.(png|jpg|jpeg|svg|gif)$/) ||
+        requestUrl.pathname.match(/\.(png|jpg|jpeg|svg|gif|webp)$/i) ||
         requestUrl.hostname.includes('inaturalist')
     ) {
         event.respondWith(
@@ -67,13 +70,18 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
+    // サードパーティ（CDN/フォント）はSWで触らずブラウザ標準キャッシュに任せる
+    if (requestUrl.origin !== self.location.origin) return;
+
     // HTML/CSS/JS/JSON（Network First：常に最新を優先）
     event.respondWith(
         fetch(event.request).then((networkResponse) => {
-            const responseToCache = networkResponse.clone();
-            caches.open(STATIC_CACHE_NAME).then((cache) => {
-                cache.put(event.request, responseToCache);
-            });
+            if (networkResponse && networkResponse.ok && networkResponse.type === 'basic') {
+                const responseToCache = networkResponse.clone();
+                caches.open(STATIC_CACHE_NAME).then((cache) => {
+                    cache.put(event.request, responseToCache);
+                });
+            }
             return networkResponse;
         }).catch(() => caches.match(event.request))
     );
