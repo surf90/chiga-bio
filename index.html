@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0ea5e9">
     <meta name="description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://inaturalist-open-data.s3.amazonaws.com https://static.inaturalist.org; connect-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://inaturalist-open-data.s3.amazonaws.com https://static.inaturalist.org; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
     <title>ちがビオ | 茅ヶ崎の生き物情報</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://inaturalist-open-data.s3.amazonaws.com">
     <link rel="preconnect" href="https://static.inaturalist.org">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -35,15 +35,24 @@
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://surf90.github.io/chiga-bio/">
 
+    <!-- 構造化データ（JSON-LD） -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "ちがビオ",
-      "alternateName": "ちがビオ | 茅ヶ崎の生き物情報",
-      "url": "https://surf90.github.io/chiga-bio/",
-      "description": "魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ",
-      "inLanguage": "ja"
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ちがビオ",
+        "alternateName": "ちがビオ | 茅ヶ崎の生き物情報",
+        "url": "https://surf90.github.io/chiga-bio/",
+        "description": "魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ",
+        "inLanguage": "ja",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://surf90.github.io/chiga-bio/?id={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
     }
     </script>
 </head>
@@ -76,7 +85,7 @@
 
     <div id="result-count" class="sr-only" aria-live="polite"></div>
 
-    <div id="empty-state" class="empty-state">
+    <div id="empty-state" class="empty-state" role="status">
         <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M12 2C7.58 2 4 5.58 4 10v2a2 2 0 002 2h12a2 2 0 002-2v-2c0-4.42-3.58-8-8-8z"/>
             <path d="M6 14v4c0 1.1.9 2 2 2v2M10 14v6c0 1.1.9 2 2 2v2M14 14v6c0 1.1.9 2 2 2v2M18 14v4c0 1.1-.9 2-2 2v2"/>

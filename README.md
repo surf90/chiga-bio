@@ -10,9 +10,11 @@
 
 ## 技術要件・制約
 
-- **構成:** シングルページの静的HTML（Vanilla JS / CSS）。外部ライブラリへの依存は最小限とする。アイコンは Font Awesome 6.5.1（CDN）を使用。
+- **構成:** シングルページの静的HTML（Vanilla JS / CSS）。外部ライブラリへの依存は最小限とする。アイコンはインラインSVG（Feather Icons ベースの自前実装）で、外部アイコンCDNには依存しない。
 - **デプロイ・ホスティング:** GitHub Pages（HTTPS）。
-- **CI/CD:** GitHub Actions を利用した自動デプロイ。
+- **CI/CD:** GitHub Actions を利用した自動デプロイ。`sitemap.xml` の lastmod は push 時に自動更新（`update-sitemap.yml`）。
+- **セキュリティ:** Content-Security-Policy（メタタグ）で読み込み元を `self` + Google Fonts + iNaturalist に限定。
+- **SEO:** JSON-LD（`WebSite` + `SearchAction`）による構造化データを `index.html` に埋め込み。
 - **PWA対応済み:** Service Worker（`sw.js`）によるオフラインキャッシュを実装済み。電波状況の悪い海辺でもインストール済みページを閲覧可能。
   - 静的ファイル（HTML / CSS / JS / JSON）: Network First
   - 画像（ローカル・iNaturalist CDN）: Cache First（最大100枚）
@@ -30,7 +32,8 @@
 chiga-bio/
 ├── .github/
 │   └── workflows/
-│       └── pages.yml                  # GitHub Pages 自動デプロイ用
+│       ├── pages.yml                  # GitHub Pages 自動デプロイ用
+│       └── update-sitemap.yml         # sitemap.xml の lastmod を push 時に自動更新
 ├── index.html                         # メインHTML（UI/テンプレート）
 ├── sw.js                              # Service Worker（PWAオフライン対応）
 ├── site.webmanifest                   # PWAマニフェスト
@@ -147,7 +150,7 @@ chiga-bio/
 3. `robots.txt` で sitemap を明示する
 4. GitHub Pages のデプロイ完了後に再送信する（反映前は 404 になる）
 
-このリポジトリでは `sitemap.xml` と `robots.txt` をルートに配置済み。
+このリポジトリでは `sitemap.xml` と `robots.txt` をルートに配置済み。`sitemap.xml` の `lastmod` は、コンテンツ（`data/` `index.html` `css/` `js/`）の push 時に `update-sitemap.yml` ワークフローが当日（JST）へ自動更新する。
 
 
 ### 「インデックス登録リクエストの送信中に問題が発生しました」エラーへの対処

@@ -79,23 +79,49 @@ function getImageUrl(bio) {
     return placeholderSVG;
 }
 
-function getCitySymbol(id, isTile = false) {
-    let svg = '';
-    let label = '';
-    if (id === 'tsutsuji') {
-        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M240,144a40,40,0,0,1-40,40A39.88,39.88,0,0,1,183.86,180.58A40,40,0,0,1,136,200v8a40,40,0,0,1-80,0v-8a40,40,0,0,1-47.86-51.42A40,40,0,0,1,56,104a39.88,39.88,0,0,1,16.14,3.42A40,40,0,0,1,120,56V48a40,40,0,0,1,80,0v8a40,40,0,0,1,47.86,51.42A40,40,0,0,1,240,144ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Z"></path></svg>`;
-        label = '市の花';
-    } else if (id === 'shijukara') {
-        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M232,104a32.16,32.16,0,0,0-17.76-28.72l-14.88-7.44a56.16,56.16,0,0,0-25-5.84h0a64,64,0,0,0-64,64v8h-8A40,40,0,0,0,62.36,174l-25.13,10.6a16,16,0,0,0-3.32,27.18,52.28,52.28,0,0,0,32,12.18h8a64,64,0,0,0,64-64v-8h16l14.88,7.44A56.16,56.16,0,0,0,188.64,164h0a32.16,32.16,0,0,0,28.72-17.76A103.58,103.58,0,0,0,232,104ZM120,136v24a48,48,0,0,1-48,48h-8A36.4,36.4,0,0,1,43.25,200L68.61,189.31A24,24,0,0,1,102.36,174,16,16,0,0,0,120,136ZM214.32,138.8a16.08,16.08,0,0,1-14.36,8.88h0A40.12,40.12,0,0,1,182.1,143.5l-20.44-10.22A15.93,15.93,0,0,0,154.5,132H136V126a48,48,0,0,1,48-48h0a40.12,40.12,0,0,1,17.86,4.18L222.3,92.4a16.08,16.08,0,0,1,8.88,14.36A87.65,87.65,0,0,1,214.32,138.8ZM160,116a12,12,0,1,1-12-12A12,12,0,0,1,160,116Z"></path></svg>`;
-        label = '市の鳥';
-    } else if (id === 'niseakashia') {
-        svg = `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,149.66l-36,36A8,8,0,0,1,166,188H136v40a8,8,0,0,1-16,0V188H90.06a8,8,0,0,1-5.72-2.4l-35.72-36.43A48,48,0,0,1,80,64a8,8,0,0,1,0,16,32,32,0,0,0-22.63,54.63L88,165.94V136a8,8,0,0,1,16,0v16h16V120a8,8,0,0,1,16,0v32h16v-8a8,8,0,0,1,16,0v8.06l29.66-29.66a8,8,0,0,1,11.31,11.31ZM176,80a48.05,48.05,0,0,0-48-48,47.58,47.58,0,0,0-19.79,4.27,8,8,0,0,0,6.62,14.56A31.7,31.7,0,0,1,128,48a32,32,0,0,1,32,32,31.7,31.7,0,0,1-2.83,13.17,8,8,0,1,0,14.56,6.62A47.58,47.58,0,0,0,176,80Z"></path></svg>`;
-        label = '市の木';
-    } else {
-        return '';
+// 画像読み込み失敗時にプレースホルダーへ差し替えるハンドラを付与
+function attachImgFallback(img) {
+    if (!img) return;
+    img.addEventListener('error', () => {
+        if (img.src !== placeholderSVG) img.src = placeholderSVG;
+    }, { once: true });
+}
+
+// 茅ヶ崎市のシンボル定義（市の花・鳥・木）
+const CITY_SYMBOLS = {
+    tsutsuji: {
+        label: '市の花',
+        svg: `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M240,144a40,40,0,0,1-40,40A39.88,39.88,0,0,1,183.86,180.58A40,40,0,0,1,136,200v8a40,40,0,0,1-80,0v-8a40,40,0,0,1-47.86-51.42A40,40,0,0,1,56,104a39.88,39.88,0,0,1,16.14,3.42A40,40,0,0,1,120,56V48a40,40,0,0,1,80,0v8a40,40,0,0,1,47.86,51.42A40,40,0,0,1,240,144ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Z"></path></svg>`
+    },
+    shijukara: {
+        label: '市の鳥',
+        svg: `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M232,104a32.16,32.16,0,0,0-17.76-28.72l-14.88-7.44a56.16,56.16,0,0,0-25-5.84h0a64,64,0,0,0-64,64v8h-8A40,40,0,0,0,62.36,174l-25.13,10.6a16,16,0,0,0-3.32,27.18,52.28,52.28,0,0,0,32,12.18h8a64,64,0,0,0,64-64v-8h16l14.88,7.44A56.16,56.16,0,0,0,188.64,164h0a32.16,32.16,0,0,0,28.72-17.76A103.58,103.58,0,0,0,232,104ZM120,136v24a48,48,0,0,1-48,48h-8A36.4,36.4,0,0,1,43.25,200L68.61,189.31A24,24,0,0,1,102.36,174,16,16,0,0,0,120,136ZM214.32,138.8a16.08,16.08,0,0,1-14.36,8.88h0A40.12,40.12,0,0,1,182.1,143.5l-20.44-10.22A15.93,15.93,0,0,0,154.5,132H136V126a48,48,0,0,1,48-48h0a40.12,40.12,0,0,1,17.86,4.18L222.3,92.4a16.08,16.08,0,0,1,8.88,14.36A87.65,87.65,0,0,1,214.32,138.8ZM160,116a12,12,0,1,1-12-12A12,12,0,0,1,160,116Z"></path></svg>`
+    },
+    niseakashia: {
+        label: '市の木',
+        svg: `<svg class="symbol-svg" width="1.1em" height="1.1em" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,149.66l-36,36A8,8,0,0,1,166,188H136v40a8,8,0,0,1-16,0V188H90.06a8,8,0,0,1-5.72-2.4l-35.72-36.43A48,48,0,0,1,80,64a8,8,0,0,1,0,16,32,32,0,0,0-22.63,54.63L88,165.94V136a8,8,0,0,1,16,0v16h16V120a8,8,0,0,1,16,0v32h16v-8a8,8,0,0,1,16,0v8.06l29.66-29.66a8,8,0,0,1,11.31,11.31ZM176,80a48.05,48.05,0,0,0-48-48,47.58,47.58,0,0,0-19.79,4.27,8,8,0,0,0,6.62,14.56A31.7,31.7,0,0,1,128,48a32,32,0,0,1,32,32,31.7,31.7,0,0,1-2.83,13.17,8,8,0,1,0,14.56,6.62A47.58,47.58,0,0,0,176,80Z"></path></svg>`
     }
+};
+
+function getCitySymbol(id, isTile = false) {
+    const symbol = CITY_SYMBOLS[id];
+    if (!symbol) return '';
     const wrapperClass = isTile ? 'tile-symbol-icon' : 'symbol-icon';
-    return `<span class="${wrapperClass}" title="茅ヶ崎${label}">${svg}<span class="symbol-label">${label}</span></span>`;
+    return `<span class="${wrapperClass}" title="茅ヶ崎${symbol.label}">${symbol.svg}<span class="symbol-label">${symbol.label}</span></span>`;
+}
+
+// 危険タイプの定義（カード・モーダル共通）。icon はインラインSVGマークアップ
+const DANGER_TYPES = {
+    contact: { label: '触れると危険', icon: ICONS.warning, badgeClass: 'contact' },
+    eat: { label: '食べると危険', icon: ICONS.skull, badgeClass: 'eat' },
+    protect: { label: '守るため注意', icon: ICONS.heart, badgeClass: 'protect' }
+};
+
+// 生き物の危険情報を返す。dangerType 未指定で isDanger のみの場合は汎用「危険」
+function getDangerInfo(bio) {
+    if (bio.dangerType && DANGER_TYPES[bio.dangerType]) return DANGER_TYPES[bio.dangerType];
+    if (bio.isDanger) return { label: '危険', icon: ICONS.warning, badgeClass: 'contact' };
+    return null;
 }
 
 function escapeHtml(value) {
@@ -162,7 +188,33 @@ async function fetchBioData() {
         console.error('エラー:', error);
         skeletonList.style.display = 'none';
         bioList.style.display = 'block';
-        bioList.innerHTML = '<p style="text-align:center; padding: 20px;">データの読み込みに失敗しました。</p>';
+
+        // エラー種別ごとにメッセージを出し分け
+        let message;
+        if (!navigator.onLine) {
+            message = 'インターネットに接続されていません。接続を確認してください。';
+        } else if (error instanceof SyntaxError) {
+            message = 'データの形式が正しくありません。時間をおいて再度お試しください。';
+        } else {
+            message = 'データの読み込みに失敗しました。';
+        }
+
+        bioList.innerHTML = '';
+        const wrap = document.createElement('div');
+        wrap.className = 'load-error';
+        const p = document.createElement('p');
+        p.textContent = message;
+        const retryBtn = document.createElement('button');
+        retryBtn.type = 'button';
+        retryBtn.className = 'empty-reset-btn';
+        retryBtn.textContent = '再読み込み';
+        retryBtn.addEventListener('click', () => {
+            bioList.style.display = 'none';
+            skeletonList.style.display = 'grid';
+            fetchBioData();
+        });
+        wrap.append(p, retryBtn);
+        bioList.appendChild(wrap);
     }
 }
 
@@ -194,20 +246,20 @@ function renderCards(data) {
         card.type = 'button';
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
 
-        const dangerLabelMap = { contact: '触れると危険', eat: '食べると危険', protect: '守るため注意' };
-        const dangerLabel = dangerLabelMap[bio.dangerType] || (bio.isDanger ? '危険' : '');
+        const dangerInfo = getDangerInfo(bio);
+        const dangerLabel = dangerInfo ? dangerInfo.label : '';
         const ariaParts = [bio.name, bio.category];
         if (dangerLabel) ariaParts.push(dangerLabel);
         if (bio.rarity) ariaParts.push(`希少度${bio.rarity}`);
         card.setAttribute('aria-label', `${ariaParts.join('、')}の詳細を開く`);
 
-        let tileBadge = '';
-        if (bio.dangerType === 'contact') tileBadge = `<div class="tile-badge contact" aria-hidden="true">${ICONS.warning}</div>`;
-        else if (bio.dangerType === 'eat') tileBadge = `<div class="tile-badge eat" aria-hidden="true">${ICONS.skull}</div>`;
-        else if (bio.dangerType === 'protect') tileBadge = `<div class="tile-badge protect" aria-hidden="true">${ICONS.heart}</div>`;
-        else if (bio.isDanger) tileBadge = `<div class="tile-badge contact" aria-hidden="true">${ICONS.warning}</div>`;
+        const tileBadge = dangerInfo
+            ? `<div class="tile-badge ${dangerInfo.badgeClass}" aria-hidden="true">${dangerInfo.icon}</div>`
+            : '';
 
         const imgUrl = getImageUrl(bio);
+        // 画像のaltに分類・危険情報を含めて文脈を補う
+        const imgAlt = `${bio.name}（${bio.category}${dangerLabel ? '・' + dangerLabel : ''}）`;
 
         const rarityStars = bio.rarity === 3 ? '★★★' : bio.rarity === 2 ? '★★☆' : '★☆☆';
         const rarityClass = `rarity-${bio.rarity || 1}`;
@@ -230,12 +282,13 @@ function renderCards(data) {
             ${rarityBadge}
             ${tileBadge}
             <div class="tile-image-wrapper">
-                <img src="${tileSrc}"${srcsetAttr} alt="${escapeHtml(bio.name)}" width="200" height="200" loading="${loadingAttr}" decoding="async"${fetchAttr}>
+                <img src="${tileSrc}"${srcsetAttr} alt="${escapeHtml(imgAlt)}" width="200" height="200" loading="${loadingAttr}" decoding="async"${fetchAttr}>
             </div>
             <div class="tile-name">${escapeHtml(bio.name)}</div>
             <div class="tile-category">${escapeHtml(bio.category)}${getCitySymbol(bio.id, true)}</div>
         `;
 
+        attachImgFallback(card.querySelector('img'));
         card.addEventListener('click', () => openModal(bio));
         fragment.appendChild(card);
     });
@@ -323,13 +376,14 @@ let lastFocusedElement = null;
 
 function openModal(bio, options = {}) {
     lastFocusedElement = document.activeElement;
-    let badgeHtml = '';
-    if (bio.dangerType === 'contact') badgeHtml = `<span class="danger-badge contact">${ICONS.warning} 触れると危険</span>`;
-    else if (bio.dangerType === 'eat') badgeHtml = `<span class="danger-badge eat">${ICONS.skull} 食べると危険</span>`;
-    else if (bio.dangerType === 'protect') badgeHtml = `<span class="danger-badge protect">${ICONS.heart} 守るため注意</span>`;
-    else if (bio.isDanger) badgeHtml = `<span class="danger-badge contact">${ICONS.warning} 危険</span>`;
+    const dangerInfo = getDangerInfo(bio);
+    const badgeHtml = dangerInfo
+        ? `<span class="danger-badge ${dangerInfo.badgeClass}">${dangerInfo.icon} ${dangerInfo.label}</span>`
+        : '';
 
     const imgUrl = getImageUrl(bio);
+    const dangerLabel = dangerInfo ? dangerInfo.label : '';
+    const imgAlt = `${bio.name}（${bio.category}${dangerLabel ? '・' + dangerLabel : ''}）`;
     let creditHtml = '';
     if (imgUrl !== placeholderSVG && bio.image && bio.image.author) {
         const authorText = escapeHtml(bio.image.author);
@@ -420,7 +474,7 @@ function openModal(bio, options = {}) {
         : '';
 
     modalBody.innerHTML = `
-        <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(bio.name)}" class="modal-header-img" width="600" height="400" decoding="async">
+        <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
         ${creditHtml}
         ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
         <h2 class="modal-title" id="modal-title-anchor">${escapeHtml(bio.name)}${symbolIcon}</h2>
@@ -441,6 +495,7 @@ function openModal(bio, options = {}) {
         ${referencesHtml}
     `;
 
+    attachImgFallback(modalBody.querySelector('.modal-header-img'));
     modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));
 
     modal.classList.add('active');
