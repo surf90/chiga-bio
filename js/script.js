@@ -12,6 +12,7 @@ const emptyState = document.getElementById('empty-state');
 const emptyKeyword = document.getElementById('empty-keyword');
 const emptyResetBtn = document.getElementById('emptyResetBtn');
 
+const resultCount = document.getElementById('result-count');
 const modal = document.getElementById('bio-modal');
 const modalContent = document.getElementById('modal-content');
 const modalBody = document.getElementById('modal-body');
@@ -38,6 +39,37 @@ const navItems = document.querySelectorAll('.nav-item');
 
 // SVGプレースホルダー (外部リクエストを減らし、デザインを統一)
 const placeholderSVG = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f1f5f9'/%3E%3Cpath d='M0 130 Q 50 160 100 130 T 200 130 L 200 200 L 0 200 Z' fill='%23e2e8f0'/%3E%3Cpath d='M0 150 Q 50 180 100 150 T 200 150 L 200 200 L 0 200 Z' fill='%23cbd5e1' opacity='0.6'/%3E%3Ctext x='100' y='90' font-family='sans-serif' font-size='14' font-weight='bold' fill='%2394a3b8' text-anchor='middle'%3ENo Image%3C/text%3E%3C/svg%3E`;
+
+// インラインSVGアイコン（Feather Icons (MIT) ベース。Font Awesome CDN 廃止に伴い自前化）
+const ICONS = {
+    warning: '<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+    skull: '<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 2.5 1.16 4.73 3 6.2V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2.8c1.84-1.47 3-3.7 3-6.2a8 8 0 0 0-8-8zM8.5 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM12 12.5l1.5 3h-3l1.5-3z"/></svg>',
+    heart: '<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+    calendar: '<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+    location: '<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    chart: '<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>'
+};
+
+// CCライセンスマーク（円＋略号のシンプルなインラインSVG）
+function ccIcon(label, title) {
+    const fontSize = label.length > 1 ? 9 : 12;
+    return `<svg class="cc-icon" viewBox="0 0 24 24" role="img" aria-label="${title}"><title>${title}</title>` +
+        `<circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.8"/>` +
+        `<text x="12" y="12.5" text-anchor="middle" dominant-baseline="central" font-size="${fontSize}" font-weight="bold" fill="currentColor" font-family="Arial, Helvetica, sans-serif">${label}</text></svg>`;
+}
+
+// ひらがな→カタカナ変換＋小文字化（かな表記の違いを吸収して検索ヒットさせる）
+function normalizeKana(str) {
+    return String(str ?? '')
+        .toLowerCase()
+        .replace(/[ぁ-ゖ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) + 0x60));
+}
+
+// iNaturalist 画像URLのサイズ変種を返す（square/small/medium/large 形式以外は null）
+function getImageVariant(url, size) {
+    const m = /^(.*\/)(square|small|medium|large)(\.(?:jpe?g|png|webp))$/i.exec(url);
+    return m ? `${m[1]}${size}${m[3]}` : null;
+}
 
 // 画像URLを返すヘルパー（プレースホルダーフォールバック付き）
 function getImageUrl(bio) {
@@ -78,17 +110,17 @@ function getCitySymbol(id, isTile = false) {
     return `<span class="${wrapperClass}" title="茅ヶ崎${symbol.label}">${symbol.svg}<span class="symbol-label">${symbol.label}</span></span>`;
 }
 
-// 危険タイプの定義（カード・モーダル共通）
+// 危険タイプの定義（カード・モーダル共通）。icon はインラインSVGマークアップ
 const DANGER_TYPES = {
-    contact: { label: '触れると危険', icon: 'fa-triangle-exclamation', badgeClass: 'contact' },
-    eat: { label: '食べると危険', icon: 'fa-skull-crossbones', badgeClass: 'eat' },
-    protect: { label: '守るため注意', icon: 'fa-hand-holding-heart', badgeClass: 'protect' }
+    contact: { label: '触れると危険', icon: ICONS.warning, badgeClass: 'contact' },
+    eat: { label: '食べると危険', icon: ICONS.skull, badgeClass: 'eat' },
+    protect: { label: '守るため注意', icon: ICONS.heart, badgeClass: 'protect' }
 };
 
 // 生き物の危険情報を返す。dangerType 未指定で isDanger のみの場合は汎用「危険」
 function getDangerInfo(bio) {
     if (bio.dangerType && DANGER_TYPES[bio.dangerType]) return DANGER_TYPES[bio.dangerType];
-    if (bio.isDanger) return { label: '危険', icon: 'fa-triangle-exclamation', badgeClass: 'contact' };
+    if (bio.isDanger) return { label: '危険', icon: ICONS.warning, badgeClass: 'contact' };
     return null;
 }
 
@@ -192,6 +224,12 @@ async function fetchBioData() {
 function renderCards(data) {
     bioList.innerHTML = '';
 
+    if (resultCount) {
+        resultCount.textContent = data.length === 0
+            ? '一致する生き物は見つかりませんでした'
+            : `${data.length}件の生き物を表示中`;
+    }
+
     if (data.length === 0) {
         bioList.style.display = 'none';
         emptyState.style.display = 'flex';
@@ -202,6 +240,7 @@ function renderCards(data) {
     bioList.style.display = 'grid';
     emptyState.style.display = 'none';
 
+    const fragment = document.createDocumentFragment();
     data.forEach((bio, idx) => {
         const card = document.createElement('button');
         card.type = 'button';
@@ -215,7 +254,7 @@ function renderCards(data) {
         card.setAttribute('aria-label', `${ariaParts.join('、')}の詳細を開く`);
 
         const tileBadge = dangerInfo
-            ? `<div class="tile-badge ${dangerInfo.badgeClass}" aria-hidden="true"><i class="fa-solid ${dangerInfo.icon}"></i></div>`
+            ? `<div class="tile-badge ${dangerInfo.badgeClass}" aria-hidden="true">${dangerInfo.icon}</div>`
             : '';
 
         const imgUrl = getImageUrl(bio);
@@ -231,11 +270,19 @@ function renderCards(data) {
         const loadingAttr = isAboveFold ? 'eager' : 'lazy';
         const fetchAttr = isAboveFold ? ' fetchpriority="high"' : '';
 
+        // iNaturalist の URL ならタイル向けに小さいサイズ変種を使う
+        const smallUrl = getImageVariant(imgUrl, 'small');
+        const mediumUrl = getImageVariant(imgUrl, 'medium');
+        const tileSrc = smallUrl || imgUrl;
+        const srcsetAttr = (smallUrl && mediumUrl)
+            ? ` srcset="${smallUrl} 240w, ${mediumUrl} 500w" sizes="(min-width: 600px) 140px, 33vw"`
+            : '';
+
         card.innerHTML = `
             ${rarityBadge}
             ${tileBadge}
             <div class="tile-image-wrapper">
-                <img src="${imgUrl}" alt="${escapeHtml(imgAlt)}" width="200" height="200" loading="${loadingAttr}" decoding="async"${fetchAttr}>
+                <img src="${tileSrc}"${srcsetAttr} alt="${escapeHtml(imgAlt)}" width="200" height="200" loading="${loadingAttr}" decoding="async"${fetchAttr}>
             </div>
             <div class="tile-name">${escapeHtml(bio.name)}</div>
             <div class="tile-category">${escapeHtml(bio.category)}${getCitySymbol(bio.id, true)}</div>
@@ -243,8 +290,9 @@ function renderCards(data) {
 
         attachImgFallback(card.querySelector('img'));
         card.addEventListener('click', () => openModal(bio));
-        bioList.appendChild(card);
+        fragment.appendChild(card);
     });
+    bioList.appendChild(fragment);
 }
 
 // ==========================================
@@ -278,7 +326,7 @@ searchInput.addEventListener('compositionstart', () => { isComposing = true; });
 searchInput.addEventListener('compositionend', () => {
     isComposing = false;
     clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(filterData, 100);
+    filterData(); // IME確定後は待たずに即時反映
 });
 
 searchInput.addEventListener('input', (e) => {
@@ -308,13 +356,15 @@ emptyResetBtn.addEventListener('click', () => {
 });
 
 function filterData() {
-    const keyword = searchInput.value.toLowerCase();
+    // ひらがな・カタカナどちらの入力でもヒットするよう正規化して比較
+    const keyword = normalizeKana(searchInput.value.trim());
     const filtered = globalBioData.filter(bio => {
         const matchCategory = currentCategory === 'all' || bio.category === currentCategory;
-        const matchKeyword =
-            bio.name.toLowerCase().includes(keyword) ||
-            (bio.features && bio.features.some(f => f.toLowerCase().includes(keyword)));
-        return matchCategory && matchKeyword;
+        if (!matchCategory) return false;
+        if (!keyword) return true;
+        return normalizeKana(bio.name).includes(keyword) ||
+            normalizeKana(bio.scientificName).includes(keyword) ||
+            (bio.features && bio.features.some(f => normalizeKana(f).includes(keyword)));
     });
     renderCards(filtered);
 }
@@ -328,7 +378,7 @@ function openModal(bio, options = {}) {
     lastFocusedElement = document.activeElement;
     const dangerInfo = getDangerInfo(bio);
     const badgeHtml = dangerInfo
-        ? `<span class="danger-badge ${dangerInfo.badgeClass}"><i class="fa-solid ${dangerInfo.icon}"></i> ${dangerInfo.label}</span>`
+        ? `<span class="danger-badge ${dangerInfo.badgeClass}">${dangerInfo.icon} ${dangerInfo.label}</span>`
         : '';
 
     const imgUrl = getImageUrl(bio);
@@ -344,10 +394,10 @@ function openModal(bio, options = {}) {
             const licenseUpper = bio.image.license.toUpperCase().trim();
             if (licenseUpper === 'CC0') {
                 // CC0の場合は、ベースマークとゼロマークを両方表示
-                licenseIcons = '<i class="fa-brands fa-creative-commons" aria-label="Creative Commons" title="CC0"></i><i class="fa-brands fa-creative-commons-zero" aria-label="Public Domain" title="Public Domain"></i>';
+                licenseIcons = ccIcon('CC', 'Creative Commons') + ccIcon('0', 'Public Domain');
             } else if (licenseUpper.startsWith('CC')) {
                 // ベースとなる「CC」マーク
-                licenseIcons += '<i class="fa-brands fa-creative-commons" aria-label="Creative Commons" title="Creative Commons"></i>';
+                licenseIcons += ccIcon('CC', 'Creative Commons');
 
                 const typesStr = licenseUpper.substring(2).trim(); // "BY-NC" 等の抽出
                 const types = typesStr.split('-');
@@ -355,10 +405,10 @@ function openModal(bio, options = {}) {
                 // ライセンス条件に応じてアイコンを追加
                 types.forEach(type => {
                     const t = type.trim();
-                    if (t === 'BY') licenseIcons += '<i class="fa-brands fa-creative-commons-by" aria-label="Attribution" title="Attribution"></i>';
-                    else if (t === 'SA') licenseIcons += '<i class="fa-brands fa-creative-commons-sa" aria-label="ShareAlike" title="ShareAlike"></i>';
-                    else if (t === 'NC') licenseIcons += '<i class="fa-brands fa-creative-commons-nc" aria-label="NonCommercial" title="NonCommercial"></i>';
-                    else if (t === 'ND') licenseIcons += '<i class="fa-brands fa-creative-commons-nd" aria-label="NoDerivatives" title="NoDerivatives"></i>';
+                    if (t === 'BY') licenseIcons += ccIcon('BY', 'Attribution');
+                    else if (t === 'SA') licenseIcons += ccIcon('SA', 'ShareAlike');
+                    else if (t === 'NC') licenseIcons += ccIcon('NC', 'NonCommercial');
+                    else if (t === 'ND') licenseIcons += ccIcon('ND', 'NoDerivatives');
                 });
             } else {
                 licenseIcons = ` <span class="license-text">(${escapeHtml(bio.image.license)})</span>`;
@@ -377,9 +427,9 @@ function openModal(bio, options = {}) {
     let encounterHtml = '';
     if (bio.encounterSeason || bio.encounterLocation || bio.encounterProbability) {
         const tags = [];
-        if (bio.encounterSeason) tags.push(`<span class="encounter-tag"><i class="fa-regular fa-calendar"></i>${escapeHtml(bio.encounterSeason)}</span>`);
-        if (bio.encounterLocation) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-location-dot"></i>${escapeHtml(bio.encounterLocation)}</span>`);
-        if (bio.encounterProbability) tags.push(`<span class="encounter-tag"><i class="fa-solid fa-chart-simple"></i>遭遇確率: ${escapeHtml(bio.encounterProbability)}</span>`);
+        if (bio.encounterSeason) tags.push(`<span class="encounter-tag">${ICONS.calendar}${escapeHtml(bio.encounterSeason)}</span>`);
+        if (bio.encounterLocation) tags.push(`<span class="encounter-tag">${ICONS.location}${escapeHtml(bio.encounterLocation)}</span>`);
+        if (bio.encounterProbability) tags.push(`<span class="encounter-tag">${ICONS.chart}遭遇確率: ${escapeHtml(bio.encounterProbability)}</span>`);
         encounterHtml = `<div class="encounter-tags">${tags.join('')}</div>`;
     }
 
@@ -415,8 +465,16 @@ function openModal(bio, options = {}) {
 
     const symbolIcon = getCitySymbol(bio.id, false);
 
+    // iNaturalist の URL なら表示幅に応じたサイズ変種を使う
+    const modalMediumUrl = getImageVariant(imgUrl, 'medium');
+    const modalLargeUrl = getImageVariant(imgUrl, 'large');
+    const modalSrc = modalMediumUrl || imgUrl;
+    const modalSrcset = (modalMediumUrl && modalLargeUrl)
+        ? ` srcset="${modalMediumUrl} 500w, ${modalLargeUrl} 1024w" sizes="(min-width: 800px) 760px, 100vw"`
+        : '';
+
     modalBody.innerHTML = `
-        <img src="${imgUrl}" alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
+        <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
         ${creditHtml}
         ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
         <h2 class="modal-title" id="modal-title-anchor">${escapeHtml(bio.name)}${symbolIcon}</h2>
