@@ -10,6 +10,16 @@
 
 ## 変更履歴
 
+### 2026-06-12 — A11y・CSP・パフォーマンス改善とコード整理（[PR #35](https://github.com/surf90/chiga-bio/pull/35)）
+
+- a11y: モーダルの `aria-labelledby` 参照先（`modal-title-anchor`）を `<h2>` に付与、`empty-state` に `role="status"`、画像 `alt` に分類・危険情報を補完、極小フォント拡大
+- セキュリティ: Content-Security-Policy メタタグ追加（`self` + Google Fonts + cdnjs + iNaturalist に限定）
+- パフォーマンス: Fonts / gstatic / cdnjs への `preconnect` 追加
+- UX: データ取得失敗の文言出し分け＋再読み込みボタン、画像読込失敗時のプレースホルダーフォールバック（`attachImgFallback`）
+- SEO: JSON-LD（`WebSite` + `SearchAction`）追加、`sitemap.xml` lastmod 更新、lastmod 自動更新の GitHub Actions（`update-sitemap.yml`）追加
+- 保守性: 危険バッジ（`DANGER_TYPES`）と市シンボルSVG（`CITY_SYMBOLS`）の重複排除、CSS ハードコード色の変数化、印刷スタイル（`@media print`）追加
+- 見送り（別タスク）: PWAアイコン512px圧縮（要画像ツール）、Font Awesome サブセット化（要ビルド）、ユニットテスト導入（要テストランナー）
+
 ### 2026-04-30 — PWA対応・UI/UX改善・アイコン統一
 
 - PWA対応 Service Worker 導入（オフライン・キャッシュ戦略）（[PR #20](https://github.com/surf90/chiga-bio/pull/20)）
