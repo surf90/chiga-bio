@@ -3862,17 +3862,17 @@
     "encounterProbability": "中"
   },
   {
-    "id": "hamahyoutangomimushi",
-    "name": "ハマヒョウタンゴミムシ",
+    "id": "hamahyoutangomimushidamashi",
+    "name": "ハマヒョウタンゴミムシダマシ",
     "category": "無脊椎動物",
-    "scientificName": "Omophron aequale",
+    "scientificName": "Idisia ornata",
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": " ",
-      "author": " ",
-      "license": " ",
-      "sourceUrl": " "
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/667672113/large.jpg",
+      "author": "invertebratist",
+      "license": "CC BY",
+      "sourceUrl": "https://www.inaturalist.org/observations/365839994"
     },
     "features": [
       "海岸の砂浜にのみ生息する体長5mmほどの小さな甲虫",
