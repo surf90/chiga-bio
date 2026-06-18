@@ -489,7 +489,7 @@ function openModal(bio, options = {}) {
     modalBody.innerHTML = `
         <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
         ${creditHtml}
-        ${badgeHtml ? `<div style="margin-bottom:8px;">${badgeHtml}</div>` : ''}
+        ${badgeHtml ? `<div class="modal-badge-wrap">${badgeHtml}</div>` : ''}
         <h2 class="modal-title" id="modal-title-anchor">${escapeHtml(bio.name)}${symbolIcon}</h2>
         <dl class="modal-meta">
             <dt class="sr-only">分類</dt><dd><span class="category-tag">${escapeHtml(bio.category)}</span></dd>
