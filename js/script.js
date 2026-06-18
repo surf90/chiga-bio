@@ -58,11 +58,15 @@ function ccIcon(label, title) {
         `<text x="12" y="12.5" text-anchor="middle" dominant-baseline="central" font-size="${fontSize}" font-weight="bold" fill="currentColor" font-family="Arial, Helvetica, sans-serif">${label}</text></svg>`;
 }
 
-// ひらがな→カタカナ変換＋小文字化（かな表記の違いを吸収して検索ヒットさせる）
+// ひらがな→カタカナ変換＋小文字化＋濁点・半濁点の清音化（かな表記の違いを吸収して検索ヒットさせる）
 function normalizeKana(str) {
     return String(str ?? '')
         .toLowerCase()
-        .replace(/[ぁ-ゖ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) + 0x60));
+        .replace(/[ぁ-ゖ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) + 0x60))
+        // NFD 分解で濁点(U+3099)・半濁点(U+309A)を結合文字に分け、それらを除去して清音化（カメ≒ガメ等を吸収）
+        .normalize('NFD')
+        .replace(/[゙゚]/g, '')
+        .normalize('NFC');
 }
 
 // iNaturalist 画像URLのサイズ変種を返す（square/small/medium/large 形式以外は null）
@@ -373,6 +377,7 @@ function filterData() {
 // 詳細モーダルとシェア機能
 // ==========================================
 let lastFocusedElement = null;
+let savedScrollY = 0; // モーダル表示中の背景スクロール位置の退避先
 
 function openModal(bio, options = {}) {
     lastFocusedElement = document.activeElement;
@@ -500,7 +505,13 @@ function openModal(bio, options = {}) {
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    // 背景スクロールを完全にロック（iOS Safari は overflow:hidden だけでは背面が動くため position:fixed 方式）
+    savedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
     modalBody.scrollTop = 0;
 
     // 履歴に積んで「戻る」でモーダルを閉じられるようにする
@@ -517,7 +528,13 @@ function closeModal(options = {}) {
     if (!modal.classList.contains('active')) return;
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    // 背景スクロールロックを解除し、退避していたスクロール位置を復元
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    window.scrollTo(0, savedScrollY);
     // history からモーダル状態を取り除く
     if (!options.skipHistory && window.history.state && window.history.state.modal) {
         window.history.back();
