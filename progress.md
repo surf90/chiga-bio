@@ -1,7 +1,7 @@
 ## 開発ロードマップ
 
 - **フェーズ1：生物データの拡充** ✅ 進行中 — 遭遇率・危険度の高い生物から優先的にJSONデータを追加。[データ管理スプレッドシート](https://docs.google.com/spreadsheets/d/11n9cdOqSrykqO0FIyUA1I3S-O7i3gc20X8yUd6LYMPQ/edit?gid=554732195#gid=554732195)
-- **フェーズ2：ビジュアルアセットの適用** — 権利フリー画像（iNaturalist等）の選定とJSONデータへの組み込み。[iNaturalist 茅ヶ崎周辺の観察記録](https://www.inaturalist.org/observations?place_id=6737&quality_grade=research&subview=map&verifiable=any)
+- **フェーズ2：ビジュアルアセットの適用** ✅ 完了 — 全110件に画像情報（url/author/license/sourceUrl）を適用済み。[iNaturalist 茅ヶ崎周辺の観察記録](https://www.inaturalist.org/observations?place_id=6737&quality_grade=research&subview=map&verifiable=any)
 - **フェーズ3：PWA化（オフライン対応）** ✅ 完了 — `sw.js` と `site.webmanifest` 導入済み。Network First / Cache First 戦略実装済み。
 
 ### 未対応（要確認）
@@ -9,6 +9,13 @@
 - `data/bio-data.json` の `localEncounter` フィールドがモーダルで非表示（表示実装は未スコープ）
 
 ## 変更履歴
+
+### 2026-06-18 — 全生物の画像データ整備完了
+
+- `bio-data.json` 全110件に画像情報（url/author/license/sourceUrl）を反映
+- Excelデータから51件を一括適用（2回のExcelファイルに分けて処理）
+- id・name・学名の誤りを修正: `umiakaamenbo`→`umiamenbo`（ウミアカアメンボ→ウミアメンボ）、`hamahyoutangomimushi`→`hamahyoutangomimushidamashi`（学名も`Omophron aequale`→`Idisia ornata`）、`marubasharinbai`→`sharinbai`
+- 残り6件（araiguma, niseakashia, hamatobimushi他）は個別に画像情報を反映し全件完了
 
 ### 2026-06-18 — モバイル品質チェック・高度品質改善
 
