@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#0ea5e9">
+    <meta name="theme-color" content="#0e7490">
     <meta name="description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://inaturalist-open-data.s3.amazonaws.com https://static.inaturalist.org; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
     <title>ちがビオ | 茅ヶ崎の生き物情報</title>
@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://inaturalist-open-data.s3.amazonaws.com">
     <link rel="preconnect" href="https://static.inaturalist.org">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
+    <link rel="preload" href="data/bio-data.json" as="fetch" type="application/json" crossorigin>
+    <!-- ロゴ用フォントはレンダーブロッキング回避のため script.js から非同期注入（CSP: script-src 'self' 準拠） -->
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap"></noscript>
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -31,7 +33,11 @@
     <meta property="og:image:alt" content="ちがビオ - 茅ヶ崎の生き物情報">
     <meta property="og:site_name" content="ちがビオ">
     <meta property="og:locale" content="ja_JP">
+    <meta property="og:image:type" content="image/webp">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ちがビオ | 茅ヶ崎の生き物情報">
+    <meta name="twitter:description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
+    <meta name="twitter:image" content="https://surf90.github.io/chiga-bio/ogp.webp">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://surf90.github.io/chiga-bio/">
 
@@ -65,7 +71,7 @@
     <span class="subtitle">茅ヶ崎の生き物が、まるっとわかる。</span>
 </header>
 
-<div class="container">
+<main class="container">
     <div class="search-wrapper">
         <label for="searchInput" class="sr-only">生き物の検索</label>
         <input type="search" id="searchInput" class="search-bar" placeholder="生き物の名前や特徴で検索..." aria-label="生き物の検索" enterkeyhint="search" autocomplete="off">
@@ -93,7 +99,7 @@
         <p>「<strong id="empty-keyword" style="color: var(--text-main);"></strong>」に一致する<br>生き物は見つかりませんでした。</p>
         <button id="emptyResetBtn" class="empty-reset-btn">すべてを表示に戻す</button>
     </div>
-</div>
+</main>
 
 <div id="bio-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-anchor" aria-hidden="true">
     <div class="modal-content" id="modal-content">
@@ -149,6 +155,6 @@
 
 <div id="toast"></div>
 
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>

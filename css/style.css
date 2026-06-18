@@ -274,8 +274,10 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 
 .tile-name {
     font-size: 0.9rem; font-weight: 700; color: var(--text-main);
-    text-align: center; width: 90%; white-space: nowrap;
+    text-align: center; width: 90%;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
     overflow: hidden; text-overflow: ellipsis;
+    line-height: 1.25; word-break: break-word;
 }
 .tile-category { font-size: 0.75rem; color: var(--text-meta); margin-top: 2px; }
 
@@ -409,7 +411,7 @@ summary { font-weight: bold; cursor: pointer; }
 .symbol-label { font-size: 0.75em; letter-spacing: 0.05em; vertical-align: middle; }
 .category-tag { background-color: rgba(14, 116, 144, 0.1); color: var(--primary-deep); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
 
-.footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: #94a3b8; }
+.footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: #64748b; }
 .footer a { color: inherit; } /* リンクを周りの文字色に合わせる */
 .footer a.lifesaving-link { color: var(--danger-color); } /* 特定のリンクのみ赤系に */
 .footer-disclaimer { background: var(--bg-color); padding: 12px; border-radius: 8px; text-align: left; margin: 16px 0; } /* 背景色を全体に揃える */
@@ -461,6 +463,12 @@ summary { font-weight: bold; cursor: pointer; }
     word-break: break-all;
 }
 .ref-meta { color: #94a3b8; font-size: 0.75rem; }
+
+/* 小画面（〜360px）でのヘッダー横溢れ防止 */
+@media (max-width: 360px) {
+    header h1 { font-size: 1.6rem; flex-wrap: wrap; gap: 4px; }
+    header h1 small { font-size: 0.75rem; }
+}
 
 /* =========================================
    9. ダークモード

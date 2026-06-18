@@ -1,5 +1,13 @@
 // js/script.js
 
+// ロゴ用Webフォントを非同期注入（レンダーブロッキング回避。CSP: script-src 'self' 準拠）
+(function loadLogoFont() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@900&display=swap';
+    document.head.appendChild(link);
+})();
+
 let globalBioData = [];
 let currentCategory = 'all';
 
