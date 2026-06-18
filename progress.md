@@ -10,6 +10,15 @@
 
 ## 変更履歴
 
+### 2026-06-18 — モバイル品質チェック・高度品質改善
+
+- モバイルレイアウト: `.tile-name` を2行クランプ化（長い和名の途中切れ解消）、`@media (max-width:360px)` でヘッダー横溢れ防止
+- perf: `script.js` を `defer` 化、`bio-data.json`(170KB) を `<link rel="preload">` で前倒し取得、Google Fonts をJS注入で非ブロッキング化（CSP `script-src 'self'` 準拠）
+- a11y: コンテンツ領域を `<div>` → `<main>` に変更しランドマーク追加、フッター文字色を `#94a3b8` → `#64748b`（WCAG AA 4.5:1達成）
+- pwa: `site.webmanifest` アイコンの `purpose` を `"any maskable"` に統一、`theme_color` を HTML meta・manifest・実ヘッダーで `#0e7490` に3者統一
+- seo/ogp: `og:image:type=image/webp` 追加、`twitter:title/description/image` 専用タグを明示
+- sw: `CACHE_VERSION` を `v1.3.2` へbump（CSS/HTML変更の確実な配信）
+
 ### 2026-06-12 — A11y・CSP・パフォーマンス改善とコード整理（[PR #35](https://github.com/surf90/chiga-bio/pull/35)）
 
 - a11y: モーダルの `aria-labelledby` 参照先（`modal-title-anchor`）を `<h2>` に付与、`empty-state` に `role="status"`、画像 `alt` に分類・危険情報を補完、極小フォント拡大

@@ -17,8 +17,9 @@
 - **SEO:** JSON-LD（`WebSite` + `SearchAction`）による構造化データを `index.html` に埋め込み。
 - **PWA対応済み:** Service Worker（`sw.js`）によるオフラインキャッシュを実装済み。電波状況の悪い海辺でもインストール済みページを閲覧可能。
   - 静的ファイル（HTML / CSS / JS / JSON）: Network First
-  - 画像（ローカル・iNaturalist CDN）: Cache First（最大100枚）
+  - 画像（ローカル・iNaturalist CDN）: Cache First（最大150枚）
   - キャッシュバージョン: `CACHE_VERSION`（`sw.js`冒頭）を変更することで旧キャッシュを自動削除
+  - マニフェスト `theme_color` / HTML `<meta name="theme-color">` / ヘッダー背景色は `#0e7490` で統一
 
 ## UX 定義
 
