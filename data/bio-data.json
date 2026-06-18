@@ -2,7 +2,7 @@
   {
     "id": "katsuonoeboshi",
     "name": "カツオノエボシ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Physalia physalis",
     "isDanger": true,
     "dangerType": "contact",
@@ -129,7 +129,7 @@
   {
     "id": "hyoumondako",
     "name": "ヒョウモンダコ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Hapalochlaena",
     "isDanger": true,
     "dangerType": "contact",
@@ -246,7 +246,7 @@
   {
     "id": "andonkurage",
     "name": "アンドンクラゲ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Carybdea brevipedalia",
     "isDanger": true,
     "dangerType": "contact",
@@ -393,7 +393,7 @@
   {
     "id": "sunagani",
     "name": "スナガニ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Ocypode stimpsoni",
     "isDanger": false,
     "dangerType": "",
@@ -461,7 +461,7 @@
   {
     "id": "akakurage",
     "name": "アカクラゲ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Chrysaora pacifica",
     "isDanger": true,
     "dangerType": "contact",
@@ -499,7 +499,7 @@
   {
     "id": "mizukurage",
     "name": "ミズクラゲ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Aurelia aurita",
     "isDanger": false,
     "dangerType": "",
@@ -535,7 +535,7 @@
   {
     "id": "kabutokurage",
     "name": "カブトクラゲ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Bolinopsis mikado",
     "isDanger": false,
     "dangerType": "",
@@ -568,7 +568,7 @@
   {
     "id": "ginkakurage",
     "name": "ギンカクラゲ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Porpita porpita",
     "isDanger": false,
     "dangerType": "",
@@ -603,7 +603,7 @@
   {
     "id": "katsuonokanmuri",
     "name": "カツオノカンムリ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Velella velella",
     "isDanger": false,
     "dangerType": "",
@@ -638,7 +638,7 @@
   {
     "id": "aominoumiushi",
     "name": "アオミノウミウシ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Glaucus atlanticus",
     "isDanger": true,
     "dangerType": "contact",
@@ -717,7 +717,7 @@
   {
     "id": "fujitsubo",
     "name": "フジツボ類",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Balanomorpha",
     "isDanger": true,
     "dangerType": "contact",
@@ -839,7 +839,7 @@
   {
     "id": "akaumigame",
     "name": "アカウミガメ",
-    "category": "は虫類",
+    "category": "爬虫類",
     "scientificName": "Caretta caretta",
     "isDanger": false,
     "dangerType": "protect",
@@ -986,7 +986,7 @@
   {
     "id": "sunameri",
     "name": "スナメリ",
-    "category": "ほ乳類",
+    "category": "哺乳類",
     "scientificName": "Neophocaena asiaeorientalis",
     "isDanger": false,
     "dangerType": "protect",
@@ -1023,7 +1023,7 @@
   {
     "id": "kamairuka",
     "name": "カマイルカ",
-    "category": "ほ乳類",
+    "category": "哺乳類",
     "scientificName": "Lagenorhynchus obliquidens",
     "isDanger": false,
     "dangerType": "protect",
@@ -1058,7 +1058,7 @@
   {
     "id": "hanagondou",
     "name": "ハナゴンドウ",
-    "category": "ほ乳類",
+    "category": "哺乳類",
     "scientificName": "Grampus griseus",
     "isDanger": false,
     "dangerType": "protect",
@@ -1093,7 +1093,7 @@
   {
     "id": "zatoukujira",
     "name": "ザトウクジラ",
-    "category": "ほ乳類",
+    "category": "哺乳類",
     "scientificName": "Megaptera novaeangliae",
     "isDanger": true,
     "dangerType": "contact",
@@ -1313,7 +1313,7 @@
   {
     "id": "honyadokari",
     "name": "ホンヤドカリ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Pagurus filholi",
     "isDanger": false,
     "dangerType": "",
@@ -1346,7 +1346,7 @@
   {
     "id": "amehurashi",
     "name": "アメフラシ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Aplysia kurodai",
     "isDanger": false,
     "dangerType": "",
@@ -1419,7 +1419,7 @@
   {
     "id": "hamadangomushi",
     "name": "ハマダンゴムシ",
-    "category": "無脊椎動物",
+    "category": "その他の動物",
     "scientificName": "Tylos granuliferus",
     "isDanger": false,
     "dangerType": "",
@@ -1486,7 +1486,7 @@
   {
     "id": "midoriigai",
     "name": "ミドリイガイ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Perna viridis",
     "isDanger": true,
     "dangerType": "contact",
@@ -1901,7 +1901,7 @@
   {
     "id": "nekogai",
     "name": "ネコガイ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Eunaticina papilla",
     "isDanger": false,
     "dangerType": "",
@@ -1935,7 +1935,7 @@
   {
     "id": "matsubagai",
     "name": "マツバガイ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Cellana nigrolineata",
     "isDanger": false,
     "dangerType": "",
@@ -1971,7 +1971,7 @@
   {
     "id": "aoumiushi",
     "name": "アオウミウシ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Hypselodoris festiva",
     "isDanger": false,
     "dangerType": "",
@@ -2077,7 +2077,7 @@
   {
     "id": "sazae",
     "name": "サザエ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Turbo sazae",
     "isDanger": false,
     "dangerType": "protect",
@@ -2111,7 +2111,7 @@
   {
     "id": "hamaguri",
     "name": "ハマグリ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Meretrix lusoria",
     "isDanger": false,
     "dangerType": "protect",
@@ -2623,7 +2623,7 @@
   {
     "id": "seguroumihebi",
     "name": "セグロウミヘビ",
-    "category": "は虫類",
+    "category": "爬虫類",
     "scientificName": "Hydrophis platurus",
     "isDanger": true,
     "dangerType": "contact",
@@ -2667,7 +2667,7 @@
   {
     "id": "araiguma",
     "name": "アライグマ",
-    "category": "ほ乳類",
+    "category": "哺乳類",
     "scientificName": "Procyon lotor",
     "isDanger": true,
     "dangerType": "contact",
@@ -3062,7 +3062,7 @@
   {
     "id": "isogani",
     "name": "イソガニ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Hemigrapsus sanguineus",
     "isDanger": false,
     "dangerType": "",
@@ -3096,7 +3096,7 @@
   {
     "id": "murasakiuni",
     "name": "ムラサキウニ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Heliocidaris crassispina",
     "isDanger": true,
     "dangerType": "contact",
@@ -3139,7 +3139,7 @@
   {
     "id": "madako",
     "name": "マダコ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Octopus vulgaris",
     "isDanger": false,
     "dangerType": "",
@@ -3173,7 +3173,7 @@
   {
     "id": "aoriika",
     "name": "アオリイカ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Sepioteuthis lessoniana",
     "isDanger": false,
     "dangerType": "",
@@ -3207,7 +3207,7 @@
   {
     "id": "itomakihitode",
     "name": "イトマキヒトデ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Patiria pectinifera",
     "isDanger": false,
     "dangerType": "",
@@ -3241,7 +3241,7 @@
   {
     "id": "murasakiigai",
     "name": "ムラサキイガイ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Mytilus galloprovincialis",
     "isDanger": true,
     "dangerType": "contact",
@@ -3283,7 +3283,7 @@
   {
     "id": "shiroumiushi",
     "name": "シロウミウシ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Chromodoris orientalis",
     "isDanger": false,
     "dangerType": "",
@@ -3317,7 +3317,7 @@
   {
     "id": "ougigani",
     "name": "オウギガニ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Leptodius exaratus",
     "isDanger": false,
     "dangerType": "",
@@ -3351,7 +3351,7 @@
   {
     "id": "shako",
     "name": "シャコ",
-    "category": "無脊椎動物",
+    "category": "海の無脊椎動物",
     "scientificName": "Oratosquilla oratoria",
     "isDanger": true,
     "dangerType": "contact",
@@ -3728,7 +3728,7 @@
   {
     "id": "nihontokage",
     "name": "ニホントカゲ",
-    "category": "は虫類",
+    "category": "爬虫類",
     "scientificName": "Plestiodon japonicus",
     "isDanger": false,
     "dangerType": "",
@@ -3762,7 +3762,7 @@
   {
     "id": "nihonkanahebi",
     "name": "ニホンカナヘビ",
-    "category": "は虫類",
+    "category": "爬虫類",
     "scientificName": "Takydromus tachydromoides",
     "isDanger": false,
     "dangerType": "",
@@ -3796,7 +3796,7 @@
   {
     "id": "hamabehasamimushi",
     "name": "ハマベハサミムシ",
-    "category": "無脊椎動物",
+    "category": "昆虫・クモ",
     "scientificName": "Anisolabis maritima",
     "isDanger": false,
     "dangerType": "",
@@ -3830,7 +3830,7 @@
   {
     "id": "umiamenbo",
     "name": "ウミアメンボ",
-    "category": "無脊椎動物",
+    "category": "昆虫・クモ",
     "scientificName": "Halobates japonicus",
     "isDanger": false,
     "dangerType": "",
@@ -3864,7 +3864,7 @@
   {
     "id": "hamahyoutangomimushidamashi",
     "name": "ハマヒョウタンゴミムシダマシ",
-    "category": "無脊椎動物",
+    "category": "昆虫・クモ",
     "scientificName": "Idisia ornata",
     "isDanger": false,
     "dangerType": "",
@@ -3898,7 +3898,7 @@
   {
     "id": "hamatobimushi",
     "name": "ハマトビムシ類",
-    "category": "無脊椎動物",
+    "category": "その他の動物",
     "scientificName": "Talitridae",
     "isDanger": false,
     "dangerType": "",
