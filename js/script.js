@@ -487,7 +487,10 @@ function openModal(bio, options = {}) {
         : '';
 
     modalBody.innerHTML = `
-        <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
+        <button type="button" class="modal-header-img-wrap" aria-expanded="false" aria-label="写真を全体表示に切り替え">
+            <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
+            <span class="zoom-hint">🔍 タップで全体表示</span>
+        </button>
         ${creditHtml}
         ${badgeHtml ? `<div class="modal-badge-wrap">${badgeHtml}</div>` : ''}
         <h2 class="modal-title" id="modal-title-anchor">${escapeHtml(bio.name)}${symbolIcon}</h2>
@@ -510,6 +513,15 @@ function openModal(bio, options = {}) {
 
     attachImgFallback(modalBody.querySelector('.modal-header-img'));
     modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));
+
+    // ヘッダー写真タップで横長(cover)⇔全体表示(contain)をトグル
+    const imgWrap = modalBody.querySelector('.modal-header-img-wrap');
+    imgWrap.addEventListener('click', () => {
+        const expanded = imgWrap.classList.toggle('expanded');
+        imgWrap.setAttribute('aria-expanded', String(expanded));
+        const hint = imgWrap.querySelector('.zoom-hint');
+        if (hint) hint.textContent = expanded ? '🔍 タップで横長に戻す' : '🔍 タップで全体表示';
+    });
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
