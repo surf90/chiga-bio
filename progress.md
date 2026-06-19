@@ -6,11 +6,17 @@
 
 ### 未対応（要確認）
 
-- `data/bio-data.json` の `localEncounter` フィールドがモーダルで非表示（表示実装は未スコープ）
+- **要手動**: ハイブリッドSEO（PR #46）マージ後、GitHub Pages の Source を「Deploy from a branch」→「GitHub Actions」へ切替（切替まで `pages.yml` のデプロイは反映されない）
 - 追加54件のうち27件が画像未登録（プレースホルダー）。Excelに画像URLが入り次第、同手順で反映予定
   - 画像選定TODO（id）: hiruzakitsukimisou, tsurunichinichisou, kibanadaikon, imokatabami, ookamakiri, inuhoozuki, kumazemi, shiokaratonbo, warajimushi, aosujiageha, yakeyasude, arakashi, hanaochibatake, marukamemushi, chabaneseseri, harabirokamakiri, aobahagoromo, miyamakuwagata, minminzemi, mokusei, akiakane, kiberihagoromo, matsukasakinokomodoki, misujimaimai, kimadarakamikiri, mejiro, tamakikurage
 
 ## 変更履歴
+
+### 2026-06-19 — リンク下線の除去（タイル／撮影者名）
+
+- 一覧タイルの生物名・分類名の下線を除去（`.bio-card` が `<a>` 化された際の既定下線。`text-decoration: none;` を追加）
+- 詳細カードの撮影者名（`.image-credit a`）の下線を除去
+- `sw.js` の `CACHE_VERSION` を `v1.4.0`→`v1.4.1` へbump
 
 ### 2026-06-19 — ハイブリッドSEO（SSG + SPA）改修
 
