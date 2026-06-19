@@ -374,11 +374,29 @@ function filterData() {
         const matchEnv = currentEnv === 'all' || bio.environment === currentEnv;
         if (!matchEnv) return false;
         if (!keyword) return true;
+        // 危険タイプは表示ラベル（例「守るため注意」）に変換して検索対象に含める
+        const dangerLabel = getDangerInfo(bio)?.label || '';
         return normalizeKana(bio.name).includes(keyword) ||
             normalizeKana(bio.scientificName).includes(keyword) ||
-            (bio.features && bio.features.some(f => normalizeKana(f).includes(keyword)));
+            (bio.features && bio.features.some(f => normalizeKana(f).includes(keyword))) ||
+            normalizeKana(bio.category).includes(keyword) ||
+            normalizeKana(dangerLabel).includes(keyword) ||
+            normalizeKana(bio.environment).includes(keyword) ||
+            normalizeKana(bio.encounterSeason).includes(keyword);
     });
     renderCards(filtered);
+}
+
+// 分類タグから同じ分類の一覧へ。検索ボックスに分類名を入れて絞り込む
+function searchByCategory(category) {
+    closeModal();
+    searchInput.value = category;
+    clearSearchBtn.classList.add('visible');
+    // 環境フィルタを「すべて」に戻し、分類検索が場所で制限されないようにする
+    setActiveNav(document.querySelector('.nav-item[data-env="all"]'));
+    currentEnv = 'all';
+    filterData();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ==========================================
@@ -495,7 +513,7 @@ function openModal(bio, options = {}) {
         ${badgeHtml ? `<div class="modal-badge-wrap">${badgeHtml}</div>` : ''}
         <h2 class="modal-title" id="modal-title-anchor">${escapeHtml(bio.name)}${symbolIcon}</h2>
         <dl class="modal-meta">
-            <dt class="sr-only">分類</dt><dd><span class="category-tag">${escapeHtml(bio.category)}</span></dd>
+            <dt class="sr-only">分類</dt><dd><button type="button" class="category-tag category-tag-btn" aria-label="${escapeHtml(bio.category)}で検索">${escapeHtml(bio.category)}</button></dd>
             <dt class="sr-only">学名</dt><dd class="scientific-name">${escapeHtml(bio.scientificName)}</dd>
         </dl>
         ${encounterHtml}
@@ -513,6 +531,10 @@ function openModal(bio, options = {}) {
 
     attachImgFallback(modalBody.querySelector('.modal-header-img'));
     modalBody.querySelector('.share-btn').addEventListener('click', () => shareBio(bio.id, bio.name, bio.category));
+
+    // 分類タグのタップで同じ分類の一覧へ絞り込む
+    const categoryBtn = modalBody.querySelector('.category-tag-btn');
+    if (categoryBtn) categoryBtn.addEventListener('click', () => searchByCategory(bio.category));
 
     // ヘッダー写真タップで横長(cover)⇔全体表示(contain)をトグル
     const imgWrap = modalBody.querySelector('.modal-header-img-wrap');

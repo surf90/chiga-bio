@@ -42,7 +42,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -81,7 +81,7 @@
     "rarity": 2,
     "encounterSeason": "春〜秋",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -292,7 +292,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -326,7 +326,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -506,7 +506,7 @@
     "rarity": 2,
     "encounterSeason": "秋〜春",
     "encounterLocation": "海岸全般",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -543,7 +543,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "高"
   },
   {
@@ -577,7 +577,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -613,7 +613,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "海岸全般",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -649,7 +649,7 @@
     "rarity": 2,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -692,7 +692,7 @@
     "rarity": 2,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -811,7 +811,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -895,7 +895,7 @@
     "rarity": 3,
     "encounterSeason": "初夏〜夏",
     "encounterLocation": "砂浜",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -1044,7 +1044,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沿岸・砂浜",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -1186,7 +1186,7 @@
     "rarity": 2,
     "encounterSeason": "春〜秋",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -1230,7 +1230,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -1594,7 +1594,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -2734,7 +2734,7 @@
     "rarity": 3,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "砂浜",
-    "environment": "砂浜・海岸",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
