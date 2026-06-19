@@ -4499,7 +4499,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "川・池・湿地",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -5167,7 +5167,7 @@
     "rarity": 1,
     "encounterSeason": "春〜秋",
     "encounterLocation": "川・池・湿地",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -5547,7 +5547,7 @@
     "rarity": 1,
     "encounterSeason": "春〜秋",
     "encounterLocation": "池・川・公園",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -6084,7 +6084,7 @@
     "rarity": 1,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "里山・池・水田",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
