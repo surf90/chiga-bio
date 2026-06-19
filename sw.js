@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v1.3.7';
+const CACHE_VERSION = 'v1.3.8';
 const STATIC_CACHE_NAME = `chiga-bio-static-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `chiga-bio-image-${CACHE_VERSION}`;
 const MAX_IMAGE_CACHE = 150;
