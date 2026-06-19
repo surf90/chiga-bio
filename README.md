@@ -83,6 +83,7 @@ chiga-bio/
 | `encounterLocation` | 主な遭遇場所の詳細（例: `"砂浜・波打ち際"` / `"岩礁・タイドプール"`） |
 | `environment` | フッタータブ（どこで見られるか）の絞り込み用の環境大分類。`砂浜・海岸` / `磯・岩場` / `茅ヶ崎の海` / `河口・干潟` / `町中・林` の5区分（`encounterLocation` を集約した値） |
 | `encounterProbability` | 遭遇確率の目安（`"高"` / `"中"` / `"低"`） |
+| `invasive` | 外来種の法的区分（任意）。`level`（`specified`=特定外来生物 / `conditional`=条件付特定外来生物 / `general`=外来種）・`origin`（原産地）・`warning`（注意喚起文）。詳細モーダルに区分別配色の注意ボックスを表示 |
 | `references` | 記述の根拠文献（`title`, `author`, `year`, `doi` またはURL） |
 
 ### カードの統一ルール
