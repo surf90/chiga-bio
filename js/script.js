@@ -9,7 +9,7 @@
 })();
 
 let globalBioData = [];
-let currentCategory = 'all';
+let currentEnv = 'all';
 
 // DOM要素の取得
 const searchInput = document.getElementById('searchInput');
@@ -325,7 +325,7 @@ navItems.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         setActiveNav(item);
-        currentCategory = item.dataset.category;
+        currentEnv = item.dataset.env;
         filterData();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -362,8 +362,8 @@ clearSearchBtn.addEventListener('click', () => {
 emptyResetBtn.addEventListener('click', () => {
     searchInput.value = '';
     clearSearchBtn.classList.remove('visible');
-    setActiveNav(document.querySelector('.nav-item[data-category="all"]'));
-    currentCategory = 'all';
+    setActiveNav(document.querySelector('.nav-item[data-env="all"]'));
+    currentEnv = 'all';
     filterData();
 });
 
@@ -371,8 +371,8 @@ function filterData() {
     // ひらがな・カタカナどちらの入力でもヒットするよう正規化して比較
     const keyword = normalizeKana(searchInput.value.trim());
     const filtered = globalBioData.filter(bio => {
-        const matchCategory = currentCategory === 'all' || bio.category === currentCategory;
-        if (!matchCategory) return false;
+        const matchEnv = currentEnv === 'all' || bio.environment === currentEnv;
+        if (!matchEnv) return false;
         if (!keyword) return true;
         return normalizeKana(bio.name).includes(keyword) ||
             normalizeKana(bio.scientificName).includes(keyword) ||

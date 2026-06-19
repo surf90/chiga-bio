@@ -10,6 +10,16 @@
 
 ## 変更履歴
 
+### 2026-06-19 — フッタータブを生物分類から環境（どこで見られるか）へ変更
+
+- フッターのタブ軸を生物分類10種 → 環境5区分（`砂浜・海岸`／`磯・岩場`／`茅ヶ崎の海`／`河口・干潟`／`町中・林`）＋「すべて」に変更。茅ヶ崎特化のバイオーム的価値を強化
+- `data/bio-data.json` 全110件に `environment` フィールドを追加（既存 `encounterLocation` を集約。`encounterLocation` は残置）
+- `index.html`（ナビを `data-env` 化）・`js/script.js`（`currentEnv` で `bio.environment` を絞り込み）を更新。カードの生物分類バッジは継続表示
+- `css/style.css` の `.bottom-nav` を `justify-content: safe center` に変更（6タブ。広い画面は中央寄せ、狭い画面は左端からスクロール）
+- コバンソウの `encounterLocation` を誤記「上空・海面」→「砂浜・海岸」に修正
+- `adding-biology-data.md`・`README.md` に `environment` フィールド定義／有効値一覧を追記
+- `sw.js` の `CACHE_VERSION` を `v1.3.3`→`v1.3.4` へbump（HTML/CSS/JS/JSON変更の確実な配信）
+
 ### 2026-06-19 — 分類カテゴリの生物学的再整理
 
 - カテゴリを7区分→9区分（＋将来用「菌類」）へ再編。`ほ乳類`→`哺乳類`、`は虫類`→`爬虫類`に漢字正規化

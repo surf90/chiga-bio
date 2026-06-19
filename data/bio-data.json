@@ -42,6 +42,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -80,6 +81,7 @@
     "rarity": 2,
     "encounterSeason": "春〜秋",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -124,6 +126,7 @@
     "rarity": 1,
     "encounterSeason": "春〜秋",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -169,6 +172,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -205,6 +209,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -241,6 +246,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -286,6 +292,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -319,6 +326,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -355,6 +363,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -388,6 +397,7 @@
     "rarity": 2,
     "encounterSeason": "春",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -423,6 +433,7 @@
     "rarity": 2,
     "encounterSeason": "冬",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -456,6 +467,7 @@
     "rarity": 1,
     "encounterSeason": "初夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -494,6 +506,7 @@
     "rarity": 2,
     "encounterSeason": "秋〜春",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -530,6 +543,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -563,6 +577,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -598,6 +613,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -633,6 +649,7 @@
     "rarity": 2,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -675,6 +692,7 @@
     "rarity": 2,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -712,6 +730,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -749,6 +768,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -791,6 +811,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -834,6 +855,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -873,6 +895,7 @@
     "rarity": 3,
     "encounterSeason": "初夏〜夏",
     "encounterLocation": "砂浜",
+    "environment": "砂浜・海岸",
     "encounterProbability": "低"
   },
   {
@@ -910,6 +933,7 @@
     "rarity": 3,
     "encounterSeason": "夏",
     "encounterLocation": "沖合・浅瀬",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -946,6 +970,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -981,6 +1006,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1018,6 +1044,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沿岸・砂浜",
+    "environment": "砂浜・海岸",
     "encounterProbability": "低"
   },
   {
@@ -1053,6 +1080,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -1088,6 +1116,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -1123,6 +1152,7 @@
     "rarity": 3,
     "encounterSeason": "冬〜春",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -1156,6 +1186,7 @@
     "rarity": 2,
     "encounterSeason": "春〜秋",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1199,6 +1230,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1235,6 +1267,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -1268,6 +1301,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1308,6 +1342,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1341,6 +1376,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1374,6 +1410,7 @@
     "rarity": 2,
     "encounterSeason": "春",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1414,6 +1451,7 @@
     "rarity": 2,
     "encounterSeason": "秋〜春",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1447,6 +1485,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -1481,6 +1520,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -1517,6 +1557,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1553,6 +1594,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1586,6 +1628,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1620,6 +1663,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "中"
   },
   {
@@ -1654,6 +1698,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "漁港・堤防",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1688,6 +1733,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -1722,6 +1768,7 @@
     "rarity": 2,
     "encounterSeason": "秋〜春",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "中"
   },
   {
@@ -1756,6 +1803,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -1790,6 +1838,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -1824,6 +1873,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -1860,6 +1910,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "高"
   },
   {
@@ -1896,6 +1947,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "中"
   },
   {
@@ -1930,6 +1982,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -1966,6 +2019,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -2000,6 +2054,7 @@
     "rarity": 1,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -2036,6 +2091,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -2072,6 +2128,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -2106,6 +2163,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -2140,6 +2198,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "低"
   },
   {
@@ -2173,7 +2232,8 @@
     ],
     "rarity": 2,
     "encounterSeason": "初夏",
-    "encounterLocation": "上空・海面",
+    "encounterLocation": "砂浜・海岸",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -2208,6 +2268,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -2244,6 +2305,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "防砂林・砂丘",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -2278,6 +2340,7 @@
     "rarity": 3,
     "encounterSeason": "夏",
     "encounterLocation": "ため池・水路",
+    "environment": "町中・林",
     "encounterProbability": "低"
   },
   {
@@ -2312,6 +2375,7 @@
     "rarity": 3,
     "encounterSeason": "春",
     "encounterLocation": "林床",
+    "environment": "町中・林",
     "encounterProbability": "低"
   },
   {
@@ -2346,6 +2410,7 @@
     "rarity": 2,
     "encounterSeason": "初夏",
     "encounterLocation": "雑木林・社叢林",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2382,6 +2447,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "防砂林・砂丘",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2418,6 +2484,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "公園・市街地",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2461,6 +2528,7 @@
     "rarity": 1,
     "encounterSeason": "春",
     "encounterLocation": "公園・市街地",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -2501,6 +2569,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "公園・市街地",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -2538,6 +2607,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "公園・市街地",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2581,6 +2651,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "防砂林・砂丘",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2618,6 +2689,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "防砂林・砂丘",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2662,6 +2734,7 @@
     "rarity": 3,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "砂浜",
+    "environment": "砂浜・海岸",
     "encounterProbability": "低"
   },
   {
@@ -2705,6 +2778,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "防砂林・海浜公園",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -2745,6 +2819,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "防砂林・海岸",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -2779,6 +2854,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "漁港・堤防",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -2813,6 +2889,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -2847,6 +2924,7 @@
     "rarity": 1,
     "encounterSeason": "秋〜冬",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -2887,6 +2965,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -2921,6 +3000,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -2955,6 +3035,7 @@
     "rarity": 1,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "高"
   },
   {
@@ -2989,6 +3070,7 @@
     "rarity": 3,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "低"
   },
   {
@@ -3023,6 +3105,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -3057,6 +3140,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -3091,6 +3175,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -3134,6 +3219,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3168,6 +3254,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3202,6 +3289,7 @@
     "rarity": 2,
     "encounterSeason": "春〜秋",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3236,6 +3324,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "高"
   },
   {
@@ -3278,6 +3367,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3312,6 +3402,7 @@
     "rarity": 2,
     "encounterSeason": "春〜初夏",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3346,6 +3437,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "海岸全般",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -3383,6 +3475,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "沖合",
+    "environment": "茅ヶ崎の海",
     "encounterProbability": "中"
   },
   {
@@ -3417,6 +3510,7 @@
     "rarity": 2,
     "encounterSeason": "初夏",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -3451,6 +3545,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "公園・市街地",
+    "environment": "町中・林",
     "encounterProbability": "中"
   },
   {
@@ -3485,6 +3580,7 @@
     "rarity": 2,
     "encounterSeason": "夏",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3519,6 +3615,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -3553,6 +3650,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -3587,6 +3685,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "中"
   },
   {
@@ -3621,6 +3720,7 @@
     "rarity": 1,
     "encounterSeason": "秋〜春",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -3655,6 +3755,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "高"
   },
   {
@@ -3689,6 +3790,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "中"
   },
   {
@@ -3723,6 +3825,7 @@
     "rarity": 1,
     "encounterSeason": "秋〜春",
     "encounterLocation": "河口・干潟",
+    "environment": "河口・干潟",
     "encounterProbability": "高"
   },
   {
@@ -3757,6 +3860,7 @@
     "rarity": 1,
     "encounterSeason": "春〜秋",
     "encounterLocation": "防砂林・砂丘",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -3791,6 +3895,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -3825,6 +3930,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -3859,6 +3965,7 @@
     "rarity": 2,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "岩礁・タイドプール",
+    "environment": "磯・岩場",
     "encounterProbability": "中"
   },
   {
@@ -3893,6 +4000,7 @@
     "rarity": 2,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "中"
   },
   {
@@ -3933,6 +4041,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "砂浜・波打ち際",
+    "environment": "砂浜・海岸",
     "encounterProbability": "高"
   },
   {
@@ -3977,6 +4086,7 @@
     "rarity": 2,
     "encounterSeason": "初夏",
     "encounterLocation": "河川敷・防砂林",
+    "environment": "町中・林",
     "encounterProbability": "中"
   }
 ]
