@@ -1528,6 +1528,11 @@
     "name": "ミドリイガイ",
     "category": "海の無脊椎動物",
     "scientificName": "Perna viridis",
+    "invasive": {
+      "level": "general",
+      "origin": "インド・西太平洋",
+      "warning": "船舶などに付着して定着した外来種です。生きたまま他の海域へ移動させないでください。"
+    },
     "isDanger": true,
     "dangerType": "contact",
     "image": {
@@ -2206,6 +2211,11 @@
     "name": "コバンソウ",
     "category": "植物",
     "scientificName": "Briza maxima",
+    "invasive": {
+      "level": "general",
+      "origin": "地中海沿岸",
+      "warning": "帰化植物です。種子を自然保護区などへ持ち込んで人為的に広げないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -2742,6 +2752,11 @@
     "name": "アライグマ",
     "category": "哺乳類",
     "scientificName": "Procyon lotor",
+    "invasive": {
+      "level": "specified",
+      "origin": "北米",
+      "warning": "外来生物法により、生きたままの運搬・飼育・譲渡などが原則禁止されています。捕獲や防除は自治体の指示に従ってください。"
+    },
     "isDanger": true,
     "dangerType": "contact",
     "image": {
@@ -3332,6 +3347,11 @@
     "name": "ムラサキイガイ",
     "category": "海の無脊椎動物",
     "scientificName": "Mytilus galloprovincialis",
+    "invasive": {
+      "level": "general",
+      "origin": "地中海",
+      "warning": "船舶に付着して世界中に広がった侵略的外来種です。生きたまま他の水域へ持ち込まないでください。"
+    },
     "isDanger": true,
     "dangerType": "contact",
     "image": {
@@ -4049,6 +4069,11 @@
     "name": "ニセアカシア（ハリエンジュ）",
     "category": "植物",
     "scientificName": "Robinia pseudoacacia",
+    "invasive": {
+      "level": "general",
+      "origin": "北米",
+      "warning": "生態系被害防止外来種に指定されています。繁殖力が強いため、種子や苗を他所へ持ち込んで広げないでください。"
+    },
     "isDanger": true,
     "dangerType": "contact",
     "image": {
@@ -4425,6 +4450,11 @@
     "name": "オカダンゴムシ",
     "category": "その他の動物",
     "scientificName": "Armadillidium vulgare",
+    "invasive": {
+      "level": "general",
+      "origin": "ヨーロッパ",
+      "warning": "明治時代に定着した外来種です。生態系への影響に配慮し、他の地域へ持ち出して放さないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -4593,6 +4623,11 @@
     "name": "キマダラカメムシ",
     "category": "昆虫・クモ",
     "scientificName": "Erthesina fullo",
+    "invasive": {
+      "level": "general",
+      "origin": "台湾・中国南部",
+      "warning": "近年、急速に分布を広げている外来種です。生きたまま他の地域へ移動させないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -5003,6 +5038,11 @@
     "name": "ベニカタバミ",
     "category": "植物",
     "scientificName": "Oxalis brasiliensis",
+    "invasive": {
+      "level": "general",
+      "origin": "南米",
+      "warning": "観賞用が逸出した帰化植物です。鱗茎や種子で増えるため、他所へ持ち出して広げないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -5130,6 +5170,11 @@
     "name": "アカミミガメ",
     "category": "爬虫類",
     "scientificName": "Trachemys scripta",
+    "invasive": {
+      "level": "conditional",
+      "origin": "北米",
+      "warning": "2023年に条件付特定外来生物に指定。野外への放出・販売・購入などが禁止されています。飼育中の個体は最後まで責任を持って飼ってください。"
+    },
     "isDanger": true,
     "dangerType": "protect",
     "image": {
@@ -5175,6 +5220,11 @@
     "name": "クリハラリス",
     "category": "哺乳類",
     "scientificName": "Callosciurus erythraeus",
+    "invasive": {
+      "level": "specified",
+      "origin": "台湾",
+      "warning": "外来生物法により、生きたままの運搬・飼育・放出などが原則禁止されています。神奈川県・市が防除を進めており、見かけても捕まえず情報提供をお願いします。"
+    },
     "isDanger": true,
     "dangerType": "protect",
     "image": {
@@ -5220,6 +5270,11 @@
     "name": "ヒルザキツキミソウ",
     "category": "植物",
     "scientificName": "Oenothera speciosa",
+    "invasive": {
+      "level": "general",
+      "origin": "北米",
+      "warning": "観賞用が野生化した帰化植物です。地下茎で広がるため、他所へ持ち出さないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -5261,6 +5316,11 @@
     "name": "ツルニチニチソウ",
     "category": "植物",
     "scientificName": "Vinca major",
+    "invasive": {
+      "level": "general",
+      "origin": "地中海沿岸",
+      "warning": "園芸種が逸出した帰化植物です。茎の断片からも繁殖するため、抜き取った株を野外に捨てないでください。"
+    },
     "isDanger": true,
     "dangerType": "ingestion",
     "image": {
@@ -5305,6 +5365,11 @@
     "name": "キバナダイコン",
     "category": "植物",
     "scientificName": "Raphanus raphanistrum",
+    "invasive": {
+      "level": "general",
+      "origin": "ヨーロッパ",
+      "warning": "帰化植物です。種子で広がるため、自然度の高い場所へ持ち込んで広げないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -5346,6 +5411,11 @@
     "name": "イモカタバミ",
     "category": "植物",
     "scientificName": "Oxalis articulata",
+    "invasive": {
+      "level": "general",
+      "origin": "南米",
+      "warning": "観賞用が逸出した帰化植物です。鱗茎で旺盛に増えるため、他所へ持ち出して広げないでください。"
+    },
     "isDanger": false,
     "dangerType": "",
     "image": {
