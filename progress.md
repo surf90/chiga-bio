@@ -8,8 +8,23 @@
 
 - `data/bio-data.json` の `localEncounter` フィールドがモーダルで非表示（表示実装は未スコープ）
 - 追加54件のうち27件が画像未登録（プレースホルダー）。Excelに画像URLが入り次第、同手順で反映予定
+  - 画像選定TODO（id）: hiruzakitsukimisou, tsurunichinichisou, kibanadaikon, imokatabami, ookamakiri, inuhoozuki, kumazemi, shiokaratonbo, warajimushi, aosujiageha, yakeyasude, arakashi, hanaochibatake, marukamemushi, chabaneseseri, harabirokamakiri, aobahagoromo, miyamakuwagata, minminzemi, mokusei, akiakane, kiberihagoromo, matsukasakinokomodoki, misujimaimai, kimadarakamikiri, mejiro, tamakikurage
 
 ## 変更履歴
+
+### 2026-06-19 — データ検証・表記揺れ統一・ふりがな整備
+
+- `data/bio-data.json` 全164件を機械検証（構文・必須17フィールド・enum・id/name/学名の重複・references URL形式）。重大な不整合なしを確認
+- 仕様書の実態反映: `adding-biology-data.md` を更新し、非危険生物（`isDanger:false`）でも `firstAid`／`dontDo`／`dangerType:"protect"` を保護・採取マナー・ストランディング対応として記述可と明文化（アプリ実装に追従。データ62件は変更せず）
+- 常用外字の修正: `拟態`（中国簡体字）→ `擬態`
+- 表記揺れ統一: きわめて→極めて、子供→子ども、付ける→つける、「を持つ」（形質）→「をもつ」、`等`→`など`、`とげ`→`トゲ`、`ただちに`→`直ちに`、`すみやか`→`速やか`、`1年`→`一年`、`ヒレ`→`ひれ`
+- ふりがな整備（原則: 訓読み和語＝ひらがな化／専門名詞＝漢字＋ふりがな）:
+  - ひらがな化（既存ふりがなも解除）: つかむ・はがす・まれに・とがる・はう・もろい・かゆい・すむ・しびれ、および動詞「かむ／かまれる」（`咬傷`・`麻痺` は維持）
+  - ふりがな付与（各カード初出）: `翅（はね）`/`前翅長（ぜんしちょう）`/`後翅（こうし）`/`鞘翅（しょうし）`・`顎（あご）`/`大顎（おおあご）`・`磯（いそ）`・`石鹸（せっけん）`・`嘔吐（おうと）`・`痙攣（けいれん）`
+  - `稜鱗（ぜんご）` の注記対象・語順を統一
+- 軽微修正: `niseakashia` の `features` を4→3項目に集約（規約の2〜3項目へ）
+- 再検証: 熟語の誤置換（`高等植物`/`海棲哺乳類` の巻き込み）を検出し復旧、熟語途中の不自然なふりがな（`前翅（ぜんし）長`）を `前翅長（ぜんしちょう）` へ修正。括弧の開閉数一致・JSON妥当を確認
+- `sw.js` の `CACHE_VERSION` を `v1.3.6`→`v1.3.7` へbump（JSON変更の確実な配信）
 
 ### 2026-06-19 — 生物データ54件追加（110→164件）と画像27件反映
 
