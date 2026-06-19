@@ -10,13 +10,16 @@
 
 ## 技術要件・制約
 
-- **構成:** シングルページの静的HTML（Vanilla JS / CSS）。外部ライブラリへの依存は最小限とする。アイコンはインラインSVG（Feather Icons ベースの自前実装）で、外部アイコンCDNには依存しない。
+- **構成:** SSG + SPA のハイブリッド静的サイト（Vanilla JS / CSS）。外部ライブラリへの依存は最小限とする。アイコンはインラインSVG（Feather Icons ベースの自前実装）で、外部アイコンCDNには依存しない。`data/bio-data.json`（唯一の真実）から `scripts/build.py` が配信用の `dist/` を静的生成する。
+  - **ビルド（SSG）:** `python scripts/build.py` で `dist/` に以下を生成。(1) `list.json`（一覧・検索用の軽量データ＋サムネイル `thumb`）、(2) `species/{id}.json`（各種の全項目・詳細描画用）、(3) `species/{id}/index.html`（種ごとに固有の `title`/`description`/OGP/JSON-LD を持つ静的ページ）、(4) `sitemap.xml`（ルート＋全種URL）。
+  - **表示（SPA）:** 一覧は `list.json` を描画し、カードは `<a href="…/species/{id}/">` の実リンク。クリックは JS が捕捉して `history.pushState`＋`species/{id}.json` フェッチで既存のモーダル表示へつなぎ、UXを変えずに個別URLを実現する。サイトルートは `SITE_BASE` として動的算出し、ローカル（ルート配信）と本番（サブパス `/chiga-bio/`）の両方で動作する。
 - **デプロイ・ホスティング:** GitHub Pages（HTTPS）。
-- **CI/CD:** GitHub Actions を利用した自動デプロイ。`sitemap.xml` の lastmod は push 時に自動更新（`update-sitemap.yml`）。
+- **CI/CD:** GitHub Actions（`pages.yml`）が `main` への push で `scripts/build.py` を実行し、`dist/` を Pages へデプロイ（`actions/deploy-pages`）。`sitemap.xml` はビルドで生成される（旧 `update-sitemap.yml` は廃止）。生成物（`dist/`）はコミットせず CI 生成。
 - **セキュリティ:** Content-Security-Policy（メタタグ）で読み込み元を `self` + Google Fonts + iNaturalist に限定。
-- **SEO:** JSON-LD（`WebSite` + `SearchAction`）による構造化データを `index.html` に埋め込み。
+- **SEO:** トップは JSON-LD（`WebSite` + `SearchAction` + `ItemList`）。各個別ページは固有メタ（`title`/`description`/OGP）と JSON-LD（`WebSite` + `BreadcrumbList` + 種を表す `Thing`）を埋め込み、生き物単位でのインデックス・SNS共有に対応。
 - **PWA対応済み:** Service Worker（`sw.js`）によるオフラインキャッシュを実装済み。電波状況の悪い海辺でもインストール済みページを閲覧可能。
-  - 静的ファイル（HTML / CSS / JS / JSON）: Network First
+  - 静的ファイル（HTML / CSS / JS / JSON）: Network First。プリキャッシュは App Shell（`index.html`）＋ `list.json` 等。
+  - ページ遷移（navigate）: Network First。オフラインで `/species/{id}/` へ直アクセスした場合は該当ページ→App Shell の順でフォールバックし、クライアントJSが URL から id を判別してキャッシュ済み `species/{id}.json` で描画する。
   - 画像（ローカル・iNaturalist CDN）: Cache First（最大150枚）
   - キャッシュバージョン: `CACHE_VERSION`（`sw.js`冒頭）を変更することで旧キャッシュを自動削除
   - マニフェスト `theme_color` / HTML `<meta name="theme-color">` / ヘッダー背景色は `#0e7490` で統一
@@ -34,17 +37,19 @@
 chiga-bio/
 ├── .github/
 │   └── workflows/
-│       ├── pages.yml                  # GitHub Pages 自動デプロイ用
-│       └── update-sitemap.yml         # sitemap.xml の lastmod を push 時に自動更新
-├── index.html                         # メインHTML（UI/テンプレート）
+│       └── pages.yml                  # SSGビルド→GitHub Pages 自動デプロイ
+├── scripts/
+│   └── build.py                       # SSGビルド（bio-data.json → dist/ を静的生成）
+├── index.html                         # メインHTML（UI兼・個別ページのテンプレート）
 ├── sw.js                              # Service Worker（PWAオフライン対応）
 ├── site.webmanifest                   # PWAマニフェスト
 ├── css/
 │   └── style.css                      # スタイルシート
 ├── js/
-│   └── script.js                      # 生物データの描画と検索・UI制御
+│   └── script.js                      # 一覧描画・検索・ルーティング・UI制御
 ├── data/
-│   └── bio-data.json                  # 生物データ
+│   └── bio-data.json                  # 生物データ（ビルド入力＝唯一の真実）
+├── dist/                              # ビルド生成物（非コミット。list.json/species/**/sitemap.xml 等）
 ├── favicon.ico / favicon.svg          # ファビコン
 ├── apple-touch-icon.png               # iOS向けアイコン
 ├── web-app-manifest-192x192.png       # PWAアイコン（192px）
@@ -160,7 +165,7 @@ chiga-bio/
 3. `robots.txt` で sitemap を明示する
 4. GitHub Pages のデプロイ完了後に再送信する（反映前は 404 になる）
 
-このリポジトリでは `sitemap.xml` と `robots.txt` をルートに配置済み。`sitemap.xml` の `lastmod` は、コンテンツ（`data/` `index.html` `css/` `js/`）の push 時に `update-sitemap.yml` ワークフローが当日（JST）へ自動更新する。
+`robots.txt` はルートに配置済みで、`sitemap.xml` は `scripts/build.py` が全種URL（ルート＋各 `/chiga-bio/species/{id}/`）を含めて生成し、`pages.yml` のデプロイで `https://surf90.github.io/chiga-bio/sitemap.xml` に配信される。`lastmod` はビルド実行日（JST）。
 
 
 ### 「インデックス登録リクエストの送信中に問題が発生しました」エラーへの対処

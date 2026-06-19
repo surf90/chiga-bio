@@ -11,6 +11,53 @@
 let globalBioData = [];
 let currentEnv = 'all';
 
+// ==========================================
+// ルーティング基盤（SSG個別ページ /species/{id}/ と SPA を橋渡し）
+// ==========================================
+
+// サイトルートの絶対パスを動的算出（ローカル=ルート配信／本番=サブパス配信の両対応）。
+// 例: /chiga-bio/species/utsubo/ → /chiga-bio/ 、 /chiga-bio/ → /chiga-bio/
+const SITE_BASE = (() => {
+    const path = window.location.pathname;
+    const m = path.match(/^(.*\/)species\/[^/]+\/?$/);
+    if (m) return m[1];
+    // /species/ 配下以外は現在ディレクトリをルートとみなす（末尾ファイル名を除去）
+    return path.replace(/[^/]*$/, '');
+})();
+
+// 種詳細の全項目データのメモ化キャッシュ（同一種の再フェッチ抑制）
+const speciesCache = new Map();
+
+// 現在のパスから種 id を判定（個別ページURLのとき id、そうでなければ null）
+function speciesIdFromPath() {
+    const m = window.location.pathname.match(/\/species\/([^/]+)\/?$/);
+    return m ? decodeURIComponent(m[1]) : null;
+}
+
+// 種の全項目データを取得（キャッシュ優先 → species/{id}.json → 一覧データで代替）
+async function getSpeciesData(id) {
+    if (speciesCache.has(id)) return speciesCache.get(id);
+    try {
+        const res = await fetch(`${SITE_BASE}species/${encodeURIComponent(id)}.json`);
+        if (res.ok) {
+            const data = await res.json();
+            speciesCache.set(id, data);
+            return data;
+        }
+    } catch (e) { /* オフライン等はフォールバックへ */ }
+    // フォールバック：一覧データ（軽量）から最低限を返す
+    return globalBioData.find(bio => bio.id === id) || null;
+}
+
+// 個別ページURLへ遷移してモーダルを開く（履歴を積む）
+async function navigateToSpecies(id) {
+    const data = await getSpeciesData(id);
+    if (!data) { showToast('指定の生き物が見つかりませんでした'); return; }
+    const url = `${SITE_BASE}species/${encodeURIComponent(id)}/`;
+    window.history.pushState({ modal: true, id }, '', url);
+    openModal(data, { skipPushState: true });
+}
+
 // DOM要素の取得
 const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
@@ -129,6 +176,24 @@ const DANGER_TYPES = {
     protect: { label: '守るため注意', icon: ICONS.heart, badgeClass: 'protect' }
 };
 
+// 外来種の法的区分の定義（詳細モーダルの注意喚起セクション用）。level は data 側で人手付与
+const INVASIVE_LEVELS = {
+    // 特定外来生物：飼養・栽培・保管・運搬・放出が法律で原則禁止
+    specified: { label: '特定外来生物', cls: 'invasive-specified', icon: '⛔' },
+    // 条件付特定外来生物：野外への放出・販売・購入等が禁止（飼育中の個体の継続飼養は可）
+    conditional: { label: '条件付特定外来生物', cls: 'invasive-conditional', icon: '⚠️' },
+    // 法規制はないが人為的に持ち込まれ定着した外来種（生態系被害防止外来種を含む）
+    general: { label: '外来種', cls: 'invasive-general', icon: '🌐' }
+};
+
+// 外来種情報を返す。bio.invasive があり level が既知のときのみ区分定義を返す
+function getInvasiveInfo(bio) {
+    if (bio.invasive && bio.invasive.level && INVASIVE_LEVELS[bio.invasive.level]) {
+        return INVASIVE_LEVELS[bio.invasive.level];
+    }
+    return null;
+}
+
 // 生き物の危険情報を返す。dangerType 未指定で isDanger のみの場合は汎用「危険」
 function getDangerInfo(bio) {
     if (bio.dangerType && DANGER_TYPES[bio.dangerType]) return DANGER_TYPES[bio.dangerType];
@@ -159,12 +224,12 @@ function sanitizeUrl(url) {
 
 async function fetchBioData() {
     try {
-        const response = await fetch('./data/bio-data.json');
-        
+        const response = await fetch(`${SITE_BASE}list.json`);
+
         if (!response.ok) {
             throw new Error('データの取得に失敗しました');
         }
-        
+
         globalBioData = await response.json();
 
         // ソート（市のシンボルを先頭に）
@@ -183,19 +248,18 @@ async function fetchBioData() {
         bioList.style.display = 'grid';
         
         renderCards(globalBioData);
-        
-        // URLパラメータをチェックし、指定の生き物がいたらモーダルを自動で開く
-        const urlParams = new URLSearchParams(window.location.search);
-        const targetId = urlParams.get('id');
+
+        // 初期URLを解決：個別ページ /species/{id}/ を優先、無ければ旧 ?id= を後方互換で処理
+        const targetId = speciesIdFromPath() || new URLSearchParams(window.location.search).get('id');
         if (targetId) {
-            const targetBio = globalBioData.find(bio => bio.id === targetId);
+            const targetBio = await getSpeciesData(targetId);
             if (targetBio) {
                 openModal(targetBio, { skipPushState: true });
             } else {
                 showToast('指定の生き物が見つかりませんでした');
             }
         }
-        
+
     } catch (error) {
         console.error('エラー:', error);
         skeletonList.style.display = 'none';
@@ -254,8 +318,9 @@ function renderCards(data) {
 
     const fragment = document.createDocumentFragment();
     data.forEach((bio, idx) => {
-        const card = document.createElement('button');
-        card.type = 'button';
+        // クロール可能な実リンク（<a href>）。クリックは JS で捕捉してモーダル表示する
+        const card = document.createElement('a');
+        card.href = `${SITE_BASE}species/${encodeURIComponent(bio.id)}/`;
         card.className = `bio-card ${bio.isDanger ? 'danger' : ''} ${bio.dangerType === 'protect' ? 'protect-border' : ''}`;
 
         const dangerInfo = getDangerInfo(bio);
@@ -269,7 +334,8 @@ function renderCards(data) {
             ? `<div class="tile-badge ${dangerInfo.badgeClass}" aria-hidden="true">${dangerInfo.icon}</div>`
             : '';
 
-        const imgUrl = getImageUrl(bio);
+        // 一覧データは thumb（サムネイルURL）を持つ。無ければプレースホルダー
+        const imgUrl = (bio.thumb && bio.thumb.length > 5) ? bio.thumb : placeholderSVG;
         // 画像のaltに分類・危険情報を含めて文脈を補う
         const imgAlt = `${bio.name}（${bio.category}${dangerLabel ? '・' + dangerLabel : ''}）`;
 
@@ -301,7 +367,12 @@ function renderCards(data) {
         `;
 
         attachImgFallback(card.querySelector('img'));
-        card.addEventListener('click', () => openModal(bio));
+        card.addEventListener('click', (e) => {
+            // 修飾キー・中クリックは通常遷移（新規タブ等）を尊重し、それ以外は SPA 遷移
+            if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            e.preventDefault();
+            navigateToSpecies(bio.id);
+        });
         fragment.appendChild(card);
     });
     bioList.appendChild(fragment);
@@ -404,6 +475,7 @@ function searchByCategory(category) {
 // ==========================================
 let lastFocusedElement = null;
 let savedScrollY = 0; // モーダル表示中の背景スクロール位置の退避先
+let currentModalId = null; // 表示中の種 id（popstate での画面同期に使用）
 
 function openModal(bio, options = {}) {
     lastFocusedElement = document.activeElement;
@@ -476,6 +548,19 @@ function openModal(bio, options = {}) {
     
     let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${escapeHtml(bio.dontDo)}</div>` : '';
 
+    // 外来種の法的区分に応じた注意喚起セクション（区分の色・ラベル・アイコンは自動、警告文は種ごと）
+    let invasiveHtml = '';
+    const invasiveInfo = getInvasiveInfo(bio);
+    if (invasiveInfo) {
+        const originHtml = bio.invasive.origin
+            ? `<p class="invasive-origin">原産地：${escapeHtml(bio.invasive.origin)}</p>` : '';
+        const warningHtml = bio.invasive.warning
+            ? `<p class="invasive-warning">${escapeHtml(bio.invasive.warning)}</p>` : '';
+        invasiveHtml = `<div class="invasive-box ${invasiveInfo.cls}">`
+            + `<p class="invasive-title">${invasiveInfo.icon} ${escapeHtml(invasiveInfo.label)}</p>`
+            + originHtml + warningHtml + '</div>';
+    }
+
     let referencesHtml = '';
     if (bio.references && bio.references.length > 0) {
         const items = bio.references.map(ref => {
@@ -521,7 +606,8 @@ function openModal(bio, options = {}) {
         ${featuresHtml}
         ${firstAidHtml}
         ${dontDoHtml}
-        
+        ${invasiveHtml}
+
        <button class="share-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
             この生き物をシェアする
@@ -556,9 +642,12 @@ function openModal(bio, options = {}) {
     document.body.style.width = '100%';
     modalBody.scrollTop = 0;
 
+    // 現在表示中の種 id を記録（popstate での同期判定に使う）
+    currentModalId = bio.id;
+
     // 履歴に積んで「戻る」でモーダルを閉じられるようにする
     if (!options.skipPushState) {
-        const url = `${window.location.pathname}?id=${encodeURIComponent(bio.id)}`;
+        const url = `${SITE_BASE}species/${encodeURIComponent(bio.id)}/`;
         window.history.pushState({ modal: true, id: bio.id }, '', url);
     }
 
@@ -577,11 +666,13 @@ function closeModal(options = {}) {
     document.body.style.right = '';
     document.body.style.width = '';
     window.scrollTo(0, savedScrollY);
+    currentModalId = null;
     // history からモーダル状態を取り除く
     if (!options.skipHistory && window.history.state && window.history.state.modal) {
         window.history.back();
     } else if (!options.skipHistory) {
-        const cleanUrl = window.location.origin + window.location.pathname;
+        // 直接 /species/{id}/ で着地したまま閉じる場合などはルート（一覧）へ戻す
+        const cleanUrl = window.location.origin + SITE_BASE;
         window.history.replaceState({}, document.title, cleanUrl);
     }
     if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
@@ -589,9 +680,15 @@ function closeModal(options = {}) {
     }
 }
 
-// 「戻る」でモーダルが開いていれば閉じる
-window.addEventListener('popstate', () => {
-    if (modal.classList.contains('active')) {
+// 戻る／進むで URL と画面（モーダル開閉・種の差し替え）を同期する
+window.addEventListener('popstate', async () => {
+    const id = speciesIdFromPath() || new URLSearchParams(window.location.search).get('id');
+    if (id) {
+        if (!modal.classList.contains('active') || currentModalId !== id) {
+            const data = await getSpeciesData(id);
+            if (data) openModal(data, { skipPushState: true });
+        }
+    } else if (modal.classList.contains('active')) {
         closeModal({ skipHistory: true });
     }
 });
@@ -630,8 +727,7 @@ modal.addEventListener('click', (e) => {
 // シェアAPI
 // ==========================================
 function shareBio(id, name, category) {
-    const baseUrl = window.location.origin + window.location.pathname;
-    const shareUrl = `${baseUrl}?id=${encodeURIComponent(id)}`;
+    const shareUrl = `${window.location.origin}${SITE_BASE}species/${encodeURIComponent(id)}/`;
 
     if (navigator.share) {
         navigator.share({
@@ -704,6 +800,8 @@ document.addEventListener('DOMContentLoaded', fetchBioData);
 // Service Worker 登録（PWA オフライン対応）
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(() => { /* 失敗時は静かに無視 */ });
+        // 個別ページ /species/{id}/ からでも正しい位置の sw.js をサイトルートscopeで登録
+        navigator.serviceWorker.register(`${SITE_BASE}sw.js`, { scope: SITE_BASE })
+            .catch(() => { /* 失敗時は静かに無視 */ });
     });
 }

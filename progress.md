@@ -12,6 +12,19 @@
 
 ## 変更履歴
 
+### 2026-06-19 — ハイブリッドSEO（SSG + SPA）改修
+
+- **SSGビルド新設** `scripts/build.py`: `data/bio-data.json`（唯一の真実）から `dist/` へ静的生成。出力は (1) `list.json`（一覧・検索用の軽量データ＋`thumb`）、(2) `species/{id}.json`（全項目・詳細描画用）、(3) `species/{id}/index.html`（種ごとの固有 title/description/OGP/JSON-LD〈WebSite+BreadcrumbList+Thing〉）、(4) `sitemap.xml`（ルート＋全164種URL）。トップ `index.html` は `list.json` プリロード化＋ItemList 付与
+- **フロント（`js/script.js`）ルーティング拡張**: サイトルートを動的算出（`SITE_BASE`、ローカル/サブパス両対応）。一覧データ取得を `bio-data.json`→`list.json` に変更。カードを `<a href="…/species/{id}/">` 化しクリックを捕捉→`pushState`→`species/{id}.json` を fetch→既存モーダルで描画（UX不変）。初期URL（`/species/{id}/` 優先、旧 `?id=` 後方互換）解決・`popstate` 同期・`shareBio`/`closeModal` のURLを個別ページ形式へ更新。SW登録を `SITE_BASE` 基準に修正
+- **Service Worker（`sw.js`）**: `CACHE_VERSION` を `v1.3.9`→`v1.4.0` へbump。プリキャッシュを `data/bio-data.json`→`list.json` へ。`navigate` リクエストを Network First 化し、オフライン直アクセス時は該当ページ→App Shell（`index.html`）へフォールバック。`species/{id}.json` は既存の same-origin 戦略でランタイムキャッシュ
+- **デプロイ**: `.github/workflows/pages.yml` を新設（Python ビルド→`actions/upload-pages-artifact`(dist)→`actions/deploy-pages`）。生成物は非コミット（`.gitignore` に `dist/`）。sitemap をビルド生成へ移管したため `update-sitemap.yml` を廃止。**要手動**: Pages の Source を「GitHub Actions」へ切替
+
+### 2026-06-19 — 外来種（invasive）区分の表示を追加
+
+- 詳細モーダルに外来種の法的区分セクションを追加。`bio.invasive`（`level`／`origin`／`warning`）を持つ種で、区分（`specified`=特定外来生物／`conditional`=条件付特定外来生物／`general`=外来種）に応じた色・アイコン・ラベルの注意喚起ボックスを表示（`js/script.js` の `INVASIVE_LEVELS`／`getInvasiveInfo`／`openModal`）
+- `css/style.css` に `.invasive-box` ほか区分別配色（ライト／ダーク両対応）を追加
+- `data/bio-data.json` の該当種（ミドリイガイ・コバンソウ・アライグマ・ムラサキイガイ・ニセアカシア・オカダンゴムシ・キマダラカメムシ ほか）に `invasive` を付与
+
 ### 2026-06-19 — 環境分類の追加是正（河口・干潟→町中・林）
 
 - 川・池・公園寄りの4件を「河口・干潟」→「町中・林」へ移動（河口・干潟 16→12件／町中・林 60→64件）。対象: アカミミガメ・シオカラトンボ・アキアカネ・カルガモ

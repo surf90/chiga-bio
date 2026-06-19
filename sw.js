@@ -1,14 +1,17 @@
-const CACHE_VERSION = 'v1.3.9';
+const CACHE_VERSION = 'v1.4.0';
 const STATIC_CACHE_NAME = `chiga-bio-static-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `chiga-bio-image-${CACHE_VERSION}`;
 const MAX_IMAGE_CACHE = 150;
+
+// App Shell（個別ページ直アクセスのオフラインフォールバック先）
+const APP_SHELL = './index.html';
 
 const PRECACHE_URLS = [
     './',
     './index.html',
     './css/style.css',
     './js/script.js',
-    './data/bio-data.json',
+    './list.json',
     './site.webmanifest'
 ];
 
@@ -39,6 +42,25 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     // GET 以外は素通し
     if (event.request.method !== 'GET') return;
+
+    // ページ遷移（HTML文書）：Network First。オフライン時は該当ページ→App Shell の順でフォールバック。
+    // これにより /species/{id}/ への直アクセスがオフラインでも App Shell が起動し、
+    // クライアントJSが URL から id を判別してキャッシュ済み species/{id}.json で描画できる。
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request).then((networkResponse) => {
+                if (networkResponse && networkResponse.ok && networkResponse.type === 'basic') {
+                    const responseToCache = networkResponse.clone();
+                    caches.open(STATIC_CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
+                }
+                return networkResponse;
+            }).catch(async () => {
+                const cached = await caches.match(event.request);
+                return cached || await caches.match(APP_SHELL) || Response.error();
+            })
+        );
+        return;
+    }
 
     const requestUrl = new URL(event.request.url);
 
