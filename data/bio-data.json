@@ -5176,7 +5176,7 @@
       "warning": "2023年に条件付特定外来生物に指定。野外への放出・販売・購入などが禁止されています。飼育中の個体は最後まで責任を持って飼ってください。"
     },
     "isDanger": true,
-    "dangerType": "protect",
+    "dangerType": "",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/670449956/original.jpg",
       "author": "greenwaterdiver",
@@ -5226,7 +5226,7 @@
       "warning": "外来生物法により、生きたままの運搬・飼育・放出などが原則禁止されています。神奈川県・市が防除を進めており、見かけても捕まえず情報提供をお願いします。"
     },
     "isDanger": true,
-    "dangerType": "protect",
+    "dangerType": "",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/679224372/original.jpg",
       "author": "enriquetarb",
