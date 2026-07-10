@@ -2,15 +2,28 @@
    1. CSS変数定義
    ========================================= */
 :root {
-    --bg-color: #f8fafc; /* 少し明るい背景に変更してタイルを際立たせる */
+    --bg-color: #f6faf7; /* ごく淡い緑みのオフホワイト。背景グラデと両立 */
     --text-main: #111111;
     --text-meta: #707070;
     --danger-color: #d32f2f;
     --alert-high: #d32f2f;
-    --primary-deep: #0e7490;
+
+    /* ブランドカラー（茅ヶ崎の「海→里」を象徴する青緑〜緑） */
+    --brand: #0d9488;          /* メイン＝澄んだ海の青緑 */
+    --brand-strong: #16a34a;   /* 里の緑（グラデ終端・アクセント） */
+    --brand-mid: #0f9d6b;      /* 青緑→緑の中間（アクセントバー用） */
+    --brand-soft: rgba(13,148,136,0.08);
+    --brand-softer: rgba(13,148,136,0.12);
+    --hairline: rgba(13,148,136,0.14);
+    --primary-deep: var(--brand); /* 既存参照の後方互換 */
+
     --card-bg: #ffffff;
     --border-radius: 16px;
     --font-mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+    /* 影トークン（多層シャドウ） */
+    --shadow-card: 0 1px 2px rgba(16,24,40,0.04), 0 8px 20px rgba(13,148,136,0.08);
+    --shadow-card-hover: 0 2px 6px rgba(16,24,40,0.05), 0 16px 32px rgba(13,148,136,0.16);
 
     /* 危険・分類カラー（ライト／ダークで切り替え） */
     --danger-border: #fca5a5;
@@ -53,8 +66,22 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* 背景の多層グラデ（海→里の淡い光の演出、コンテンツ背面に固定） */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(1000px 600px at 12% -8%, rgba(255,255,255,0.9), transparent 60%),
+        radial-gradient(900px 620px at 88% 4%, rgba(13,148,136,0.10), transparent 62%),
+        linear-gradient(180deg, transparent 62%, rgba(22,163,74,0.06) 100%);
+}
+
 header {
     background-color: var(--primary-deep);
+    background-image: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
     color: white;
     padding: 16px;
     text-align: center;
@@ -89,7 +116,7 @@ header.scrolled h1 {
 }
 
 .logo-text {
-    background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #a7f3d0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -108,6 +135,16 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
     padding: 16px;
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+}
+/* 海→里を象徴する3色アクセントバー */
+.container::before {
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 0 4px 16px;
+    background: linear-gradient(90deg, var(--brand) 0%, var(--brand-mid) 50%, var(--brand-strong) 100%);
 }
 
 .search-wrapper {
@@ -128,8 +165,8 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 }
 .search-bar:focus {
     outline: none;
-    border-color: var(--primary-deep);
-    box-shadow: 0 4px 12px rgba(14, 116, 144, 0.1);
+    border-color: var(--brand);
+    box-shadow: 0 4px 14px var(--brand-softer);
 }
 
 .search-clear-btn {
@@ -206,9 +243,10 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 
 .bio-card {
     background-color: var(--card-bg);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.7), transparent 42%);
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-    border: 1px solid #f1f5f9;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--hairline);
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -224,13 +262,20 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
     -webkit-appearance: none;
 }
 
+@media (hover: hover) {
+    .bio-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-card-hover);
+    }
+}
+
 .bio-card:active {
     transform: scale(0.95);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .bio-card:focus-visible {
-    outline: 3px solid var(--primary-deep);
+    outline: 3px solid var(--brand);
     outline-offset: 2px;
 }
 
@@ -273,8 +318,8 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 
 .tile-symbol-icon {
     display: inline-flex; align-items: center;
-    color: var(--primary-deep);
-    background-color: rgba(14, 116, 144, 0.08);
+    color: var(--brand);
+    background-color: var(--brand-soft);
     padding: 2px 6px; border-radius: 8px; margin-left: 6px;
     font-size: 0.85em; font-weight: 600;
 }
@@ -282,7 +327,7 @@ header.scrolled .subtitle { max-height: 0; opacity: 0; pointer-events: none; }
 
 .tile-image-wrapper {
     width: 55%; height: 55%; border-radius: 50%; overflow: hidden;
-    margin-bottom: 8px; background-color: #f1f5f9; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 8px; background-color: #f1f5f9; box-shadow: inset 0 2px 6px rgba(0,0,0,0.08);
 }
 .tile-image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -392,7 +437,7 @@ span.danger-badge.contact { background: var(--alert-high); }
 span.danger-badge.eat { background: var(--badge-eat); }
 span.danger-badge.protect { background: var(--badge-protect); }
 
-h3.section-label { font-family: var(--font-mono); background: #f1f5f9; color: var(--primary-deep); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; display: inline-block; margin: 20px 0 12px; }
+h3.section-label { font-family: var(--font-mono); background: var(--brand-soft); color: var(--brand); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; display: inline-block; margin: 20px 0 12px; }
 h3.section-label.alert { background: #fef2f2; color: var(--alert-high); }
 
 .styled-list { padding-left: 20px; margin-bottom: 16px; font-size: 0.95rem; }
@@ -439,7 +484,7 @@ summary { font-weight: bold; cursor: pointer; }
 }
 .nav-item:active { transform: scale(0.95); }
 .nav-item:focus-visible { outline: 2px solid var(--primary-deep); outline-offset: 2px; }
-.nav-item.active { background-color: var(--primary-deep); color: #ffffff; box-shadow: 0 2px 6px rgba(14, 116, 144, 0.3); }
+.nav-item.active { background-image: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%); color: #ffffff; box-shadow: 0 4px 12px rgba(13, 148, 136, 0.32); }
 
 /* =========================================
    8. その他 (シンボル、フッター、トースト)
@@ -447,10 +492,10 @@ summary { font-weight: bold; cursor: pointer; }
 .symbol-icon { font-size: 0.85em; margin-left: 6px; color: var(--primary-deep); opacity: 0.75; vertical-align: middle; }
 .symbol-svg { vertical-align: -0.15em; margin-right: 4px; }
 .symbol-label { font-size: 0.75em; letter-spacing: 0.05em; vertical-align: middle; }
-.category-tag { background-color: rgba(14, 116, 144, 0.1); color: var(--primary-deep); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+.category-tag { background-color: var(--brand-softer); color: var(--brand); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
 .category-tag-btn { border: none; cursor: pointer; font-family: inherit; transition: background-color 0.15s; }
-.category-tag-btn:hover { background-color: rgba(14, 116, 144, 0.2); }
-.category-tag-btn:focus-visible { outline: 2px solid var(--primary-deep); outline-offset: 2px; }
+.category-tag-btn:hover { background-color: rgba(13, 148, 136, 0.2); }
+.category-tag-btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
 .footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: #64748b; }
 .footer a { color: inherit; text-decoration: none; } /* リンクを周りの文字色に合わせる */
@@ -461,10 +506,11 @@ summary { font-weight: bold; cursor: pointer; }
 }
 /* トースト通知 */
 #toast {
-    visibility: hidden; min-width: 200px; background-color: var(--primary-deep); color: #fff;
+    visibility: hidden; min-width: 200px; background-color: var(--primary-deep);
+    background-image: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%); color: #fff;
     text-align: center; border-radius: 30px; padding: 12px 24px;
     position: fixed; z-index: 3000; left: 50%; bottom: 80px; transform: translateX(-50%);
-    font-size: 13px; font-weight: 600; box-shadow: 0 4px 12px rgba(14, 116, 144, 0.3);
+    font-size: 13px; font-weight: 600; box-shadow: 0 6px 18px rgba(13, 148, 136, 0.32);
     opacity: 0; transition: visibility 0s, opacity 0.3s, bottom 0.3s;
 }
 #toast.show { visibility: visible; opacity: 1; bottom: 90px; }
@@ -520,11 +566,26 @@ summary { font-weight: bold; cursor: pointer; }
         --text-main: #f8fafc;
         --text-meta: #94a3b8;
         --card-bg: #1e293b;
-        --primary-deep: #0891b2;
+        --brand: #2dd4bf;          /* ダーク: 明るい海の青緑 */
+        --brand-strong: #4ade80;   /* ダーク: 明るい里の緑 */
+        --brand-mid: #34d399;
+        --brand-soft: rgba(45,212,191,0.12);
+        --brand-softer: rgba(45,212,191,0.18);
+        --hairline: rgba(45,212,191,0.18);
+        --primary-deep: var(--brand);
         --danger-card-bg: #2d1515;
         --protect-card-bg: #0d2318;
         --rarity-3-bg: #422006;
+        --shadow-card: 0 1px 2px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.35);
+        --shadow-card-hover: 0 2px 6px rgba(0,0,0,0.5), 0 16px 32px rgba(0,0,0,0.45);
     }
+
+    body::before {
+        background:
+            radial-gradient(1000px 600px at 12% -8%, rgba(45,212,191,0.08), transparent 60%),
+            radial-gradient(900px 620px at 88% 4%, rgba(74,222,128,0.06), transparent 62%);
+    }
+    .bio-card { background-image: none; }
 
     .bio-card { border-color: #334155; }
 
@@ -571,6 +632,15 @@ summary { font-weight: bold; cursor: pointer; }
 .load-error {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 16px; padding: 40px 20px; text-align: center; color: var(--text-meta);
+}
+
+/* モーション控えめ設定への配慮 */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
 }
 
 /* =========================================
