@@ -15,7 +15,7 @@
     "features": [
       "大きさ約10cmの透き通った鮮やかな藍色を含む浮き袋と、平均10m（最大約50m）にも達する長い触手をもつ",
       "浮き袋にある三角形の帆で風を受けて移動し、自身には遊泳力がほとんどない",
-      "1個体に見えるが、実は触手や浮袋など多くのヒドロ虫が集まって形成された群体生物である"
+      "1個体に見えるが、実は触手や浮き袋など多くのヒドロ虫が集まって形成された群体生物である"
     ],
     "firstAid": [
       "アナフィラキシーショックによる溺水を防ぐため、刺されたらすぐに海から上がる",
@@ -24,7 +24,7 @@
       "痛みが落ち着く程度の温度（40度以上）のお湯で温めるか、保冷剤などで冷やして痛みを和らげ、速やかに医療機関を受診する"
     ],
     "dontDo": "お酢（食酢）をかけると逆に刺胞が反応して毒針を発射するため絶対に使用しないこと。また、真水（水道水）で洗うのも未発射の刺胞が浸透圧ショックで毒針をさらに発射し症状が悪化するため絶対に避けること。",
-    "localEncounter": "夏場を中心に、強い南風や台風の影響でサザンビーチをはじめとする茅ヶ崎海岸の砂浜へ大量に漂着して打ち上げられていることが多い。",
+    "localEncounter": "夏場を中心に、強い南風や台風の影響でヘッドランドビーチをはじめとする茅ヶ崎海岸の砂浜へ大量に漂着して打ち上げられており、サザンビーチでもよく見られる。",
     "references": [
       {
         "title": "クラゲに刺された時に一番重要なこと",
@@ -181,7 +181,7 @@
     "category": "鳥類",
     "scientificName": "Milvus migrans",
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "protect",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/451063568/large.jpeg",
       "author": "pedroam14",
@@ -197,13 +197,19 @@
       "怪我をした場合は、感染症のリスクを考慮し早めに皮膚科などの医療機関を受診する"
     ],
     "dontDo": "鳥獣保護法によって保護されており、傷つけると罰則があるため、勝手に駆除したり、攻撃された際に反撃したりしないこと。",
-    "localEncounter": "サザンビーチちがさきなど、茅ヶ崎の海岸全域で年中上空を旋回している。海岸で食事をする際は常に注意が必要。",
+    "localEncounter": "ヘッドランドビーチやサザンビーチちがさきなど、茅ヶ崎の海岸全域で年中上空を旋回している。海岸で食事をする際は常に注意が必要。",
     "references": [
       {
-        "title": "トンビによる被害事例と対策方法をご紹介します！",
-        "author": "EPARKくらしのレスキュー",
+        "title": "鳥獣の保護及び管理並びに狩猟の適正化に関する法律",
+        "author": "環境省",
         "year": "2023",
-        "url": "https://rescue.epark.jp/columns/gaityou-gaiju/gaityou/869"
+        "url": "https://www.env.go.jp/nature/choju/"
+      },
+      {
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2024",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       }
     ],
     "rarity": 1,
@@ -218,7 +224,7 @@
     "category": "魚類",
     "scientificName": "Gymnothorax sp.",
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "protect",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/617492575/large.jpg",
       "author": "triskellbreizh",
@@ -274,7 +280,7 @@
       "痛みが落ち着く程度の温度（40度以上）のお湯で患部を温めるか保冷剤などで冷やして痛みを和らげ、速やかに医療機関を受診する（遅延型のかゆみにも温めることが有効）"
     ],
     "dontDo": "真水（水道水）で洗うと未発射の刺胞が浸透圧ショックにより毒針をさらに発射して症状が悪化するため絶対に避けること。",
-    "localEncounter": "お盆（8月中旬）の時期以降にサザンビーチなどの海水浴場へよく発生し「お盆過ぎに海に入ると刺される」原因の代表格であり、大潮のときなどに多数群れていることがあるため注意が必要である。",
+    "localEncounter": "お盆（8月中旬）の時期以降にヘッドランドビーチやサザンビーチなどの海水浴場へよく発生し「お盆過ぎに海に入ると刺される」原因の代表格であり、大潮のときなどに多数群れていることがあるため注意が必要である。",
     "references": [
       {
         "title": "クラゲに刺された時に一番重要なこと",
@@ -904,7 +910,7 @@
     "category": "魚類",
     "scientificName": "Sphyrna lewini",
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "eat",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/398918477/large.jpg",
       "author": "mikejdo",
@@ -942,7 +948,7 @@
     "category": "魚類",
     "scientificName": "Prionace glauca",
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "eat",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/639983975/large.jpg",
       "author": "jacob-crisp",
@@ -994,7 +1000,7 @@
       "糞（ふん）が落ちてきて目に入った場合は、擦らずに大量の流水で洗い流し、必要に応じて眼科を受診する"
     ],
     "dontDo": "栄養失調の原因になるほか、人に慣れることでトンビと同様のひったくり被害を誘発する恐れがあるため、人間の食べ物（スナック菓子など）を絶対に与えないこと。",
-    "localEncounter": "えぼし岩周辺が県内有数の繁殖地・休息地となっており、サザンビーチちがさきや漁港で日常的に飛び交っている。",
+    "localEncounter": "えぼし岩周辺が県内有数の繁殖地・休息地となっており、ヘッドランドビーチやサザンビーチちがさき、漁港で日常的に飛び交っている。",
     "references": [
       {
         "title": "ふるさとの鳥：ウミネコ",
@@ -1125,7 +1131,7 @@
     "category": "哺乳類",
     "scientificName": "Megaptera novaeangliae",
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "protect",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/621150444/large.jpg",
       "author": "josylai",
@@ -1427,13 +1433,13 @@
       "sourceUrl": "https://www.inaturalist.org/observations/67946572"
     },
     "features": [
-      "全長20cmほど（スズキほどの大きさ）の小型のシギ",
+      "全長20cmほど（スズメよりやや大きい）の小型のシギ",
       "全体的に白っぽく丸みを帯びたシルエットで、後趾（こうし）がなく、前向きの3本の指しかないのが名前の由来",
       "打ち寄せる波から逃げるように、波打ち際を「チクタク」と波に合わせて高速で走り回る愛らしい姿が特徴"
     ],
     "firstAid": [],
     "dontDo": "長旅の途中で砂浜に立ち寄り休息・採餌しているため、犬を放して追いかけさせたりわざと驚かせて飛ばしたりせず、遠くから静かに観察すること。",
-    "localEncounter": "秋から春にかけて、サザンビーチから柳島海岸までの波打ち際で小さな群れを作ってゴカイなどのエサを探している姿が観察できる。",
+    "localEncounter": "秋から春にかけて、柳島海岸からヘッドランドビーチ、サザンビーチちがさきまでの波打ち際で小さな群れを作ってゴカイなどのエサを探している姿が観察できる。",
     "references": [
       {
         "title": "ふるさとの鳥",
@@ -2758,7 +2764,7 @@
       "warning": "外来生物法により、生きたままの運搬・飼育・譲渡などが原則禁止されています。捕獲や防除は自治体の指示に従ってください。"
     },
     "isDanger": true,
-    "dangerType": "contact",
+    "dangerType": "",
     "image": {
       "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/620850626/large.jpg",
       "author": "nozaki_reiji",
@@ -2891,7 +2897,7 @@
       "警戒心が非常に強く、釣りのターゲット（チヌ）として非常に人気が高い"
     ],
     "firstAid": [],
-    "dontDo": "背びれやエラ蓋の棘（とげ）が非常に鋭く太いため、釣り上げた際に素手で魚体を強く握り込まないこと。",
+    "dontDo": "背びれやエラ蓋のトゲが非常に鋭く太いため、釣り上げた際に素手で魚体を強く握り込まないこと。",
     "localEncounter": "えぼし岩周辺の磯（いそ）釣りや、茅ヶ崎漁港の堤防、相模川河口の汽水域など、市内全域の沿岸で年間を通して狙える。",
     "references": [
       {
@@ -3072,7 +3078,7 @@
       "身が肉厚で、カレイ類の中でも特に美味しいとされる"
     ],
     "firstAid": [],
-    "dontDo": "両目の間やエラ蓋の棘（とげ）が鋭く、触ると痛む（目痛カレイの由来の一説）ため、釣り上げた際に顔周辺を素手で強くつかまないこと。",
+    "dontDo": "両目の間やエラ蓋のトゲが鋭く、触ると痛む（目痛カレイの由来の一説）ため、釣り上げた際に顔周辺を素手で強くつかまないこと。",
     "localEncounter": "茅ヶ崎沖の砂泥底に生息し、相模湾の刺し網漁や底引き網で水揚げされるほか、海岸からの投げ釣りでもまれに掛かる。",
     "references": [
       {
@@ -4043,7 +4049,7 @@
     ],
     "firstAid": [],
     "dontDo": "砂浜の有機物を分解して海岸を清潔に保つ益虫的な存在であるため、無闇に踏み潰したり、隠れ家となる打ち上げ海藻を不必要に除去したりしないこと。",
-    "localEncounter": "茅ヶ崎海岸やサザンビーチちがさきの波打ち際付近で、満潮線の跡に打ち上げられたワカメなどの海藻や流木を足でどかすと、一斉に跳び跳ねる姿が一年中観察できる。",
+    "localEncounter": "茅ヶ崎海岸やヘッドランドビーチ、サザンビーチちがさきの波打ち際付近で、満潮線の跡に打ち上げられたワカメなどの海藻や流木を足でどかすと、一斉に跳び跳ねる姿が一年中観察できる。",
     "references": [
       {
         "title": "海辺の魚類・甲殻類",
@@ -4174,7 +4180,7 @@
     ],
     "firstAid": [],
     "dontDo": "",
-    "localEncounter": "サザンビーチちがさきの砂浜や茅ヶ崎漁港、相模川河口付近のほか、中央公園や駅前の広場で一年中頻繁に見られる。",
+    "localEncounter": "ヘッドランドビーチやサザンビーチちがさきの砂浜、茅ヶ崎漁港、相模川河口付近のほか、中央公園や駅前の広場で一年中頻繁に見られる。",
     "references": [
       {
         "title": "日本の鳥百科 ハクセキレイ",
@@ -4297,7 +4303,7 @@
     ],
     "firstAid": [],
     "dontDo": "",
-    "localEncounter": "茅ヶ崎海岸やサザンビーチちがさき、ヘッドランド周辺の砂浜に殻がよく漂着する。地元の堤貝塚からも多数出土し、古くから親しまれている。",
+    "localEncounter": "茅ヶ崎海岸やヘッドランドビーチ周辺、サザンビーチちがさきの砂浜に殻がよく漂着する。地元の堤貝塚からも多数出土し、古くから親しまれている。",
     "references": [
       {
         "title": "共同漁業権と海のルールについて",
@@ -4907,7 +4913,7 @@
     "rarity": 1,
     "encounterSeason": "通年",
     "encounterLocation": "河川敷・公園・農地",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
@@ -5030,7 +5036,7 @@
     "rarity": 1,
     "encounterSeason": "夏〜秋",
     "encounterLocation": "公園・畑・農地",
-    "environment": "河口・干潟",
+    "environment": "町中・林",
     "encounterProbability": "高"
   },
   {
