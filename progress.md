@@ -12,6 +12,18 @@
 
 ## 変更履歴
 
+### 2026-07-14 — bio-data.json 校正 第2ラウンド（表記統一・ルビ・iNat学名照合）
+
+- **表記統一**: 嘴→くちばし（和語ひらがな、他鳥カードと統一）＝ハシブトガラス・カルガモ・カワラヒワ・ムクドリ。応急処置の温度「40度以上」→「40℃以上」＝カツオノエボシ・アンドンクラゲ
+- **表外漢字にルビ付与**: 橙色（だいだいいろ）＝ナミアゲハ・クマゼミ、橙黄色（とうこうしょく）＝モクセイ・ムクドリ、藍色（あいいろ）＝カツオノエボシ・ヨシキリザメ、藍黒色（あいこくしょく）＝ツバメ、濾過（ろか）＝ダンベイキサゴ、麻痺（まひ）＝ジョロウグモ・ツルニチニチソウ。擬態はハオコゼのみルビ付きだったため他カードに合わせルビ削除
+- **iNaturalist 参照先との学名照合**（API で画像あり134件を全件照合）:
+  - **誤り修正**: アゴハゼの `scientificName`「Chasmichthys gulosus」（ドロメの学名）→「Chaenogobius annularis」（iNat写真＝アゴハゼと一致）
+  - **現行学名へ更新（シノニム）**: アカエイ→Hemitrygon akajei、シロチドリ→Anarhynchus alexandrinus、ハオコゼ→Paracentropogon rubripinnis、トビウオ→Cheilopogon agoo、ヤブガラシ→Causonis japonica、スナビキソウ→Tournefortia sibirica
+  - **画像情報をプレースホルダーへリセット**（iNat写真が別属同定で別種の可能性。ユーザーが再登録予定）: バケヌメリ・リュウキュウヨロイアジ・カマイルカ
+  - 上位分類での記載（フジツボ類 Balanomorpha・ダツ Belonidae・ハマトビムシ類 Talitridae）は仕様上許容のため現状維持
+- `name`（表示名）は全件が正しい和名で iNat写真とも一致（不整合なし）
+- `sw.js` の `CACHE_VERSION` を `v1.5.1`→`v1.5.2` へbump
+
 ### 2026-07-14 — bio-data.json 校正（adding-biology-data.md 適合）
 
 - **明確な誤り修正**: ミユビシギの `features`「スズキほどの大きさ」（魚と誤比較）→「スズメよりやや大きい」。イチモンジセセリ・カワラヒワの `environment`「河口・干潟」→「町中・林」（陸生種で `encounterLocation` と不整合だった）
