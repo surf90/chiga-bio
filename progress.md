@@ -7,10 +7,19 @@
 ### 未対応（要確認）
 
 - **要手動**: ハイブリッドSEO（PR #46）マージ後、GitHub Pages の Source を「Deploy from a branch」→「GitHub Actions」へ切替（切替まで `pages.yml` のデプロイは反映されない）
-- 追加54件のうち27件が画像未登録（プレースホルダー）。Excelに画像URLが入り次第、同手順で反映予定
-  - 画像選定TODO（id）: hiruzakitsukimisou, tsurunichinichisou, kibanadaikon, imokatabami, ookamakiri, inuhoozuki, kumazemi, shiokaratonbo, warajimushi, aosujiageha, yakeyasude, arakashi, hanaochibatake, marukamemushi, chabaneseseri, harabirokamakiri, aobahagoromo, miyamakuwagata, minminzemi, mokusei, akiakane, kiberihagoromo, matsukasakinokomodoki, misujimaimai, kimadarakamikiri, mejiro, tamakikurage
+- 33件が画像未登録（プレースホルダー）。iNaturalistで人力選定後、同手順で反映予定
+  - 画像選定TODO（id）: katsuonoeboshi, kamairuka, bakenumeri, ryukyuyoroiaji, ginanago, ougigani, hiruzakitsukimisou, tsurunichinichisou, kibanadaikon, imokatabami, ookamakiri, inuhoozuki, kumazemi, shiokaratonbo, warajimushi, aosujiageha, yakeyasude, arakashi, hanaochibatake, marukamemushi, chabaneseseri, harabirokamakiri, aobahagoromo, miyamakuwagata, minminzemi, mokusei, akiakane, kiberihagoromo, matsukasakinokomodoki, misujimaimai, kimadarakamikiri, mejiro, tamakikurage
 
 ## 変更履歴
+
+### 2026-07-14 — bio-data.json 校正 第3ラウンド（標準和名・分類体系・難読語）
+
+- **標準和名・表示階級を整理**: `トンビ（トビ）`→`トビ`、`カタクチイワシ（シラス）`→`カタクチイワシ`、`シュモクザメ（アカシュモクザメなど）`→`アカシュモクザメ`、`ウミネコ（カモメ類）`→`ウミネコ`、`スズキ（シーバス）`→`スズキ`、科レベルの `Belonidae` を示す `ダツ`→`ダツ類`。俗称・総称は検索できるよう `features` に残した
+- **iNaturalist・WoRMS再照合**: ゴンズイを `Plotosus japonicus`、ミズクラゲを `Aurelia coerulea`、ウツボを `Gymnothorax kidako`、マダコを `Octopus sinensis`、ヘビギンポを `Enneapterygius etheostoma` へ更新し、WoRMSの受容名ページを出典に追加
+- **誤画像をプレースホルダーへリセット**: カツオノエボシ（画像側 `Physalia utriculus`）、ギンアナゴ（画像側 `Gnathophis longicauda`）、オウギガニ（画像側 `Leptodius affinis`）。いずれもWoRMSでJSON側と画像側が別の受容種であることを確認し、人力再選定待ちとした
+- **難読語にルビ付与**: 腎臓形、采配、社叢林、亀甲状、砂礫底、馬蹄形網、扁平、小鱗片、口吻、鋸歯、馬尾毛状、饅頭型
+- 茅ヶ崎ローカル記述は、えぼし岩・柳島海岸・小出川等を含む項目を機械検査の誤検出と確認。地域記録の裏付けがない項目へ地名を推測追加する変更は見送った
+- `sw.js` の `CACHE_VERSION` を `v1.5.2`→`v1.5.3` へbump
 
 ### 2026-07-14 — bio-data.json 校正 第2ラウンド（表記統一・ルビ・iNat学名照合）
 

@@ -7,10 +7,10 @@
     "isDanger": true,
     "dangerType": "contact",
     "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/554220722/medium.jpg",
-      "author": "peaslover",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/observations/307276767"
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "大きさ約10cmの透き通った鮮やかな藍色（あいいろ）を含む浮き袋と、平均10m（最大約50m）にも達する長い触手をもつ",
@@ -88,7 +88,7 @@
     "id": "gonzui",
     "name": "ゴンズイ",
     "category": "魚類",
-    "scientificName": "Plotosus lineatus",
+    "scientificName": "Plotosus japonicus",
     "isDanger": true,
     "dangerType": "contact",
     "image": {
@@ -121,6 +121,12 @@
         "author": "海上保安庁 海洋情報部",
         "year": "2020",
         "url": "https://www1.kaiho.mlit.go.jp/JODC/kiken/"
+      },
+      {
+        "title": "WoRMS: Plotosus japonicus",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=398360"
       }
     ],
     "rarity": 1,
@@ -177,7 +183,7 @@
   },
   {
     "id": "tonbi",
-    "name": "トンビ（トビ）",
+    "name": "トビ",
     "category": "鳥類",
     "scientificName": "Milvus migrans",
     "isDanger": true,
@@ -190,7 +196,8 @@
     },
     "features": [
       "死角（背後や上空）から人間の食べ物を奪う",
-      "食べ物を狙って飛来した際、鋭い爪によって手や顔に怪我を負う事例が発生している"
+      "食べ物を狙って飛来した際、鋭い爪によって手や顔に怪我を負う事例が発生している",
+      "標準和名はトビで、一般にはトンビとも呼ばれる"
     ],
     "firstAid": [
       "傷口からの感染症を防ぐため、その場に消毒液があれば早めに消毒して対処する",
@@ -222,7 +229,7 @@
     "id": "utsubo",
     "name": "ウツボ",
     "category": "魚類",
-    "scientificName": "Gymnothorax sp.",
+    "scientificName": "Gymnothorax kidako",
     "isDanger": true,
     "dangerType": "protect",
     "image": {
@@ -247,6 +254,12 @@
         "author": "海上保安庁（国土交通省）",
         "year": "2024",
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/fishing/25_fish/index.html"
+      },
+      {
+        "title": "WoRMS: Gymnothorax kidako",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=271843"
       }
     ],
     "rarity": 2,
@@ -303,7 +316,7 @@
   },
   {
     "id": "katakuchiiwashi",
-    "name": "カタクチイワシ（シラス）",
+    "name": "カタクチイワシ",
     "category": "魚類",
     "scientificName": "Engraulis japonicus",
     "isDanger": false,
@@ -456,7 +469,7 @@
       "sourceUrl": "https://www.inaturalist.org/observations/287623862"
     },
     "features": [
-      "葉は厚みがあり、光沢のあるハート型（腎臓形）をしている",
+      "葉は厚みがあり、光沢のあるハート型をしており、腎臓形（じんぞうけい）とも表現される",
       "蔓（つる）が砂の上をはうように広がり、砂の移動を抑える役割（飛砂防止）ももつ"
     ],
     "firstAid": [],
@@ -519,7 +532,7 @@
     "id": "mizukurage",
     "name": "ミズクラゲ",
     "category": "海の無脊椎動物",
-    "scientificName": "Aurelia aurita",
+    "scientificName": "Aurelia coerulea",
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -544,6 +557,12 @@
         "author": "新江ノ島水族館",
         "year": "2018",
         "url": "https://www.enosui.com/diaryentry.php?eid=04461"
+      },
+      {
+        "title": "WoRMS: Aurelia coerulea",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=292506"
       }
     ],
     "rarity": 1,
@@ -779,7 +798,7 @@
   },
   {
     "id": "datsu",
-    "name": "ダツ",
+    "name": "ダツ類",
     "category": "魚類",
     "scientificName": "Belonidae",
     "isDanger": true,
@@ -906,7 +925,7 @@
   },
   {
     "id": "shumokuzame",
-    "name": "シュモクザメ（アカシュモクザメなど）",
+    "name": "アカシュモクザメ",
     "category": "魚類",
     "scientificName": "Sphyrna lewini",
     "isDanger": true,
@@ -919,7 +938,8 @@
     },
     "features": [
       "頭部が左右に張り出したT字型（ハンマー型）の特異なシルエット",
-      "比較的神経質だが、群れで浅瀬に接近することがある"
+      "比較的神経質だが、群れで浅瀬に接近することがある",
+      "シュモクザメ類の一種で、頭部前縁の中央がくぼむことなどで見分けられる"
     ],
     "firstAid": [
       "背びれを発見次第、直ちに海から上がり、周囲の遊泳者にも避難を呼びかける",
@@ -981,7 +1001,7 @@
   },
   {
     "id": "umineko",
-    "name": "ウミネコ（カモメ類）",
+    "name": "ウミネコ",
     "category": "鳥類",
     "scientificName": "Larus crassirostris",
     "isDanger": false,
@@ -1573,7 +1593,7 @@
   },
   {
     "id": "suzuki",
-    "name": "スズキ（シーバス）",
+    "name": "スズキ",
     "category": "魚類",
     "scientificName": "Lateolabrax japonicus",
     "isDanger": true,
@@ -1585,7 +1605,7 @@
       "sourceUrl": "https://www.inaturalist.org/observations/82091822"
     },
     "features": [
-      "成長とともに名前が変わる出世魚（セイゴ→フッコ→スズキ）で、銀色の細長い体をもつ",
+      "成長とともに名前が変わる出世魚（セイゴ→フッコ→スズキ）で、釣りではシーバスとも呼ばれる銀色の細長い魚",
       "ルアーに掛かると水面で激しく頭を振る「エラ洗い」という行動をとる"
     ],
     "firstAid": [
@@ -2409,12 +2429,12 @@
     },
     "features": [
       "ラン科の多年草で、広葉樹林の薄暗い林床に生える",
-      "花序の形が戦場で武将が持つ「采配」に似ている",
+      "花序の形が戦場で武将が持つ「采配（さいはい）」に似ている",
       "一枚の大きな笹（ささ）のような葉を冬にも残す"
     ],
     "firstAid": [],
     "dontDo": "ラン科植物は特定の菌類と共生しているなど生育環境が特殊なため、素人が持ち帰っても枯死させてしまう可能性が高いため絶対に採取しないこと。",
-    "localEncounter": "県内の雑木林や神社の社叢林など、やや湿り気のある日陰で初夏に花茎を伸ばす姿が見られる。",
+    "localEncounter": "県内の雑木林や神社の社叢林（しゃそうりん）など、やや湿り気のある日陰で初夏に花茎を伸ばす姿が見られる。",
     "references": [
       {
         "title": "植物和名ー学名インデックス YList",
@@ -2817,7 +2837,7 @@
     },
     "features": [
       "海岸の厳しい環境（潮風や乾燥）に耐える常緑針葉樹",
-      "樹皮は黒褐色で亀甲状に深く割れ、葉は硬く触るとチクチクする",
+      "樹皮は黒褐色で亀甲状（きっこうじょう）に深く割れ、葉は硬く触るとチクチクする",
       "飛砂を防ぎ、後背地の暮らしや農地を守る「砂防林」として古くから植林されてきた"
     ],
     "firstAid": [],
@@ -3009,7 +3029,7 @@
     ],
     "firstAid": [],
     "dontDo": "",
-    "localEncounter": "茅ヶ崎沖のやや深場の岩礁地帯や砂礫底に生息し、茅ヶ崎港から出船する乗合船のコマセ釣りなどで一年中狙うことができる。",
+    "localEncounter": "茅ヶ崎沖のやや深場の岩礁地帯や砂礫底（されきてい）に生息し、茅ヶ崎港から出船する乗合船のコマセ釣りなどで一年中狙うことができる。",
     "references": [
       {
         "title": "おさかな図鑑（マダイ）",
@@ -3098,7 +3118,7 @@
     "id": "hebiginpo",
     "name": "ヘビギンポ",
     "category": "魚類",
-    "scientificName": "Enneapterygius etheostomus",
+    "scientificName": "Enneapterygius etheostoma",
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -3121,6 +3141,12 @@
         "author": "茅ヶ崎市 文化資料館",
         "year": "2024",
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
+      },
+      {
+        "title": "WoRMS: Enneapterygius etheostoma",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=402617"
       }
     ],
     "rarity": 1,
@@ -3137,10 +3163,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/195460799/large.jpeg",
-      "author": "fiftygrit",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/observations/115811985"
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "マアナゴに似ているが、全体的に銀白色で目が大きい",
@@ -3247,7 +3273,7 @@
     "id": "madako",
     "name": "マダコ",
     "category": "海の無脊椎動物",
-    "scientificName": "Octopus vulgaris",
+    "scientificName": "Octopus sinensis",
     "isDanger": false,
     "dangerType": "",
     "image": {
@@ -3270,6 +3296,12 @@
         "author": "神奈川県",
         "year": "2020",
         "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-madako.html"
+      },
+      {
+        "title": "WoRMS: Octopus sinensis",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=534443"
       }
     ],
     "rarity": 2,
@@ -3439,10 +3471,10 @@
     "isDanger": false,
     "dangerType": "",
     "image": {
-      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/656448571/large.jpg",
-      "author": "devilived",
-      "license": "CC BY-NC",
-      "sourceUrl": "https://www.inaturalist.org/observations/359825197"
+      "url": " ",
+      "author": " ",
+      "license": " ",
+      "sourceUrl": " "
     },
     "features": [
       "甲羅が扇（おうぎ）のような形をしており、表面がゴツゴツしている",
@@ -4257,7 +4289,7 @@
     },
     "features": [
       "メスは体長約20〜30mmで脚を広げると10cm近くになり、黄色と青緑色の鮮やかな縞模様が腹部にある",
-      "網は前網・主網・後網の3重の立体的な馬蹄形網を張り、主に飛来する昆虫を捕食する",
+      "網は前網・主網・後網の3重の立体的な馬蹄形網（ばていけいもう）を張り、主に飛来する昆虫を捕食する",
       "興奮性神経伝達を阻害する麻痺（まひ）性毒をもつが、極めて微量であり人に対して実質無害とされる"
     ],
     "firstAid": [],
@@ -4297,7 +4329,7 @@
       "sourceUrl": "https://www.inaturalist.org/observations/147440732"
     },
     "features": [
-      "殻径約3〜4cmの扁平なソロバン玉型の巻貝で、殻の表面は滑らかで美しく、暗緑色や灰褐色の多様な模様がある",
+      "殻径約3〜4cmの扁平（へんぺい）なソロバン玉型の巻貝で、殻の表面は滑らかで美しく、暗緑色や灰褐色の多様な模様がある",
       "水深数メートルから20メートルの細砂底に生息し、砂の中に潜って底生の有機物やプランクトンを濾過（ろか）して食べる",
       "湘南地域や相模湾周辺ではナガラミの名称で親しまれる代表的な食用貝であり、共同漁業権の対象種に指定されている"
     ],
@@ -4338,7 +4370,7 @@
       "sourceUrl": "https://www.inaturalist.org/observations/163953517"
     },
     "features": [
-      "傘は直径10〜25cmと大型の褐色で、表面に白色のいぼ状の小鱗片を多数有し、周辺部にははっきりとした条線がある",
+      "傘は直径10〜25cmと大型の褐色で、表面に白色のいぼ状の小鱗片（しょうりんぺん）を多数有し、周辺部にははっきりとした条線がある",
       "マツ科などの針葉樹林床に自生する外生菌根菌であり、夏から秋にかけて地上に単生または群生する",
       "イボテン酸やムシモール、スチゾロビン酸、ムスカリン類などの強力な神経毒を含有する有毒キノコである"
     ],
@@ -4644,7 +4676,7 @@
     },
     "features": [
       "体長約20〜23mmの大型のカメムシで、黒褐色の体全体に黄色い細かな斑点があり、頭部中央には縦に走る黄色の細い線がある",
-      "サクラやカキ、サルスベリなどの樹木に寄生し、細長い口吻を樹皮や果実に突き刺して汁液を吸引する",
+      "サクラやカキ、サルスベリなどの樹木に寄生し、細長い口吻（こうふん）を樹皮や果実に突き刺して汁液を吸引する",
       "台湾原産の外来種であり、近年地球温暖化の影響もあり急速に分布を北上させ、関東地方でも極めてありふれた種となっている"
     ],
     "firstAid": [],
@@ -5640,7 +5672,7 @@
       "sourceUrl": " "
     },
     "features": [
-      "体長約10〜15mmの灰色で扁平な形をした甲殻類で、オカダンゴムシに似るが、触っても丸くならないのが特徴",
+      "体長約10〜15mmの灰色で扁平（へんぺい）な形をした甲殻類で、オカダンゴムシに似るが、触っても丸くならないのが特徴",
       "素早く走って逃げる性質があり、尾部の先端に一対の針状の突起が突き出ている",
       "湿気のある石の下や落ち葉の中に生息し、腐植質や枯れ葉を食べることで土壌を分解する益虫"
     ],
@@ -5767,7 +5799,7 @@
       "sourceUrl": " "
     },
     "features": [
-      "高さ10〜15mに達する常緑広葉樹（ブナ科）で、葉の上半分に粗い鋸歯があり、裏面が灰白色をしている",
+      "高さ10〜15mに達する常緑広葉樹（ブナ科）で、葉の上半分に粗い鋸歯（きょし）があり、裏面が灰白色をしている",
       "秋には、お椀状の帽子をかぶった卵型の小さく可愛いどんぐりを実らせる",
       "乾燥や潮風に非常に強いため、庭木や生け垣、都市公園の防風林や遮音林として広く植栽されている"
     ],
@@ -5809,7 +5841,7 @@
     },
     "features": [
       "傘は径1〜2cmと非常に小型で、鮮やかな美しいピンク色をしており、中央がやや窪んだパラソルのような形をしている",
-      "柄は長さ3〜5cmと極めて細く、馬尾毛状で針金のように硬く、黒褐色で強い光沢がある",
+      "柄は長さ3〜5cmと極めて細く、馬尾毛状（ばすもうじょう）で針金のように硬く、黒褐色で強い光沢がある",
       "森林の落ち葉を分解して生活する極めて小さな腐生菌である"
     ],
     "firstAid": [],
@@ -6178,7 +6210,7 @@
     },
     "features": [
       "体長約10mmのハゴロモの一種で、前翅（ぜんし）全体が鮮やかな緑色で、前縁が鮮やかな黄色に縁取られているのが名前の由来",
-      "カエデ、ケヤキ、サクラなどの多種多様な落葉広葉樹の枝に群生し、口吻を刺して植物の樹液を吸う",
+      "カエデ、ケヤキ、サクラなどの多種多様な落葉広葉樹の枝に群生し、口吻（こうふん）を刺して植物の樹液を吸う",
       "アオバハゴロモに良く似ているが、翅の前縁が黄色く、翅全体がより濃い緑色をしている点で明瞭に区別される"
     ],
     "firstAid": [],
@@ -6218,7 +6250,7 @@
       "sourceUrl": " "
     },
     "features": [
-      "傘は径1〜2.5cmと極めて小型で、淡い灰褐色から暗褐色をしており、表面は滑らかで中央がややとがった饅頭型",
+      "傘は径1〜2.5cmと極めて小型で、淡い灰褐色から暗褐色をしており、表面は滑らかで中央がややとがった饅頭型（まんじゅうがた）",
       "落ちて地中に埋もれたマツ科の松ぼっくりからのみ発生する、宿主特異性の極めて高いキノコ",
       "柄は長さ3〜7cmと細長く針金状で、基部が松ぼっくりの鱗片の間に深く根のように伸びて固着している"
     ],
