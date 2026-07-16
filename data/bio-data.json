@@ -111,16 +111,16 @@
     "localEncounter": "春から秋にかけて、岩場やテトラポッドの周辺で幼魚が密集し「ゴンズイ玉」を作る。夜行性で、夜釣りや磯（いそ）遊びの際に触れる事故が多い。",
     "references": [
       {
-        "title": "海洋危険生物の毒と病態",
-        "author": "日本救急医学会",
-        "year": "2023",
-        "url": "https://www.jaam.jp/"
+        "title": "海洋動物の毒",
+        "author": "塩見一雄",
+        "year": "1999",
+        "url": "https://www.jstage.jst.go.jp/article/jjaam1990/10/1/10_1_4/_article/-char/ja/"
       },
       {
-        "title": "海の危険生物ガイドブック",
-        "author": "海上保安庁 海洋情報部",
-        "year": "2020",
-        "url": "https://www1.kaiho.mlit.go.jp/JODC/kiken/"
+        "title": "危険な生物について｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2026",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/fishing/25_fish/index.html"
       },
       {
         "title": "WoRMS: Plotosus japonicus",
@@ -169,10 +169,10 @@
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/index.html"
       },
       {
-        "title": "相模湾におけるヒョウモンダコ属の出現傾向",
-        "author": "神奈川県水産技術センター",
-        "year": "2018",
-        "url": "https://www.pref.kanagawa.jp/docs/aw3/cnt/f6567/"
+        "title": "野外における代表的な危険生物とその対処法",
+        "author": "神奈川県",
+        "year": "2025",
+        "url": "https://www.pref.kanagawa.jp/docs/ch3/ikusei/r4outdoor/safety/dangerous.html"
       }
     ],
     "rarity": 2,
@@ -302,10 +302,10 @@
         "url": "https://jla-lifesaving.or.jp/watersafety/jellyfish/"
       },
       {
-        "title": "学校理科教育現場における事故事例とその対策（8）",
-        "author": "神奈川大学",
-        "year": "2017",
-        "url": "https://kanagawa-u.repo.nii.ac.jp/record/2001549/"
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2026",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/index.html"
       }
     ],
     "rarity": 2,
@@ -336,10 +336,10 @@
     "localEncounter": "えぼし岩周辺や相模湾全域を回遊しており、地曳網でもおなじみ。年間を通じて見られる。",
     "references": [
       {
-        "title": "茅ヶ崎の漁業：シラスについて",
+        "title": "茅ヶ崎の漁業",
         "author": "茅ヶ崎市",
-        "year": "2023",
-        "url": "https://www.city.chigasaki.kanagawa.jp/sangyo/gyogyo/index.html"
+        "year": "2024",
+        "url": "https://www.city.chigasaki.kanagawa.jp/1060033/1006713.html"
       }
     ],
     "rarity": 2,
@@ -407,10 +407,10 @@
     "localEncounter": "4月〜7月頃、茅ヶ崎海岸の砂浜に直接卵を産み、繁殖を行うため足元に注意が必要。",
     "references": [
       {
-        "title": "ふるさとの鳥：シロチドリ",
-        "author": "神奈川県",
-        "year": "2021",
-        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+        "title": "海辺で見られる野鳥",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040927.html"
       }
     ],
     "rarity": 2,
@@ -708,10 +708,10 @@
         "url": "https://www.museum.yokosuka.kanagawa.jp/archives/nature-history/40275"
       },
       {
-        "title": "色と模様が変わっていく | えのすいトリーター日誌",
+        "title": "アオミノウミウシ（Glaucus atlanticus）の魅力",
         "author": "新江ノ島水族館",
-        "year": "2021",
-        "url": "https://www.enosui.com/diaryentry.php?eid=07467"
+        "year": "2023",
+        "url": "https://www.enosui.com/diaryentry.php?eid=06574"
       }
     ],
     "rarity": 2,
@@ -784,10 +784,10 @@
     "localEncounter": "えぼし岩、ヘッドランドの消波ブロック、堤防など、茅ヶ崎のあらゆる岩礁地帯に密集している。",
     "references": [
       {
-        "title": "海洋危険生物の毒と病態",
-        "author": "日本救急医学会",
-        "year": "2023",
-        "url": "https://www.jaam.jp/"
+        "title": "海洋動物の毒",
+        "author": "塩見一雄",
+        "year": "1999",
+        "url": "https://www.jstage.jst.go.jp/article/jjaam1990/10/1/10_1_4/_article/-char/ja/"
       }
     ],
     "rarity": 1,
@@ -827,10 +827,10 @@
         "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/"
       },
       {
-        "title": "海洋危険生物の毒と病態",
-        "author": "日本救急医学会",
-        "year": "2023",
-        "url": "https://www.jaam.jp/"
+        "title": "海洋動物の毒",
+        "author": "塩見一雄",
+        "year": "1999",
+        "url": "https://www.jstage.jst.go.jp/article/jjaam1990/10/1/10_1_4/_article/-char/ja/"
       }
     ],
     "rarity": 2,
@@ -865,10 +865,10 @@
     "localEncounter": "えぼし岩周辺の岩礁帯やヘッドランドの消波ブロック周辺に定着しており、ダイビングやシュノーケリングで頻繁に目撃される。",
     "references": [
       {
-        "title": "海の危険生物ガイドブック",
-        "author": "海上保安庁 海洋情報部",
-        "year": "2020",
-        "url": "https://www1.kaiho.mlit.go.jp/JODC/kiken/"
+        "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
+        "author": "海上保安庁（国土交通省）",
+        "year": "2026",
+        "url": "https://www6.kaiho.mlit.go.jp/watersafety/swimming/02_attention/index.html"
       },
       {
         "title": "相模湾の魚類",
@@ -911,10 +911,10 @@
         "url": "https://www.env.go.jp/press/103823.html"
       },
       {
-        "title": "相模湾におけるウミガメ類の漂着・上陸記録",
+        "title": "ウミガメの浜辺：相模湾で見られるウミガメ",
         "author": "新江ノ島水族館",
-        "year": "2023",
-        "url": "https://www.enosui.com/diaryentry.php?eid=08112"
+        "year": "2026",
+        "url": "https://www.enosui.com/exhibition_turtle.php"
       }
     ],
     "rarity": 3,
@@ -987,10 +987,10 @@
     "localEncounter": "主に相模湾の沖合を回遊する外洋性のサメだが、地曳網に入ったり、台風後に海岸へ打ち上げられたりすることがある。",
     "references": [
       {
-        "title": "魚類写真資料データベース",
-        "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/Fishes/"
+        "title": "WoRMS: Prionace glauca",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=105801"
       }
     ],
     "rarity": 3,
@@ -1023,10 +1023,10 @@
     "localEncounter": "えぼし岩周辺が県内有数の繁殖地・休息地となっており、ヘッドランドビーチやサザンビーチちがさき、漁港で日常的に飛び交っている。",
     "references": [
       {
-        "title": "ふるさとの鳥：ウミネコ",
-        "author": "神奈川県",
-        "year": "2021",
-        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+        "title": "海辺で見られる野鳥",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040927.html"
       }
     ],
     "rarity": 2,
@@ -1061,10 +1061,10 @@
     "localEncounter": "相模湾の沿岸部に生息しており、茅ヶ崎や平塚の海岸に死骸が漂着（ストランディング）する事例が定期的に報告されている。",
     "references": [
       {
-        "title": "ストランディング（漂着）個体への対応",
-        "author": "国立科学博物館 海棲哺乳類情報データベース",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/m-mammal/"
+        "title": "海棲哺乳類ストランディングデータベース：スナメリ",
+        "author": "国立科学博物館",
+        "year": "2026",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/marmam/drift/index.php?k=%E3%82%B9%E3%83%8A%E3%83%A1%E3%83%AA"
       }
     ],
     "rarity": 3,
@@ -1097,10 +1097,10 @@
     "localEncounter": "相模湾を数十頭の群れで回遊しており、地曳網や定置網の近くに現れたり、沖合でのマリンスポーツ中に遭遇したりすることがある。",
     "references": [
       {
-        "title": "相模湾のクジラたち",
-        "author": "新江ノ島水族館",
-        "year": "2022",
-        "url": "https://www.enosui.com/diaryentry.php?eid=08112"
+        "title": "海棲哺乳類ストランディングデータベース：カマイルカ",
+        "author": "国立科学博物館",
+        "year": "2026",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/marmam/drift/index.php?k=%E3%82%AB%E3%83%9E%E3%82%A4%E3%83%AB%E3%82%AB"
       }
     ],
     "rarity": 3,
@@ -1169,10 +1169,10 @@
     "localEncounter": "近年、冬から春（11月〜4月頃）にかけて、相模湾や湘南海岸の沖合でブロー（潮吹き）やジャンプが目撃される機会が急増している。",
     "references": [
       {
-        "title": "沿岸域におけるクジラ類との遭遇時の注意喚起",
-        "author": "海上保安庁",
-        "year": "2022",
-        "url": "https://www.kaiho.mlit.go.jp/info/kouhou/r4/k220302/k220302.pdf"
+        "title": "海棲哺乳類ストランディングデータベース：ザトウクジラ",
+        "author": "国立科学博物館",
+        "year": "2026",
+        "url": "https://www.kahaku.go.jp/research/db/zoology/marmam/drift/index.php?k=%E3%82%B6%E3%83%88%E3%82%A6%E3%82%AF%E3%82%B8%E3%83%A9"
       }
     ],
     "rarity": 3,
@@ -1359,10 +1359,10 @@
         "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040920.html"
       },
       {
-        "title": "WoRMS: Chasmichthys gulosus",
+        "title": "WoRMS: Chaenogobius annularis",
         "author": "World Register of Marine Species",
-        "year": "2024",
-        "url": "https://www.marinespecies.org/"
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1020086"
       }
     ],
     "rarity": 1,
@@ -1427,10 +1427,10 @@
     "localEncounter": "春先（3月〜5月）にかけて、えぼし岩やヘッドランド周辺の浅瀬で大量に発生し、黄色い麺のような卵（海そうめん）を産みつける。",
     "references": [
       {
-        "title": "えのすいトリーター日誌：アメフラシ",
+        "title": "大きいっ・・・！これは・・・！！（アメフラシ）",
         "author": "新江ノ島水族館",
-        "year": "2020",
-        "url": "https://www.enosui.com/diaryentry.php?eid=06123"
+        "year": "2011",
+        "url": "https://www.enosui.com/diaryentry.php?eid=01889"
       }
     ],
     "rarity": 2,
@@ -1462,16 +1462,16 @@
     "localEncounter": "秋から春にかけて、柳島海岸からヘッドランドビーチ、サザンビーチちがさきまでの波打ち際で小さな群れを作ってゴカイなどのエサを探している姿が観察できる。",
     "references": [
       {
-        "title": "ふるさとの鳥",
-        "author": "神奈川県",
-        "year": "2021",
-        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+        "title": "海辺で見られる野鳥",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040927.html"
       },
       {
-        "title": "鳥類標本データベース",
+        "title": "標本・資料統合データベース：鳥類",
         "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/search?cls=col_a1_01"
       }
     ],
     "rarity": 2,
@@ -1685,10 +1685,10 @@
     "localEncounter": "相模川の河口付近や干潟、海岸の浅瀬などで小魚を捕食する姿が通年観察される。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 2,
@@ -1720,10 +1720,10 @@
     "localEncounter": "相模湾沿岸や河川の下流域でよく見られ、防波堤などで翼を休めていることが多い。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 1,
@@ -1755,10 +1755,10 @@
     "localEncounter": "三浦半島や真鶴などの岩礁地帯で一年を通して観察され、冬場は数が増える。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 2,
@@ -1790,10 +1790,10 @@
     "localEncounter": "冬鳥として渡来し、波の穏やかな湾内や河口域で潜水して魚を捕る姿が冬場に見られる。",
     "references": [
       {
-        "title": "鳥類標本データベース",
+        "title": "標本・資料統合データベース：鳥類",
         "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/search?cls=col_a1_01"
       }
     ],
     "rarity": 2,
@@ -1825,10 +1825,10 @@
     "localEncounter": "海岸の磯（いそ）、干潟、河川など水辺全般で一年中見られ、単独で行動していることが多い。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 1,
@@ -1860,10 +1860,10 @@
     "localEncounter": "沿岸の浅い砂泥底に生息し、地引き網などで混獲されることがある。",
     "references": [
       {
-        "title": "日本産魚類検索 全種の同定 第三版",
-        "author": "中坊徹次",
-        "year": "2013",
-        "url": "https://www.fish-isj.jp/"
+        "title": "日本産追加種リスト（「日本産魚類検索 全種の同定 第三版」補完）",
+        "author": "日本魚類学会",
+        "year": "2025",
+        "url": "https://www.fish-isj.jp/addition/"
       }
     ],
     "rarity": 2,
@@ -1932,10 +1932,10 @@
     "localEncounter": "沿岸域や河口、港湾内で群れをなして泳いでいるのが頻繁に目撃される。",
     "references": [
       {
-        "title": "水産資源評価データ",
-        "author": "水産庁",
-        "year": "2023",
-        "url": "https://www.jfa.maff.go.jp/"
+        "title": "WoRMS: Mugil cephalus",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=126983"
       }
     ],
     "rarity": 1,
@@ -2006,8 +2006,8 @@
       {
         "title": "WoRMS: Eunaticina papilla",
         "author": "World Register of Marine Species",
-        "year": "2024",
-        "url": "https://www.marinespecies.org/"
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=564878"
       }
     ],
     "rarity": 2,
@@ -2041,10 +2041,10 @@
     "localEncounter": "海岸の岩礁帯や堤防の波打ち際付近で普通に見られ、潮が引いた岩肌に張り付いている。",
     "references": [
       {
-        "title": "OBIS: Cellana nigrolineata",
-        "author": "Ocean Biodiversity Information System",
-        "year": "2024",
-        "url": "https://obis.org/"
+        "title": "WoRMS: Cellana nigrolineata",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=531787"
       }
     ],
     "rarity": 1,
@@ -2113,10 +2113,10 @@
     "localEncounter": "暖海性の魚だが、温暖化や黒潮の影響で相模湾内の定置網などで散発的に確認される。",
     "references": [
       {
-        "title": "日本産魚類検索 全種の同定 第三版",
-        "author": "中坊徹次",
-        "year": "2013",
-        "url": "https://www.fish-isj.jp/"
+        "title": "日本産追加種リスト（「日本産魚類検索 全種の同定 第三版」補完）",
+        "author": "日本魚類学会",
+        "year": "2025",
+        "url": "https://www.fish-isj.jp/addition/"
       }
     ],
     "rarity": 3,
@@ -2185,10 +2185,10 @@
     "localEncounter": "岩礁海岸の浅海に生息するが、漁業権が設定されているため無断採取は密漁となる。",
     "references": [
       {
-        "title": "日本産貝類図鑑",
-        "author": "日本貝類学会",
-        "year": "2017",
-        "url": "https://www.malaco-soc-japan.org/"
+        "title": "MolluscaBase: Turbo sazae",
+        "author": "MolluscaBase editors",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=994353"
       }
     ],
     "rarity": 2,
@@ -2220,10 +2220,10 @@
     "localEncounter": "かつては東京湾や相模湾の干潟にも広く生息していたが、現在は自然環境下での減少が著しい。",
     "references": [
       {
-        "title": "海洋生物レッドリスト",
+        "title": "第4次レッドリストの公表について：ハマグリ",
         "author": "環境省",
-        "year": "2017",
-        "url": "https://www.env.go.jp/nature/kisho/marine/redlist.html"
+        "year": "2012",
+        "url": "https://www.env.go.jp/press/15619.html"
       }
     ],
     "rarity": 3,
@@ -2260,10 +2260,10 @@
     "localEncounter": "海岸の砂地や後背地の空き地、道端などで初夏に群生しているのが見られる。",
     "references": [
       {
-        "title": "日本の帰化植物",
-        "author": "国立科学博物館",
-        "year": "2020",
-        "url": "https://www.kahaku.go.jp/"
+        "title": "GBIF: Briza maxima",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/2702792"
       }
     ],
     "rarity": 2,
@@ -2332,10 +2332,10 @@
     "localEncounter": "海岸の砂防林の周縁や堤防、河川敷など、日当たりの良い開けた場所に大群落を形成する。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Imperata cylindrica",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/8424006"
       }
     ],
     "rarity": 1,
@@ -2367,10 +2367,10 @@
     "localEncounter": "ため池や流れの穏やかな水路に生息するが、環境変化により野生での確認は減少している。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Hydrocharis dubia",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/5329272"
       }
     ],
     "rarity": 3,
@@ -2437,10 +2437,10 @@
     "localEncounter": "県内の雑木林や神社の社叢林（しゃそうりん）など、やや湿り気のある日陰で初夏に花茎を伸ばす姿が見られる。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Cremastra appendiculata",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/2789676"
       }
     ],
     "rarity": 2,
@@ -2474,10 +2474,10 @@
     "localEncounter": "海岸の防風林の縁や市街地の空き地、フェンスなど、あらゆる場所で夏場に繁茂する。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Causonis japonica",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/4055350"
       }
     ],
     "rarity": 2,
@@ -2590,10 +2590,10 @@
     "localEncounter": "平成9年に「茅ヶ崎市の鳥」に制定された市のシンボル。市街地の公園や住宅街の庭先から山林まで広く分布し、年間を通じて市内全域でよく見られる身近な野鳥。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       },
       {
         "title": "市の鳥",
@@ -2678,10 +2678,10 @@
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuchu/poison/"
       },
       {
-        "title": "海洋危険生物の毒と病態",
-        "author": "日本救急医学会",
-        "year": "2023",
-        "url": "https://www.jaam.jp/"
+        "title": "海洋動物の毒",
+        "author": "塩見一雄",
+        "year": "1999",
+        "url": "https://www.jstage.jst.go.jp/article/jjaam1990/10/1/10_1_4/_article/-char/ja/"
       }
     ],
     "rarity": 2,
@@ -2755,10 +2755,10 @@
     "localEncounter": "夏から秋にかけて黒潮に乗って相模湾に入り込み、台風通過後などに茅ヶ崎の海岸に漂着（ストランディング）することがまれにある。",
     "references": [
       {
-        "title": "海洋危険生物の毒と病態",
-        "author": "日本救急医学会",
-        "year": "2023",
-        "url": "https://www.jaam.jp/"
+        "title": "海洋動物の毒",
+        "author": "塩見一雄",
+        "year": "1999",
+        "url": "https://www.jstage.jst.go.jp/article/jjaam1990/10/1/10_1_4/_article/-char/ja/"
       },
       {
         "title": "海で遊ぶときの注意｜ウォーターセーフティガイド",
@@ -2804,16 +2804,16 @@
     "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）や周辺の海浜公園に生息し、放置されたゴミやバーベキューの食べ残しを狙って出没することがある。",
     "references": [
       {
-        "title": "特定外来生物の解説：アライグマ",
+        "title": "特定外来生物等の選定について",
         "author": "環境省",
-        "year": "2023",
-        "url": "https://www.env.go.jp/nature/intro/2outline/list/L-ho-01.html"
+        "year": "2026",
+        "url": "https://www.env.go.jp/nature/intro/4document/data/sentei/list01.html"
       },
       {
-        "title": "野生鳥獣（アライグマなど）の被害を防ぐために",
+        "title": "市内に生息する野生動物と被害：アライグマ",
         "author": "茅ヶ崎市",
-        "year": "2023",
-        "url": "https://www.city.chigasaki.kanagawa.jp/"
+        "year": "2025",
+        "url": "https://www.city.chigasaki.kanagawa.jp/kankyo/gaituyaseidobutsu/1003574.html"
       }
     ],
     "rarity": 2,
@@ -2851,10 +2851,10 @@
         "url": "https://www.city.chigasaki.kanagawa.jp/profile/1007342.html"
       },
       {
-        "title": "海岸林の役割",
-        "author": "神奈川県",
-        "year": "2022",
-        "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
+        "title": "砂防林",
+        "author": "神奈川県 藤沢土木事務所",
+        "year": "2026",
+        "url": "https://www.pref.kanagawa.jp/docs/ex5/saborin/index.html"
       }
     ],
     "rarity": 1,
@@ -2921,10 +2921,10 @@
     "localEncounter": "えぼし岩周辺の磯（いそ）釣りや、茅ヶ崎漁港の堤防、相模川河口の汽水域など、市内全域の沿岸で年間を通して狙える。",
     "references": [
       {
-        "title": "おさかな図鑑（クロダイ）",
-        "author": "神奈川県水産技術センター",
-        "year": "2020",
-        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kurodai.html"
+        "title": "WoRMS: Acanthopagrus schlegelii",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=293534"
       }
     ],
     "rarity": 2,
@@ -2956,10 +2956,10 @@
     "localEncounter": "えぼし岩などの岩礁帯や海藻が多い浅海に生息し、秋から冬にかけての船釣りやボート釣りで茅ヶ崎の代表的なターゲットとなる。",
     "references": [
       {
-        "title": "おさかな図鑑（カワハギ）",
-        "author": "神奈川県水産技術センター",
-        "year": "2020",
-        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-kawahagi.html"
+        "title": "WoRMS: Stephanolepis cirrhifer",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=275247"
       }
     ],
     "rarity": 1,
@@ -2991,10 +2991,10 @@
     "localEncounter": "相模湾を巨大な群れで回遊しており、地引き網でよく獲れるほか、ヘッドランド周辺に接岸した際はサビキ釣りで大漁になることがある。",
     "references": [
       {
-        "title": "水産資源評価データ",
+        "title": "令和7年度マイワシ資源評価結果",
         "author": "水産庁",
-        "year": "2023",
-        "url": "https://www.jfa.maff.go.jp/"
+        "year": "2025",
+        "url": "https://www.jfa.maff.go.jp/j/press/sigen/250829.html"
       },
       {
         "title": "相模湾の漁業資源",
@@ -3102,10 +3102,10 @@
     "localEncounter": "茅ヶ崎沖の砂泥底に生息し、相模湾の刺し網漁や底引き網で水揚げされるほか、海岸からの投げ釣りでもまれに掛かる。",
     "references": [
       {
-        "title": "日本産魚類検索 全種の同定 第三版",
-        "author": "中坊徹次",
-        "year": "2013",
-        "url": "https://www.fish-isj.jp/"
+        "title": "日本産追加種リスト（「日本産魚類検索 全種の同定 第三版」補完）",
+        "author": "日本魚類学会",
+        "year": "2025",
+        "url": "https://www.fish-isj.jp/addition/"
       }
     ],
     "rarity": 3,
@@ -3333,10 +3333,10 @@
     "localEncounter": "春から夏にかけて、えぼし岩周辺のホンダワラなどの海藻が生い茂る岩礁帯や、茅ヶ崎漁港の堤防周辺で産卵のため姿を見せる。",
     "references": [
       {
-        "title": "おさかな図鑑（アオリイカ）",
-        "author": "神奈川県水産技術センター",
-        "year": "2020",
-        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-aoriika.html"
+        "title": "WoRMS: Sepioteuthis lessoniana",
+        "author": "World Register of Marine Species",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=220317"
       }
     ],
     "rarity": 2,
@@ -3525,9 +3525,9 @@
     "references": [
       {
         "title": "おさかな図鑑（シャコ）",
-        "author": "神奈川県水産技術センター",
+        "author": "神奈川県",
         "year": "2020",
-        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-syako.html"
+        "url": "https://www.pref.kanagawa.jp/docs/mx7/cnt/f430693/zukan-shako.html"
       }
     ],
     "rarity": 2,
@@ -3594,10 +3594,10 @@
     "localEncounter": "本来は北日本の海岸に多く自生するが、茅ヶ崎海岸のサイクリングロード沿いや海浜公園などの植栽として見ることができる。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Rosa rugosa",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/3003979"
       }
     ],
     "rarity": 2,
@@ -3629,10 +3629,10 @@
     "localEncounter": "茅ヶ崎の海岸周辺の砂地や、えぼし岩などの岩礁帯の隙間、サイクリングロードの脇などで夏場に見られる。",
     "references": [
       {
-        "title": "植物和名ー学名インデックス YList",
-        "author": "米倉浩司・梶田忠",
-        "year": "2003",
-        "url": "http://ylist.info/"
+        "title": "GBIF: Dianthus japonicus",
+        "author": "GBIF Secretariat",
+        "year": "2026",
+        "url": "https://www.gbif.org/species/7267525"
       }
     ],
     "rarity": 2,
@@ -3699,10 +3699,10 @@
     "localEncounter": "茅ヶ崎海岸の防砂林（クロマツ林）の縁や、国道134号沿いの植え込み、サザンビーチ周辺の生垣などで一年中見られる。",
     "references": [
       {
-        "title": "海岸林の役割",
-        "author": "神奈川県",
-        "year": "2022",
-        "url": "https://www.pref.kanagawa.jp/docs/g8g/cnt/f1043/"
+        "title": "海浜自然生態園",
+        "author": "神奈川県 藤沢土木事務所",
+        "year": "2021",
+        "url": "https://www.pref.kanagawa.jp/docs/ex5/saborin/seitaien.html"
       }
     ],
     "rarity": 1,
@@ -3734,10 +3734,10 @@
     "localEncounter": "相模川の河口付近や茅ヶ崎海岸の上空を飛翔し、海面や川面に向かってダイブしてボラなどの魚を狩る姿が一年を通して観察される。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 2,
@@ -3769,10 +3769,10 @@
     "localEncounter": "秋から春にかけての冬鳥として、相模川河口付近や茅ヶ崎漁港、サザンビーチちがさきなどで群れを作って休んでいる姿がよく見られる。",
     "references": [
       {
-        "title": "ふるさとの鳥：ユリカモメ",
-        "author": "神奈川県",
-        "year": "2021",
-        "url": "https://www.pref.kanagawa.jp/docs/t7i/cnt/f985/"
+        "title": "海辺で見られる野鳥",
+        "author": "茅ヶ崎市 文化資料館",
+        "year": "2023",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/bunkashiryokan/1040819/1040822/1040927.html"
       }
     ],
     "rarity": 1,
@@ -3804,10 +3804,10 @@
     "localEncounter": "相模川の支流や小出川、千ノ川などの市内の河川や、中央公園の池など水辺環境のある場所で一年中観察できる留鳥。",
     "references": [
       {
-        "title": "鳥類標本データベース",
-        "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+        "title": "清流の鳥「カワセミ」",
+        "author": "茅ヶ崎市",
+        "year": "2017",
+        "url": "https://www.city.chigasaki.kanagawa.jp/bunka_rekishi/hakubutsukan/1042540/1042555/1042736.html"
       }
     ],
     "rarity": 1,
@@ -3839,10 +3839,10 @@
     "localEncounter": "相模川河口の干潟や浅瀬、市内の田園地帯などで一年を通して単独または小さな群れで行動しているのが観察される。",
     "references": [
       {
-        "title": "日本産鳥類目録 改訂第7版",
+        "title": "日本鳥類目録 改訂第8版",
         "author": "日本鳥学会",
-        "year": "2012",
-        "url": "https://www.ornithology.jp/"
+        "year": "2024",
+        "url": "https://ornithology.jp/checklist.html"
       }
     ],
     "rarity": 2,
@@ -3874,10 +3874,10 @@
     "localEncounter": "代表的な冬鳥として秋から春にかけて飛来し、相模川河口付近のヨシ原の周辺や市内のため池で群れになって越冬する。",
     "references": [
       {
-        "title": "鳥類標本データベース",
+        "title": "標本・資料統合データベース：鳥類",
         "author": "国立科学博物館",
-        "year": "2023",
-        "url": "https://www.kahaku.go.jp/research/db/zoology/birds/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/search?cls=col_a1_01"
       }
     ],
     "rarity": 1,
@@ -4180,10 +4180,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1409.html"
       },
       {
-        "title": "GBIF Species Search: Columba livia",
+        "title": "GBIF: Columba livia",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Columba%20livia"
+        "url": "https://www.gbif.org/species/2495414"
       }
     ],
     "rarity": 1,
@@ -4221,10 +4221,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1451.html"
       },
       {
-        "title": "GBIF Species Search: Motacilla alba",
+        "title": "GBIF: Motacilla alba",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Motacilla%20alba"
+        "url": "https://www.gbif.org/species/9687165"
       }
     ],
     "rarity": 1,
@@ -4262,10 +4262,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1453.html"
       },
       {
-        "title": "GBIF Species Search: Spodiopsar cineraceus",
+        "title": "GBIF: Spodiopsar cineraceus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Spodiopsar%20cineraceus"
+        "url": "https://www.gbif.org/species/6100944"
       }
     ],
     "rarity": 1,
@@ -4297,16 +4297,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森などの樹木間、または市街地の生け垣や民家の軒先で、8月から11月頃にかけて巨大な巣を張る姿が非常によく見られる。",
     "references": [
       {
-        "title": "ジョロウグモ",
-        "author": "国立科学博物館 標本・資料統合データベース",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "title": "標本・資料統合データベース",
+        "author": "国立科学博物館",
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Trichonephila clavata",
+        "title": "GBIF: Trichonephila clavata",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Trichonephila%20clavata"
+        "url": "https://www.gbif.org/species/10670284"
       }
     ],
     "rarity": 1,
@@ -4338,16 +4338,16 @@
     "localEncounter": "茅ヶ崎海岸やヘッドランドビーチ周辺、サザンビーチちがさきの砂浜に殻がよく漂着する。地元の堤貝塚からも多数出土し、古くから親しまれている。",
     "references": [
       {
-        "title": "共同漁業権と海のルールについて",
-        "author": "茅ヶ崎市経済部農業水産課",
+        "title": "WoRMS: Umbonium giganteum",
+        "author": "World Register of Marine Species",
         "year": "2026",
-        "url": "https://www.city.chigasaki.kanagawa.jp/shisetsu/koen/1067245.html"
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=216353"
       },
       {
-        "title": "GBIF Species Search: Umbonium giganteum",
+        "title": "GBIF: Umbonium giganteum",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Umbonium%20giganteum"
+        "url": "https://www.gbif.org/species/4358246"
       }
     ],
     "rarity": 1,
@@ -4389,10 +4389,10 @@
         "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000142712.html"
       },
       {
-        "title": "GBIF Species Search: Amanita ibotengutake",
+        "title": "GBIF: Amanita ibotengutake",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Amanita%20ibotengutake"
+        "url": "https://www.gbif.org/species/5452245"
       }
     ],
     "rarity": 3,
@@ -4424,16 +4424,16 @@
     "localEncounter": "茅ヶ崎里山公園や駒寄川周辺の草地、あるいは家庭菜園などで春から秋にかけて非常によく見られ、雑草の多い場所に多く生息する。",
     "references": [
       {
-        "title": "昆虫データベース ナナホシテントウ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Coccinella septempunctata",
+        "title": "GBIF: Coccinella septempunctata",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Coccinella%20septempunctata"
+        "url": "https://www.gbif.org/species/4990191"
       }
     ],
     "rarity": 1,
@@ -4465,16 +4465,16 @@
     "localEncounter": "市内全域の路傍、小出川沿いや茅ヶ崎里山公園の草地、空き地などで6月から10月頃にかけてごく普通に見られる。",
     "references": [
       {
-        "title": "野生植物データベース ツユクサ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Commelina communis",
+        "title": "GBIF: Commelina communis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Commelina%20communis"
+        "url": "https://www.gbif.org/species/2764179"
       }
     ],
     "rarity": 1,
@@ -4511,16 +4511,16 @@
     "localEncounter": "市街地の民家の庭先やブロック塀の下、茅ヶ崎里山公園の遊歩道沿いの落ち葉の下などで、春から秋にかけて無数に見つけることができる。",
     "references": [
       {
-        "title": "オカダンゴムシの生態と防除",
-        "author": "国立環境研究所 侵入生物データベース",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/detail/70270.html"
+        "title": "日本の外来種全種リスト：その他の節足動物",
+        "author": "国立環境研究所",
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_miscarthropods.html"
       },
       {
-        "title": "GBIF Species Search: Armadillidium vulgare",
+        "title": "GBIF: Armadillidium vulgare",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Armadillidium%20vulgare"
+        "url": "https://www.gbif.org/species/2203611"
       }
     ],
     "rarity": 1,
@@ -4558,10 +4558,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1460.html"
       },
       {
-        "title": "GBIF Species Search: Anas zonorhyncha",
+        "title": "GBIF: Anas zonorhyncha",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Anas%20zonorhyncha"
+        "url": "https://www.gbif.org/species/2498061"
       }
     ],
     "rarity": 1,
@@ -4603,10 +4603,10 @@
         "url": "https://www.mhlw.go.jp/topics/syokuchu/poison/kinoko_18.html"
       },
       {
-        "title": "GBIF Species Search: Chlorophyllum molybdites",
+        "title": "GBIF: Chlorophyllum molybdites",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Chlorophyllum%20molybdites"
+        "url": "https://www.gbif.org/species/5243168"
       }
     ],
     "rarity": 2,
@@ -4638,16 +4638,16 @@
     "localEncounter": "市街地の庭先、中央公園や茅ヶ崎里山公園の草花周辺で4月から10月にかけて頻繁に見られ、柑橘類の木が植えられている民家付近に多い。",
     "references": [
       {
-        "title": "日本の昆虫データベース ナミアゲハ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Papilio xuthus",
+        "title": "GBIF: Papilio xuthus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Papilio%20xuthus"
+        "url": "https://www.gbif.org/species/1937819"
       }
     ],
     "rarity": 1,
@@ -4684,16 +4684,16 @@
     "localEncounter": "茅ヶ崎里山公園や中央公園、市街地のサクラの街路樹、公園のケヤキの幹などで、春から秋にかけて容易に発見できる。",
     "references": [
       {
-        "title": "キマダラカメムシ（外来種データベース）",
+        "title": "日本の外来種全種リスト：その他の昆虫類",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/detail/60550.html"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_miscinsects.html"
       },
       {
-        "title": "GBIF Species Search: Erthesina fullo",
+        "title": "GBIF: Erthesina fullo",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Erthesina%20fullo"
+        "url": "https://www.gbif.org/species/5866171"
       }
     ],
     "rarity": 1,
@@ -4731,10 +4731,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1408.html"
       },
       {
-        "title": "GBIF Species Search: Streptopelia orientalis",
+        "title": "GBIF: Streptopelia orientalis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Streptopelia%20orientalis"
+        "url": "https://www.gbif.org/species/2495681"
       }
     ],
     "rarity": 1,
@@ -4772,10 +4772,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1410.html"
       },
       {
-        "title": "GBIF Species Search: Hirundo rustica",
+        "title": "GBIF: Hirundo rustica",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Hirundo%20rustica"
+        "url": "https://www.gbif.org/species/9515886"
       }
     ],
     "rarity": 1,
@@ -4813,10 +4813,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1412.html"
       },
       {
-        "title": "GBIF Species Search: Passer montanus",
+        "title": "GBIF: Passer montanus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Passer%20montanus"
+        "url": "https://www.gbif.org/species/5231198"
       }
     ],
     "rarity": 1,
@@ -4848,16 +4848,16 @@
     "localEncounter": "茅ヶ崎里山公園や駒寄川沿いの野草地、民家の庭木などで春から秋にかけてナナホシテントウと並び非常に多く見られる。",
     "references": [
       {
-        "title": "日本の昆虫データベース ナミテントウ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Harmonia axyridis",
+        "title": "GBIF: Harmonia axyridis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Harmonia%20axyridis"
+        "url": "https://www.gbif.org/species/4989904"
       }
     ],
     "rarity": 1,
@@ -4889,16 +4889,16 @@
     "localEncounter": "茅ヶ崎市内の市民農園や、海岸のツルナが自生する砂浜付近、小出川や里山公園周辺の畑地・雑草地で、夏から秋にかけて極めて高頻度で確認できる。",
     "references": [
       {
-        "title": "日本の蛾類データベース シロオビノメイガ",
-        "author": "日本蛾類学会",
-        "year": "2023",
-        "url": "http://www.moth.jp/"
+        "title": "飼料作物害虫目録：シロオビノメイガ",
+        "author": "農研機構 畜産研究部門",
+        "year": "2026",
+        "url": "https://www.naro.go.jp/laboratory/nilgs/d-base/lepidoptera/066885.html"
       },
       {
-        "title": "GBIF Species Search: Spoladea recurvalis",
+        "title": "GBIF: Spoladea recurvalis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Spoladea%20recurvalis"
+        "url": "https://www.gbif.org/species/1886251"
       }
     ],
     "rarity": 1,
@@ -4971,16 +4971,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森にあるクヌギ・コナラの雑木林で、6月下旬から8月にかけて樹液採集や夜間の灯火採集で発見できる。",
     "references": [
       {
-        "title": "クワガタムシ科データベース ノコギリクワガタ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Prosopocoilus inclinatus",
+        "title": "GBIF: Prosopocoilus inclinatus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Prosopocoilus%20inclinatus"
+        "url": "https://www.gbif.org/species/7487564"
       }
     ],
     "rarity": 2,
@@ -5012,16 +5012,16 @@
     "localEncounter": "市内の住宅街の庭木、中央公園、里山公園、サクラの街路樹などで、7月中旬から9月上旬にかけて耳を聾するほど大音量で鳴く様子が通例である。",
     "references": [
       {
-        "title": "日本の昆虫データベース アブラゼミ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Graptopsaltria nigrofuscata",
+        "title": "GBIF: Graptopsaltria nigrofuscata",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Graptopsaltria%20nigrofuscata"
+        "url": "https://www.gbif.org/species/8357478"
       }
     ],
     "rarity": 1,
@@ -5059,10 +5059,10 @@
         "url": "https://www.maff.go.jp/j/syouan/syokubo/"
       },
       {
-        "title": "GBIF Species Search: Parnara guttata",
+        "title": "GBIF: Parnara guttatus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Parnara%20guttata"
+        "url": "https://www.gbif.org/species/1943212"
       }
     ],
     "rarity": 1,
@@ -5099,16 +5099,16 @@
     "localEncounter": "市街地の道端、小出川沿いの土手、公園の芝生の隅などで4月から7月頃にかけて、ピンク色の可憐な花を群生させて咲かせている。",
     "references": [
       {
-        "title": "日本の帰化植物データベース ベニカタバミ",
+        "title": "日本の外来種全種リスト：離弁花植物（2）",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_angio2.html"
       },
       {
-        "title": "GBIF Species Search: Oxalis brasiliensis",
+        "title": "GBIF: Oxalis brasiliensis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Oxalis%20brasiliensis"
+        "url": "https://www.gbif.org/species/10905755"
       }
     ],
     "rarity": 1,
@@ -5150,10 +5150,10 @@
         "url": "https://www.city.chigasaki.kanagawa.jp/kankyo/gaituyaseidobutsu/1003574.html"
       },
       {
-        "title": "GBIF Species Search: Corvus macrorhynchos",
+        "title": "GBIF: Corvus macrorhynchos",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Corvus%20macrorhynchos"
+        "url": "https://www.gbif.org/species/2482487"
       }
     ],
     "rarity": 1,
@@ -5191,10 +5191,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1425.html"
       },
       {
-        "title": "GBIF Species Search: Emberiza cioides",
+        "title": "GBIF: Emberiza cioides",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Emberiza%20cioides"
+        "url": "https://www.gbif.org/species/2491538"
       }
     ],
     "rarity": 2,
@@ -5235,16 +5235,16 @@
     "localEncounter": "千ノ川、駒寄川、小出川、茅ヶ崎里山公園内の池などで、年中（特に春から秋の暖かい日）にコンクリート護岸や流木の上で多数並んで日光浴している姿が見られる。",
     "references": [
       {
-        "title": "アカミミガメ（外来生物データベース）",
-        "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "title": "ミシシッピアカミミガメ",
+        "author": "国立環境研究所 侵入生物データベース",
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/30050.html"
       },
       {
-        "title": "GBIF Species Search: Trachemys scripta",
+        "title": "GBIF: Trachemys scripta",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Trachemys%20scripta"
+        "url": "https://www.gbif.org/species/2443002"
       }
     ],
     "rarity": 1,
@@ -5291,10 +5291,10 @@
         "url": "https://www.pref.kanagawa.jp/documents/108156/kurihararisu_bojo_plan.pdf"
       },
       {
-        "title": "GBIF Species Search: Callosciurus erythraeus",
+        "title": "GBIF: Callosciurus erythraeus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Callosciurus%20erythraeus"
+        "url": "https://www.gbif.org/species/2437394"
       }
     ],
     "rarity": 1,
@@ -5331,16 +5331,16 @@
     "localEncounter": "茅ヶ崎海岸の防砂林周辺やサイクリングロード沿いの砂地、小出川の土手などで、5月から7月にかけて一斉に開花し、ピンクの絨毯を形成する。",
     "references": [
       {
-        "title": "日本の外来生物データベース ヒルザキツキミソウ",
+        "title": "日本の外来種全種リスト：離弁花植物（3）",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_angio3.html"
       },
       {
-        "title": "GBIF Species Search: Oenothera speciosa",
+        "title": "GBIF: Oenothera speciosa",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Oenothera%20speciosa"
+        "url": "https://www.gbif.org/species/3188859"
       }
     ],
     "rarity": 1,
@@ -5380,16 +5380,16 @@
     "localEncounter": "市内の住宅街の路傍、中央公園や茅ヶ崎里山公園の斜面、空き地などで、3月から6月頃にかけて青紫色の花を咲かせながら広がっている。",
     "references": [
       {
-        "title": "日本の有毒植物・帰化植物データベース ツルニチニチソウ",
+        "title": "日本の外来種全種リスト：その他の合弁花植物",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_angio4.html"
       },
       {
-        "title": "GBIF Species Search: Vinca major",
+        "title": "GBIF: Vinca major",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Vinca%20major"
+        "url": "https://www.gbif.org/species/3169708"
       }
     ],
     "rarity": 1,
@@ -5426,16 +5426,16 @@
     "localEncounter": "茅ヶ崎海岸やサザンビーチちがさき周辺の砂地、サイクリングロード沿いにハマダイコンに混じって4月から7月頃に見られる。",
     "references": [
       {
-        "title": "キバナダイコン（アブラナ科）の野生化",
-        "author": "国立科学博物館 帰化植物データベース",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "title": "標本・資料統合データベース",
+        "author": "国立科学博物館",
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Raphanus raphanistrum",
+        "title": "GBIF: Raphanus raphanistrum",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Raphanus%20raphanistrum"
+        "url": "https://www.gbif.org/species/3040983"
       }
     ],
     "rarity": 2,
@@ -5472,16 +5472,16 @@
     "localEncounter": "市街地の歩道の隙間、公園の植え込み、小出川の土手などで、4月から10月にかけて群生して鮮やかに咲いている。",
     "references": [
       {
-        "title": "日本の外来生物データベース イモカタバミ",
+        "title": "日本の外来種全種リスト：離弁花植物（2）",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_angio2.html"
       },
       {
-        "title": "GBIF Species Search: Oxalis articulata",
+        "title": "GBIF: Oxalis articulata",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Oxalis%20articulata"
+        "url": "https://www.gbif.org/species/2891664"
       }
     ],
     "rarity": 1,
@@ -5513,16 +5513,16 @@
     "localEncounter": "茅ヶ崎里山公園の野原、小出川沿いの草むら、家庭菜園などで8月から11月頃にかけてよく見られ、バッタの多い背の高い草むらに多く生息する。",
     "references": [
       {
-        "title": "日本の昆虫データベース オオカマキリ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Tenodera sinensis",
+        "title": "GBIF: Tenodera sinensis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Tenodera%20sinensis"
+        "url": "https://www.gbif.org/species/5887934"
       }
     ],
     "rarity": 1,
@@ -5558,16 +5558,16 @@
     "localEncounter": "市内の空き地、小出川周辺の畑の隅、砂浜沿いの防砂林の林縁など、日当たりの良い荒地で4月から11月にかけて非常によく自生している。",
     "references": [
       {
-        "title": "毒のある野生植物とその見分け方",
-        "author": "東京都健康安全研究センター",
-        "year": "2023",
-        "url": "https://www.tmiph.metro.tokyo.lg.jp/shokuhin/shokuchu/yudoku/"
+        "title": "警戒すべき雑草「イヌホオズキ」",
+        "author": "農林水産省・農研機構",
+        "year": "2026",
+        "url": "https://www.maff.go.jp/j/seisan/gijutsuhasshin/techinfo/daizu.html"
       },
       {
-        "title": "GBIF Species Search: Solanum nigrum",
+        "title": "GBIF: Solanum nigrum",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Solanum%20nigrum"
+        "url": "https://www.gbif.org/species/9150405"
       }
     ],
     "rarity": 1,
@@ -5599,16 +5599,16 @@
     "localEncounter": "中央公園やサザン通り周辺のケヤキやクマシデ、茅ヶ崎里山公園の樹木で、7月中旬から8月下旬の朝方に極めて騒がしく大合唱している。",
     "references": [
       {
-        "title": "日本の昆虫データベース クマゼミ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Cryptotympana facialis",
+        "title": "GBIF: Cryptotympana facialis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Cryptotympana%20facialis"
+        "url": "https://www.gbif.org/species/7874703"
       }
     ],
     "rarity": 1,
@@ -5640,16 +5640,16 @@
     "localEncounter": "小出川や駒寄川沿いの水田地帯、茅ヶ崎里山公園の「中の谷」の湿地や池、民家の庭先などで5月から10月にかけて頻繁に見られる。",
     "references": [
       {
-        "title": "トンボ類データベース シオカラトンボ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Orthetrum albistylum",
+        "title": "GBIF: Orthetrum albistylum",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Orthetrum%20albistylum"
+        "url": "https://www.gbif.org/species/1428595"
       }
     ],
     "rarity": 1,
@@ -5681,16 +5681,16 @@
     "localEncounter": "市街地の民家の植木鉢の下、日陰のブロック塀の隙間、茅ヶ崎里山公園の樹林帯の湿った落ち葉の下などで、通年（主に春から秋）に無数に観察できる。",
     "references": [
       {
-        "title": "ワラジムシ類の生態と分類",
+        "title": "日本の外来種全種リスト：その他の節足動物",
         "author": "国立環境研究所",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_miscarthropods.html"
       },
       {
-        "title": "GBIF Species Search: Porcellio scaber",
+        "title": "GBIF: Porcellio scaber",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Porcellio%20scaber"
+        "url": "https://www.gbif.org/species/6284337"
       }
     ],
     "rarity": 1,
@@ -5722,10 +5722,10 @@
     "localEncounter": "中央公園や茅ヶ崎里山公園、市役所周辺などクスノキがシンボルツリーとして植えられている場所や、住宅街の生け垣の周りで5月から10月にかけて頻繁に舞う姿が見られる。",
     "references": [
       {
-        "title": "日本の昆虫データベース アオスジアゲハ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
         "title": "GBIF Species Search: Graphium sarpedon",
@@ -5767,16 +5767,16 @@
     "localEncounter": "梅雨や秋雨などの雨が降る時期に、里山公園の林床や市街地の湿ったコンクリート壁、石垣、排水溝周辺に集団で出現することがある。",
     "references": [
       {
-        "title": "ヤケヤスデの生態と防除",
-        "author": "国立環境研究所 侵入生物データベース",
-        "year": "2025",
-        "url": "https://www.nies.go.jp/biodiversity/invasive/db/"
+        "title": "日本の外来種全種リスト：その他の節足動物",
+        "author": "国立環境研究所",
+        "year": "2026",
+        "url": "https://www.nies.go.jp/biodiversity/invasive/resources/listja_miscarthropods.html"
       },
       {
-        "title": "GBIF Species Search: Oxidus gracilis",
+        "title": "GBIF: Oxidus gracilis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Oxidus%20gracilis"
+        "url": "https://www.gbif.org/species/1017419"
       }
     ],
     "rarity": 1,
@@ -5808,16 +5808,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森、あるいは海岸沿いの住宅街の生け垣として通年見られ、秋には子どもたちがどんぐり拾いを楽しむ定番の樹木である。",
     "references": [
       {
-        "title": "樹木データベース アラカシ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Quercus glauca",
+        "title": "GBIF: Quercus glauca",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Quercus%20glauca"
+        "url": "https://www.gbif.org/species/2876873"
       }
     ],
     "rarity": 1,
@@ -5849,16 +5849,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森の、日陰の湿った広葉樹の落ち葉が堆積している地面に、梅雨時から秋にかけて雨上がりに可憐に群生する。",
     "references": [
       {
-        "title": "キノコ類データベース ハナオチバタケ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Marasmius pulcherripes",
+        "title": "GBIF: Marasmius pulcherripes",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Marasmius%20pulcherripes"
+        "url": "https://www.gbif.org/species/3322053"
       }
     ],
     "rarity": 2,
@@ -5896,10 +5896,10 @@
         "url": "https://www.maff.go.jp/j/syouan/syokubo/"
       },
       {
-        "title": "GBIF Species Search: Megacopta punctatissima",
+        "title": "GBIF: Megacopta punctatissima",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Megacopta%20punctatissima"
+        "url": "https://www.gbif.org/species/11515979"
       }
     ],
     "rarity": 1,
@@ -5931,16 +5931,16 @@
     "localEncounter": "茅ヶ崎里山公園周辺や小出川沿いの畑地、市民農園などで、8月から10月にかけてイチモンジセセリに混じって見られるが、数はこちらの方が少ない。",
     "references": [
       {
-        "title": "日本の昆虫データベース チャバネセセリ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Pelopidas mathias",
+        "title": "GBIF: Pelopidas mathias",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Pelopidas%20mathias"
+        "url": "https://www.gbif.org/species/1945878"
       }
     ],
     "rarity": 2,
@@ -5972,16 +5972,16 @@
     "localEncounter": "市内の住宅街の庭木、中央公園や茅ヶ崎里山公園の樹上で、8月から11月頃にかけて比較的高い場所で見つけられる。",
     "references": [
       {
-        "title": "日本の昆虫データベース ハラビロカマキリ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Hierodula patellifera",
+        "title": "GBIF: Hierodula patellifera",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Hierodula%20patellifera"
+        "url": "https://www.gbif.org/species/1405951"
       }
     ],
     "rarity": 1,
@@ -6013,16 +6013,16 @@
     "localEncounter": "住宅街のアジサイや生け垣、茅ヶ崎里山公園内の低木林などで、7月から9月にかけて成虫が一斉に草むらを飛び跳ねる姿が見られる。",
     "references": [
       {
-        "title": "アオバハゴロモの生態",
-        "author": "農林水産省 農業環境技術研究所",
-        "year": "2023",
-        "url": "https://www.naro.go.jp/index.html"
+        "title": "アオバハゴロモ幼虫のブラックベリー新梢被害と分布様式",
+        "author": "日本応用動物昆虫学会",
+        "year": "2024",
+        "url": "https://www.jstage.jst.go.jp/article/jjaez/68/4/68_680401/_article/-char/ja/"
       },
       {
-        "title": "GBIF Species Search: Geisha distinctissima",
+        "title": "GBIF: Geisha distinctissima",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Geisha%20distinctissima"
+        "url": "https://www.gbif.org/species/2068647"
       }
     ],
     "rarity": 1,
@@ -6054,16 +6054,16 @@
     "localEncounter": "茅ヶ崎市内は平地のため極めてまれ。わずかに茅ヶ崎里山公園の「柳谷」周辺など、涼しい樹林が保全されている深緑部でまれに夏の夜間に確認される程度。",
     "references": [
       {
-        "title": "クワガタムシ科データベース ミヤマクワガタ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Lucanus maculifemoratus",
+        "title": "GBIF: Lucanus maculifemoratus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Lucanus%20maculifemoratus"
+        "url": "https://www.gbif.org/species/7466607"
       }
     ],
     "rarity": 3,
@@ -6095,16 +6095,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森、あるいは日陰の多い高木が立ち並ぶお寺や神社の境内で、7月下旬から9月上旬にかけて盛んに鳴いている。",
     "references": [
       {
-        "title": "日本の昆虫データベース ミンミンゼミ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Hyalessa maculaticollis",
+        "title": "GBIF: Hyalessa maculaticollis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Hyalessa%20maculaticollis"
+        "url": "https://www.gbif.org/species/8015248"
       }
     ],
     "rarity": 1,
@@ -6136,16 +6136,16 @@
     "localEncounter": "市内のほぼ全域の庭先、中央公園や茅ヶ崎里山公園の遊歩道沿いに植栽されており、秋風が吹く頃に一斉に強い香りが漂い始める。",
     "references": [
       {
-        "title": "樹木データベース モクセイ類",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Osmanthus fragrans",
+        "title": "GBIF: Osmanthus fragrans",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Osmanthus%20fragrans"
+        "url": "https://www.gbif.org/species/3172278"
       }
     ],
     "rarity": 1,
@@ -6177,16 +6177,16 @@
     "localEncounter": "小出川沿いの水田、茅ヶ崎里山公園の中の谷、駒寄川周辺などで、10月頃に周囲の空を埋め尽くすように群れを成して飛び回る定番の秋の風物詩。",
     "references": [
       {
-        "title": "トンボ類データベース アキアカネ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Sympetrum frequens",
+        "title": "GBIF: Sympetrum frequens",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Sympetrum%20frequens"
+        "url": "https://www.gbif.org/species/1428237"
       }
     ],
     "rarity": 1,
@@ -6218,16 +6218,16 @@
     "localEncounter": "茅ヶ崎里山公園の「柳谷」などの雑木林や、市民の森のケヤキの枝に、7月から9月にかけてアオバハゴロモと混じってひっそりと生息している。",
     "references": [
       {
-        "title": "日本の昆虫データベース キベリハゴロモ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Salurnis marginella",
+        "title": "GBIF: Salurnis marginella",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Salurnis%20marginella"
+        "url": "https://www.gbif.org/species/2067626"
       }
     ],
     "rarity": 2,
@@ -6259,16 +6259,16 @@
     "localEncounter": "茅ヶ崎海岸の防砂林周辺や茅ヶ崎ゴルフリンクス内のクロマツの下で、春先や秋の雨上がりに埋もれた松ぼっくりを探すと、まれに見つかる。",
     "references": [
       {
-        "title": "キノコ類データベース マツカサキノコモドキ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Strobilurus stephanocystis",
+        "title": "GBIF: Strobilurus stephanocystis",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Strobilurus%20stephanocystis"
+        "url": "https://www.gbif.org/species/5243617"
       }
     ],
     "rarity": 3,
@@ -6300,16 +6300,16 @@
     "localEncounter": "茅ヶ崎里山公園の林内、駒寄川や小出川沿いの茂み、民家の湿った庭石の間などで、梅雨時に紫陽花の葉の上などでよく見られる。",
     "references": [
       {
-        "title": "陸産貝類データベース ミスジマイマイ",
-        "author": "日本貝類学会",
-        "year": "2024",
-        "url": "http://www.malacology-japan.org/"
+        "title": "MolluscaBase: Euhadra peliomphala",
+        "author": "MolluscaBase editors",
+        "year": "2026",
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1328690"
       },
       {
-        "title": "GBIF Species Search: Euhadra peliomphala",
+        "title": "GBIF: Euhadra peliomphala",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Euhadra%20peliomphala"
+        "url": "https://www.gbif.org/species/8977527"
       }
     ],
     "rarity": 1,
@@ -6341,16 +6341,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森のクヌギ・コナラの樹液で夏の夜間に発見でき、里山に近い住宅街の街灯や自動販売機の明かりに飛来することがある。",
     "references": [
       {
-        "title": "コウチュウ目カミキリムシ科 キマダラカミキリ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Pseudaeolesthes chrysothrix",
+        "title": "GBIF: Pseudaeolesthes chrysothrix",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Pseudaeolesthes%20chrysothrix"
+        "url": "https://www.gbif.org/species/4739263"
       }
     ],
     "rarity": 2,
@@ -6388,10 +6388,10 @@
         "url": "https://www.suntory.co.jp/eco/birds/encyclopedia/detail/1444.html"
       },
       {
-        "title": "GBIF Species Search: Zosterops japonicus",
+        "title": "GBIF: Zosterops japonicus",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Zosterops%20japonicus"
+        "url": "https://www.gbif.org/species/9300456"
       }
     ],
     "rarity": 1,
@@ -6423,16 +6423,16 @@
     "localEncounter": "茅ヶ崎里山公園や市民の森の林床に、冬から早春の降雨後にコナラやクヌギの倒木・枯れ枝を探すと、一斉に膨らんでいる姿を見つけられる。",
     "references": [
       {
-        "title": "キノコ類データベース タマキクラゲ",
+        "title": "標本・資料統合データベース",
         "author": "国立科学博物館",
-        "year": "2024",
-        "url": "https://db.kahaku.go.jp/"
+        "year": "2026",
+        "url": "https://db.kahaku.go.jp/webmuseum/"
       },
       {
-        "title": "GBIF Species Search: Exidia uvapassa",
+        "title": "GBIF: Exidia uvapassa",
         "author": "GBIF Secretariat",
         "year": "2026",
-        "url": "https://www.gbif.org/species/search?q=Exidia%20uvapassa"
+        "url": "https://www.gbif.org/species/3314444"
       }
     ],
     "rarity": 2,
