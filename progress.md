@@ -1,16 +1,22 @@
 ## 開発ロードマップ
 
 - **フェーズ1：生物データの拡充** ✅ 進行中 — 遭遇率・危険度の高い生物から優先的にJSONデータを追加。[データ管理スプレッドシート](https://docs.google.com/spreadsheets/d/11n9cdOqSrykqO0FIyUA1I3S-O7i3gc20X8yUd6LYMPQ/edit?gid=554732195#gid=554732195)
-- **フェーズ2：ビジュアルアセットの適用** ✅ 完了 — 全110件に画像情報（url/author/license/sourceUrl）を適用済み。[iNaturalist 茅ヶ崎周辺の観察記録](https://www.inaturalist.org/observations?place_id=6737&quality_grade=research&subview=map&verifiable=any)
+- **フェーズ2：ビジュアルアセットの適用** ✅ 進行中 — 全164件中163件に画像情報（url/author/license/sourceUrl）を適用済み。[iNaturalist 茅ヶ崎周辺の観察記録](https://www.inaturalist.org/observations?place_id=6737&quality_grade=research&subview=map&verifiable=any)
 - **フェーズ3：PWA化（オフライン対応）** ✅ 完了 — `sw.js` と `site.webmanifest` 導入済み。Network First / Cache First 戦略実装済み。
 
 ### 未対応（要確認）
 
 - **要手動**: ハイブリッドSEO（PR #46）マージ後、GitHub Pages の Source を「Deploy from a branch」→「GitHub Actions」へ切替（切替まで `pages.yml` のデプロイは反映されない）
-- 33件が画像未登録（プレースホルダー）。iNaturalistで人力選定後、同手順で反映予定
-  - 画像選定TODO（id）: katsuonoeboshi, kamairuka, bakenumeri, ryukyuyoroiaji, ginanago, ougigani, hiruzakitsukimisou, tsurunichinichisou, kibanadaikon, imokatabami, ookamakiri, inuhoozuki, kumazemi, shiokaratonbo, warajimushi, aosujiageha, yakeyasude, arakashi, hanaochibatake, marukamemushi, chabaneseseri, harabirokamakiri, aobahagoromo, miyamakuwagata, minminzemi, mokusei, akiakane, kiberihagoromo, matsukasakinokomodoki, misujimaimai, kimadarakamikiri, mejiro, tamakikurage
+- 1件が画像未登録（プレースホルダー）。iNaturalistで人力選定後、同手順で反映予定
+  - 画像選定TODO（id）: ginanago
 
 ## 変更履歴
+
+### 2026-07-16 — スプレッドシートの画像候補をJSONへ反映
+
+- 画像管理スプレッドシート `Reference` シートの候補情報から、画像未登録33件のうち候補がある32件について `url`・`author`・`license`・`sourceUrl` を `data/bio-data.json` へ反映
+- ギンアナゴ（`ginanago`）はスプレッドシートに画像候補がないため、プレースホルダーのまま継続
+- `sw.js` の `CACHE_VERSION` を `v1.5.3`→`v1.5.4` へbump
 
 ### 2026-07-14 — bio-data.json 校正 第3ラウンド（標準和名・分類体系・難読語）
 
