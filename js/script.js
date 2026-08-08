@@ -761,9 +761,12 @@ let currentY = 0;
 modalContent.addEventListener('touchstart', (e) => {
     if (modalBody.scrollTop <= 0) {
         startY = e.touches[0].clientY;
+        // 前回のスワイプ座標を持ち越すと、次のタップだけで閉じることがあるため毎回初期化する
+        currentY = startY;
         modalContent.classList.add('dragging');
     } else {
         startY = 0;
+        currentY = 0;
     }
 }, {passive: true});
 
@@ -778,7 +781,7 @@ modalContent.addEventListener('touchmove', (e) => {
     }
 }, {passive: false});
 
-modalContent.addEventListener('touchend', (e) => {
+modalContent.addEventListener('touchend', () => {
     if (!startY) return;
     modalContent.classList.remove('dragging');
     const diff = currentY - startY;
