@@ -160,12 +160,8 @@ def build_species_html(template: str, bio: dict) -> str:
     out = out.replace('href="favicon.svg"', 'href="../../favicon.svg"')
     out = out.replace('href="apple-touch-icon.png"', 'href="../../apple-touch-icon.png"')
     out = out.replace('href="site.webmanifest"', 'href="../../site.webmanifest"')
-    # データプリロードは list.json（種ページでも一覧描画の土台が要る）
-    out = re.sub(
-        r'<link rel="preload" href="data/bio-data\.json"[^>]*>',
-        '<link rel="preload" href="../../list.json" as="fetch" type="application/json" crossorigin>',
-        out,
-    )
+    # データプリロードも種ページ階層へ補正（種ページでも一覧描画の土台に list.json が要る）
+    out = out.replace('href="list.json"', 'href="../../list.json"')
 
     # 固有メタへ差し替え
     out = out.replace(
@@ -232,11 +228,8 @@ def build_species_html(template: str, bio: dict) -> str:
 
 
 def build_home_html(template: str, species: list[dict]) -> str:
-    """トップページ HTML を生成する（list.json プリロード化 + ItemList 追加）。"""
-    out = template.replace(
-        '<link rel="preload" href="data/bio-data.json" as="fetch" type="application/json" crossorigin>',
-        '<link rel="preload" href="list.json" as="fetch" type="application/json" crossorigin>',
-    )
+    """トップページ HTML を生成する（ItemList 追加）。"""
+    out = template
     # 既存 WebSite JSON-LD の直後に ItemList を追加
     item_block = (
         '<script type="application/ld+json">\n'

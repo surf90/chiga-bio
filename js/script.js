@@ -25,6 +25,15 @@ const SITE_BASE = (() => {
     return path.replace(/[^/]*$/, '');
 })();
 
+// アイコン・マニフェストの相対 href を絶対URLへ固定する。
+// pushState で URL が /species/{id}/ に変わると相対 href が再解決され、
+// /species/{id}/favicon.svg のような存在しないパスを取りに行ってしまうため。
+(function absolutizeHeadLinks() {
+    document.querySelectorAll(
+        'link[rel~="icon"], link[rel="manifest"], link[rel="apple-touch-icon"]'
+    ).forEach((el) => { el.href = el.href; });
+})();
+
 // 種詳細の全項目データのメモ化キャッシュ（同一種の再フェッチ抑制）
 const speciesCache = new Map();
 
@@ -50,7 +59,19 @@ async function getSpeciesData(id) {
 }
 
 // 個別ページURLへ遷移してモーダルを開く（履歴を積む）
+let navigatingId = null;
 async function navigateToSpecies(id) {
+    // 取得完了前の連打で履歴が二重に積まれるのを防ぐ
+    if (navigatingId === id) return;
+    navigatingId = id;
+    try {
+        await openSpeciesFromClick(id);
+    } finally {
+        navigatingId = null;
+    }
+}
+
+async function openSpeciesFromClick(id) {
     const data = await getSpeciesData(id);
     if (!data) { showToast('指定の生き物が見つかりませんでした'); return; }
     const url = `${SITE_BASE}species/${encodeURIComponent(id)}/`;
@@ -64,7 +85,7 @@ const clearSearchBtn = document.getElementById('clearSearchBtn');
 const skeletonList = document.getElementById('skeleton-list');
 const bioList = document.getElementById('bio-list');
 const emptyState = document.getElementById('empty-state');
-const emptyKeyword = document.getElementById('empty-keyword');
+const emptyMessage = document.getElementById('empty-message');
 const emptyResetBtn = document.getElementById('emptyResetBtn');
 
 const resultCount = document.getElementById('result-count');
@@ -81,7 +102,11 @@ const navItems = document.querySelectorAll('.nav-item');
     const SCROLL_THRESHOLD = 30;
     let ticking = false;
     function updateHeader() {
-        header.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
+        // モーダル表示中は body が position:fixed で scrollY が 0 になる。
+        // ここでヘッダーを開いてしまうと閉じたときに高さが変わり、復元位置がずれるため据え置く。
+        if (!document.body.classList.contains('modal-open')) {
+            header.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
+        }
         ticking = false;
     }
     window.addEventListener('scroll', function () {
@@ -142,8 +167,21 @@ function getImageUrl(bio) {
 function attachImgFallback(img) {
     if (!img) return;
     img.addEventListener('error', () => {
-        if (img.src !== placeholderSVG) img.src = placeholderSVG;
+        if (img.src === placeholderSVG) return;
+        // srcset が残っていると src より優先されるため、必ず先に除去する
+        img.removeAttribute('srcset');
+        img.removeAttribute('sizes');
+        img.src = placeholderSVG;
     }, { once: true });
+}
+
+// モーション控えめ設定のときは smooth スクロールを使わない
+function prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
 }
 
 // 茅ヶ崎市のシンボル定義（市の花・鳥・木）
@@ -297,6 +335,21 @@ async function fetchBioData() {
 // ==========================================
 // スマホ最適化 UI（タイル形式）の描画
 // ==========================================
+// 0件時の文言を組み立てる。検索語が空（場所フィルタのみ）のときは鉤括弧を出さない
+function renderEmptyMessage() {
+    if (!emptyMessage) return;
+    const keyword = searchInput.value.trim();
+    emptyMessage.textContent = '';
+    if (keyword) {
+        const strong = document.createElement('strong');
+        strong.id = 'empty-keyword';
+        strong.textContent = keyword;
+        emptyMessage.append('「', strong, '」に一致する生き物は見つかりませんでした。');
+    } else {
+        emptyMessage.textContent = 'この条件に当てはまる生き物は見つかりませんでした。';
+    }
+}
+
 function renderCards(data) {
     bioList.innerHTML = '';
 
@@ -309,7 +362,7 @@ function renderCards(data) {
     if (data.length === 0) {
         bioList.style.display = 'none';
         emptyState.style.display = 'flex';
-        emptyKeyword.textContent = searchInput.value;
+        renderEmptyMessage();
         return;
     }
 
@@ -398,7 +451,7 @@ navItems.forEach(item => {
         setActiveNav(item);
         currentEnv = item.dataset.env;
         filterData();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollToTop();
     });
 });
 
@@ -467,7 +520,7 @@ function searchByCategory(category) {
     setActiveNav(document.querySelector('.nav-item[data-env="all"]'));
     currentEnv = 'all';
     filterData();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
 }
 
 // ==========================================
@@ -478,7 +531,10 @@ let savedScrollY = 0; // モーダル表示中の背景スクロール位置の�
 let currentModalId = null; // 表示中の種 id（popstate での画面同期に使用）
 
 function openModal(bio, options = {}) {
-    lastFocusedElement = document.activeElement;
+    // 既に開いている状態での差し替え（戻る／進む等）では、退避済みの
+    // フォーカス元・スクロール位置を上書きしない（body が fixed のため scrollY が 0 になる）
+    const wasOpen = modal.classList.contains('active');
+    if (!wasOpen) lastFocusedElement = document.activeElement;
     const dangerInfo = getDangerInfo(bio);
     const badgeHtml = dangerInfo
         ? `<span class="danger-badge ${dangerInfo.badgeClass}">${dangerInfo.icon} ${dangerInfo.label}</span>`
@@ -633,13 +689,19 @@ function openModal(bio, options = {}) {
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
-    // 背景スクロールを完全にロック（iOS Safari は overflow:hidden だけでは背面が動くため position:fixed 方式）
-    savedScrollY = window.scrollY;
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${savedScrollY}px`;
-    document.body.style.left = '0';
-    document.body.style.right = '0';
-    document.body.style.width = '100%';
+    modal.removeAttribute('inert');
+    // スワイプ途中で閉じた直後の再オープンに備えて、残留 transform をリセット
+    modalContent.style.transform = '';
+    if (!wasOpen) {
+        // 背景スクロールを完全にロック（iOS Safari は overflow:hidden だけでは背面が動くため position:fixed 方式）
+        savedScrollY = window.scrollY;
+        document.body.classList.add('modal-open');
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${savedScrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+    }
     modalBody.scrollTop = 0;
 
     // 現在表示中の種 id を記録（popstate での同期判定に使う）
@@ -651,20 +713,28 @@ function openModal(bio, options = {}) {
         window.history.pushState({ modal: true, id: bio.id }, '', url);
     }
 
-    // フォーカスをモーダル内へ
-    setTimeout(() => { modalClose.focus(); }, 50);
+    // フォーカスをモーダル内へ（本文を先頭に戻した直後なのでスクロールは伴わせない）
+    setTimeout(() => { modalClose.focus({ preventScroll: true }); }, 50);
 }
 
 function closeModal(options = {}) {
     if (!modal.classList.contains('active')) return;
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
+    // 非表示中の内部要素がタブ移動・読み上げ対象にならないようにする
+    modal.setAttribute('inert', '');
     // 背景スクロールロックを解除し、退避していたスクロール位置を復元
+    document.body.classList.remove('modal-open');
     document.body.style.position = '';
     document.body.style.top = '';
     document.body.style.left = '';
     document.body.style.right = '';
     document.body.style.width = '';
+    // フォーカス復帰を先に行う。既定の focus() は対象を画面内へスクロールしてしまい、
+    // 直後に復元したスクロール位置を上書きするため preventScroll を指定する
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+        lastFocusedElement.focus({ preventScroll: true });
+    }
     window.scrollTo(0, savedScrollY);
     currentModalId = null;
     // history からモーダル状態を取り除く
@@ -674,9 +744,6 @@ function closeModal(options = {}) {
         // 直接 /species/{id}/ で着地したまま閉じる場合などはルート（一覧）へ戻す
         const cleanUrl = window.location.origin + SITE_BASE;
         window.history.replaceState({}, document.title, cleanUrl);
-    }
-    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
-        lastFocusedElement.focus();
     }
 }
 
@@ -702,9 +769,10 @@ document.addEventListener('keydown', (e) => {
         return;
     }
     if (e.key === 'Tab') {
-        const focusables = modalContent.querySelectorAll(
-            'a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])'
-        );
+        // 折りたたまれた <details> 内のリンク等、実際にフォーカスできない要素は除外する
+        const focusables = Array.from(modalContent.querySelectorAll(
+            'a[href], button:not([disabled]), summary, input, [tabindex]:not([tabindex="-1"])'
+        )).filter(el => el.offsetParent !== null || el === document.activeElement);
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -745,36 +813,48 @@ function shareBio(id, name, category) {
     }
 }
 
+let toastTimer;
 function showToast(message) {
     const toast = document.getElementById('toast');
+    if (!toast) return;
     toast.textContent = message;
-    toast.className = "show";
-    setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+    toast.classList.add('show');
+    // 連続表示でタイマーが重なると、後から出したトーストが早く消えるため毎回張り直す
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { toast.classList.remove('show'); }, 3000);
 }
 
 // ==========================================
 // モーダルのスワイプダウンによるクローズ
 // ==========================================
+// 座標 0 からのスワイプを取りこぼさないよう、開始判定は真偽フラグで持つ
+let isSwiping = false;
 let startY = 0;
 let currentY = 0;
 
+function endSwipe() {
+    isSwiping = false;
+    startY = 0;
+    currentY = 0;
+}
+
 modalContent.addEventListener('touchstart', (e) => {
     if (modalBody.scrollTop <= 0) {
+        isSwiping = true;
         startY = e.touches[0].clientY;
         // 前回のスワイプ座標を持ち越すと、次のタップだけで閉じることがあるため毎回初期化する
         currentY = startY;
         modalContent.classList.add('dragging');
     } else {
-        startY = 0;
-        currentY = 0;
+        endSwipe();
     }
 }, {passive: true});
 
 modalContent.addEventListener('touchmove', (e) => {
-    if (!startY) return;
+    if (!isSwiping) return;
     currentY = e.touches[0].clientY;
     const diff = currentY - startY;
-    
+
     if (diff > 0) {
         modalContent.style.transform = `translateY(${diff}px)`;
         e.preventDefault();
@@ -782,19 +862,26 @@ modalContent.addEventListener('touchmove', (e) => {
 }, {passive: false});
 
 modalContent.addEventListener('touchend', () => {
-    if (!startY) return;
+    if (!isSwiping) return;
     modalContent.classList.remove('dragging');
     const diff = currentY - startY;
-    
+
     if (diff > 150) {
         closeModal();
         setTimeout(() => { modalContent.style.transform = ''; }, 300);
     } else {
         modalContent.style.transform = '';
     }
-    
-    startY = 0;
-    currentY = 0;
+
+    endSwipe();
+});
+
+// 着信などでタッチが中断された場合も、引きずったままにならないよう元に戻す
+modalContent.addEventListener('touchcancel', () => {
+    if (!isSwiping) return;
+    modalContent.classList.remove('dragging');
+    modalContent.style.transform = '';
+    endSwipe();
 });
 
 // 起動
