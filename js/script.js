@@ -360,6 +360,11 @@ function renderCards(data) {
         resultCount.textContent = data.length === 0
             ? '一致する生き物は見つかりませんでした'
             : `${data.length}件の生き物を表示中`;
+        // 検索語や場所フィルタが効いているときだけ、件数を目にも見える形で出す。
+        // 全件表示のときは情報量が増えるだけなので読み上げ専用に戻す。
+        const isFiltered = searchInput.value.trim() !== '' || currentEnv !== 'all';
+        resultCount.classList.toggle('sr-only', !isFiltered);
+        resultCount.classList.toggle('result-count-visible', isFiltered && data.length > 0);
     }
 
     if (data.length === 0) {
@@ -455,8 +460,46 @@ navItems.forEach(item => {
         currentEnv = item.dataset.env;
         filterData();
         scrollToTop();
+        // 端の項目を選ぶと見切れたままになるため、選択項目を可視域へ寄せる
+        revealNavItem(item);
     });
 });
+
+// ボトムナビは項目が画面幅に収まらないと横スクロールになるが、スクロールバーを
+// 隠しているため続きがあることに気づけない。スクロールできる向きの端をフェードさせる。
+const bottomNav = document.getElementById('bottomNavScroller');
+function updateNavScrollHints() {
+    if (!bottomNav) return;
+    const max = bottomNav.scrollWidth - bottomNav.clientWidth;
+    // 小数点以下の誤差でフェードが残らないよう遊びを持たせる
+    const slack = 2;
+    bottomNav.classList.toggle('can-scroll-left', bottomNav.scrollLeft > slack);
+    bottomNav.classList.toggle('can-scroll-right', bottomNav.scrollLeft < max - slack);
+}
+// 選択項目を可視域へ寄せる。`scrollIntoView` はページ全体もスクロールし
+// 直前の `scrollToTop()` と競合するため、ナビの横スクロールだけを動かす。
+function revealNavItem(item) {
+    if (!bottomNav || !item) return;
+    const navRect = bottomNav.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
+    const margin = 28; // フェード幅ぶん内側に寄せる
+    let delta = 0;
+    if (itemRect.left < navRect.left + margin) {
+        delta = itemRect.left - navRect.left - margin;
+    } else if (itemRect.right > navRect.right - margin) {
+        delta = itemRect.right - navRect.right + margin;
+    }
+    if (delta !== 0) {
+        bottomNav.scrollBy({ left: delta, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    }
+    updateNavScrollHints();
+}
+
+if (bottomNav) {
+    bottomNav.addEventListener('scroll', updateNavScrollHints, { passive: true });
+    window.addEventListener('resize', updateNavScrollHints, { passive: true });
+    updateNavScrollHints();
+}
 
 let searchTimeout;
 let isComposing = false;
