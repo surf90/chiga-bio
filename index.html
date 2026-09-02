@@ -91,9 +91,9 @@
         <div class="skeleton-card"><div class="skeleton-circle"></div><div class="skeleton-text"></div></div>
     </div>
 
-    <div id="bio-list" class="grid-container is-hidden"></div>
-
     <div id="result-count" class="sr-only" aria-live="polite"></div>
+
+    <div id="bio-list" class="grid-container is-hidden"></div>
 
     <div id="empty-state" class="empty-state" role="status">
         <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -114,12 +114,14 @@
 </div>
 
 <nav class="bottom-nav" id="bottomNav" aria-label="見られる場所">
-    <button type="button" class="nav-item active" data-env="all" aria-current="page">すべて</button>
-    <button type="button" class="nav-item" data-env="砂浜・海岸">砂浜・海岸</button>
-    <button type="button" class="nav-item" data-env="磯・岩場">磯・岩場</button>
-    <button type="button" class="nav-item" data-env="茅ヶ崎の海">茅ヶ崎の海</button>
-    <button type="button" class="nav-item" data-env="河口・干潟">河口・干潟</button>
-    <button type="button" class="nav-item" data-env="町中・林">町中・林</button>
+    <div class="bottom-nav-scroller" id="bottomNavScroller">
+        <button type="button" class="nav-item active" data-env="all" aria-current="page">すべて</button>
+        <button type="button" class="nav-item" data-env="砂浜・海岸">砂浜・海岸</button>
+        <button type="button" class="nav-item" data-env="磯・岩場">磯・岩場</button>
+        <button type="button" class="nav-item" data-env="茅ヶ崎の海">茅ヶ崎の海</button>
+        <button type="button" class="nav-item" data-env="河口・干潟">河口・干潟</button>
+        <button type="button" class="nav-item" data-env="町中・林">町中・林</button>
+    </div>
 </nav>
 
 <footer class="footer">
