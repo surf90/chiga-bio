@@ -18,6 +18,9 @@ let currentEnv = 'all';
 // サイトルートの絶対パスを動的算出（ローカル=ルート配信／本番=サブパス配信の両対応）。
 // 例: /chiga-bio/species/utsubo/ → /chiga-bio/ 、 /chiga-bio/ → /chiga-bio/
 const SITE_BASE = (() => {
+    // ビルド時に埋め込まれた確定値を最優先（404 ページのように任意の深さで着地しても正しく解決できる）
+    const meta = document.querySelector('meta[name="site-base"]');
+    if (meta && meta.content) return meta.content.endsWith('/') ? meta.content : `${meta.content}/`;
     const path = window.location.pathname;
     const m = path.match(/^(.*\/)species\/[^/]+\/?$/);
     if (m) return m[1];
@@ -647,7 +650,7 @@ function openModal(bio, options = {}) {
 
     modalBody.innerHTML = `
         <button type="button" class="modal-header-img-wrap" aria-expanded="false" aria-label="写真を全体表示に切り替え">
-            <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async">
+            <img src="${modalSrc}"${modalSrcset} alt="${escapeHtml(imgAlt)}" class="modal-header-img" width="600" height="400" decoding="async" fetchpriority="high">
             <span class="zoom-hint">🔍 タップで全体表示</span>
         </button>
         ${creditHtml}

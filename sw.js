@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v1.6.0';
+const CACHE_VERSION = 'v1.7.0';
 const STATIC_CACHE_NAME = `chiga-bio-static-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `chiga-bio-image-${CACHE_VERSION}`;
 const MAX_IMAGE_CACHE = 150;
@@ -70,24 +70,25 @@ self.addEventListener('fetch', (event) => {
         requestUrl.hostname.includes('inaturalist')
     ) {
         event.respondWith(
-            caches.match(event.request).then((cachedResponse) => {
+            // 画像は画像キャッシュだけを見る（他キャッシュへの誤ヒットを避ける）
+            caches.open(IMAGE_CACHE_NAME).then((cache) => cache.match(event.request).then((cachedResponse) => {
                 if (cachedResponse) return cachedResponse;
                 return fetch(event.request).then((networkResponse) => {
-                    if (
-                        !networkResponse ||
-                        networkResponse.status !== 200 ||
-                        (networkResponse.type !== 'basic' && networkResponse.type !== 'cors')
-                    ) {
-                        return networkResponse;
-                    }
+                    if (!networkResponse) return networkResponse;
+                    // iNaturalist の画像は <img> 経由の no-cors 取得となり type='opaque'（status=0）で返る。
+                    // opaque を弾くと外部画像が一切キャッシュされないため、明示的に許可する。
+                    const isOpaque = networkResponse.type === 'opaque';
+                    const isCacheable = isOpaque
+                        || ((networkResponse.type === 'basic' || networkResponse.type === 'cors')
+                            && networkResponse.status === 200);
+                    if (!isCacheable) return networkResponse;
                     const responseToCache = networkResponse.clone();
-                    caches.open(IMAGE_CACHE_NAME).then((cache) => {
-                        cache.put(event.request, responseToCache);
-                        limitCacheSize(IMAGE_CACHE_NAME, MAX_IMAGE_CACHE);
-                    });
+                    cache.put(event.request, responseToCache)
+                        .then(() => limitCacheSize(IMAGE_CACHE_NAME, MAX_IMAGE_CACHE))
+                        .catch(() => { /* 容量超過等は無視（表示は継続） */ });
                     return networkResponse;
-                }).catch(() => new Response(''));
-            })
+                }).catch(() => new Response('', { status: 504, statusText: 'offline' }));
+            }))
         );
         return;
     }
@@ -110,12 +111,11 @@ self.addEventListener('fetch', (event) => {
 });
 
 // キャッシュ容量制限（上限超過時に古いものから削除）
-function limitCacheSize(cacheName, maxItems) {
-    caches.open(cacheName).then((cache) => {
-        cache.keys().then((keys) => {
-            if (keys.length > maxItems) {
-                cache.delete(keys[0]).then(() => limitCacheSize(cacheName, maxItems));
-            }
-        });
-    });
+async function limitCacheSize(cacheName, maxItems) {
+    const cache = await caches.open(cacheName);
+    const keys = await cache.keys();
+    // 超過分をまとめて古い順（挿入順）に削除する
+    for (const key of keys.slice(0, Math.max(0, keys.length - maxItems))) {
+        await cache.delete(key);
+    }
 }

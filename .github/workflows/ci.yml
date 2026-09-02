@@ -1,0 +1,40 @@
+name: CI
+
+# PR と main への push でビルドを検証する。
+# デプロイ前に JSON パースエラー・id 重複・ビルド失敗を検出するのが目的。
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Validate bio-data.json and build
+        run: python scripts/build.py
+
+      - name: Check generated artifacts
+        run: |
+          set -euo pipefail
+          for f in dist/index.html dist/404.html dist/list.json dist/sitemap.xml; do
+            test -s "$f" || { echo "生成物が空または存在しません: $f"; exit 1; }
+          done
+          test -e dist/.nojekyll || { echo "dist/.nojekyll がありません"; exit 1; }
+          python -c "import json,sys; json.load(open('dist/list.json')); print('list.json OK')"
+          python -c "import xml.dom.minidom as m; m.parse('dist/sitemap.xml'); print('sitemap.xml OK')"

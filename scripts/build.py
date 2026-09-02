@@ -7,6 +7,8 @@
     - dist/list.json ... 一覧・検索用の軽量データ
     - dist/species/{id}.json ... 各種の全項目（詳細描画用）
     - dist/species/{id}/index.html ... 種ごとの固有メタ付き静的 HTML
+    - dist/404.html ... GitHub Pages のカスタム404（SPAとして復帰できる）
+    - dist/.nojekyll ... Jekyll 変換の抑止
     - dist/sitemap.xml ... 全個別ページURLを含むサイトマップ
 
 実行: python scripts/build.py
@@ -137,6 +139,46 @@ def itemlist_jsonld(species: list[dict]) -> str:
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 
+SITE_BASE_META = f'<meta name="site-base" content="{BASE}/">'
+
+
+def inject_site_base(out: str) -> str:
+    """配信サブパスを `site-base` メタとして埋め込む。
+
+    クライアントJSは URL からサイトルートを推測するが、404 ページのように
+    任意の深さで着地する場合は推測できない。ビルド時に確定値を渡す。
+    """
+    return out.replace("<head>", f"<head>\n    {SITE_BASE_META}", 1)
+
+
+def build_404_html(template: str) -> str:
+    """GitHub Pages 用のカスタム404ページを生成する。
+
+    任意の深さのURLで配信されるため、アセット参照はすべて絶対パスへ書き換える。
+    """
+    out = template
+    for attr, path in (
+        ('href="css/', f'href="{BASE}/css/'),
+        ('src="js/script.js"', f'src="{BASE}/js/script.js"'),
+        ('href="favicon.ico"', f'href="{BASE}/favicon.ico"'),
+        ('href="favicon.svg"', f'href="{BASE}/favicon.svg"'),
+        ('href="apple-touch-icon.png"', f'href="{BASE}/apple-touch-icon.png"'),
+        ('href="site.webmanifest"', f'href="{BASE}/site.webmanifest"'),
+        ('href="list.json"', f'href="{BASE}/list.json"'),
+    ):
+        out = out.replace(attr, path)
+    # 404 は検索結果に載せない
+    out = out.replace(
+        '<meta name="robots" content="index,follow,max-image-preview:large">',
+        '<meta name="robots" content="noindex,follow">',
+    )
+    out = out.replace(
+        "<title>ちがビオ | 茅ヶ崎の生き物情報</title>",
+        f"<title>ページが見つかりません | {SITE_NAME}</title>",
+    )
+    return inject_site_base(out)
+
+
 def build_species_html(template: str, bio: dict) -> str:
     """テンプレート（index.html）の `<head>` を種固有メタへ差し替えた HTML を返す。
 
@@ -224,7 +266,7 @@ def build_species_html(template: str, bio: dict) -> str:
         + species_jsonld(bio, page_url, desc) + '\n    </script>',
         out, count=1, flags=re.S,
     )
-    return out
+    return inject_site_base(out)
 
 
 def build_home_html(template: str, species: list[dict]) -> str:
@@ -240,7 +282,7 @@ def build_home_html(template: str, species: list[dict]) -> str:
         r'\1\n    ' + item_block.replace('\\', '\\\\'),
         out, count=1, flags=re.S,
     )
-    return out
+    return inject_site_base(out)
 
 
 def copy_static() -> None:
@@ -256,6 +298,8 @@ def copy_static() -> None:
         src = ROOT / d
         if src.exists():
             shutil.copytree(src, DIST / d)
+    # Jekyll 変換を抑止（アンダースコア始まりのパスが落とされる事故を防ぐ）
+    (DIST / ".nojekyll").write_text("", encoding="utf-8")
 
 
 def main() -> None:
@@ -301,6 +345,9 @@ def main() -> None:
     (DIST / "index.html").write_text(
         build_home_html(template, species), encoding="utf-8",
     )
+
+    # 404.html（GitHub Pages のカスタム404）
+    (DIST / "404.html").write_text(build_404_html(template), encoding="utf-8")
 
     # sitemap.xml
     today = jst_today()
