@@ -2,6 +2,8 @@
 
 茅ヶ崎の海の生き物がわかる
 
+🔗 https://surf90.github.io/chiga-bio/
+
 ---
 
 ## プロジェクト概要
