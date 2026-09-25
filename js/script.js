@@ -57,8 +57,10 @@ async function getSpeciesData(id) {
             return data;
         }
     } catch (e) { /* オフライン等はフォールバックへ */ }
-    // フォールバック：一覧データ（軽量）から最低限を返す
-    return globalBioData.find(bio => bio.id === id) || null;
+    // フォールバック：一覧データ（軽量）から最低限を返す。
+    // 応急処置などの詳細は含まないため、_partial を付けてモーダルで明示する（「情報なし」と誤読させない）
+    const light = globalBioData.find(bio => bio.id === id);
+    return light ? { ...light, _partial: true } : null;
 }
 
 // 個別ページURLへ遷移してモーダルを開く（履歴を積む）
@@ -647,6 +649,9 @@ function openModal(bio, options = {}) {
 
     let firstAidHtml = (bio.firstAid && bio.firstAid.length > 0)
         ? `<h3 class="section-label ${bio.isDanger ? 'alert' : ''}">FIRST AID / 応急処置</h3><ul class="styled-list">${bio.firstAid.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>` : '';
+    if (bio._partial) {
+        firstAidHtml = `<p class="alert-box" role="alert">詳細情報（応急処置など）を読み込めませんでした。通信状況を確認して開き直してください。</p>`;
+    }
     
     let dontDoHtml = bio.dontDo ? `<div class="alert-box"><strong>⚠️ やってはいけないこと：</strong><br>${escapeHtml(bio.dontDo)}</div>` : '';
 

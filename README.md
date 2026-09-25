@@ -4,6 +4,12 @@
 
 🔗 https://surf90.github.io/chiga-bio/
 
+## データの扱い
+
+- 生き物の情報は、リポジトリ内の JSON（`list.json`・`species/*.json`、`scripts/build.py` が `dist/` に生成）をブラウザで読み込むだけです。利用者の入力や位置情報を送信・保存しません。
+- 外部から読み込むもの：Google Fonts（Zen Kaku Gothic New、見出し用）、iNaturalist の写真（`inaturalist-open-data.s3.amazonaws.com`・`static.inaturalist.org`）。読み込み先は `index.html` の Content-Security-Policy で限定しています。
+- 各種の説明は `references` に出典を明記しています（下記「データ収集・編集ガイドライン」）。**危険生物の対処は目安です。** 刺傷・咬傷などの際は、救急（119）・医療機関の判断に従ってください。
+
 ---
 
 ## プロジェクト概要
@@ -182,3 +188,8 @@ Search Console のこの文言は、URL 側の構文エラーではなく **Goog
 5. 失敗が 72 時間以上続く場合は、Search Console のプロパティを開き直して再認証し、URL プレフィックスが `https://surf90.github.io/chiga-bio/` になっているか確認する
 
 補足: GitHub Pages への反映直後はキャッシュやクロール待ちで失敗表示が出ることがあります。公開後に再試行してください。
+
+## ライセンス
+
+MIT License © 2026 ISHIKAWA, Natsuki（[LICENSE](LICENSE)）
+写真・引用した情報は、それぞれの出典のライセンス（CC0・CC BY など）に従います。
