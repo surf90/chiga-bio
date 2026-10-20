@@ -12,6 +12,13 @@
 
 ## 変更履歴
 
+### 2026-10-20 — dependabot の更新を1PRにまとめる（[PR #64](https://github.com/surf90/chiga-bio/pull/64)）
+
+保守:
+
+- `.github/dependabot.yml` に `groups` を追加し、GitHub Actions の更新を1PRにまとめた。`open-pull-requests-limit` を 5 → 2（chiga-log と同じ方針。頻度は weekly のまま）
+- サイトの HTML/CSS/JS/JSON は変更していないため `CACHE_VERSION` は据え置き
+
 ### 2026-09-25 — 詳細読み込み失敗時の応急処置欄の明示（[PR #62](https://github.com/surf90/chiga-bio/pull/62)）
 
 不具合修正:
