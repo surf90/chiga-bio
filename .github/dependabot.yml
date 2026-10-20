@@ -1,7 +1,11 @@
+# 依存の更新提案。PR を溜めないよう、1つの PR にまとめる。
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns: ["*"]
+    open-pull-requests-limit: 2
