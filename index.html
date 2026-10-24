@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#0d9488" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#006fc0" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
     <meta name="color-scheme" content="light dark">
     <meta name="description" content="魚も鳥も哺乳類も植物も　茅ヶ崎の生き物まとめ">
@@ -145,11 +145,17 @@
         ※ 本ページは参考用です。実際の応急処置時は、必ず医療機関の指示や最新の医学的知見を優先してください。<br>
     </div>
 
-    <div class="footer-info">
-        | <a class="lifesaving-link" href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a> | <br>
-        <br>
-        | <a href="https://surf90.github.io/chiga-log/" rel="noopener">ちがログ | 茅ヶ崎の海情報</a> | <br>
-    </div>
+    <!-- サーフ90の関連サイトであることを示すリンク群。ちがログのフッターと同じ構成・順序にそろえる。
+         公式サイトは HTTPS 化が完了するまで http で張る（完了後に https へ）。 -->
+    <nav class="footer-family" aria-labelledby="footer-family-title">
+        <p id="footer-family-title" class="footer-family-title">サーフ90茅ヶ崎ライフセービングクラブ</p>
+        <ul class="footer-family-links">
+            <li><a href="http://surf90.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></li>
+            <li><a href="https://www.instagram.com/surf90chigasakilsc/" target="_blank" rel="noopener noreferrer">茅ヶ崎のライフセービング活動紹介</a></li>
+            <li><a href="https://surf90.github.io/chiga-log/" rel="noopener">ちがログ | 茅ヶ崎の海情報</a></li>
+        </ul>
+        <p class="footer-family-note">ちがログ・ちがビオは、サーフ90の関連サイト（非公式）です。</p>
+    </nav>
 
     <div class="footer-copyright">
         <a href="https://github.com/surf90/chiga-bio/blob/main/README.md" target="_blank" rel="noopener noreferrer">&copy;</a> 2026 ISHIKAWA, Natsuki<br>
