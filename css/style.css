@@ -575,10 +575,9 @@ summary { font-weight: bold; cursor: pointer; }
 
 .footer { text-align: center; padding: 24px 16px 40px; font-size: 11px; color: var(--text-meta); }
 .footer a { color: inherit; text-decoration: none; } /* リンクを周りの文字色に合わせる */
-/* サーフ90の関連サイトのリンク群（ちがログと同じ構成）。赤は危険・安全の色として取っておき
-   （公式サイトの配色ルールと同じ）、クラブ名だけをブランドの青で示す */
+/* サーフ90の関連サイトのリンク群（ちがログと同じ構成）。非公式サイトのため、公式に見えないよう
+   関連性の表記は控えめにする（クラブ名の見出しは置かない）。赤は危険・安全の色として取っておく */
 .footer-family { margin-top: 16px; }
-.footer-family-title { font-size: 12px; font-weight: 700; color: var(--brand); margin-bottom: 2px; }
 .footer-family-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 16px; list-style: none; } /* 区切り記号は折り返すと行頭に残るため、余白で区切る */
 .footer-family-links a { display: inline-block; padding: 4px 0; }
 .footer-family-note { margin-top: 2px; }
